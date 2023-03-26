@@ -1,0 +1,72 @@
+{
+  "name": "nastran",
+  "displayName": "nastran",
+  "description": "Syntax highlighting and documentation support for Nastran",
+  "author": "Marcus Bakke",
+  "version": "0.0.1",
+  "publisher": "mbakke",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nastran",
+        "aliases": [
+          "NASTRAN",
+          "nastran"
+        ],
+        "extensions": [
+          ".bdf",
+          ".dat",
+          ".nas"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nastran",
+        "scopeName": "source.nastran",
+        "path": "./syntaxes/NASTRAN.tmLanguage"
+      }
+    ],
+    "commands": [
+      {
+        "command": "hoverDocs",
+        "title": "Bulk Data Entry documentation hover."
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Nastran Server Configuration",
+      "properties": {
+        "nastranServer.Configuration": {
+          "scope": "resource",
+          "type": "string",
+          "default": "You can override this message."
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "hoverProvider": "true"
+  },
+  "main": "./client/out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@types/vscode": "^1.75.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^7.0.0"
+  }
+}
