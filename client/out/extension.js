@@ -70,7 +70,7 @@ function activate(context) {
     // const pythonPath = workspace
     //     .getConfiguration("python")
     //     .get<string>("pythonPath");
-    const pythonPath = ".venv/Scripts/python";
+    const pythonPath = "python";
     if (!pythonPath) {
         throw new Error("`python.pythonPath` is not set");
     }
