@@ -16,15 +16,20 @@
       {
         "id": "nastran",
         "aliases": [
-          "NASTRAN",
           "Nastran",
+          "NASTRAN",
           "nastran"
         ],
         "extensions": [
           ".bdf",
           ".dat",
-          ".nas"
+          ".nas",
+          ".inp"
         ],
+        "icon": {
+          "light": "./icons/nasa-dark.png",
+          "dark": "./icons/nasa-dark.png"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
