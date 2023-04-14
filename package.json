@@ -17,6 +17,7 @@
         "id": "nastran",
         "aliases": [
           "NASTRAN",
+          "Nastran",
           "nastran"
         ],
         "extensions": [
