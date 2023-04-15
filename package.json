@@ -4,7 +4,7 @@
   "description": "Syntax highlighting and documentation support for Nastran",
   "author": "Marcus Bakke",
   "version": "0.0.1",
-  "publisher": "mbakke",
+  "publisher": "dmarc3",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -27,7 +27,7 @@
           ".inp"
         ],
         "icon": {
-          "light": "./icons/nasa-dark.png",
+          "light": "./icons/nasa-light.png",
           "dark": "./icons/nasa-dark.png"
         },
         "configuration": "./language-configuration.json"
