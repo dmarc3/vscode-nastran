@@ -1,6 +1,4 @@
 import os
-import string
-import re
 
 def get_docs(card: str, section='') -> str:
     if section:
@@ -13,6 +11,9 @@ def get_docs(card: str, section='') -> str:
     return convert_to_markdown(out)
 
 def read_docs(card: str, section: str) -> str:
+    # Ignore hover for comment
+    if card == '$':
+        return ''
     # Read raw NASTRAN-95 documentation
     with open(file=os.path.join('utils', 'um', section+'.TXT'), mode='r') as f:
         lines = f.read()
@@ -29,15 +30,26 @@ def read_docs(card: str, section: str) -> str:
     lines = lines.replace('¿','┐').replace('»','┐')
     lines = lines.replace('´','┤')
     lines = lines.replace('Ù','┘').replace('¼','┘')
+    lines = lines.replace('é', 'θ')
+    lines = lines.replace('è', 'φ').replace('í', 'φ')
+    lines = lines.replace('à', 'α')
     # Split by =PAGE=
     lines = lines.split('=PAGE=\n')
     # Find index of desired card
     ind = [i for i, line in enumerate(lines) if line.startswith(card.upper())]
+    # If not found, try trimming last char
+    # (i.e. PDUM1 needs to use PDUMi documetation -> search for PDUM)
+    if not ind:
+        ind = [i for i, line in enumerate(lines) if line.startswith(card.upper()[:-1])]
     return lines[ind[0]] if ind else ''
 
 def convert_to_markdown(lines: str) -> str:
-        return f"```text\n{lines}\n```" if lines else ''
+    # lines = lines.split('\n')
+    # lines = [f"```nastran\n{lines[0]}\n```"]+["```text"]+lines[1:]+["```"]
+    # lines = '\n'.join(lines)
+    lines = f"```text\n{lines}```"
+    return lines if lines else ''
 
 if __name__ == "__main__":
     os.chdir('..')
-    print(get_docs('GRID'))
+    print(get_docs('ALTER'))
