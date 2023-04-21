@@ -48,9 +48,16 @@ function startLangServer(command, args, cwd) {
 function activate(context) {
     // Production - Client is going to run the server (for use within `.vsix` package)
     const cwd = path.join(__dirname, "..", "..");
+<<<<<<< HEAD
     const pythonPath = vscode_1.workspace
         .getConfiguration("python")
         .get("defaultInterpreterPath");
+=======
+    // const pythonPath = workspace
+    //     .getConfiguration("python")
+    //     .get<string>("pythonPath");
+    const pythonPath = "python";
+>>>>>>> main
     if (!pythonPath) {
         throw new Error("`python.defaultInterpreterPath` is not set");
     }

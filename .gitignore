@@ -132,4 +132,4 @@ dmypy.json
 node_modules
 
 # client compiled code
-client/out/
+client/out/*
