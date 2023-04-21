@@ -26,5 +26,12 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    // keyword pairs which should fold
+    "folding": {
+        "markers": {
+           "start": "^\\s*(BEGIN BULK)",
+           "end": "^\\s*(ENDDATA)"
+        },
+     }
 }

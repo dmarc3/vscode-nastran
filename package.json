@@ -16,6 +16,7 @@
       {
         "id": "nastran",
         "aliases": [
+          "Nastran",
           "NASTRAN",
           "Nastran",
           "nastran"
@@ -23,8 +24,13 @@
         "extensions": [
           ".bdf",
           ".dat",
-          ".nas"
+          ".nas",
+          ".inp"
         ],
+        "icon": {
+          "light": "./icons/nasa-light.png",
+          "dark": "./icons/nasa-dark.png"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
@@ -32,7 +38,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/NASTRAN.tmLanguage"
+        "path": "./syntaxes/nastran.json"
       }
     ],
     "commands": [
@@ -51,7 +57,33 @@
           "default": "You can override this message."
         }
       }
-    }
+    },
+    "semanticTokenTypes": [
+      {
+        "id": "field",
+        "superType": "punctuation",
+        "description": "Short or long format fields."
+      },
+      {
+        "id": "subs",
+        "superType": "markup",
+        "description": "Substructure Control Deck."
+      },
+      {
+        "id": "dmap",
+        "superType": "string",
+        "description": "Direct Matrix Abstraction Program."
+      }
+    ],
+    "semanticTokenScopes": [
+      {
+        "scopes":{
+          "field": ["punctuation.definition.tag"],
+          "subs": ["markup.inserted"],
+          "dmap": ["constant.regexp"]
+        }
+      }
+    ]
   },
   "capabilities": {
     "hoverProvider": "true"
