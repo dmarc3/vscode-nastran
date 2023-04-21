@@ -49,12 +49,11 @@ def detect_section(line: int, ind: dict) -> str:
     return 'BULK'
 
 @server.feature(TEXT_DOCUMENT_HOVER)
-async def hovers(ls: NastranLanguageServer, params: HoverParams):
+async def hovers(ls: NastranLanguageServer, params: HoverParams) -> Optional[Hover]:
     # ls.show_message(f"file: {params.text_document.uri}; line: {params.position.line}; character: {params.position.character}")
     doc = server.workspace.get_document(params.text_document.uri)
     orig_line = doc.lines[params.position.line]
-    current_line = orig_line.lstrip()
-    card = current_line[:8]
+    card = orig_line.lstrip()[:8]
     for char in [',', '*', ' ', '=', '\n', '(']:
         if char in card:
             card = card.split(char)[0]
@@ -78,9 +77,8 @@ async def hovers(ls: NastranLanguageServer, params: HoverParams):
             if not hover_txt:
                 hover_txt = get_docs(card)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
-            # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)
             return Hover(contents=contents)
-    return Hover(contents=None)
+    return None
 
 # Derived from:
 # https://github.com/openlawlibrary/pygls/blob/master/examples/json-vscode-extension/server/server.py

@@ -8,7 +8,7 @@ def get_docs(card: str, section='') -> str:
             out = read_docs(card, section)
             if out:
                 break
-    return convert_to_markdown(out)
+    return convert_to_markdown(out) if out else out
 
 def read_docs(card: str, section: str) -> str:
     # Ignore hover for comment
