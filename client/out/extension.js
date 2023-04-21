@@ -19,7 +19,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
-const net = require("net");
 const path = require("path");
 const vscode_1 = require("vscode");
 const node_1 = require("vscode-languageclient/node");
@@ -38,20 +37,6 @@ function getClientOptions() {
         },
     };
 }
-function startLangServerTCP(addr) {
-    const serverOptions = () => {
-        return new Promise((resolve /*, reject */) => {
-            const clientSocket = new net.Socket();
-            clientSocket.connect(addr, "127.0.0.1", () => {
-                resolve({
-                    reader: clientSocket,
-                    writer: clientSocket,
-                });
-            });
-        });
-    };
-    return new node_1.LanguageClient(`tcp lang server (port ${addr})`, serverOptions, getClientOptions());
-}
 function startLangServer(command, args, cwd) {
     const serverOptions = {
         args,
@@ -61,33 +46,15 @@ function startLangServer(command, args, cwd) {
     return new node_1.LanguageClient(command, serverOptions, getClientOptions());
 }
 function activate(context) {
-    // if (context.extensionMode === ExtensionMode.Development) {
-    //     // Development - Run the server manually
-    //     client = startLangServerTCP(2087);
-    // } else {
     // Production - Client is going to run the server (for use within `.vsix` package)
     const cwd = path.join(__dirname, "..", "..");
-    // const pythonPath = workspace
-    //     .getConfiguration("python")
-    //     .get<string>("pythonPath");
-    const pythonPath = ".venv/Scripts/python";
+    const pythonPath = vscode_1.workspace
+        .getConfiguration("python")
+        .get("defaultInterpreterPath");
     if (!pythonPath) {
-        throw new Error("`python.pythonPath` is not set");
+        throw new Error("`python.defaultInterpreterPath` is not set");
     }
     client = startLangServer(pythonPath, ["-m", "server.server"], cwd);
-    // }
-    // languages.registerHoverProvider('nastran', {
-    //     provideHover(document, position, token) {
-    //         const range = document.getWordRangeAtPosition(position);
-    //         const word = document.getText(range);
-    //         if (word == "CBUSH") {
-    //             return new Hover({
-    //                 language: "Hello language",
-    //                 value: "Hello Value"
-    //             });
-    //         }
-    //     }
-    // });
     context.subscriptions.push(client.start());
 }
 exports.activate = activate;
