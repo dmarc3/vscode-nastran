@@ -25,6 +25,9 @@
 		"match": "(\\$).*$\\n?"
 	},
 	{
+        "include": "#nastran"
+    },
+	{
         "include": "#section"
     },
 	{
@@ -91,6 +94,17 @@
 	}],
 	"repository":
 	{
+		"nastran":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "string.regexp.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(NASTRAN)"
+        },
 		"section":
         {
             "captures":

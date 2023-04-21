@@ -4,7 +4,7 @@
   "description": "Syntax highlighting and documentation support for Nastran",
   "author": "Marcus Bakke",
   "version": "0.0.1",
-  "publisher": "dmarc3",
+  "publisher": "mbakke",
   "engines": {
     "vscode": "^1.74.0"
   },
