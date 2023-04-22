@@ -1,6 +1,6 @@
 {
   "name": "vscode-nastran",
-  "displayName": "Nastran",
+  "displayName": "vscode-nastran",
   "description": "Syntax highlighting and documentation support for Nastran",
   "author": "Marcus Bakke",
   "version": "0.1.0",
