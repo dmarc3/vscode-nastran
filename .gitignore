@@ -133,3 +133,6 @@ node_modules
 
 # client compiled code
 client/out/*
+
+# VS Code Extension Package
+*.vsix

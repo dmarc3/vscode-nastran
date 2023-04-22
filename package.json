@@ -1,12 +1,17 @@
 {
   "name": "nastran",
-  "displayName": "nastran",
+  "displayName": "Nastran",
   "description": "Syntax highlighting and documentation support for Nastran",
   "author": "Marcus Bakke",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "mbakke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmarc3/vscode-nastran"
+  },
+  "icon": "icons/extension.png",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
