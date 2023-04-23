@@ -43,6 +43,9 @@
 		"include": "#plot"
 	},
 	{
+		"include": "#include"
+	},
+	{
 		"name": "string.quoted.single.nastran",
 		"beginCaptures":
 		{
@@ -181,6 +184,17 @@
                 }
             },
             "match": "^\\s*(?i)(ALTER|ADD5|ADD|DECOMP|DIAGONAL|FBS|MATGEN|MERGE|MPYAD|MPY3|PARTN|SDCMPS|SMPYAD|SOLVE|TRNSP|UMERGE|UPARTN|COPY|DATABASE|GINOFILE|INPUTT1|INPUTT2|INPUTT3|INPUTT4|INPUTT5|INPUT|LAMX|MATGPR|MATPRN|MATPRT|NORM|OUTPUT1|OUTPUT2|OUTPUT3|OUTPUT4|OUTPUT5|PARAMD|PARAML|PARAMR|PARAM|PRTPARM|SCALAR|SEEMAT|SETVAL|SWITCH|TABPCH|TABPRT|TABPT|TIMETEST|VEC|DDR|DUMMOD1|DUMMOD2|DUMMOD3|DUMMOD4|DUMMOD5|MATGEN|MODA|MODB|MODC|OUTPUT|XYPRNPLT|BEGIN|CHKPNT|COMPOFF|COMPON|COND|END|EQUIV|EXIT|FILE|JUMP|LABEL|PRECHK|PURGE|REPT|SAVE|XDMAP|EMA1|GPSPC)"
+        },
+		"include":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "constant.regexp.include.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(include)"
         }
 	}
 }
