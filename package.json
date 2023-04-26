@@ -56,10 +56,23 @@
     },
     "commands": [
       {
-        "command": "extension.buildIncludeTree",
-        "title": "Nastran: Build include tree hierarchy."
+        "command": "includeHierarchy.buildHierarchy",
+        "title": "Nastran: Build include tree hierarchy.",
+        "icon": {
+            "light": "resources/light/refresh.svg",
+            "dark": "resources/dark/refresh.svg"
+        }
       }
     ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "includeHierarchy.buildHierarchy",
+          "when": "view == includeHierarchy",
+          "group": "navigation"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
       "title": "Nastran Server Configuration",

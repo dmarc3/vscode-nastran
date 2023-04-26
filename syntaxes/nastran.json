@@ -43,9 +43,6 @@
 		"include": "#plot"
 	},
 	{
-		"include": "#include"
-	},
-	{
 		"name": "string.quoted.single.nastran",
 		"beginCaptures":
 		{
