@@ -46,12 +46,33 @@
         "path": "./syntaxes/nastran.json"
       }
     ],
+    "views": {
+      "explorer": [
+        {
+          "id": "includeHierarchy",
+          "name": "Include Hierarchy"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "hoverDocs",
-        "title": "Bulk Data Entry documentation hover."
+        "command": "includeHierarchy.buildHierarchy",
+        "title": "Nastran: Build include tree hierarchy.",
+        "icon": {
+            "light": "resources/light/refresh.svg",
+            "dark": "resources/dark/refresh.svg"
+        }
       }
     ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "includeHierarchy.buildHierarchy",
+          "when": "view == includeHierarchy",
+          "group": "navigation"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
       "title": "Nastran Server Configuration",

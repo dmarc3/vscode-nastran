@@ -59,3 +59,7 @@ Please create an issue as bugs are discovered. Provide specific details includin
 ### 0.1.0
 
 Pre-release version of extension. Actively under development.
+
+## Acknowledgements
+ 
+- Icon used in `Include Hierarchy` is from [Freepik - Flaticon](https://www.flaticon.com/free-icons/mesh)
