@@ -122,6 +122,57 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () =>
         includeHierarchyProvider.refresh()
     );
+    vscode.commands.registerCommand('version.MSC_Nastran', () => {
+        const oldstr = findCurrentVersion()
+        const newstr = [
+            '"MSC Nastran",',
+            '"path": "./syntaxes/MSC_Nastran.json"'
+        ]
+        updatePackageJson(oldstr, newstr)
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+    vscode.commands.registerCommand('version.Simcenter_Nastran', () => {
+        // Do something to change grammar
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+    vscode.commands.registerCommand('version.NASTRAN-95', () => {
+        const oldstr = findCurrentVersion()
+        const newstr = [
+            '"NASTRAN-95",',
+            '"path": "./syntaxes/NASTRAN-95.json"'
+        ]
+        updatePackageJson(oldstr, newstr)
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+}
+
+function updatePackageJson(oldstr, newstr): void {
+    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    var lines = fs.readFileSync(fileName).toString()
+    for(let i=0; i<oldstr.length; i++){
+        lines = lines.split(oldstr[i]).join(newstr[i])
+    }
+    fs.writeFileSync(fileName, lines)
+}
+
+function findCurrentVersion(): any {
+    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    var lines = fs.readFileSync(fileName).toString().split('\n')
+    var oldstr = []
+    // Alias name
+    for (var i=lines.length; i--;) {
+        if (lines[i].indexOf('        "aliases": [')>=0) break;
+    }
+    oldstr.push(lines[i+1].trim())
+    // Grammar name
+    for (var i=lines.length; i--;) {
+        if (lines[i].indexOf('"scopeName": "source.nastran",')>=0) break;
+    }
+    oldstr.push(lines[i+1].trim())
+    return oldstr
 }
 
 export function deactivate(): Thenable<void> {
