@@ -71,11 +71,11 @@ Please create an issue as bugs are discovered. Provide specific details includin
 
 ## Release Notes
 
-### 0.1.0
+### v0.1.0
 
 - Pre-release version of extension. Actively under development.
 
-### 0.2.0
+### v0.2.0
 
 - Implementation of Include Hierarchy navigation pane
 - Implementation of commands to switch between `NASTRAN-95` and `MSC Nastran`
