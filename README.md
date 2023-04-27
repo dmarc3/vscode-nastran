@@ -22,16 +22,25 @@ Currently supported features include:
     - Long and short format field highlighting
 2. Documentation on keyword hover
 
+> **Note**
+> Hover documentation is currently pulling from `NASTRAN-95` documentation only. Even with the version set to `MSC Nastran` documentation from `NASTRAN-95` will be displayed on hover.
 
 &nbsp;
 ![](./docs/documentation_hover.gif)
 
+3. Include file hierarchy tree view for easy navigation of model. Open top level `Nastran` run deck and run command to parse include paths and generate tree view. Command tied to "refresh" button on view.
+
+&nbsp;
+![](./docs/include_hierarchy.gif)
+
+4. Command to switch between `NASTRAN-95` and `MSC Nastran` syntax highlighting keywords. `Simcenter Nastran` syntax highlighting not yet developed.
+
+&nbsp;
+![](./docs/switch_language.gif)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
-- Command to switch between `NASTRAN-95`, `MSC Nastran`, and `Simcenter Nastran` syntax highlighting keywords
-- Expansion of documentation hovers to support `MSC Nastran` and `Simcenter Nastran` Quick Reference Guide documentation with hyperlinks.
 - Command to explictly set the `Nastran` section for highlighting. Models are sometimes compartmentalized into "include" files. Current logic searches the file for section breaks (i.e. `CEND`, `BEGIN BULK`, etc.) and colors accordingly. The user may want to be able to open a file which contains exclusively DMAP or Case Control cards.
-- Include file tree view for easy navigation of model. Open top level `Nastran` run deck and run command to parse include paths and generate tree view.
+- Expansion of documentation hovers to support `MSC Nastran` and `Simcenter Nastran` Quick Reference Guide documentation with hyperlinks.
 - "Go to line" feature (i.e. Given a `CQUAD` which references 4 `GRID`s, jump to the definition of the specified `GRID`)
 - Interactive plot view of 3D model highlighting currently selected element / grid  / etc.
 
@@ -40,7 +49,7 @@ If you have an idea for a feature, please create and issue and flag it as a `Fea
 ## Requirements
 In order to use this extension, the user must have the following installed:
 - Python 3.7+
-- [`pygls`](https://github.com/openlawlibrary/pygls)
+    - [`pygls`](https://github.com/openlawlibrary/pygls)
 
 ## Usage
 Once the requirements are satisfied and the extension is installed through [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mbakke.vscode-nastran), the extension will automatically activate upon opening a `Nastran` file with the following extensions:
@@ -50,6 +59,8 @@ Once the requirements are satisfied and the extension is installed through [Visu
 - `*.inp`
 
 If opening a `Nastran` file with a different extension, users may set the language by pressing `CTRL` + `K` followed by `M` and selecting `Nastran`.
+
+The language will default to version `NASTRAN-95` but will remember the last active version set.
 
 ## Known Issues
 
@@ -62,4 +73,12 @@ Please create an issue as bugs are discovered. Provide specific details includin
 
 ### 0.1.0
 
-Pre-release version of extension. Actively under development.
+- Pre-release version of extension. Actively under development.
+
+### 0.2.0
+
+- Implementation of Include Hierarchy navigation pane
+- Implementation of commands to switch between `NASTRAN-95` and `MSC Nastran`
+- Creation of `MSC Nastran` syntax highlighting grammar
+- Updated requirements to specifically callout need for Python>=3.7 with `pygls` installed
+- Update to icons

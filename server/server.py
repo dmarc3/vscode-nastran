@@ -155,7 +155,7 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
-        if section == "BULK" and "$" not in line.lstrip() and "," not in line and "'" not in line:
+        if section == "BULK" and "$" not in line.lstrip() and "," not in line and "'" not in line and '\t' not in line:
             # Determine if long or short format
             n = 16 if "*" in line else 8
             # Split the line by fields
