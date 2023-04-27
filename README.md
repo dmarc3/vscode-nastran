@@ -1,6 +1,6 @@
 # Nastran Extension for Visual Studio Code
 
-This [Visual Studio Code](https://code.visualstudio.com/) extension aims to build [`Nastran`](https://software.nasa.gov/software/LAR-16804-GS) "language" support with features akin to what software developers are accustomed to in their Integrated Development Environments (IDEs) while programming. `Nastran` stands for "**NAS**A **STR**uctural **AN**alysis" and is a finite element analysis software used to predict the behavior of a physical structure. While `Nastran` is not a programming language itself, `Nastran` models share many similarites to a programming language. These models are composed of text files built with a defined structure using keywords to identify model parameters.
+This [Visual Studio Code](https://code.visualstudio.com/) extension aims to build [`Nastran`](https://software.nasa.gov/software/LAR-16804-GS) "language" support with features akin to what software developers are accustomed to in their Integrated Development Environments (IDEs) while programming. `Nastran` stands for "**NA**SA **STR**uctural **AN**alysis" and is a finite element analysis software used to predict the behavior of a physical structure. While `Nastran` is not a programming language itself, `Nastran` models share many similarites to a programming language. These models are composed of text files built with a defined structure using keywords to identify model parameters.
 
  The ultimate goal of this project is to provide a more efficient means of manipulating `Nastran` finite element models at the text file level through eliminatation of some of the key pain points and provide a more IDE-like experience.
 
@@ -37,9 +37,13 @@ In addition to these features, the following are proposed features with no feasi
 
 If you have an idea for a feature, please create and issue and flag it as a `Feature Request`.
 
-## Usage
+## Requirements
+In order to use this extension, the user must have the following installed:
+- Python 3.7+
+- [`pygls`](https://github.com/openlawlibrary/pygls)
 
-Once the extension is installed through [Visual Studio Marketplace](https://marketplace.visualstudio.com/) (UPDATE LATER), the extension will automatically activate upon opening a `Nastran` file with the following extensions:
+## Usage
+Once the requirements are satisfied and the extension is installed through [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mbakke.vscode-nastran), the extension will automatically activate upon opening a `Nastran` file with the following extensions:
 - `*.bdf`
 - `*.dat`
 - `*.nas`
@@ -59,7 +63,3 @@ Please create an issue as bugs are discovered. Provide specific details includin
 ### 0.1.0
 
 Pre-release version of extension. Actively under development.
-
-## Acknowledgements
- 
-- Icon used in `Include Hierarchy` is from [Freepik - Flaticon](https://www.flaticon.com/free-icons/mesh)

@@ -136,3 +136,6 @@ client/out/*
 
 # VS Code Extension Package
 *.vsix
+
+# Resource Creation
+resources/*.pptx

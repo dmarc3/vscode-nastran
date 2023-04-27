@@ -1,0 +1,197 @@
+{
+    "name": "nastran",
+	"scopeName": "source.nastran",
+	"fileTypes": ["bdf", "dat", "nas", "inp"],
+	"patterns": [
+	{
+		"begin": "\"",
+		"name": "string.quoted.double.untitled",
+		"patterns": [
+		{
+			"name": "constant.character.escape.nastran",
+			"match": "//."
+		}],
+		"end": "\""
+	},
+	{
+		"captures":
+		{
+			"1":
+			{
+				"name": "comment.line.character.nastran"
+			}
+		},
+		"name": "comment.line.character.nastran",
+		"match": "(\\$).*$\\n?"
+	},
+	{
+        "include": "#nastran"
+    },
+	{
+        "include": "#section"
+    },
+	{
+		"include": "#exec"
+	},
+	{
+		"include": "#bulk"
+	},
+	{
+		"include": "#case"
+	},
+	{
+		"include": "#plot"
+	},
+	{
+		"name": "string.quoted.single.nastran",
+		"beginCaptures":
+		{
+			"0":
+			{
+				"name": "punctuation.definition.string.begin.nastran"
+			}
+		},
+		"end": "'",
+		"comment": "single quoted string (does not allow interpolation)",
+		"endCaptures":
+		{
+			"0":
+			{
+				"name": "punctuation.definition.string.end.nastran"
+			}
+		},
+		"begin": "'",
+		"patterns": [
+		{
+			"name": "constant.character.escape.nastran",
+			"match": "\\\\'|\\\\\\\\"
+		}]
+	},
+	{
+		"name": "string.quoted.double.nastran",
+		"beginCaptures":
+		{
+			"0":
+			{
+				"name": "punctuation.definition.string.begin.nastran"
+			}
+		},
+		"end": "'",
+		"comment": "single quoted string (does not allow interpolation)",
+		"endCaptures":
+		{
+			"0":
+			{
+				"name": "punctuation.definition.string.end.nastran"
+			}
+		},
+		"begin": "'",
+		"patterns": [
+		{
+			"name": "constant.character.escape.nastran",
+			"match": "\\\\\"|\\\\\\\\"
+		}]
+	}],
+	"repository":
+	{
+		"nastran":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "string.regexp.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(NASTRAN)"
+        },
+		"section":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "invalid.section.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(ID|ALTER|CEND|BEGIN BULK|SUBSTRUCTURE|ENDDATA|ENDALTER|ENDSUBS|END)"
+        },
+		"exec":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "string.exec.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(ALTER|APP|BEGIN|CEND|CHKPNT|DELETE|DIAG|ENDALTER|END|ID|INSERT|NUMF|READFILE|RESTART|SOL|TIME|UMFEDIT|UMF)"
+        },
+		"subs":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "markup.inserted.subs.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(BRECOVER|CHECK|COMBINE|CREDUCE|DELETE|DESTROY|DUMP|EDIT|ENDSUBS|EQUIV|MRECOVER|MREDUCE|OPTIONS|OPTION|PASSWORD|PLOT|RECOVER|REDUCE|RESTORE|RUN|SOFIN|SOFOUT|SOFPRINT|SOFP|SOF|SOLVE|SUBSTRUCTURE)"
+        },
+		"bulk":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "constant.language.bulk.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(INCLUDE|ADUM1|ADUM2|ADUM3|ADUM4|ADUM5|ADUM6|ADUM7|ADUM8|ADUM9|AEFACT|AERO|ASET1|ASET|AXIC|AXIF|AXSLOT|BAROR|BDYC|BDYLIST|BDYS1|BDYS|BFIELD|CAERO1|CAERO2|CAERO3|CAERO4|CAERO5|CAXIF1|CAXIF2|CAXIF3|CAXIF4|CBAR|CCONEAX|CDAMP1|CDAMP2|CDAMP3|CDAMP4|CDUM1|CDUM2|CDUM3|CDUM4|CDUM5|CDUM6|CDUM7|CDUM8|CDUM9|CELAS1|CELAS2|CELAS3|CELAS4|CELBOW|CEMLOOP|CFFREE|CFHEX1|CFHEX2|CFLSTR|CFLUID2|CFLUID3|CFLUID4|CFTETRA|CFTUBE|CFWEDGE|CHBDY|CHEXA1|CHEXA2|CIHEX1|CIHEX2|CIHEX3|CIS2D8|CMASS1|CMASS2|CMASS3|CMASS4|CNGRNT|CONCT1|CONCT|CONM1|CONM2|CONROD|CORD1C|CORD1R|CORD1S|CORD2C|CORD2R|CORD2S|CPSE2|CPSE3|CPSE4|CQDMEM1|CQDMEM2|CQDMEM|CQDPLT|CQUAD1|CQUAD2|CQUAD4|CRBAR|CRBE1|CRBE2|CRBE3|CRIGD1|CRIGD2|CRIGD3|CRIGDR|CROD|CRROD|CRSPLINE|CRTRPLT|CSHEAR|CSLOT3|CSLOT4|CTETRA|CTORDRG|CTRAPAX|CTRAPRG|CTRBSC|CTRIA1|CTRIA2|CTRIA3|CTRIAAX|CTRIARG|CTRIM6|CTRMEM|CTRPLT1|CTRPLT|CTRSHL|CTUBE|CTWIST|CVISC|CWEDGE|CYJOIN|DAREAS|DAREA|DEFORM|DELAYS|DELAY|DLOAD|DMIAX|DMIG|DMI|DPHASES|DPHASE|DSFACT|DTI|EIGB|EIGC|EIGP|EIGR|ENDDATA|EPOINT|FLFACT|FLSYM|FLUTTER|FORCE1|FORCE2|FORCEAX|FORCE|FREEPT|FREQ1|FREQ2|FREQ|FSLIST|GEMLOOP|GENEL|GRAV|GRDSET|GRIDB|GRIDF|GRIDS|GRID|GTRAN|GUST|LOADC|LOAD|MAT1|MAT2|MAT3|MAT4|MAT5|MAT6|MAT8|MATF|MATPZ1|MATPZ2|MATS1|MATT1|MATT2|MATT3|MATT4|MATT5|MATT6|MDIPOLE|MKAERO1|MKAERO2|MOMAX|MOMENT1|MOMENT2|MOMENT|MPCADD|MPCAX|MPCS|MPC|MTTPZ1|MTTPZ2|NFTUBE|NOLIN1|NOLIN2|NOLIN3|NOLIN4|NOLIN5|NOLIN6|OMIT1|OMITAX|OMIT|PAERO1|PAERO2|PAERO3|PAERO4|PAERO5|PARAM|PBAR|PCOMP1|PCOMP2|PCOMP|PCONEAX|PDAMP|PDUM1|PDUM2|PDUM3|PDUM4|PDUM5|PDUM6|PDUM7|PDUM8|PDUM9|PELAS|PELBOW|PERMBDY|PFTUBE|PHBDY|PIHEX|PIS2D8|PLFACT|PLIMIT|PLOAD2|PLOAD3|PLOAD4|PLOAD|PLOTEL|PMASS|POINTAX|POPT|PPSE|PQDMEM1|PQDMEM2|PQDMEM|PQDPLT|PQUAD1|PQUAD2|PRESAX|PRESPT|PROD|PROLATE|PSHEAR|PSHELL|PTORDRG|PTRAPAX|PTRBSC|PTRIA1|PTRIA2|PTRIAAX|PTRIM6|PTRMEM|PTRPLT1|PTRPLT|PTRSHL|PTUBE|PTWIST|PVISC|QBDY1|QBDY2|QHBDY|QVECT|QVOL|RADLST|RADMTX|RANDPS|RANDT1|RELES|REMFLUX|RFORCE|RINGAX|RINGFL|RLOAD1|RLOAD2|SECTAX|SEQEP|SEQGP|SET1|SET2|SLBDY|SLOAD|SPC1|SPCADD|SPCAX|SPCD|SPCFLD|SPCS1|SPCSD|SPCS|SPC|SPLINE1|SPLINE2|SPLINE3|SPOINT|STREAML1|STREAML2|SUPAX|SUPORT|TABDMP1|TABLED1|TABLED2|TABLED3|TABLED4|TABLEM1|TABLEM2|TABLEM3|TABLEM4|TABLES1|TABRND1|TABRNDG|TEMPAX|TEMPD|TEMPP1|TEMPP2|TEMPP3|TEMPRB|TEMP|TF|TICS|TIC|TLOAD1|TLOAD2|TRANS|TSTEP)(?!.*=)"
+        },
+		"case":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "entity.name.tag.css.case.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(INCLUDE|ACCELERATION|AEROF|AXISYMMETRIC|AXISYM|BEGIN BULK|B2PP|CMETHOD|DEFORM|DISPLACEMENTS|DISPLACEMENT|DISP|DLOAD|DSCOEFFICIENT|ECHO|ELFORCE|ELFOR|ELFO|ELSTRESS|ELSTR|ESE|FMETHOD|FORCE|FREQUENCY|GPFORCE|GUST|HARMONICS|IC|K2PP|LABEL|LINE|LOAD|M2PP|MAXLINES|METHOD|MODES|MPCFORCE|MPC|NCHECK|NLLOAD|NONLINEAR|OFREQUENCY|OLOAD|OTIME|OUTPUT|PLCOEFFICIENT|PLOTID|PRESSURE|RANDOM|READFILE|REPCASE|SACCELERATION|SCAN|SDAMPING|SDISPLACEMENT|SDISP|SET|SPCFORCES|SPCFORCE|SPCF|SPC|STRAIN|STRESS|STRES|STRE|SUBCASE|SUBCOM|SUBSEQ|SUBTITLE|SUBTI|SVECTOR|SVEC|SVELOCITY|SYMCOM|SYMSEQ|SYM|TEMPERATURE|TEMP|TFL|THERMAL|TITLE|TSTEP|VECTOR|VELOCITY)*\\s*(=|\\(|\\s)"
+        },
+        "plot":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "keyword.plot.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(AXES|CAMERA|CONTOUR|CSCALE|FIND|MAXIMUM DEFORMATION|OCULAR SEPARATION|ORIGIN|PAPER SIZE|PEN|PLOTTER|PLOT|PROJECTION PLANE SEPARATION|PROJECTION|PTITLE|SCALE|SET|VANTAGE POINT|VIEW|ALL EDGE TICS|BALL EDGE TICS|BLEFT TICS|BRIGHT TICS|CLEAR|COLOR|CURVELINESYMBOL|DENSITY|LEFT TICS|LOWER TICS|PENSIZE|RIGHT TICS|SKIP|TALL EDGE TICS|TCURVE|TLEFT TICS|TRIGHT TICS|UPPER TICS|XAXIS|XBAXIS|XBGRID LINES|XDIVISIONS|XGRID LINES|XINTERCEPT|XLOG|XMAX|XMIN|XPAPER|XTAXIS|XTGRID LINES|XTITLE|XVALUE PRINT SKIP|XYPAPLOT|XYPEAK|XYPLOT|XYPRINT|XYPUNCH|YAXIS|YBDIVISIONS|YBGRID LINES|YBINTERCEPT|YBLOG|YBMAX|YBMIN|YBTITLE|YBVALUE PRINT SKIP|YDIVISIONS|YGRID LINES|YINTERCEPT|YLOG|YMAX|YMIN|YPAPER|YTDIVISIONS|YTGRID LINES|YTINTERCEPT|YTITLE|YTLOG|YTMAX|YTMIN|YTTITLE|YTVALUE PRINT SKIP|YVALUE PRINT SKIP)*\\s*(=|\\(|\\s)"
+        },
+        "dmap":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "string.dmap.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(ALTER|ADD5|ADD|DECOMP|DIAGONAL|FBS|MATGEN|MERGE|MPYAD|MPY3|PARTN|SDCMPS|SMPYAD|SOLVE|TRNSP|UMERGE|UPARTN|COPY|DATABASE|GINOFILE|INPUTT1|INPUTT2|INPUTT3|INPUTT4|INPUTT5|INPUT|LAMX|MATGPR|MATPRN|MATPRT|NORM|OUTPUT1|OUTPUT2|OUTPUT3|OUTPUT4|OUTPUT5|PARAMD|PARAML|PARAMR|PARAM|PRTPARM|SCALAR|SEEMAT|SETVAL|SWITCH|TABPCH|TABPRT|TABPT|TIMETEST|VEC|DDR|DUMMOD1|DUMMOD2|DUMMOD3|DUMMOD4|DUMMOD5|MATGEN|MODA|MODB|MODC|OUTPUT|XYPRNPLT|BEGIN|CHKPNT|COMPOFF|COMPON|COND|END|EQUIV|EXIT|FILE|JUMP|LABEL|PRECHK|PURGE|REPT|SAVE|XDMAP|EMA1|GPSPC)"
+        },
+		"include":
+        {
+            "captures":
+            {
+                "1":
+                {
+                    "name": "constant.regexp.include.nastran"
+                }
+            },
+            "match": "^\\s*(?i)(include)"
+        }
+	}
+}

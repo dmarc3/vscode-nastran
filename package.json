@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/dmarc3/vscode-nastran"
   },
-  "icon": "icons/extension.png",
+  "icon": "resources/dark/logo.png",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -21,10 +21,8 @@
       {
         "id": "nastran",
         "aliases": [
-          "Nastran",
-          "NASTRAN",
-          "Nastran",
-          "nastran"
+          "NASTRAN-95",
+          "Nastran"
         ],
         "extensions": [
           ".bdf",
@@ -33,8 +31,8 @@
           ".inp"
         ],
         "icon": {
-          "light": "./icons/nasa-light.png",
-          "dark": "./icons/nasa-dark.png"
+          "light": "./resources/light/logo.png",
+          "dark": "./resources/dark/logo.png"
         },
         "configuration": "./language-configuration.json"
       }
@@ -43,7 +41,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/nastran.json"
+        "path": "./syntaxes/NASTRAN-95.json"
       }
     ],
     "views": {
@@ -55,6 +53,18 @@
       ]
     },
     "commands": [
+      {
+        "command": "version.MSC_Nastran",
+        "title": "Nastran: Set version to MSC Nastran."
+      },
+      {
+        "command": "version.NASTRAN-95",
+        "title": "Nastran: Set version to NASTRAN-95."
+      },
+      {
+        "command": "version.Simcenter_Nastran",
+        "title": "Nastran: Set version to Simcenter Nastran."
+      },
       {
         "command": "includeHierarchy.buildHierarchy",
         "title": "Nastran: Build include tree hierarchy.",
