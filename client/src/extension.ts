@@ -1,25 +1,9 @@
-/* -------------------------------------------------------------------------
- * Original work Copyright (c) Microsoft Corporation. All rights reserved.
- * Original work licensed under the MIT License.
- * See ThirdPartyNotices.txt in the project root for license information.
- * All modifications Copyright (c) Open Law Library. All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License")
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http: // www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ----------------------------------------------------------------------- */
+ /* ----------------------------------------------------------------------- */
 "use strict";
 
 import * as path from "path";
-import { ExtensionContext, workspace} from "vscode";
+import * as fs from 'fs';
+import * as vscode from "vscode";
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -38,7 +22,7 @@ function getClientOptions(): LanguageClientOptions {
         outputChannelName: "[pygls] NastranLanguageServer",
         synchronize: {
             // Notify the server about file changes to '.clientrc files contain in the workspace
-            fileEvents: workspace.createFileSystemWatcher("**/.clientrc"),
+            fileEvents: vscode.workspace.createFileSystemWatcher("**/.clientrc"),
         },
     };
 }
@@ -57,10 +41,68 @@ function startLangServer(
     return new LanguageClient(command, serverOptions, getClientOptions());
 }
 
-export function activate(context: ExtensionContext): void {
+export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
+
+    constructor() {}
+  
+    getTreeItem(element: IncludeFile): vscode.TreeItem {
+        return element;
+    }
+  
+    getChildren(element?: IncludeFile): Thenable<IncludeFile[]> {
+        if (element) {
+            const includes = this.getIncludes(element)
+            return Promise.resolve(includes);
+        }
+        const origin = vscode.window.activeTextEditor.document.fileName
+        return Promise.resolve([new IncludeFile(path.basename(origin), vscode.TreeItemCollapsibleState.Expanded, origin)]);
+    }
+
+    private hasIncludes(fileName: string): boolean {
+        const lines = fs.readFileSync(fileName).toString().split("\n");
+        for (var line of lines) {
+            if (line.toLowerCase().includes('include')) {
+                return true
+            }
+        }
+        return false
+    }
+
+    private getIncludes(element: IncludeFile): IncludeFile[] {
+        const lines = fs.readFileSync(element.origin).toString().split("\n");
+        var includes = []
+        for (var line of lines) {
+            if (line.toLowerCase().includes('include')) {
+                if (line.includes("'")) {
+                    line = line.split("'")[1]
+                } 
+                if (line.includes('"')) {
+                    line = line.split('"')[1]
+                }
+                const fileName = path.join(path.dirname(element.origin), line)
+                if (this.hasIncludes(fileName)) {
+                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                } else {
+                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                }
+            }
+        }
+        return includes
+    }
+
+    private _onDidChangeTreeData: vscode.EventEmitter<IncludeFile | undefined | null | void> = new vscode.EventEmitter<IncludeFile | undefined | null | void>();
+    readonly onDidChangeTreeData: vscode.Event<IncludeFile | undefined | null | void> = this._onDidChangeTreeData.event;
+  
+    refresh(): void {
+      this._onDidChangeTreeData.fire();
+    }
+
+}
+
+export function activate(context: vscode.ExtensionContext): void {
     // Production - Client is going to run the server (for use within `.vsix` package)
     const cwd = path.join(__dirname, "..", "..");
-    const pythonPath = workspace
+    const pythonPath = vscode.workspace
         .getConfiguration("python")
         .get<string>("defaultInterpreterPath");
 
@@ -70,8 +112,89 @@ export function activate(context: ExtensionContext): void {
 
     client = startLangServer(pythonPath, ["-m", "server.server"], cwd);
     context.subscriptions.push(client.start());
+    // Register Tree View
+    const includeHierarchyProvider = new TreeDataProvider();
+    vscode.window.registerTreeDataProvider(
+        'includeHierarchy',
+        includeHierarchyProvider
+    );
+    // Register Commands
+    vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () =>
+        includeHierarchyProvider.refresh()
+    );
+    vscode.commands.registerCommand('version.MSC_Nastran', () => {
+        const oldstr = findCurrentVersion()
+        const newstr = [
+            '"MSC Nastran",',
+            '"path": "./syntaxes/MSC_Nastran.json"'
+        ]
+        updatePackageJson(oldstr, newstr)
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+    vscode.commands.registerCommand('version.Simcenter_Nastran', () => {
+        // Do something to change grammar
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+    vscode.commands.registerCommand('version.NASTRAN-95', () => {
+        const oldstr = findCurrentVersion()
+        const newstr = [
+            '"NASTRAN-95",',
+            '"path": "./syntaxes/NASTRAN-95.json"'
+        ]
+        updatePackageJson(oldstr, newstr)
+        vscode.commands.executeCommand("workbench.action.reloadWindow")
+        }
+    );
+}
+
+function updatePackageJson(oldstr, newstr): void {
+    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    var lines = fs.readFileSync(fileName).toString()
+    for(let i=0; i<oldstr.length; i++){
+        lines = lines.split(oldstr[i]).join(newstr[i])
+    }
+    fs.writeFileSync(fileName, lines)
+}
+
+function findCurrentVersion(): any {
+    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    var lines = fs.readFileSync(fileName).toString().split('\n')
+    var oldstr = []
+    // Alias name
+    for (var i=lines.length; i--;) {
+        if (lines[i].indexOf('        "aliases": [')>=0) break;
+    }
+    oldstr.push(lines[i+1].trim())
+    // Grammar name
+    for (var i=lines.length; i--;) {
+        if (lines[i].indexOf('"scopeName": "source.nastran",')>=0) break;
+    }
+    oldstr.push(lines[i+1].trim())
+    return oldstr
 }
 
 export function deactivate(): Thenable<void> {
     return client ? client.stop() : Promise.resolve();
 }
+
+class IncludeFile extends vscode.TreeItem {
+    constructor(
+      public readonly label: string,
+      public readonly collapsibleState: vscode.TreeItemCollapsibleState,
+      public readonly origin: string
+    ) {
+      super(label, collapsibleState);
+      this.origin = this.origin;
+    }
+    command = {
+        "title": "Open Include File",
+        "command": "vscode.open",
+        "arguments": [vscode.Uri.file(this.origin)]
+    }
+    iconPath = {
+      light: path.join(__filename, '..', '..', '..', 'resources', 'light', 'mesh.png'),
+      dark: path.join(__filename, '..', '..', '..', 'resources', 'dark', 'mesh.png')
+    };
+  }
