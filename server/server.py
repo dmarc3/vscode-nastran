@@ -1,4 +1,5 @@
 from typing import Optional
+import os
 
 from pygls.server import LanguageServer
 from lsprotocol.types import (
@@ -14,6 +15,17 @@ from lsprotocol.types import (
 )
 
 from utils.read_docs import get_docs
+
+def determine_version() -> str:
+    filename = os.path.join(os.path.dirname(__file__), '..', 'package.json')
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    for i, line in enumerate(lines):
+        if '"aliases": [' in line:
+            break
+    return lines[i+1].split('"')[1]
+
+VERSION = determine_version()
 
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
@@ -84,7 +96,8 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     orig_line = doc.lines[params.position.line]
     # Strip leading white space and grab first 8 characters
     # TODO: Change logic such that it grabs more than 8 characters?
-    card = orig_line.lstrip()[:8]
+    # card = orig_line.lstrip()[:8]
+    card = orig_line.lstrip().split()[0]
     # If special character detected, strip everything after that character
     for char in [",", "*", " ", "=", "\n", "("]:
         if char in card:
@@ -107,9 +120,9 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
             }
             section = detect_section(params.position.line, ind)
             # Calculate hover text
-            hover_txt = get_docs(card, section=section)
-            if not hover_txt:
-                hover_txt = get_docs(card)
+            hover_txt = get_docs(card, section=section, version=VERSION)
+            # if not hover_txt:
+            #     hover_txt = get_docs(card, version=VERSION)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
             return Hover(contents=contents)
     return None
@@ -155,24 +168,56 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
-        if section == "BULK" and "$" not in line.lstrip() and "," not in line and "'" not in line and '\t' not in line:
-            # Determine if long or short format
-            n = 16 if "*" in line else 8
-            # Split the line by fields
-            line_by_fields = [line[i:i+n] for i in range(0, len(line), n)]
-            for i, _ in enumerate(line_by_fields[2::2]):
-                start = 2*n*(i)+n+8
-                end = start + n
-                # Save SemanticToken data
-                data += [
-                    (lineno - last_line),
-                    (start - last_start),
-                    (end - start),
-                    0,
-                    0
-                ]
-                last_line = lineno
-                last_start = start
+        if line.strip() and section == "BULK" and "$" not in line.lstrip()[0] and "'" not in line and '"' not in line:
+            # Process lines with tabs
+            if '\t' in line:
+                line_by_fields = line.split('\t')
+                for i, field in enumerate(line_by_fields[2::2]):
+                    start = line.index(field)
+                    end = start + len(field)
+                    data += [
+                        (lineno - last_line),
+                        (start - last_start),
+                        (end - start),
+                        0,
+                        0
+                    ]
+                    last_line = lineno
+                    last_start = start
+            # Process lines with commas
+            elif "," in line:
+                line_by_fields = line.split(',')
+                for i, field in enumerate(line_by_fields[2::2]):
+                    start = line.index(field)
+                    end = start + len(field)
+                    data += [
+                        (lineno - last_line),
+                        (start - last_start),
+                        (end - start),
+                        0,
+                        0
+                    ]
+                    last_line = lineno
+                    last_start = start
+            # Process normal long or short format
+            else:
+                # Determine if long or short format
+                n = 16 if "*" in line else 8
+                # Split the line by fields
+                line_by_fields = [line[i:i+n] for i in range(0, len(line), n)]
+                for i, _ in enumerate(line_by_fields[2::2]):
+                    start = 2*n*(i)+n+8
+                    end = start + n
+                    # Save SemanticToken data
+                    data += [
+                        (lineno - last_line),
+                        (start - last_start),
+                        (end - start),
+                        0,
+                        0
+                    ]
+                    last_line = lineno
+                    last_start = start
                 
         # Process the SUBSTRUCTURE section
         if section == "SUBS":

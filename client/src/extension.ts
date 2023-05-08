@@ -71,19 +71,24 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     private getIncludes(element: IncludeFile): IncludeFile[] {
         const lines = fs.readFileSync(element.origin).toString().split("\n");
         var includes = []
+        var lastLine = ''
         for (var line of lines) {
+            if (lastLine) {
+                line = lastLine+line.trim()
+            }
             if (line.toLowerCase().includes('include')) {
-                if (line.includes("'")) {
-                    line = line.split("'")[1]
-                } 
-                if (line.includes('"')) {
-                    line = line.split('"')[1]
-                }
-                const fileName = path.join(path.dirname(element.origin), line)
-                if (this.hasIncludes(fileName)) {
-                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                if ((line.at(-1) !== '"') && (line.at(-1) !== "'")) {
+                    lastLine = line
                 } else {
-                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                    if (line.includes("'")) {line = line.split("'")[1]}
+                    if (line.includes('"')) {line = line.split('"')[1]}
+                    const fileName = path.join(path.dirname(element.origin), line)
+                    if (this.hasIncludes(fileName)) {
+                        includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                    } else {
+                        includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                    }
+                    lastLine = ''
                 }
             }
         }
@@ -150,7 +155,8 @@ export function activate(context: vscode.ExtensionContext): void {
 }
 
 function updatePackageJson(oldstr, newstr): void {
-    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    // const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    const fileName = path.join(vscode.extensions.getExtension("mbakke.vscode-nastran").extensionPath, 'package.json')
     var lines = fs.readFileSync(fileName).toString()
     for(let i=0; i<oldstr.length; i++){
         lines = lines.split(oldstr[i]).join(newstr[i])
