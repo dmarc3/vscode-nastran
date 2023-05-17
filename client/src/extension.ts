@@ -4,6 +4,8 @@
 import * as path from "path";
 import * as fs from 'fs';
 import * as vscode from "vscode";
+import { TreeDataProvider } from "./treeview";
+import { executeFind } from "./find";
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -39,64 +41,6 @@ function startLangServer(
     };
 
     return new LanguageClient(command, serverOptions, getClientOptions());
-}
-
-export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
-
-    constructor() {}
-  
-    getTreeItem(element: IncludeFile): vscode.TreeItem {
-        return element;
-    }
-  
-    getChildren(element?: IncludeFile): Thenable<IncludeFile[]> {
-        if (element) {
-            const includes = this.getIncludes(element)
-            return Promise.resolve(includes);
-        }
-        const origin = vscode.window.activeTextEditor.document.fileName
-        return Promise.resolve([new IncludeFile(path.basename(origin), vscode.TreeItemCollapsibleState.Expanded, origin)]);
-    }
-
-    private hasIncludes(fileName: string): boolean {
-        const lines = fs.readFileSync(fileName).toString().split("\n");
-        for (var line of lines) {
-            if (line.toLowerCase().includes('include')) {
-                return true
-            }
-        }
-        return false
-    }
-
-    private getIncludes(element: IncludeFile): IncludeFile[] {
-        const lines = fs.readFileSync(element.origin).toString().split("\n");
-        var includes = []
-        for (var line of lines) {
-            if (line.toLowerCase().includes('include')) {
-                if (line.includes("'")) {
-                    line = line.split("'")[1]
-                } 
-                if (line.includes('"')) {
-                    line = line.split('"')[1]
-                }
-                const fileName = path.join(path.dirname(element.origin), line)
-                if (this.hasIncludes(fileName)) {
-                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
-                } else {
-                    includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
-                }
-            }
-        }
-        return includes
-    }
-
-    private _onDidChangeTreeData: vscode.EventEmitter<IncludeFile | undefined | null | void> = new vscode.EventEmitter<IncludeFile | undefined | null | void>();
-    readonly onDidChangeTreeData: vscode.Event<IncludeFile | undefined | null | void> = this._onDidChangeTreeData.event;
-  
-    refresh(): void {
-      this._onDidChangeTreeData.fire();
-    }
-
 }
 
 export function activate(context: vscode.ExtensionContext): void {
@@ -147,6 +91,10 @@ export function activate(context: vscode.ExtensionContext): void {
         vscode.commands.executeCommand("workbench.action.reloadWindow")
         }
     );
+    vscode.commands.registerCommand('find', () => {
+        executeFind(includeHierarchyProvider.includes)
+        }
+    );
 }
 
 function updatePackageJson(oldstr, newstr): void {
@@ -178,23 +126,3 @@ function findCurrentVersion(): any {
 export function deactivate(): Thenable<void> {
     return client ? client.stop() : Promise.resolve();
 }
-
-class IncludeFile extends vscode.TreeItem {
-    constructor(
-      public readonly label: string,
-      public readonly collapsibleState: vscode.TreeItemCollapsibleState,
-      public readonly origin: string
-    ) {
-      super(label, collapsibleState);
-      this.origin = this.origin;
-    }
-    command = {
-        "title": "Open Include File",
-        "command": "vscode.open",
-        "arguments": [vscode.Uri.file(this.origin)]
-    }
-    iconPath = {
-      light: path.join(__filename, '..', '..', '..', 'resources', 'light', 'mesh.png'),
-      dark: path.join(__filename, '..', '..', '..', 'resources', 'dark', 'mesh.png')
-    };
-  }

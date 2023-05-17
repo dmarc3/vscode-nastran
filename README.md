@@ -82,3 +82,12 @@ Please create an issue as bugs are discovered. Provide specific details includin
 - Creation of `MSC Nastran` syntax highlighting grammar
 - Updated requirements to specifically callout need for Python>=3.7 with `pygls` installed
 - Update to icons
+
+### Test Markdown
+
+```nastran
+GRID        1085            -12. 1.21E-6     75.        
+GRID        2435            -12.  1.1E-6     15.        
+GRID        2834            -12. 1.21E-6     20.        
+GRID        2839            -12. 1.21E-6     25.     
+```
