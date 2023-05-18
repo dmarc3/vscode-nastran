@@ -13,7 +13,7 @@ export async function executeFind(includes) {
     const found = find(str, includes)
     // Process WebView
     if (found){
-        const uri = await createFindFile(str, found)
+        const uri = await createFindFile(str, found, includes)
         vscode.commands.executeCommand("vscode.open", uri)
     }
 }
@@ -24,16 +24,9 @@ async function getUserInput() {
 
 export function find(str, includes) {
     var found = {}
-    var origin = ""
     // Read each include file
     for (const [ind, include] of includes.entries()) {
-        if (ind===0) {
-            origin = vscode.window.activeTextEditor.document.fileName;
-            var lines = fs.readFileSync(origin).toString().split("\n")
-        } else {
-            var filename = path.join(path.dirname(origin), include);
-            var lines = fs.readFileSync(filename).toString().split("\n")
-        }
+        var lines = fs.readFileSync(include).toString().split("\n")
         // Loop through each line in file
         for (const [lineno, line] of lines.entries()) {
             // Test if string found
@@ -48,19 +41,19 @@ export function find(str, includes) {
     return found
 }
 
-function createFindFile(str, found) {
-    const filename = path.join(path.dirname(vscode.window.activeTextEditor.document.fileName), "find.dat")
+function createFindFile(str, found, includes) {
+    const filename = path.join(path.dirname(includes[0]), `find_${str}.dat`)
     // Delete file if it exists
     fs.rmSync(filename, {
         force: true,
     });
     // Build string
-    var text = `$\n$ Find ${str} in Include Hierarchy for ${path.basename(vscode.window.activeTextEditor.document.fileName)}\n$\n`
+    var text = `$\n$ Find ${str} in Include Hierarchy for ${path.basename(includes[0])}\n$\n`
     // text += '$'+'-'.repeat(108)+'$\n'
     for (let include in found) {
         console.log(`Processing ${include}`)
         for (var entry in found[include]) {
-            text += `${found[include][entry][0].padEnd(108)} $ Go to ${"file:///"+path.join(path.dirname(vscode.window.activeTextEditor.document.fileName), include)+"#"+String(found[include][entry][1]+1)}\n`
+            text += `${found[include][entry][0].padEnd(108)} $ Go to ${"file:///"+include+"#"+String(found[include][entry][1]+1)}\n`
             // text += '$'+'-'.repeat(108)+'$\n'
         }
     }

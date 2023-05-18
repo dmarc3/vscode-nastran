@@ -9,7 +9,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     }
 
     getTreeItem(element: IncludeFile): vscode.TreeItem {
-        this.includes.push(element.label);
+        this.includes.push(element.origin);
         return element;
     }
   
