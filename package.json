@@ -66,12 +66,23 @@
         "title": "Nastran: Set version to Simcenter Nastran."
       },
       {
+        "command": "find",
+        "title": "Nastran: Find all occurences."
+      },
+      {
         "command": "includeHierarchy.buildHierarchy",
         "title": "Nastran: Build include tree hierarchy.",
         "icon": {
-            "light": "resources/light/refresh.svg",
-            "dark": "resources/dark/refresh.svg"
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
         }
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "find",
+        "key": "alt+f",
+        "mac": "alt+f"
       }
     ],
     "menus": {
@@ -109,14 +120,28 @@
         "id": "dmap",
         "superType": "string",
         "description": "Direct Matrix Abstraction Program."
+      },
+      {
+        "id": "file",
+        "superType": "invalid",
+        "description": "Filesystem links."
       }
     ],
     "semanticTokenScopes": [
       {
-        "scopes":{
-          "field": ["punctuation.definition.tag"],
-          "subs": ["markup.inserted"],
-          "dmap": ["constant.regexp"]
+        "scopes": {
+          "field": [
+            "punctuation.definition.tag"
+          ],
+          "subs": [
+            "markup.inserted"
+          ],
+          "dmap": [
+            "constant.regexp"
+          ],
+          "file": [
+            "variable.css"
+          ]
         }
       }
     ]

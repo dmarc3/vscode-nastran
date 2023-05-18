@@ -2,7 +2,7 @@
 
 This [Visual Studio Code](https://code.visualstudio.com/) extension aims to build [`Nastran`](https://software.nasa.gov/software/LAR-16804-GS) "language" support with features akin to what software developers are accustomed to in their Integrated Development Environments (IDEs) while programming. `Nastran` stands for "**NA**SA **STR**uctural **AN**alysis" and is a finite element analysis software used to predict the behavior of a physical structure. While `Nastran` is not a programming language itself, `Nastran` models share many similarites to a programming language. These models are composed of text files built with a defined structure using keywords to identify model parameters.
 
- The ultimate goal of this project is to provide a more efficient means of manipulating `Nastran` finite element models at the text file level through eliminatation of some of the key pain points and provide a more IDE-like experience.
+ The ultimate goal of this project is to provide a more efficient means of manipulating `Nastran` finite element models at the text file level through elimination of some of the key pain points and provide a more IDE-like experience.
 
 
 > **Note**
@@ -38,11 +38,16 @@ Currently supported features include:
 &nbsp;
 ![](./docs/switch_language.gif)
 
+5. "Find All" command (keybound to `ALT`+`F`) to search model for all occurences and provide hyperlink to location in model.
+
+&nbsp;
+![](./docs/find_command.gif)
+
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
 - Command to explictly set the `Nastran` section for highlighting. Models are sometimes compartmentalized into "include" files. Current logic searches the file for section breaks (i.e. `CEND`, `BEGIN BULK`, etc.) and colors accordingly. The user may want to be able to open a file which contains exclusively DMAP or Case Control cards.
 - Expansion of documentation hovers to support `MSC Nastran` and `Simcenter Nastran` Quick Reference Guide documentation with hyperlinks.
-- "Go to line" feature (i.e. Given a `CQUAD` which references 4 `GRID`s, jump to the definition of the specified `GRID`)
 - Interactive plot view of 3D model highlighting currently selected element / grid  / etc.
+- Command to build `.vscode/tasks.json` file for executing `Nastran`
 
 If you have an idea for a feature, please create and issue and flag it as a `Feature Request`.
 
@@ -71,14 +76,19 @@ Please create an issue as bugs are discovered. Provide specific details includin
 
 ## Release Notes
 
-### 0.1.0
+### v0.1.0
 
 - Pre-release version of extension. Actively under development.
 
-### 0.2.0
+### v0.2.0
 
 - Implementation of Include Hierarchy navigation pane
 - Implementation of commands to switch between `NASTRAN-95` and `MSC Nastran`
 - Creation of `MSC Nastran` syntax highlighting grammar
 - Updated requirements to specifically callout need for Python>=3.7 with `pygls` installed
 - Update to icons
+
+### v0.3.0
+
+- Implementation of "Find All" command
+- Created syntax highlighting for vscode `file://` links
