@@ -98,7 +98,8 @@ export function activate(context: vscode.ExtensionContext): void {
 }
 
 function updatePackageJson(oldstr, newstr): void {
-    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    // const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
+    const fileName = path.join(vscode.extensions.getExtension("mbakke.vscode-nastran").extensionPath, 'package.json')
     var lines = fs.readFileSync(fileName).toString()
     for(let i=0; i<oldstr.length; i++){
         lines = lines.split(oldstr[i]).join(newstr[i])

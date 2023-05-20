@@ -1,4 +1,5 @@
 from typing import Optional
+import os
 
 from pygls.server import LanguageServer
 from lsprotocol.types import (
@@ -14,6 +15,17 @@ from lsprotocol.types import (
 )
 
 from utils.read_docs import get_docs
+
+def determine_version() -> str:
+    filename = os.path.join(os.path.dirname(__file__), '..', 'package.json')
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    for i, line in enumerate(lines):
+        if '"aliases": [' in line:
+            break
+    return lines[i+1].split('"')[1]
+
+VERSION = determine_version()
 
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
@@ -84,7 +96,8 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     orig_line = doc.lines[params.position.line]
     # Strip leading white space and grab first 8 characters
     # TODO: Change logic such that it grabs more than 8 characters?
-    card = orig_line.lstrip()[:8]
+    # card = orig_line.lstrip()[:8]
+    card = orig_line.lstrip().split()[0]
     # If special character detected, strip everything after that character
     for char in [",", "*", " ", "=", "\n", "("]:
         if char in card:
@@ -107,9 +120,9 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
             }
             section = detect_section(params.position.line, ind)
             # Calculate hover text
-            hover_txt = get_docs(card, section=section)
-            if not hover_txt:
-                hover_txt = get_docs(card)
+            hover_txt = get_docs(card, section=section, version=VERSION)
+            # if not hover_txt:
+            #     hover_txt = get_docs(card, version=VERSION)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
             return Hover(contents=contents)
     return None
