@@ -26,22 +26,22 @@ Currently supported features include:
 > Hover documentation is currently pulling from `NASTRAN-95` documentation only. Even with the version set to `MSC Nastran` documentation from `NASTRAN-95` will be displayed on hover.
 
 &nbsp;
-![](./docs/documentation_hover.gif)
+![](./resources/documentation_hover.gif)
 
 3. Include file hierarchy tree view for easy navigation of model. Open top level `Nastran` run deck and run command to parse include paths and generate tree view. Command tied to "refresh" button on view.
 
 &nbsp;
-![](./docs/include_hierarchy.gif)
+![](./resources/include_hierarchy.gif)
 
 4. Command to switch between `NASTRAN-95` and `MSC Nastran` syntax highlighting keywords. `Simcenter Nastran` syntax highlighting not yet developed.
 
 &nbsp;
-![](./docs/switch_language.gif)
+![](./resources/switch_language.gif)
 
 5. "Find All" command (keybound to `ALT`+`F`) to search model for all occurences and provide hyperlink to location in model.
 
 &nbsp;
-![](./docs/find_command.gif)
+![](./resources/find_command.gif)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
 - Command to explictly set the `Nastran` section for highlighting. Models are sometimes compartmentalized into "include" files. Current logic searches the file for section breaks (i.e. `CEND`, `BEGIN BULK`, etc.) and colors accordingly. The user may want to be able to open a file which contains exclusively DMAP or Case Control cards.
