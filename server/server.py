@@ -130,7 +130,7 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
 @server.feature(
     TEXT_DOCUMENT_SEMANTIC_TOKENS_FULL,
     SemanticTokensLegend(
-        token_types=["field", "subs", "dmap"],
+        token_types=["field", "subs", "dmap", "file"],
         token_modifiers=[],
     )
 )
@@ -168,56 +168,41 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
-        if line.strip() and section == "BULK" and "$" not in line.lstrip()[0] and "'" not in line and '"' not in line:
-            # Process lines with tabs
-            if '\t' in line:
-                line_by_fields = line.split('\t')
-                for i, field in enumerate(line_by_fields[2::2]):
-                    start = line.index(field)
-                    end = start + len(field)
-                    data += [
-                        (lineno - last_line),
-                        (start - last_start),
-                        (end - start),
-                        0,
-                        0
-                    ]
-                    last_line = lineno
-                    last_start = start
-            # Process lines with commas
-            elif "," in line:
-                line_by_fields = line.split(',')
-                for i, field in enumerate(line_by_fields[2::2]):
-                    start = line.index(field)
-                    end = start + len(field)
-                    data += [
-                        (lineno - last_line),
-                        (start - last_start),
-                        (end - start),
-                        0,
-                        0
-                    ]
-                    last_line = lineno
-                    last_start = start
-            # Process normal long or short format
-            else:
-                # Determine if long or short format
-                n = 16 if "*" in line else 8
-                # Split the line by fields
-                line_by_fields = [line[i:i+n] for i in range(0, len(line), n)]
-                for i, _ in enumerate(line_by_fields[2::2]):
-                    start = 2*n*(i)+n+8
-                    end = start + n
-                    # Save SemanticToken data
-                    data += [
-                        (lineno - last_line),
-                        (start - last_start),
-                        (end - start),
-                        0,
-                        0
-                    ]
-                    last_line = lineno
-                    last_start = start
+        if section == "BULK" and not line.lstrip().startswith('$') and "," not in line and "'" not in line and '\t' not in line:
+            # Determine if long or short format
+            n = 16 if "*" in line else 8
+            # Split the line by fields
+            bulk_line_end = len(line) if len(line)<108 else 108
+            if '$' in line:
+                bulk_line_end = line.index('$')
+            line_by_fields = [line[i:i+n] for i in range(0, bulk_line_end, n)]
+            for i, _ in enumerate(line_by_fields[2::2]):
+                start = 2*n*(i)+n+8
+                end = start + n
+                # Save SemanticToken data
+                data += [
+                    (lineno - last_line),
+                    (start - last_start),
+                    (end - start),
+                    0,
+                    0
+                ]
+                last_line = lineno
+                last_start = start
+        # Process file:// detection
+        if 'file://' in line:
+            start = line.index('file://')
+            end = len(line)-1
+            # Save SemanticToken data
+            data += [
+                (lineno - last_line),
+                (start - last_start),
+                (end - start),
+                3,
+                0
+            ]
+            last_line = lineno
+            last_start = start
                 
         # Process the SUBSTRUCTURE section
         if section == "SUBS":

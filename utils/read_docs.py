@@ -1,6 +1,5 @@
 import os
-
-URL = "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/"
+import json
 
 def get_docs(card: str, section='', version='NASTRAN-95') -> str:
     """Retrieves documentation for given Nastran entry and specified section.
@@ -87,57 +86,18 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     Returns:
         str: Documentation for Nastran entry
     """
-    def get_bulk_url(card: str) -> str:
-        """Builds Hexagon QRG URL for given bulk data entry"""
-        if card == "INCLUDE":
-            return get_case_url(card)
-        chars = card[0]
-        if chars == "C":
-            chars = chars = card[:2]
-
-        if chars in ['A', 'B']:
-            bulk = 'bulkab'
-        elif chars in ['CA', 'CB', 'CC', 'CD', 'CE', 'CF', 'CG', 'CH', 'CI', 'CJ', 'CK', 'CL', 'CM', 'CN']:
-            bulk = 'bulkc1'
-        elif chars in ['CO', 'CP', 'CQ', 'CR', 'CS', 'CT', 'CU', 'CV', 'CW', 'CX', 'CY', 'CZ']:
-            bulk = 'bulkc2'
-        elif chars in ['D', 'E']:
-            bulk = 'bulkde'
-        elif chars in ['F', 'G', 'H', 'I', 'J', 'K', 'L']:
-            bulk = 'bulkfgil'
-        elif chars in ['M', 'N', 'O']:
-            bulk = 'bulkmno'
-        elif chars in ['P']:
-            bulk = 'bulkp'
-        elif chars in ['Q', 'R', 'S']:
-            bulk = 'bulkqrs'
-        elif chars in ['T', 'U', 'V', 'W', 'X', 'Y', 'Z']:
-            bulk = 'bulktuv'
-
-        return URL + bulk +'/TOC.' + card + '.xhtml'
-
-    def get_case_url(card: str) -> str:
-        """Builds Hexagon QRG URL for given case control entry"""
-        return URL + 'casecontrol4a' + '/TOC.' + card + '.Case.xhtml'
-
-    def get_exec_url(card: str) -> str:
-        """Builds Hexagon QRG URL for given executive control entry"""
-        return URL + 'executive' + '/TOC.' + card + '.xhtml'
-
-    def get_fms_url(card: str) -> str:
-        """Builds Hexagon QRG URL for given file management entry"""
-        return URL + 'fms' + '/TOC.' + card + '.xhtml'
-
-    sections = {
-        "BULK": get_bulk_url,
-        "CASE": get_case_url,
-        "EXEC": get_exec_url,
-        "FMS": get_fms_url,
-    }
+    with open(os.path.join('utils', 'MSC_Nastran_urls.json'), 'r') as f:
+        docs = json.load(f)
     if '$' not in card:
-        if section in sections:
-            url = sections[section](card)
-            return f'Open documentation for [{card}]({url})'
+        if card in docs[section]:
+            url = docs[section][card]
+        else:
+            for sect in docs:
+                if card in docs[sect]:
+                    url = docs[sect][card]
+            if not url:
+                return f"No documentation found for {card}"
+        return f'Open documentation for [{card}]({url})'
     return ''
 
 def convert_to_markdown(lines: str) -> str:
@@ -146,4 +106,4 @@ def convert_to_markdown(lines: str) -> str:
 if __name__ == "__main__":
     # Used for debugging
     os.chdir('..')
-    print(get_docs('ALTER'))
+    print(get_docs('ALTER', section='EXEC', version='MSC Nastran'))
