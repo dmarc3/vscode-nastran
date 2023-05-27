@@ -86,19 +86,40 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     Returns:
         str: Documentation for Nastran entry
     """
-    with open(os.path.join('utils', 'MSC_Nastran_urls.json'), 'r') as f:
+    # with open(os.path.join('utils', 'MSC_Nastran_urls.json'), 'r') as f:
+    with open(os.path.join('utils', 'test.json'), 'r', encoding='utf-8') as f:
         docs = json.load(f)
+    # if '$' not in card:
+    #     if card in docs[section]:
+    #         url = docs[section][card]
+    #     else:
+    #         for sect in docs:
+    #             if card in docs[sect]:
+    #                 url = docs[sect][card]
+    #         if not url:
+    #             return f"No documentation found for {card}"
+    #     return f'Open documentation for [{card}]({url})'
+    # return ''
+    out = ""
     if '$' not in card:
-        if card in docs[section]:
-            url = docs[section][card]
-        else:
-            for sect in docs:
-                if card in docs[sect]:
-                    url = docs[sect][card]
-            if not url:
-                return f"No documentation found for {card}"
-        return f'Open documentation for [{card}]({url})'
-    return ''
+        doc = docs[section][card]
+        out = ""
+        if 'HEADER' in doc and 'SUBHEADER' in doc and 'URL' in doc:
+            out += f"[{doc['HEADER']}]({doc['URL']}) - {doc['SUBHEADER']}\n"
+            out += "---------------------------------------\n"
+        if 'BODY' in doc:
+            out += f"{doc['BODY']}\n\n"
+            out += "---------------------------------------\n"
+        if 'FORMAT' in doc:
+            out += f"{doc['FORMAT']}\n"
+            out += "---------------------------------------\n"
+        if 'EXAMPLE' in doc:
+            out += f"{doc['EXAMPLE']}\n"
+            out += "---------------------------------------\n"
+        if 'DESCRIBER' in doc:
+            out += "&nbsp;\n"
+            out += f"{doc['DESCRIBER']}\n"
+    return out
 
 def convert_to_markdown(lines: str) -> str:
     return f"```text\n{lines}```"

@@ -3,12 +3,16 @@ from time import sleep
 
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 import pandas as pd
 import numpy as np
+from tabulate import tabulate
 import ipdb
 
 URL = "https://help.hexagonmi.com"
-WAIT = 2
+WAIT = 10
 
 def main():
     options = webdriver.chrome.options.Options()
@@ -31,7 +35,9 @@ def process_url(docs, driver):
         for card in docs[section]:
             print(f"Processing {card}...")
             driver.get(docs[section][card]['URL'])
-            sleep(WAIT)
+            element_present = EC.presence_of_element_located((By.ID, 'zDocsContent'))
+            WebDriverWait(driver, WAIT).until(element_present)
+            # sleep(WAIT)
             soup = bs(driver.page_source, features="lxml")
             # Header
             header = soup.find("p", class_="FM_hheader")
@@ -49,20 +55,34 @@ def process_url(docs, driver):
             article = soup.find("article", {"id": "zDocsContent"})
             if article: article = article.find_all(["h4", "table"])
             format_bool = False
+            example_bool = False
+            header = ''
             if article:
                 for tag in article:
                     if tag.name == "h4" and tag.text == "Format:":
                         format_bool = True
                         continue
+                    if tag.name == "h4" and tag.text.startswith('Example'):
+                        header = tag.text
+                        example_bool = True
+                        continue
                     if 'table' in tag.name and format_bool:
-                        format_table = update_format(pd.read_html(tag.prettify(), flavor="bs4")[0])
+                        format_table = build_format_text(tag)
                         docs[section][card]['FORMAT'] = format_table if format_table else ""
                         format_bool = False
                         continue
+                    if 'table' in tag.name and example_bool:
+                        example_table = build_example_text(tag, header)
+                        if 'EXAMPLE' not in docs[section][card]:
+                            docs[section][card]['EXAMPLE'] = ''
+                        if example_table:
+                            docs[section][card]['EXAMPLE'] += example_table if example_table else ""
+                        example_bool = False
+                        header = ''
+                        continue
                     if 'table' in tag.name:
-                        table = pd.read_html(tag.prettify(), flavor="bs4")[0]
-                        if 'Describer' in table.columns or 'Contests' in table.columns:
-                            describer_table = update_describer(table)
+                        describer_table = build_describer_text(tag)
+                        if 'Describer' in describer_table:
                             docs[section][card]['DESCRIBER'] = describer_table if describer_table else ""
                             break
     return docs
@@ -88,15 +108,15 @@ def get_urls(driver):
             "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/bulkqrs.xhtml",    # Entries Q - S
             "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/bulktuv.xhtml",    # Entries T - Y
             ],
-        "CASE": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.Case.Control.Commands1.xhtml",
-            ],
-        "EXEC": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.Executive.Control2.xhtml",
-            ],
-        "FMS": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
-            ],
+        # "CASE": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.Case.Control.Commands1.xhtml",
+        #     ],
+        # "EXEC": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.Executive.Control2.xhtml",
+        #     ],
+        # "FMS": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
+        #     ],
     }
     docs = dict(BULK={}, CASE={}, EXEC={}, FMS={})
     for section in urls:
@@ -104,7 +124,9 @@ def get_urls(driver):
             print(f"   Processing {url}")
             # Get webpage content
             driver.get(url)
-            sleep(WAIT)
+            element_present = EC.presence_of_element_located((By.ID, 'zDocsContent'))
+            WebDriverWait(driver, WAIT).until(element_present)
+            # sleep(WAIT)
             # Load in BeautifulSoup
             soup = bs(driver.page_source, features="lxml")
             # Load bulk hyperlinks
@@ -128,23 +150,43 @@ def get_urls(driver):
                     docs[section][card]['URL'] = URL+hyperlink
     return docs
 
-def update_format(table):
-    table = table[1:]
-    table = table.replace(np.nan, '', regex=True)
+def build_format_text(tag):
     out = "Format:\n```nastran\n$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n"
-    for row in table.values:
-        for value in row:
-            out += str(value).ljust(8)
-        out += '\n'
+    for tr in tag.find_all("tr"):
+        for i, td in enumerate(tr.find_all("td")):
+            if i == 0 and td.text.strip() == '1':
+                break
+            out += td.text.strip().ljust(8)
+        out += '\n' if i != 0 else ''
     out += '```\n'
     return out
 
-def update_describer(table):
-    table.columns = table.columns.where(~table.columns.str.contains('Unnamed'), '')
-    if '' in table.columns:
-        table.loc[table['Meaning'] == table[''], ''] = ''
-    table = table.replace(np.nan, '', regex=True)
-    return table.to_markdown(index=False)
+def build_example_text(tag, header):
+    out = f"{header}\n```nastran\n$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n"
+    for tr in tag.find_all("tr"):
+        for i, td in enumerate(tr.find_all("td")):
+            if i == 0 and td.text.strip() == '1':
+                break
+            out += td.text.strip().ljust(8)
+        out += '\n' if i != 0 else ''
+    out += '```\n'
+    return out
+
+def build_describer_text(tag):
+    out = []
+    # Process header
+    inner = []
+    for th in tag.find_all("th"):
+        inner.append(th.find('h4').text)
+    out.append(inner)
+    # Process table
+    for tr in tag.find_all("tr")[1:]:
+        inner = []
+        for td in tr.find_all("td"):
+            inner.append(td.text.strip())
+        out.append(inner)
+    return '```text\n'+tabulate(out, tablefmt='simple_grid')+'\n'
+
 
 
 if __name__ == "__main__":
