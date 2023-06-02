@@ -21,6 +21,9 @@ function getClientOptions(): LanguageClientOptions {
             { scheme: "file", language: "nastran" },
             { scheme: "untitled", language: "nastran" },
         ],
+        markdown: {
+            isTrusted: true,
+        },
         outputChannelName: "[pygls] NastranLanguageServer",
         synchronize: {
             // Notify the server about file changes to '.clientrc files contain in the workspace

@@ -29,6 +29,36 @@ def get_docs(card: str, section='', version='NASTRAN-95') -> str:
     if version == 'NASTRAN-95':
         return convert_to_markdown(out) if out else out
     else:
+#         out = R"""<h1 id="sample-markdown">Sample Markdown</h1>
+# <p>This is some basic, sample markdown.</p>
+# <h2 id="second-heading">Second Heading</h2>
+# <ul>
+# <li>Unordered lists, and:<ol>
+# <li>One</li>
+# <li>Two</li>
+# <li>Three</li>
+# </ol>
+# </li>
+# <li>More</li>
+# </ul>
+# <blockquote>
+# <p>Blockquote</p>
+# </blockquote>
+# <p>And <strong>bold</strong>, <em>italics</em>, and even <em>italics and later <strong>bold</strong></em>. Even <del>strikethrough</del>. <a href="https://markdowntohtml.com">A link</a> to somewhere.</p>
+# <p>And code highlighting:</p>
+# <pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
+
+# <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baz</span><span class="hljs-params">(s)</span> </span>{
+#    <span class="hljs-keyword">return</span> foo + <span class="hljs-string">':'</span> + s;
+# }
+# </code></pre>
+# <p>Or inline code like <code>var foo = &#39;bar&#39;;</code>.</p>
+# <p>Or an image of bears</p>
+# <p><img src="http://placebear.com/200/200" alt="bears"></p>
+# <p>The end ...</p>
+# """
+#         import unmarkd
+#         out = unmarkd.unmark(out)
         return out
 
 def read_NASTRAN_95_docs(card: str, section: str) -> str:
@@ -101,24 +131,30 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     #     return f'Open documentation for [{card}]({url})'
     # return ''
     out = ""
-    if '$' not in card:
-        doc = docs[section][card]
-        out = ""
-        if 'HEADER' in doc and 'SUBHEADER' in doc and 'URL' in doc:
-            out += f"[{doc['HEADER']}]({doc['URL']}) - {doc['SUBHEADER']}\n"
-            out += "---------------------------------------\n"
-        if 'BODY' in doc:
-            out += f"{doc['BODY']}\n\n"
-            out += "---------------------------------------\n"
-        if 'FORMAT' in doc:
-            out += f"{doc['FORMAT']}\n"
-            out += "---------------------------------------\n"
-        if 'EXAMPLE' in doc:
-            out += f"{doc['EXAMPLE']}\n"
-            out += "---------------------------------------\n"
-        if 'DESCRIBER' in doc:
-            out += "&nbsp;\n"
-            out += f"{doc['DESCRIBER']}\n"
+    if card not in docs[section]:
+        card = card[:-1]+'i'
+    out = docs[section][card]['MARKDOWN']
+    # if '$' not in card:
+    #     doc = docs[section][card]
+    #     out = ""
+    #     if 'HEADER' in doc and 'URL' in doc:
+    #         out += f"[{doc['HEADER']}]({doc['URL']})"
+    #         if 'SUBHEADER' in doc:
+    #             out += f" - {doc['SUBHEADER']}"
+    #         out += "\n"
+    #         out += "---------------------------------------\n"
+    #     if 'BODY' in doc:
+    #         out += f"{doc['BODY']}\n\n"
+    #         out += "---------------------------------------\n"
+    #     if 'FORMAT' in doc:
+    #         out += f"{doc['FORMAT']}\n"
+    #         out += "---------------------------------------\n"
+    #     if 'EXAMPLE' in doc:
+    #         out += f"{doc['EXAMPLE']}\n"
+    #         out += "---------------------------------------\n"
+    #     if 'DESCRIBER' in doc:
+    #         out += "&nbsp;\n"
+    #         out += f"{doc['DESCRIBER']}\n"
     return out
 
 def convert_to_markdown(lines: str) -> str:
