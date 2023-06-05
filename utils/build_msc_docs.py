@@ -1,22 +1,20 @@
 import json
 import re
+from time import time
 
 from bs4 import BeautifulSoup as bs
-from bs4 import Tag
+from bs4.element import NavigableString
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from tabulate import tabulate
-from lxml import html
 import unmarkd
-import html2text
-from markdownify import markdownify as md
-import antimarkdown
 import ipdb
 
 URL = "https://help.hexagonmi.com"
-WAIT = 20
+DELAY = 30
 
 def main():
     options = webdriver.chrome.options.Options()
@@ -30,141 +28,96 @@ def main():
     print("\nProcessing MSC Nastran URLs and appending page information\n")
     docs = process_url(docs, driver)
     # Write to json file
-    with open('test.json', 'w') as f:
-        json.dump(docs, f)
+    with open('test.json', 'w', encoding='utf-8') as f:
+        json.dump(docs, f, indent=4)
 
+def process_descendants(tag):
+    out = []
+    for desc in tag.contents:
+        if desc.name in ['p', 'span']:
+            out += [desc.text]
+        elif desc.name == 'img':
+            out += [unmarkd.unmark(str(desc))]
+        elif isinstance(desc, NavigableString):
+            out += [str(desc)]
+        elif desc.name in ['sub', 'a']:
+            continue
+            # tag_str.append(process_descendants(desc))
+        else:
+            ipdb.set_trace()
+    return ' '.join(out) + '\n\n'
 
 def process_url(docs, driver):
     for section in docs:
         for card in docs[section]:
             if 'DYPARAM' in card:
                 continue
-            if card != 'GRID':
+            if card != 'MASSSET':
                 continue
-            print(f"  Processing {card}...")
-            url = docs[section][card]['URL']
-            driver.get(url)
-            html_id = ('bundle:'+url.split('bundle')[1][1:]).replace('/page/', '/enus/')
-            element_present = EC.presence_of_element_located((By.ID, html_id))
-            WebDriverWait(driver, WAIT).until(element_present)
-            soup = bs(driver.page_source, features="lxml")
-            # Get all tags in article
-            # tags = soup.find("article", {"id": html_id}).find_all()
-            tags = soup.find("article", {"id": html_id})
-            out = ''
-            for i, tag in enumerate(tags.children):
-                if i == 3:
-                    continue
-                if tag.name == 'a':
-                    continue
-                # Process header
-                if 'FM_hheader' in str(tag):
-                    for p in tag.find_all("p"):
-                        if p.get('class')[0] == "FM_hheader":
-                            out += f"## [{p.text}]({docs[section][card]['URL']}) - "
-                        if p.get('class')[0] == 'FM_hheadersub':
-                            out += p.text + '\n\n'
-                        if p.get('class')[0] == 'FM_body':
-                            out += p.text + '\n\n'
-                            out += '--------------------\n\n'
-                # Process body
-                elif 'FM_body' in str(tag):
-                    if tag.name != "p":
+            print(f"  Processing {card}...", end='\r')
+            try:
+                start = time()
+                url = docs[section][card]['URL']
+                driver.get(url)
+                html_id = ('bundle:'+url.split('bundle')[1][1:]).replace('/page/', '/enus/')
+                element_present = EC.presence_of_element_located((By.ID, html_id))
+                WebDriverWait(driver, DELAY).until(element_present)
+                soup = bs(driver.page_source, features="lxml")
+                # Get all tags in article
+                # tags = soup.find("article", {"id": html_id}).find_all()
+                tags = soup.find("article", {"id": html_id})
+                out = ''
+                for tag in tags.children:
+                    if tag.name == 'a':
+                        continue
+                    if tag.get('class'):
+                        if tag.get('class')[0] == 'topictitle1':
+                            continue
+                    # print(str(tag)+'\n')
+                    # Process header
+                    if 'FM_hheader' in str(tag):
                         for p in tag.find_all("p"):
-                            out += p.text + '\n\n'
+                            if p.get('class')[0] == "FM_hheader":
+                                out += f"## [{p.text}]({docs[section][card]['URL']}) - "
+                            if p.get('class')[0] == 'FM_hheadersub':
+                                out += p.text + '\n\n'
+                            if p.get('class')[0] == 'FM_body':
+                                out += p.text + '\n\n'
+                                out += '--------------------\n\n'
+                    # Process p tags
+                    elif tag.name == 'p':
+                        out += process_descendants(tag)
+                    # Process body
+                    elif 'FM_body' in str(tag):
+                        if tag.name != "p":
+                            for p in tag.find_all("p"):
+                                out += p.text + '\n\n'
+                        else:
+                            out += tag.text + '\n\n'
+                        out += '--------------------\n\n'
+                    # Process numbered items
+                    elif tag.name == 'p' and tag.find('span'):
+                        for p in tag:
+                            out += p.text + ' '
+                        out = out[:-1] + '\n\n'
+                    # Process tables
+                    elif tag.name == 'div':
+                        if 'Describer' in str(tag) or card not in str(tag) and tag.text:
+                            # print(str(tag)+'\n')
+                            out += build_table_markdown(tag)
+                        elif tag.text:
+                            out += build_nastran_markdown(card, tag)
                     else:
-                        out += tag.text + '\n\n'
-                    out += '--------------------\n\n'
-                # Process tables
-                elif tag.name == 'div':
-                    out += build_table_markdown(card, tag)
-                    # out += md(str(tag.find("table"))) + '\n\n\n\n'
-                else:
-                    # Process everything else
-                    out += unmarkd.unmark(str(tag)) + '\n\n\n\n'
-            # for a in tags.findAll('a'):
-            #     a.replaceWithChildren()
-            # out = md(str(tags))
-            # out = antimarkdown.to_markdown(str(tags).replace('\n', ''))
-            # tags = ''.join([unmarkd.unmark(tag) for tag in tags.children])
-            # ipdb.set_trace()
-            # # Try html2text
-            # text_maker = html2text.HTML2Text()
-            # text_maker.ignore_links = False
-            # text_maker.bypass_tables = False
-            # out = text_maker.handle(str(tags))
-            # Try unmarkd
-            # out = unmarkd.unmark(tags)
-            docs[section][card]['MARKDOWN'] = out
-            # ind = 0
-            # # Jump to header + subheader
-            # while tags[ind].name != 'div':
-            #     ind += 1
-            # # Header Table
-            # docs[section][card]['HEADER'] = ''
-            # docs[section][card]['SUBHEADER'] = ''
-            # docs[section][card]['BODY'] = ''
-            # for tr in tags[ind].find_all("tr"):
-            #     for p in tr.find_all("p"):
-            #         # Header
-            #         if p.attrs['class'][0] == 'FM_hheader':
-            #             docs[section][card]['HEADER'] = p.text
-            #         # Subheader
-            #         elif p.attrs['class'][0] == 'FM_hheadersub':
-            #             docs[section][card]['SUBHEADER'] = p.text
-            #         # Body
-            #         else:
-            #             docs[section][card]['BODY'] = p.text
-            # # Body
-            # if not docs[section][card]['BODY']:
-            #     body = []
-            #     while tags[ind].name != 'h4':
-            #         if tags[ind].name == 'p' and tags[ind].attrs['class'][0] == 'FM_body':
-            #             body.append(tags[ind].text)
-            #         ind += 1
-            #     body = '\n'.join(body) if body else ''
-            #     docs[section][card]['BODY'] = body
-            # # # Format
-            # # format_found = False
-            # # format_table = ''
-            # # for tag in tags[ind:]:
-            # #     if format_found:
-            # #         format_table += build_format_text(card, tag, header)
-            # #         format_found = False
-            # #     if 'format' in tag.text.lower():
-            # #         format_found = True
-            # #         header = tag.text
-            # # ipdb.set_trace()
-            # while 'Format' not in tags[ind].text:
-            #     ind += 1
-            # header = tags[ind-1].text
-            # format_table = build_format_text(card, tags[ind], header)
-            # docs[section][card]['FORMAT'] = format_table if format_table else ''
-            # ind += 1
-            # # Example
-            # while not tags[ind].text.startswith('Example'):
-            #     ind += 1
-            # header = tags[ind].text
-            # ind += 1
-            # example_table = build_example_text(card, tags[ind], header)
-            # if 'EXAMPLE' not in docs[section][card]:
-            #     docs[section][card]['EXAMPLE'] = ''
-            # if example_table:
-            #     docs[section][card]['EXAMPLE'] += example_table if example_table else ""
-            # ind += 1
-            # # Describer
-            # docs[section][card]['DESCRIBER'] = ''
-            # while not docs[section][card]['DESCRIBER']:
-            #     try:
-            #         while tags[ind].name != 'div':
-            #             ind += 1
-            #         describer = build_describer_text(tags[ind].find("table")) if tags[ind].find("table") else ""
-            #         if 'Describer' in describer or 'Field' in describer:
-            #             docs[section][card]['DESCRIBER'] = describer
-            #             break
-            #         ind += 1
-            #     except IndexError:
-            #         break
+                        # Process everything else
+                        try:
+                            out += unmarkd.unmark(str(tag)) + '\n\n'
+                        except:
+                            print(f"    Error encountered. Skipping {tag.name} for {card}: {tag.text}!")
+                docs[section][card]['MARKDOWN'] = out
+                end = time()
+                print(f"  Processing {card}...".ljust(30) + "Completed in " + f"{(end-start):.2f}".rjust(5) + " seconds!")
+            except TimeoutException: 
+                print(f"  Processing {card}...".ljust(30) + f"ERROR: Timeout Exception encountered for {card}!")
     return docs
 
 def get_urls(driver):
@@ -178,15 +131,7 @@ def get_urls(driver):
     """
     urls = {
         'BULK': [
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/bulkab.xhtml",      # Entries A - B
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/bulkc1.xhtml",      # Entries CA - CM
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/bulkc2.xhtml",      # Entries CO - CY
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/bulkde.xhtml",      # Entries D - E
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/bulkfgil.xhtml",  # Entries F - L
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/bulkmno.xhtml",    # Entries M - O
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/bulkp.xhtml",        # Entries P
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/bulkqrs.xhtml",    # Entries Q - S
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/bulktuv.xhtml",    # Entries T - Y
+            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulk_data/bulk.data.xhtml#TOC_Bulk_Data_Entries"
             ],
         # "CASE": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.Case.Control.Commands1.xhtml",
@@ -201,12 +146,12 @@ def get_urls(driver):
     docs = dict(BULK={}, CASE={}, EXEC={}, FMS={})
     for section in urls:
         for url in urls[section]:
-            print(f"   Processing {url}")
+            print(f"  Processing {section}")
             # Get webpage content
             driver.get(url)
             element_present = EC.presence_of_element_located((By.ID, 'zDocsContent'))
-            WebDriverWait(driver, WAIT).until(element_present)
-            # sleep(WAIT)
+            WebDriverWait(driver, DELAY).until(element_present)
+            # sleep(DELAY)
             # Load in BeautifulSoup
             soup = bs(driver.page_source, features="lxml")
             # Load bulk hyperlinks
@@ -219,6 +164,27 @@ def get_urls(driver):
                     card = link.text
                     docs[section][card] = {}
                     docs[section][card]['URL'] = URL+hyperlink
+            elif section == "BULK":
+                suburls = [
+                    # "MSCNastran20224-EntriesAB",
+                    # "MSCNastran20224-EntriesCACM",
+                    # "MSCNastran20224-EntriesCOCY",
+                    # "MSCNastran20224-EntriesDE",
+                    # "MSCNastran20224-EntriesFL",
+                    "MSCNastran20224-EntriesMO",
+                    # "MSCNastran20224-EntriesP",
+                    # "MSCNastran20224-EntriesQS",
+                    # "MSCNastran20224-EntriesTY"
+                ]
+                for sub in suburls:
+                    li = soup.find('ul', {"id": sub}).find_all('li')
+                    for link in li:
+                        if link.text in ['$', '/']:
+                            continue
+                        hyperlink = link.find('a')['href']
+                        card = link.text
+                        docs[section][card] = {}
+                        docs[section][card]['URL'] = URL+hyperlink
             else:
                 li = soup.find_all('div', class_="zDocsTopicPageBodyContent")[0].find_all('li')
                 for link in li:
@@ -230,11 +196,14 @@ def get_urls(driver):
                     docs[section][card]['URL'] = URL+hyperlink
     return docs
 
-def build_table_markdown(card, tag):
+def build_nastran_markdown(card, tag):
     out = "```nastran\n"
     tag = tag.find('table')
     fields = []
-    out += '$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n'
+    if card+'*' in str(tag):
+        out += '$---1---$-------2-------$-------3-------$-------4-------$-------5-------$---6---$\n'
+    else:
+        out += '$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n'
     for tr in tag.find_all("tr"):
         row = []
         for i, td in enumerate(tr.find_all("td")):
@@ -261,7 +230,7 @@ def build_table_markdown(card, tag):
                     field += [''] * (max_len - len(field))
                 entries.append(field)
             else:
-                if len(field) > 8 and card not in ['ABSNMVS', 'ACCEL', 'CINTC', 'DRESP3']:
+                if len(field) > 8 and card not in ['ABSNMVS', 'ACCEL', 'CINTC', 'DRESP3', 'FBODYLD', 'FBODYSB', 'GRIDA']:
                     field = field.ljust(8)[:8]
                     out += field[:-3]+'...'
                 else:
@@ -353,7 +322,7 @@ def build_example_text(card, tag, header):
     out += '```\n'
     return out
 
-def build_describer_text(tag):
+def build_table_markdown(tag):
     out = []
     # Process table
     for tr in tag.find_all("tr"):
@@ -376,10 +345,15 @@ def build_describer_text(tag):
     # Remove empty rows
     out = [row for row in out if not all(a == '' for a in row)]
     # Column widths
-    maxcolwidths = [12]
-    while len(maxcolwidths) != num_cols:
-        maxcolwidths.append(int((120-maxcolwidths[0])/(num_cols-1)))
-    return '```text\n'+tabulate(out, tablefmt='simple_grid', maxcolwidths=maxcolwidths)+'\n'
+    if out:
+        if len(out[0]) == 1:
+            maxcolwidths = [len(out[0][0])] if len(out[0]) < 120 else [120]
+        else:
+            maxcolwidths = [12]
+            while len(maxcolwidths) != num_cols:
+                maxcolwidths.append(int((110-maxcolwidths[0])/(num_cols-1)))
+        return '```text\n'+tabulate(out, tablefmt='simple_grid', maxcolwidths=maxcolwidths)+'\n```\n'
+    return ''
 
 
 
