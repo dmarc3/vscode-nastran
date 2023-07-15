@@ -1,4 +1,5 @@
 import json
+import os
 import re
 from time import time
 
@@ -31,10 +32,31 @@ def main():
     with open('test.json', 'w', encoding='utf-8') as f:
         json.dump(docs, f, indent=4)
 
+def expand_contents(tag):
+    contents = tag.contents
+    for i, content in enumerate(contents):
+        try:
+            if content.contents:
+                contents[i] = content.contents
+        except AttributeError:
+            pass
+    # Flatten list
+    out = []
+    for item in contents:
+        if isinstance(item, list):
+            for i in item:
+                out.append(i)
+        else:
+            out.append(item)
+    return out
+
 def process_descendants(tag):
     out = []
-    for desc in tag.contents:
-        if desc.name in ['p', 'span']:
+    if 'FM_bulletsub' in str(tag) or 'FM_listtext' in str(tag):
+        out += ['    ']
+    contents = expand_contents(tag)
+    for desc in contents:
+        if desc.name in ['p', 'span', 'b', 'sup']:
             out += [desc.text]
         elif desc.name == 'img':
             out += [unmarkd.unmark(str(desc))]
@@ -43,6 +65,8 @@ def process_descendants(tag):
         elif desc.name in ['sub', 'a']:
             continue
             # tag_str.append(process_descendants(desc))
+        elif desc.name == 'br':
+            out += '\n\n'
         else:
             ipdb.set_trace()
     return ' '.join(out) + '\n\n'
@@ -52,8 +76,8 @@ def process_url(docs, driver):
         for card in docs[section]:
             if 'DYPARAM' in card:
                 continue
-            if card != 'MASSSET':
-                continue
+            # if card != 'CQUAD4':
+            #     continue
             print(f"  Processing {card}...", end='\r')
             try:
                 start = time()
@@ -66,6 +90,7 @@ def process_url(docs, driver):
                 # Get all tags in article
                 # tags = soup.find("article", {"id": html_id}).find_all()
                 tags = soup.find("article", {"id": html_id})
+                # import ipdb; ipdb.set_trace()
                 out = ''
                 for tag in tags.children:
                     if tag.name == 'a':
@@ -95,7 +120,7 @@ def process_url(docs, driver):
                         else:
                             out += tag.text + '\n\n'
                         out += '--------------------\n\n'
-                    # Process numbered items
+                    # Process numbered / bulleted items
                     elif tag.name == 'p' and tag.find('span'):
                         for p in tag:
                             out += p.text + ' '
@@ -107,6 +132,8 @@ def process_url(docs, driver):
                             out += build_table_markdown(tag)
                         elif tag.text:
                             out += build_nastran_markdown(card, tag)
+                        elif 'img' in str(tag):
+                            out += unmarkd.unmark(str(tag.find('img'))) + '\n\n'
                     else:
                         # Process everything else
                         try:
@@ -114,6 +141,10 @@ def process_url(docs, driver):
                         except:
                             print(f"    Error encountered. Skipping {tag.name} for {card}: {tag.text}!")
                 docs[section][card]['MARKDOWN'] = out
+                if '*' in card:
+                    card = card.replace('*', '')
+                with open(os.path.join('docs', section, card+'.md'), 'w', encoding='utf-8') as f:
+                    f.write(out)
                 end = time()
                 print(f"  Processing {card}...".ljust(30) + "Completed in " + f"{(end-start):.2f}".rjust(5) + " seconds!")
             except TimeoutException: 
@@ -166,15 +197,15 @@ def get_urls(driver):
                     docs[section][card]['URL'] = URL+hyperlink
             elif section == "BULK":
                 suburls = [
-                    # "MSCNastran20224-EntriesAB",
-                    # "MSCNastran20224-EntriesCACM",
-                    # "MSCNastran20224-EntriesCOCY",
-                    # "MSCNastran20224-EntriesDE",
-                    # "MSCNastran20224-EntriesFL",
+                    "MSCNastran20224-EntriesAB",
+                    "MSCNastran20224-EntriesCACM",
+                    "MSCNastran20224-EntriesCOCY",
+                    "MSCNastran20224-EntriesDE",
+                    "MSCNastran20224-EntriesFL",
                     "MSCNastran20224-EntriesMO",
-                    # "MSCNastran20224-EntriesP",
-                    # "MSCNastran20224-EntriesQS",
-                    # "MSCNastran20224-EntriesTY"
+                    "MSCNastran20224-EntriesP",
+                    "MSCNastran20224-EntriesQS",
+                    "MSCNastran20224-EntriesTY"
                 ]
                 for sub in suburls:
                     li = soup.find('ul', {"id": sub}).find_all('li')

@@ -1,3 +1,359 @@
-CQUAD4  111     203     31      74      75      32      2.6     0.3             
-                        1.77    2.04    2.09    1.80                            
-GRID    1
+ID
+SOL 101
+CEND
+    $S700
+    A2GG
+    ACCELERATION
+    ACFPMRESULT
+    ACPOWER
+    ACTRIM
+    ADAMSMNF
+    AECONFIG
+    AERCONFIG
+    AEROF
+    AESYMXY
+    AESYMXZ
+    AEUXREF
+    ANALYSIS
+    APRESSURE
+    AUTOSPC
+    AUXCASE
+    AUXMODEL
+    AVLEXB
+    AXISYMMETRIC
+    B2GG
+    B2PP
+    BC
+    BCHANGE
+    BCMOVE
+    BCONCHK
+    BCONTACT
+    BENDL
+    BOUTPUT
+    BSQUEAL
+    CAMPBELL
+    CLOAD
+    CMETHOD
+    CMSENRGY
+    COSMSEL
+    CSSCHD
+    DBSAVE
+    DEACTEL
+    DEFORM
+    DESGLB
+    DESMOD
+    DESOBJ
+    DESSUB
+    DESVAR
+    DISPLACEMENT
+    DIVERG
+    DLOAD
+    DRSPAN
+    DSAPRT
+    DSYM
+    DYSTIFF
+    ECHO
+    EDE
+    EKE
+    ELAFORCES
+    ELSDCON
+    ELSENS
+    ELSUM
+    ENDMODULE
+    ENDSTEP
+    ENDTIME
+    ENTHALPY
+    EQUILIBRIUM
+    ERP
+    ESE
+    EXPORTLD
+    EXTDRIN
+    EXTDROUT
+    EXTMDOUT
+    EXTSEOUT
+    FATIGUE
+    FBODYLD
+    FEMCHECK
+    FLSFSEL
+    FLSPOUT
+    FLSTCNT
+    FLUX
+    FMETHOD
+    FORCE
+    FREQUENCY
+    FRF
+    GPFORCE
+    GPKE
+    GPRSORT
+    GPSDCON
+    GPSTRAIN
+    GPSTRESS
+    GROUNDCHECK
+    GUST
+    GVECTOR
+    HADAPT
+    HARMONICS
+    HDOT
+    HOUTPUT
+    HTFLOW
+    IC
+    ICF
+    IMPERFECT
+    INCLUDE
+    INTENSITY
+    IRLOAD
+    K2GG
+    K2PP
+    K42GG
+    LABEL
+    LDLABEL
+    LINE
+    LOAD
+    LOADNAME
+    LOADSET
+    M2GG
+    M2PP
+    MAPMODES
+    MASSSET
+    MASTER
+    MAXLINES
+    MAXMIN(DEF)
+    MAXMIN
+    MCFRACTION
+    MEFFMASS
+    METHOD
+    MFLUID
+    MFREQUENCY
+    MODALKE
+    MODALSE
+    MODES
+    MODESELECT
+    MODTRAK
+    MONCARL
+    MONITOR
+    MPC
+    MPCFORCES
+    MPRES
+    NLBUCK
+    NLHARM
+    NLIC
+    NLLOAD
+    NLOPRM
+    NLPARM
+    NLRESTART
+    NLSTEP
+    NLSTRESS
+    NONLINEAR
+    NOUTPUT
+    NSM
+    NVELOCITY
+    OFREQUENCY
+    OIMPERFECT
+    OLOAD
+    OMODES
+    OTIME
+    OUTPUT
+    P2G
+    PACCELERATION
+    PAGE
+    PARAM
+    PARTN
+    PEAKOUT
+    PFGRID
+    PFMODE
+    PFPANEL
+    PLOTID
+    POST
+    PRESSURE
+    RANDOM
+    RANDOUT
+    RCROSS
+    RELDISP
+    REPCASE
+    RESVEC
+    RGYRO
+    RIGID
+    ROTBENT
+    ROTSEKE
+    RSDAMP
+    SACCELERATION
+    SDAMPING
+    SDISPLACEMENT
+    SEALL
+    SEDAMP
+    SEDR
+    SEDV
+    SEEXCLUDE
+    SEFINAL
+    SEKREDUCE
+    SELGENERATE
+    SELREDUCE
+    SEMGENERATE
+    SEMREDUCE
+    SERESP
+    SET
+    SETP
+    SETS DEFINITION
+    SKIP
+    SLDSKIN
+    SMETHOD
+    SOLUTION
+    SPC
+    SPCFORCES
+    SPLINOUT
+    STATSUB
+    STEP
+    STOCHASTICS
+    STRAIN
+    STRESS
+    STRFIELD
+    SUBCASE
+    SUBCOM
+    SUBSEQ
+    SUBSEQ1
+    SUBSTEP
+    SUBTITLE
+    SUPER
+    SUPORT1
+    SVECTOR
+    SVELOCITY
+    SYM
+    SYMCOM
+    SYMSEQ
+    TACCELERATION
+    TDISPLACEMENT
+    TEMPERATURE
+    TFL
+    THERMAL
+    TIRE
+    TRIM
+    TRIMF
+    TRIMGRP
+    TSTEP
+    TSTEPNL
+    TSTRU
+    TVELOCITY
+    UNGLUE
+    VCCT
+    VECTOR
+    VELOCITY
+    VINTENSITY
+    WEIGHTCHECK
+    WETSENS
+BEGIN BULK
+ABINFL         1       2       3       4       5       6       7       8       9
+ABSNMVB        1       2       3       4       5       6       7       8       9
+ABSNMVI        1       2       3       4       5       6       7       8       9
+ABSNMVR        1       2       3       4       5       6       7       8       9
+ABSNMVS        1       2       3       4       5       6       7       8       9
+ABSTRCT        1       2       3       4       5       6       7       8       9
+ACCEL          1       2       3       4       5       6       7       8       9
+ACCEL1         1       2       3       4       5       6       7       8       9
+ACCSSPT        1       2       3       4       5       6       7       8       9
+ACLOAD         1       2       3       4       5       6       7       8       9
+ACMODL         1       2       3       4       5       6       7       8       9
+ACPEMCP        1       2       3       4       5       6       7       8       9
+ACPMCP1        1       2       3       4       5       6       7       8       9
+ACSRCE         1       2       3       4       5       6       7       8       9
+ACTRIM         1       2       3       4       5       6       7       8       9
+ADUMi          1       2       3       4       5       6       7       8       9
+AECOMP         1       2       3       4       5       6       7       8       9
+AECOMPL        1       2       3       4       5       6       7       8       9
+AEDW           1       2       3       4       5       6       7       8       9
+AEFACT         1       2       3       4       5       6       7       8       9
+AEFORCE        1       2       3       4       5       6       7       8       9
+AEGRID         1       2       3       4       5       6       7       8       9
+AELINK         1       2       3       4       5       6       7       8       9
+AELIST         1       2       3       4       5       6       7       8       9
+AELISTC        1       2       3       4       5       6       7       8       9
+AEPARM         1       2       3       4       5       6       7       8       9
+AEPRESS        1       2       3       4       5       6       7       8       9
+AEQUAD4        1       2       3       4       5       6       7       8       9
+AERO           1       2       3       4       5       6       7       8       9
+AEROS          1       2       3       4       5       6       7       8       9
+AESCALE        1       2       3       4       5       6       7       8       9
+AESTAT         1       2       3       4       5       6       7       8       9
+AESURF         1       2       3       4       5       6       7       8       9
+AESURFS        1       2       3       4       5       6       7       8       9
+AETRIA3        1       2       3       4       5       6       7       8       9
+ASET           1       2       3       4       5       6       7       8       9
+ASET1          1       2       3       4       5       6       7       8       9
+ATBACC         1       2       3       4       5       6       7       8       9
+ATBJNT         1       2       3       4       5       6       7       8       9
+ATBSEG         1       2       3       4       5       6       7       8       9
+AXIC           1       2       3       4       5       6       7       8       9
+AXIF           1       2       3       4       5       6       7       8       9
+AXSLOT         1       2       3       4       5       6       7       8       9
+BAROR          1       2       3       4       5       6       7       8       9
+BARRIER        1       2       3       4       5       6       7       8       9
+BCAUTOP        1       2       3       4       5       6       7       8       9
+BCBDPRP        1       2       3       4       5       6       7       8       9
+BCBMRAD        1       2       3       4       5       6       7       8       9
+BCBODY         1       2       3       4       5       6       7       8       9
+BCBODY1        1       2       3       4       5       6       7       8       9
+BCBOX          1       2       3       4       5       6       7       8       9
+BCBZIER        1       2       3       4       5       6       7       8       9
+BCELIPS        1       2       3       4       5       6       7       8       9
+BCGRID         1       2       3       4       5       6       7       8       9
+BCHANGE        1       2       3       4       5       6       7       8       9
+BCMATL         1       2       3       4       5       6       7       8       9
+BCMOVE         1       2       3       4       5       6       7       8       9
+BCNURB2        1       2       3       4       5       6       7       8       9
+BCNURBS        1       2       3       4       5       6       7       8       9
+BCONECT        1       2       3       4       5       6       7       8       9
+BCONP          1       2       3       4       5       6       7       8       9
+BCONPRG        1       2       3       4       5       6       7       8       9
+BCONPRP        1       2       3       4       5       6       7       8       9
+BCONUDS        1       2       3       4       5       6       7       8       9
+BCPARA         1       2       3       4       5       6       7       8       9
+BCPATCH        1       2       3       4       5       6       7       8       9
+BCPFLG         1       2       3       4       5       6       7       8       9
+BCPROP         1       2       3       4       5       6       7       8       9
+BCRGSRF        1       2       3       4       5       6       7       8       9
+BCRIGID        1       2       3       4       5       6       7       8       9
+BCSCAP         1       2       3       4       5       6       7       8       9
+BCSEG          1       2       3       4       5       6       7       8       9
+BCSURF         1       2       3       4       5       6       7       8       9
+BCTABL1        1       2       3       4       5       6       7       8       9
+BCTABLE        1       2       3       4       5       6       7       8       9
+BCTRIM         1       2       3       4       5       6       7       8       9
+BDYLIST        1       2       3       4       5       6       7       8       9
+BDYOR          1       2       3       4       5       6       7       8       9
+BEADVAR        1       2       3       4       5       6       7       8       9
+BEAMOR         1       2       3       4       5       6       7       8       9
+BFRlC          1       2       3       4       5       6       7       8       9
+BIAS           1       2       3       4       5       6       7       8       9
+BJOIN          1       2       3       4       5       6       7       8       9
+BLSEG          1       2       3       4       5       6       7       8       9
+BNDFIX         1       2       3       4       5       6       7       8       9
+BNDFIX1        1       2       3       4       5       6       7       8       9
+BNDFRE1        1       2       3       4       5       6       7       8       9
+BNDFREE        1       2       3       4       5       6       7       8       9
+BNDGRID        1       2       3       4       5       6       7       8       9
+BOLT           1       2       3       4       5       6       7       8       9
+BOLT1          1       2       3       4       5       6       7       8       9
+BOUTPUT        1       2       3       4       5       6       7       8       9
+BRKPROP        1       2       3       4       5       6       7       8       9
+BRKSYS         1       2       3       4       5       6       7       8       9
+BSET           1       2       3       4       5       6       7       8       9
+BSET1          1       2       3       4       5       6       7       8       9
+BSQUEAL        1       2       3       4       5       6       7       8       9
+BSURF          1       2       3       4       5       6       7       8       9
+BWIDTH         1       2       3       4       5       6       7       8       9
+CAABSF         1       2       3       4       5       6       7       8       9
+CACINF3        1       2       3       4       5       6       7       8       9
+CACINF4        1       2       3       4       5       6       7       8       9
+CAERO1         1       2       3       4       5       6       7       8       9
+CAERO2         1       2       3       4       5       6       7       8       9
+CAERO3         1       2       3       4       5       6       7       8       9
+CAERO4         1       2       3       4       5       6       7       8       9
+CAERO5         1       2       3       4       5       6       7       8       9
+CAMPBLL        1       2       3       4       5       6       7       8       9
+CAXIFi         1       2       3       4       5       6       7       8       9
+CAXISYM        1       2       3       4       5       6       7       8       9
+CBAR           1       2       3       4       5       6       7       8       9
+CBARAO         1       2       3       4       5       6       7       8       9
+CBEAM          1       2       3       4       5       6       7       8       9
+CBEAM3         1       2       3       4       5       6       7       8       9
+CBEND          1       2       3       4       5       6       7       8       9
+CBUSH          1       2       3       4       5       6       7       8       9

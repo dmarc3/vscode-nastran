@@ -1,0 +1,90 @@
+## [TICREG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICREG.xhtml) - Transient Initial Conditions of Eulerian Regions
+
+Defines the initial values sets for Eulerian regions. The Eulerian regions are defined by geometric shapes. Used in SOL 700 only.
+
+#### Format:
+
+```nastran
+$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$
+TICREG  TRID    TSID    TYPE    VID     MID     TSID    LEVEL                   
+```
+#### Example:
+
+```nastran
+$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$
+TICREG  300     200     SPHERE  400     100     3       4.0                     
+```
+TRID
+
+Unique TRID number. (Integer > 0; Required)
+
+TSID
+
+ID of group of Euler regions referenced from the TICEUL1 entry. (Integer > 0; Required)
+
+TYPE
+
+The type of Eulerian region. (Character; Required)
+
+SURF
+
+Region inside or outside a surface.
+
+SPHERE
+
+Region inside a sphere.
+
+CYLINDER
+
+Region inside a cylinder.
+
+BOX
+
+Region inside a box.
+
+ELEM
+
+Region defined by list of Euler elements.
+
+VID
+
+ID of a geometric entity. (Integer > 0; Required)
+
+Type:
+
+Region:
+
+SURF
+
+SURFINI
+
+SPHERE
+
+SPHERE
+
+CYLINDER
+
+CYLINDR
+
+BOX
+
+BCBOX
+
+ELEM
+
+SET1
+
+MID
+
+ID of a MATDEUL entry defining this material. (Integer > 0; Default = 0)
+
+TSID
+
+ID of a TICVAL entry containing a list of initial values for this material. (Integer > 0; Default = 0)
+
+LEVEL
+
+Level indicator for this material and initial values. (Real; Default = 0.0)
+
+--------------------
+
