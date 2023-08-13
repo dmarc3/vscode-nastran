@@ -170,11 +170,14 @@ def get_urls(driver):
         # "EXEC": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.Executive.Control2.xhtml",
         #     ],
-        "FMS": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
-            ],
+        # "FMS": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
+        #     ],
+        "DMAP": [
+            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/dmap/modules1/TOC.Detailed.Descriptions.of.xhtml",
+        ]
     }
-    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={})
+    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={}, DMAP={})
     for section in urls:
         for url in urls[section]:
             print(f"  Processing {section}")
@@ -188,6 +191,15 @@ def get_urls(driver):
             # Load bulk hyperlinks
             if section == "EXEC":
                 li = soup.find('ul', {"id": "MSCNastran20224-ExecutiveControlStatementDescriptions"}).find_all('li')
+                for link in li:
+                    if link.text in ['$', '/']:
+                        continue
+                    hyperlink = link.find('a')['href']
+                    card = link.text
+                    docs[section][card] = {}
+                    docs[section][card]['URL'] = URL+hyperlink
+            elif section == "DMAP":
+                li = soup.find('ul', {"id": "MSCNastran20224-DetailedDescriptionsofDMAPModulesandStatements"}).find_all('li')
                 for link in li:
                     if link.text in ['$', '/']:
                         continue
