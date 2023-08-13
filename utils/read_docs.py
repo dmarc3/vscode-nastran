@@ -1,5 +1,13 @@
 import os
-import json
+from glob import glob
+
+# Build section dict
+MSC_SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
+MSC_SECTION_KEY = {}
+for section in MSC_SECTIONS:
+    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
+    cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
+    MSC_SECTION_KEY[section] = cards
 
 def get_docs(card: str, section='', version='NASTRAN-95') -> str:
     """Retrieves documentation for given Nastran entry and specified section.
@@ -21,15 +29,14 @@ def get_docs(card: str, section='', version='NASTRAN-95') -> str:
         out = funcs[version](card, section)
     else:
         # If section not provided, search in this order till entry is found
-        for section in ["BULK", "CASE", "EXEC", "SUBS", "DMAP", "PLOT"]:
+        for section in ["FMS", "EXEC", "SUBS", "DMAP", "PLOT", "CASE", "BULK"]:
             out = funcs[version](card, section)
             if out:
                 break
     # If documentation found, convert to markdown otherwise return empty string
     if version == 'NASTRAN-95':
-        return convert_to_markdown(out) if out else out
-    else:
-        return out
+        out = convert_to_markdown(out) if out else out
+    return out
 
 def read_NASTRAN_95_docs(card: str, section: str) -> str:
     """Parse NASTRAN-95 documentation given Nastran entry and section.
@@ -46,7 +53,7 @@ def read_NASTRAN_95_docs(card: str, section: str) -> str:
     if card == "$":
         return ''
     # Read raw NASTRAN-95 documentation
-    with open(file=os.path.join("utils", "um", f"{section}.TXT"), mode="r") as f:
+    with open(file=os.path.join("utils", "docs", "NASTRAN-95", f"{section}.TXT"), mode="r") as f:
         lines = f.read()
     # Remove unknown characters
     lines = lines.replace("Ä","─")
@@ -86,19 +93,25 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     Returns:
         str: Documentation for Nastran entry
     """
-    with open(os.path.join('utils', 'MSC_Nastran_urls.json'), 'r') as f:
-        docs = json.load(f)
-    if '$' not in card:
-        if card in docs[section]:
-            url = docs[section][card]
-        else:
-            for sect in docs:
-                if card in docs[sect]:
-                    url = docs[sect][card]
-            if not url:
-                return f"No documentation found for {card}"
-        return f'Open documentation for [{card}]({url})'
-    return ''
+    out = ''
+    # No section
+    if section not in MSC_SECTION_KEY:
+        return out
+    # Search for full card name
+    filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
+    if os.path.exists(filename):
+        out = open(filename, 'r', encoding='utf-8').read()
+    # Search for partial card name
+    elif any([name for name in MSC_SECTION_KEY[section] if name.startswith(card)]):
+        for name in MSC_SECTION_KEY[section]:
+            if name.startswith(card) and '$' not in name:
+                card = name
+                break
+        filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
+        if os.path.exists(filename):
+            out = open(filename, 'r', encoding='utf-8').read()
+
+    return out
 
 def convert_to_markdown(lines: str) -> str:
     return f"```text\n{lines}```"

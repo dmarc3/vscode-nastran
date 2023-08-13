@@ -139,3 +139,6 @@ client/out/*
 
 # Resource Creation
 resources/*.pptx
+
+# Hover test bdf
+utils/test.bdf

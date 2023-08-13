@@ -1,5 +1,6 @@
 from typing import Optional
 import os
+from glob import glob
 
 from pygls.server import LanguageServer
 from lsprotocol.types import (
@@ -27,6 +28,14 @@ def determine_version() -> str:
 
 VERSION = determine_version()
 
+# Build section dict
+SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
+SECTION_KEY = {}
+for section in SECTIONS:
+    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
+    cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
+    SECTION_KEY[section] = cards
+
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
 
@@ -38,48 +47,50 @@ class NastranLanguageServer(LanguageServer):
 # Initialize server class
 server = NastranLanguageServer("NastranLanguageServer", "v0.1")
 
-def find_section(lines: list, section: str) -> Optional[int]:
-    """Finds line with given section divider token.
+def get_section_MSC_Nastran(line, lines):
+    # Determine index of current line
+    ind = lines.index(line)
+    # Strip to left of string
+    raw = line.lstrip()
+    if raw.startswith('$') and not raw.startswith('$S700'):
+        return ''
+    
+    # If special character detected, strip everything after that character
+    card = raw
+    for char in [",", "*", " ", "=", "\n", "("]:
+        if char in card:
+            card = card.split(char)[0].strip()
+    
+    # Determine relative position in file and return section if detected
+    CEND = [i for i, line in enumerate(lines) if 'CEND' in line]
+    CEND = 0 if not CEND else CEND[0]
+    BBULK = [i for i, line in enumerate(lines) if 'BEGIN BULK' in line]
+    BBULK = 0 if not BBULK else BBULK[0]
+    if CEND > 0 and BBULK > 0:
+        if ind <= CEND and any([name for name in SECTION_KEY['FMS'] if name.startswith(card)]):
+            return 'FMS'
+        elif ind <= CEND and any([name for name in SECTION_KEY['EXEC'] if name.startswith(card)]):
+            return 'EXEC'
+        elif ind > CEND and ind <= BBULK and any([name for name in SECTION_KEY['CASE'] if name.startswith(card)]):
+            return 'CASE'
+        elif ind > BBULK and card in SECTION_KEY['BULK']:
+            return 'BULK'
 
-    Args:
-        lines (list): List of all lines as strings in current file
-        section (str): Section divider token
+    # Test for raw line
+    for section, cards in SECTION_KEY.items():
+        if raw.strip() in cards:
+            return section
+   
+    # Catch any partial cards
+    for section, cards in SECTION_KEY.items():
+        if any([name for name in cards if name.startswith(card)]):
+            return section
 
-    Returns:
-        Optional[int]: Index of section divider if found otherwise None
-    """
-    ind = [i for i, line in enumerate(lines) if line.lstrip().upper().startswith(section)]
-    return ind[0] if ind else None
+    return ''
 
-def detect_section(line: int, ind: dict) -> str:
-    """Determines the section the provided line is in
-
-    Args:
-        line (int): Index of the current line
-        ind (dict): Dictionary containing all section divider indeces found
-
-    Returns:
-        str: Section the current line is in
-    """
-    # If CEND and BEGIN BULK exist in file, assume at least EXEC,
-    # CASE, and BULK sections exist.
-    if ind["CEND"] and ind["BEGIN BULK"]:
-        # Detect DMAP section
-        if ind["ALTER"] and ind["ENDALTER"]:
-            if line > ind["ALTER"] and line < ind["ENDALTER"]:
-                return "DMAP"
-        # Detect EXEC section
-        if line <= ind["CEND"]:
-            return "EXEC"
-        # Detect SUBS section
-        if ind["SUBSTRUCTURE"] and ind["ENDSUBS"]:
-            if line >= ind["SUBSTRUCTURE"] and line <= ind["ENDSUBS"]:
-                return "SUBS"
-        # Detect CASE section
-        if line <= ind["BEGIN BULK"] and line >= ind["CEND"]:
-            return "CASE"
-    # Assume BULK section
-    return "BULK"
+DETECT_SECTION = {
+    "MSC Nastran": get_section_MSC_Nastran,
+}
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -93,37 +104,26 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     """
     # Acquire current line
     doc = server.workspace.get_document(params.text_document.uri)
-    orig_line = doc.lines[params.position.line]
-    # Strip leading white space and grab first 8 characters
-    # TODO: Change logic such that it grabs more than 8 characters?
-    # card = orig_line.lstrip()[:8]
-    card = orig_line.lstrip().split()[0]
+    line = doc.lines[params.position.line]
+    # Strip leading white space
+    card = line.lstrip()
+
     # If special character detected, strip everything after that character
     for char in [",", "*", " ", "=", "\n", "("]:
         if char in card:
-            card = card.split(char)[0]
+            card = card.split(char)[0].strip()
     # If card is not blank and not a comment, find hover text
     if "$" not in card or card != "":
         # Only provide hover if cursor is near or on top of card
-        logic = (params.position.character >= orig_line.index(card))
-        logic = logic and (params.position.character  <= orig_line.index(card)+len(card))
+        logic = (params.position.character >= line.index(card))
+        logic = logic and (params.position.character  <= line.index(card)+len(card))
         if logic:
             # Find what section of Nastran file cursor is at
-            ind = {
-                "ID": find_section(doc.lines, "ID"),
-                "ALTER": find_section(doc.lines, "ALTER"),
-                "ENDALTER": find_section(doc.lines, "ENDALTER"),
-                "CEND": find_section(doc.lines, "CEND"),
-                "SUBSTRUCTURE": find_section(doc.lines, "SUBSTRUCTURE"),
-                "ENDSUBS": find_section(doc.lines, "ENDSUBS"),
-                "BEGIN BULK": find_section(doc.lines, "BEGIN BULK"),
-            }
-            section = detect_section(params.position.line, ind)
+            section = DETECT_SECTION[VERSION](line, doc.lines)
             # Calculate hover text
             hover_txt = get_docs(card, section=section, version=VERSION)
-            # if not hover_txt:
-            #     hover_txt = get_docs(card, version=VERSION)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
+            # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)
             return Hover(contents=contents)
     return None
 
@@ -151,20 +151,10 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
     last_start = 0
     data = []
     
-    # Find section designators
-    ind = {
-        "ID": find_section(doc.lines, "ID"),
-        "ALTER": find_section(doc.lines, "ALTER"),
-        "ENDALTER": find_section(doc.lines, "ENDALTER"),
-        "CEND": find_section(doc.lines, "CEND"),
-        "SUBSTRUCTURE": find_section(doc.lines, "SUBSTRUCTURE"),
-        "ENDSUBS": find_section(doc.lines, "ENDSUBS"),
-        "BEGIN BULK": find_section(doc.lines, "BEGIN BULK"),
-    }
     # For each line in the document...
     for lineno, line in enumerate(doc.lines):
         # Determine the section of current line
-        section = detect_section(lineno, ind)
+        section = DETECT_SECTION[VERSION](line, doc.lines)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
