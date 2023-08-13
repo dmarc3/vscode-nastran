@@ -1,3 +1,4 @@
 {
-  "python.defaultInterpreterPath": "python"
+  "python.defaultInterpreterPath": "python",
+  "fortran.fortls.disabled": true
 }

@@ -161,18 +161,18 @@ def get_urls(driver):
         dict: Dictionary containing URLs for all MSC Nastran cards per section
     """
     urls = {
-        'BULK': [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulk_data/bulk.data.xhtml#TOC_Bulk_Data_Entries"
-            ],
+        # 'BULK': [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulk_data/bulk.data.xhtml#TOC_Bulk_Data_Entries"
+        #     ],
         # "CASE": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.Case.Control.Commands1.xhtml",
         #     ],
         # "EXEC": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.Executive.Control2.xhtml",
         #     ],
-        # "FMS": [
-        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
-        #     ],
+        "FMS": [
+            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
+            ],
     }
     docs = dict(BULK={}, CASE={}, EXEC={}, FMS={})
     for section in urls:

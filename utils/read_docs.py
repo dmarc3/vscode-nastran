@@ -1,6 +1,13 @@
 import os
 from glob import glob
-import json
+
+# Build section dict
+MSC_SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
+MSC_SECTION_KEY = {}
+for section in MSC_SECTIONS:
+    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
+    cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
+    MSC_SECTION_KEY[section] = cards
 
 def get_docs(card: str, section='', version='NASTRAN-95') -> str:
     """Retrieves documentation for given Nastran entry and specified section.
@@ -22,45 +29,14 @@ def get_docs(card: str, section='', version='NASTRAN-95') -> str:
         out = funcs[version](card, section)
     else:
         # If section not provided, search in this order till entry is found
-        for section in ["BULK", "CASE", "EXEC", "SUBS", "DMAP", "PLOT"]:
+        for section in ["FMS", "EXEC", "SUBS", "DMAP", "PLOT", "CASE", "BULK"]:
             out = funcs[version](card, section)
             if out:
                 break
     # If documentation found, convert to markdown otherwise return empty string
     if version == 'NASTRAN-95':
-        return convert_to_markdown(out) if out else out
-    else:
-#         out = R"""<h1 id="sample-markdown">Sample Markdown</h1>
-# <p>This is some basic, sample markdown.</p>
-# <h2 id="second-heading">Second Heading</h2>
-# <ul>
-# <li>Unordered lists, and:<ol>
-# <li>One</li>
-# <li>Two</li>
-# <li>Three</li>
-# </ol>
-# </li>
-# <li>More</li>
-# </ul>
-# <blockquote>
-# <p>Blockquote</p>
-# </blockquote>
-# <p>And <strong>bold</strong>, <em>italics</em>, and even <em>italics and later <strong>bold</strong></em>. Even <del>strikethrough</del>. <a href="https://markdowntohtml.com">A link</a> to somewhere.</p>
-# <p>And code highlighting:</p>
-# <pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
-
-# <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baz</span><span class="hljs-params">(s)</span> </span>{
-#    <span class="hljs-keyword">return</span> foo + <span class="hljs-string">':'</span> + s;
-# }
-# </code></pre>
-# <p>Or inline code like <code>var foo = &#39;bar&#39;;</code>.</p>
-# <p>Or an image of bears</p>
-# <p><img src="http://placebear.com/200/200" alt="bears"></p>
-# <p>The end ...</p>
-# """
-#         import unmarkd
-#         out = unmarkd.unmark(out)
-        return out
+        out = convert_to_markdown(out) if out else out
+    return out
 
 def read_NASTRAN_95_docs(card: str, section: str) -> str:
     """Parse NASTRAN-95 documentation given Nastran entry and section.
@@ -77,7 +53,7 @@ def read_NASTRAN_95_docs(card: str, section: str) -> str:
     if card == "$":
         return ''
     # Read raw NASTRAN-95 documentation
-    with open(file=os.path.join("utils", "um", f"{section}.TXT"), mode="r") as f:
+    with open(file=os.path.join("utils", "docs", "NASTRAN-95", f"{section}.TXT"), mode="r") as f:
         lines = f.read()
     # Remove unknown characters
     lines = lines.replace("Ä","─")
@@ -117,16 +93,24 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     Returns:
         str: Documentation for Nastran entry
     """
-    filename = os.path.join('utils', 'docs', section, 'COMPLETE', card+'.md')
+    out = ''
+    # No section
+    if section not in MSC_SECTION_KEY:
+        return out
+    # Search for full card name
+    filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
     if os.path.exists(filename):
         out = open(filename, 'r', encoding='utf-8').read()
-    else:
-        filename = glob(os.path.join('utils', 'docs', section, 'COMPLETE', card+'*.md'))
-        if filename:
-            filename = filename[0]
+    # Search for partial card name
+    elif any([name for name in MSC_SECTION_KEY[section] if name.startswith(card)]):
+        for name in MSC_SECTION_KEY[section]:
+            if name.startswith(card) and '$' not in name:
+                card = name
+                break
+        filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
+        if os.path.exists(filename):
             out = open(filename, 'r', encoding='utf-8').read()
-        else:
-            out = ''
+
     return out
 
 def convert_to_markdown(lines: str) -> str:
