@@ -21,7 +21,7 @@
       {
         "id": "nastran",
         "aliases": [
-          "MSC Nastran",
+          "NASTRAN-95",
           "Nastran"
         ],
         "extensions": [
@@ -41,7 +41,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/MSC_Nastran.json"
+        "path": "./syntaxes/NASTRAN-95.json"
       }
     ],
     "views": {

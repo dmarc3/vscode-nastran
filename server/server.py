@@ -107,6 +107,7 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     line = doc.lines[params.position.line]
     # Strip leading white space
     card = line.lstrip()
+
     # If special character detected, strip everything after that character
     for char in [",", "*", " ", "=", "\n", "("]:
         if char in card:
