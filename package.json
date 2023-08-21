@@ -1,7 +1,7 @@
 {
   "name": "vscode-nastran",
   "displayName": "vscode-nastran",
-  "description": "Syntax highlighting and documentation support for Nastran",
+  "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
   "version": "0.1.0",
   "publisher": "mbakke",
@@ -21,14 +21,12 @@
       {
         "id": "nastran",
         "aliases": [
-          "NASTRAN-95",
+          "MSC Nastran",
           "Nastran"
         ],
         "extensions": [
           ".bdf",
-          ".dat",
-          ".nas",
-          ".inp"
+          ".dat"
         ],
         "icon": {
           "light": "./resources/light/logo.png",
@@ -41,7 +39,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/NASTRAN-95.json"
+        "path": "./syntaxes/MSC_Nastran.json"
       }
     ],
     "views": {
@@ -54,20 +52,12 @@
     },
     "commands": [
       {
-        "command": "version.MSC_Nastran",
-        "title": "Nastran: Set version to MSC Nastran."
-      },
-      {
-        "command": "version.NASTRAN-95",
-        "title": "Nastran: Set version to NASTRAN-95."
-      },
-      {
-        "command": "version.Simcenter_Nastran",
-        "title": "Nastran: Set version to Simcenter Nastran."
-      },
-      {
         "command": "find",
-        "title": "Nastran: Find all occurences."
+        "title": "Nastran: Find all occurences of substring."
+      },
+      {
+        "command": "tasks",
+        "title": "Nastran: Build tasks.json for Nastran execution."
       },
       {
         "command": "includeHierarchy.buildHierarchy",

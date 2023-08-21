@@ -69,31 +69,6 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () =>
         includeHierarchyProvider.refresh()
     );
-    vscode.commands.registerCommand('version.MSC_Nastran', () => {
-        const oldstr = findCurrentVersion()
-        const newstr = [
-            '"MSC Nastran",',
-            '"path": "./syntaxes/MSC_Nastran.json"'
-        ]
-        updatePackageJson(oldstr, newstr)
-        vscode.commands.executeCommand("workbench.action.reloadWindow")
-        }
-    );
-    vscode.commands.registerCommand('version.Simcenter_Nastran', () => {
-        // Do something to change grammar
-        vscode.commands.executeCommand("workbench.action.reloadWindow")
-        }
-    );
-    vscode.commands.registerCommand('version.NASTRAN-95', () => {
-        const oldstr = findCurrentVersion()
-        const newstr = [
-            '"NASTRAN-95",',
-            '"path": "./syntaxes/NASTRAN-95.json"'
-        ]
-        updatePackageJson(oldstr, newstr)
-        vscode.commands.executeCommand("workbench.action.reloadWindow")
-        }
-    );
     vscode.commands.registerCommand('find', () => {
         executeFind(includeHierarchyProvider.includes)
         }

@@ -17,17 +17,6 @@ from lsprotocol.types import (
 
 from utils.read_docs import get_docs
 
-def determine_version() -> str:
-    filename = os.path.join(os.path.dirname(__file__), '..', 'package.json')
-    with open(filename, 'r') as f:
-        lines = f.readlines()
-    for i, line in enumerate(lines):
-        if '"aliases": [' in line:
-            break
-    return lines[i+1].split('"')[1]
-
-VERSION = determine_version()
-
 # Build section dict
 SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
 SECTION_KEY = {}
@@ -47,7 +36,7 @@ class NastranLanguageServer(LanguageServer):
 # Initialize server class
 server = NastranLanguageServer("NastranLanguageServer", "v0.1")
 
-def get_section_MSC_Nastran(line, lines):
+def get_section(line, lines):
     # Determine index of current line
     ind = lines.index(line)
     # Strip to left of string
@@ -88,10 +77,6 @@ def get_section_MSC_Nastran(line, lines):
 
     return ''
 
-DETECT_SECTION = {
-    "MSC Nastran": get_section_MSC_Nastran,
-}
-
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
     """Hover provider
@@ -119,9 +104,9 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
         logic = logic and (params.position.character  <= line.index(card)+len(card))
         if logic:
             # Find what section of Nastran file cursor is at
-            section = DETECT_SECTION[VERSION](line, doc.lines)
+            section = get_section(line, doc.lines)
             # Calculate hover text
-            hover_txt = get_docs(card, section=section, version=VERSION)
+            hover_txt = get_docs(card, section=section)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
             # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)
             return Hover(contents=contents)
@@ -154,7 +139,7 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
     # For each line in the document...
     for lineno, line in enumerate(doc.lines):
         # Determine the section of current line
-        section = DETECT_SECTION[VERSION](line, doc.lines)
+        section = get_section(line, doc.lines)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
