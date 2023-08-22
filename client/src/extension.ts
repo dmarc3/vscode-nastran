@@ -2,10 +2,10 @@
 "use strict";
 
 import * as path from "path";
-import * as fs from 'fs';
 import * as vscode from "vscode";
 import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
+import { executeNastran, setKeywords, showKeywords } from "./execute";
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -73,33 +73,18 @@ export function activate(context: vscode.ExtensionContext): void {
         executeFind(includeHierarchyProvider.includes)
         }
     );
-}
-
-function updatePackageJson(oldstr, newstr): void {
-    // const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
-    const fileName = path.join(vscode.extensions.getExtension("mbakke.vscode-nastran").extensionPath, 'package.json')
-    var lines = fs.readFileSync(fileName).toString()
-    for(let i=0; i<oldstr.length; i++){
-        lines = lines.split(oldstr[i]).join(newstr[i])
-    }
-    fs.writeFileSync(fileName, lines)
-}
-
-function findCurrentVersion(): any {
-    const fileName = path.join(path.dirname(__filename), '..', '..', 'package.json')
-    var lines = fs.readFileSync(fileName).toString().split('\n')
-    var oldstr = []
-    // Alias name
-    for (var i=lines.length; i--;) {
-        if (lines[i].indexOf('        "aliases": [')>=0) break;
-    }
-    oldstr.push(lines[i+1].trim())
-    // Grammar name
-    for (var i=lines.length; i--;) {
-        if (lines[i].indexOf('"scopeName": "source.nastran",')>=0) break;
-    }
-    oldstr.push(lines[i+1].trim())
-    return oldstr
+    vscode.commands.registerCommand('execute', () => {
+        executeNastran(path.basename(vscode.window.activeTextEditor.document.fileName), context)
+        }
+    );
+    vscode.commands.registerCommand('set_keywords', () => {
+        setKeywords(context)
+        }
+    );
+    vscode.commands.registerCommand('show_keywords', () => {
+        showKeywords(context)
+        }
+    );
 }
 
 export function deactivate(): Thenable<void> {
