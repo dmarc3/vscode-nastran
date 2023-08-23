@@ -22,7 +22,10 @@ with open('test.bdf', 'w') as f:
     for file in glob(os.path.join('docs', 'MSC_Nastran', 'CASE', '*.md')):
         if 'CASE' in file and 'BEGIN BULK' in file:
             continue
-        f.write(os.path.basename(file).replace('.md', '') + '\n')
+        if os.path.basename(file).startswith('END'):
+            f.write(os.path.basename(file).replace('.md', '') + '\n')
+        else:
+            f.write(os.path.basename(file).replace('.md', '') + '=n\n')
     f.write('BEGIN BULK\n')
     # BULK
     for file in glob(os.path.join('docs', 'MSC_Nastran', 'BULK', '*.md')):
