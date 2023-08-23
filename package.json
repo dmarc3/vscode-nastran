@@ -56,8 +56,16 @@
         "title": "Nastran: Find all occurences of substring."
       },
       {
-        "command": "tasks",
-        "title": "Nastran: Build tasks.json for Nastran execution."
+        "command": "execute",
+        "title": "Nastran: Execute model."
+      },
+      {
+        "command": "set_keywords",
+        "title": "Nastran: Set execution keywords."
+      },
+      {
+        "command": "show_keywords",
+        "title": "Nastran: Show execution keywords."
       },
       {
         "command": "includeHierarchy.buildHierarchy",
@@ -73,6 +81,11 @@
         "command": "find",
         "key": "alt+f",
         "mac": "alt+f"
+      },
+      {
+        "command": "execute",
+        "key": "f5",
+        "mac": "f5"
       }
     ],
     "menus": {

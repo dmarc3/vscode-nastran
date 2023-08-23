@@ -10,7 +10,7 @@ Selects a set of submodels for which free body loads are to be produced and stor
 
 ```nastran
 FBODYLD=ALL 
-FOBDYLD(100)=WINGLD 
+FBODYLD(100)=WINGLD 
 FBODYLD(200)=WINGLD,TAILLD
 ```
 
