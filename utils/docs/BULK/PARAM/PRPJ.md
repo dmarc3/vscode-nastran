@@ -1,0 +1,4 @@
+## [PRPJ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PRPJ.xhtml)
+
+PRPA and PRPJ control the printout of intermediate load matrices for diagnostic purposes during superelement assembly.  If the value of PRPA (or PRPJ) is positive, all terms larger in magnitude than the value are printed.  If the value of PRPA (or PRPJ) is negative, all terms smaller in magnitude than the value are printed.  The default value requests no printout.  PARAM,IRES,1 must be present for these parameters to be effective.  The PA matrix contains the internal loads transmitted to the downstream superelement.  The PJ matrix contains external loads applied on the superelement; that is, it has the same content as the data produced by the Case Control command OLOAD.  All of this data may be obtained on restart using the SELR Case Control command option.  A related parameter is IRES.
+

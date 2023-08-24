@@ -21,7 +21,7 @@ from utils.read_docs import get_docs
 SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
 SECTION_KEY = {}
 for section in SECTIONS:
-    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
+    files = glob(os.path.join('utils', 'docs', section, '*.md'))
     cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
     SECTION_KEY[section] = cards
 
@@ -94,9 +94,21 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     card = line.lstrip()
 
     # If special character detected, strip everything after that character
-    for char in [",", "*", " ", "=", "\n", "("]:
-        if char in card:
-            card = card.split(char)[0].strip()
+    if card.lower().startswith('param'):
+        if ',' in card:
+            card = card.split(',')
+        elif ' ' in card:
+            card = card.split(' ')
+        ind = 0
+        count = 0
+        while count < params.position.character:
+            count += len(card[ind])
+            ind += 1
+        card = card[ind-1]
+    else:
+        for char in [",", "*", " ", "=", "\n", "("]:
+            if char in card:
+                card = card.split(char)[0].strip()
     # If card is not blank and not a comment, find hover text
     if "$" not in card or card != "":
         # Only provide hover if cursor is near or on top of card
@@ -108,6 +120,7 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
             # Calculate hover text
             hover_txt = get_docs(card, section=section)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
+            # contents = MarkupContent(kind=MarkupKind.Markdown, value=card)
             # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)
             return Hover(contents=contents)
     return None

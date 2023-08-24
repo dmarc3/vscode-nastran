@@ -101,14 +101,18 @@ def process_url(docs, driver):
                     # print(str(tag)+'\n')
                     # Process header
                     if 'FM_hheader' in str(tag):
-                        for p in tag.find_all("p"):
-                            if p.get('class')[0] == "FM_hheader":
-                                out += f"## [{p.text}]({docs[section][card]['URL']}) - "
-                            if p.get('class')[0] == 'FM_hheadersub':
-                                out += p.text + '\n\n'
-                            if p.get('class')[0] == 'FM_body':
-                                out += p.text + '\n\n'
-                                out += '--------------------\n\n'
+                        if section == 'PARAM':
+                            out += f"## [{tag.text}]({docs[section][card]['URL']})"
+                            out += '\n\n'
+                        else:
+                            for p in tag.find_all("p"):
+                                if p.get('class')[0] == "FM_hheader":
+                                    out += f"## [{p.text}]({docs[section][card]['URL']}) - "
+                                if p.get('class')[0] == 'FM_hheadersub':
+                                    out += p.text + '\n\n'
+                                if p.get('class')[0] == 'FM_body':
+                                    out += p.text + '\n\n'
+                                    out += '--------------------\n\n'
                     # Process p tags
                     elif tag.name == 'p':
                         out += process_descendants(tag)
@@ -173,11 +177,15 @@ def get_urls(driver):
         # "FMS": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.File.Management3.xhtml",
         #     ],
-        "DMAP": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/dmap/modules1/TOC.Detailed.Descriptions.of.xhtml",
+        # "DMAP": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/dmap/modules1/TOC.Detailed.Descriptions.of.xhtml",
+        # ],
+        "PARAM": [
+            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/parameters.xhtml",
+            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.Parameter.Descriptions.xhtml",
         ]
     }
-    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={}, DMAP={})
+    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={}, DMAP={}, PARAM={})
     for section in urls:
         for url in urls[section]:
             print(f"  Processing {section}")
@@ -200,6 +208,15 @@ def get_urls(driver):
                     docs[section][card]['URL'] = URL+hyperlink
             elif section == "DMAP":
                 li = soup.find('ul', {"id": "MSCNastran20224-DetailedDescriptionsofDMAPModulesandStatements"}).find_all('li')
+                for link in li:
+                    if link.text in ['$', '/']:
+                        continue
+                    hyperlink = link.find('a')['href']
+                    card = link.text
+                    docs[section][card] = {}
+                    docs[section][card]['URL'] = URL+hyperlink
+            elif section == "PARAM":
+                li = soup.find('ul', {"id": "MSCNastran20224-ParameterDescriptions"}).find_all('li')
                 for link in li:
                     if link.text in ['$', '/']:
                         continue

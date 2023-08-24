@@ -3,23 +3,24 @@ from glob import glob
 import ipdb
 
 folders = [
-    os.path.join('docs', 'MSC_Nastran', 'FMS'),
-    os.path.join('docs', 'MSC_Nastran', 'EXEC'),
-    os.path.join('docs', 'MSC_Nastran', 'CASE'),
-    os.path.join('docs', 'MSC_Nastran', 'BULK'),
+    os.path.join('docs', 'FMS'),
+    os.path.join('docs', 'EXEC'),
+    os.path.join('docs', 'CASE'),
+    os.path.join('docs', 'BULK', 'PARAM'),
+    os.path.join('docs', 'BULK'),
 ]
 with open('test.bdf', 'w') as f:
     # FMS
-    for file in glob(os.path.join('docs', 'MSC_Nastran', 'FMS', '*.md')):
+    for file in glob(os.path.join('docs', 'FMS', '*.md')):
         f.write(os.path.basename(file).replace('.md', '') + '\n')
     # EXEC
-    for file in glob(os.path.join('docs', 'MSC_Nastran', 'EXEC', '*.md')):
+    for file in glob(os.path.join('docs', 'EXEC', '*.md')):
         if 'CEND' in file:
             continue
         f.write(os.path.basename(file).replace('.md', '') + '\n')
     f.write('CEND\n')
     # CASE
-    for file in glob(os.path.join('docs', 'MSC_Nastran', 'CASE', '*.md')):
+    for file in glob(os.path.join('docs', 'CASE', '*.md')):
         if 'CASE' in file and 'BEGIN BULK' in file:
             continue
         if os.path.basename(file).startswith('END'):
@@ -27,8 +28,11 @@ with open('test.bdf', 'w') as f:
         else:
             f.write(os.path.basename(file).replace('.md', '') + '=n\n')
     f.write('BEGIN BULK\n')
+    # PARAM
+    for file in glob(os.path.join('docs', 'BULK', 'PARAM', '*.md')):
+        f.write('PARAM,'+os.path.basename(file).replace('.md', '') + ',n\n')
     # BULK
-    for file in glob(os.path.join('docs', 'MSC_Nastran', 'BULK', '*.md')):
+    for file in glob(os.path.join('docs', 'BULK', '*.md')):
         f.write(os.path.basename(file).replace('.md', '').ljust(8) + ''.join([str(i).rjust(8) for i in range(1, 10)]) + '\n')
     
         

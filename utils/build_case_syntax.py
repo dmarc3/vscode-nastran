@@ -3,7 +3,7 @@ from glob import glob
 import subprocess
 import ipdb
 
-folder = 'docs/MSC_Nastran/CASE/'
+folder = 'docs/CASE/'
 # Get all case control cards and sort
 cards = []
 for file in glob(folder + '*.md'):
