@@ -5,7 +5,9 @@ from glob import glob
 MSC_SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
 MSC_SECTION_KEY = {}
 for section in MSC_SECTIONS:
-    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
+    files = glob(os.path.join('utils', 'docs', section, '*.md'))
+    if section == 'BULK':
+        files += glob(os.path.join('utils', 'docs', section, 'PARAM', '*.md'))
     cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
     MSC_SECTION_KEY[section] = cards
 
@@ -47,16 +49,20 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
     if section not in MSC_SECTION_KEY:
         return out
     # Search for full card name
-    filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
+    filename = os.path.join('utils', 'docs', section, card+'.md')
     if os.path.exists(filename):
         out = open(filename, 'r', encoding='utf-8').read()
+    elif section == 'BULK':
+        filename = os.path.join('utils', 'docs', section, 'PARAM', card+'.md')
+        if os.path.exists(filename):
+            out = open(filename, 'r', encoding='utf-8').read()
     # Search for partial card name
     elif any([name for name in MSC_SECTION_KEY[section] if name.startswith(card)]):
         for name in MSC_SECTION_KEY[section]:
             if name.startswith(card) and '$' not in name:
                 card = name
                 break
-        filename = os.path.join('utils', 'docs', 'MSC_Nastran', section, card+'.md')
+        filename = os.path.join('utils', 'docs', section, card+'.md')
         if os.path.exists(filename):
             out = open(filename, 'r', encoding='utf-8').read()
 

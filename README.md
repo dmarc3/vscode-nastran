@@ -52,8 +52,8 @@ Currently supported features include:
 ![](./resources/find_command.gif)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
-- Add documentation hover support for `PARAM`
-- Add documentation hover support for `DMAP`
+- Add documentation hover support for `PLOT` section
+- Add documentation hover support for `DMAP` section
 - Interactive plot view of 3D model highlighting currently selected element / grid  / etc.
 
 If you have an idea for a feature, please create an issue and flag it as a `Feature Request`.
