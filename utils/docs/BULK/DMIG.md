@@ -6,7 +6,7 @@ Defines direct input matrices related to grid, extra, and/or scalar points. The 
 
 ```nastran
 $---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$
-DMIG    NAME    “0"     IFO     TIN     TOUT    POLAR           NCOL            
+DMIG    NAME    "0"     IFO     TIN     TOUT    POLAR           NCOL            
 ```
 
 #### Column Entry Format:

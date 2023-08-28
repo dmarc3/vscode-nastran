@@ -39,7 +39,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/MSC_Nastran.json"
+        "path": "./syntaxes/nastran.json"
       }
     ],
     "views": {
