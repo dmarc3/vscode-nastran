@@ -84,8 +84,8 @@
       },
       {
         "command": "execute",
-        "key": "f5",
-        "mac": "f5"
+        "key": "f6",
+        "mac": "f6"
       }
     ],
     "menus": {

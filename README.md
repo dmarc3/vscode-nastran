@@ -53,7 +53,7 @@ Currently supported features include:
     &nbsp;
     ![Find All Example](./resources/find_command.gif)
 
-5. `Nastran` execution command (keybound to `F5`)
+5. `Nastran` execution command (keybound to `F6`)
     - `Nastran` [keyword arguments](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
 
     &nbsp;
