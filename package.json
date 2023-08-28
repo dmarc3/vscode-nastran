@@ -1,7 +1,7 @@
 {
   "name": "vscode-nastran",
   "displayName": "vscode-nastran",
-  "description": "Syntax highlighting and documentation support for Nastran",
+  "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
   "version": "0.1.0",
   "publisher": "mbakke",
@@ -26,9 +26,7 @@
         ],
         "extensions": [
           ".bdf",
-          ".dat",
-          ".nas",
-          ".inp"
+          ".dat"
         ],
         "icon": {
           "light": "./resources/light/logo.png",
@@ -41,7 +39,7 @@
       {
         "language": "nastran",
         "scopeName": "source.nastran",
-        "path": "./syntaxes/MSC_Nastran.json"
+        "path": "./syntaxes/nastran.json"
       }
     ],
     "views": {
@@ -54,24 +52,40 @@
     },
     "commands": [
       {
-        "command": "version.MSC_Nastran",
-        "title": "Nastran: Set version to MSC Nastran."
+        "command": "find",
+        "title": "Nastran: Find all occurences of substring."
       },
       {
-        "command": "version.NASTRAN-95",
-        "title": "Nastran: Set version to NASTRAN-95."
+        "command": "execute",
+        "title": "Nastran: Execute model."
       },
       {
-        "command": "version.Simcenter_Nastran",
-        "title": "Nastran: Set version to Simcenter Nastran."
+        "command": "set_keywords",
+        "title": "Nastran: Set execution keywords."
+      },
+      {
+        "command": "show_keywords",
+        "title": "Nastran: Show execution keywords."
       },
       {
         "command": "includeHierarchy.buildHierarchy",
         "title": "Nastran: Build include tree hierarchy.",
         "icon": {
-            "light": "resources/light/refresh.svg",
-            "dark": "resources/dark/refresh.svg"
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
         }
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "find",
+        "key": "alt+f",
+        "mac": "alt+f"
+      },
+      {
+        "command": "execute",
+        "key": "f5",
+        "mac": "f5"
       }
     ],
     "menus": {
@@ -109,14 +123,28 @@
         "id": "dmap",
         "superType": "string",
         "description": "Direct Matrix Abstraction Program."
+      },
+      {
+        "id": "file",
+        "superType": "invalid",
+        "description": "Filesystem links."
       }
     ],
     "semanticTokenScopes": [
       {
-        "scopes":{
-          "field": ["punctuation.definition.tag"],
-          "subs": ["markup.inserted"],
-          "dmap": ["constant.regexp"]
+        "scopes": {
+          "field": [
+            "punctuation.definition.tag"
+          ],
+          "subs": [
+            "markup.inserted"
+          ],
+          "dmap": [
+            "constant.regexp"
+          ],
+          "file": [
+            "variable.css"
+          ]
         }
       }
     ]
