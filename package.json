@@ -3,7 +3,7 @@
   "displayName": "vscode-nastran",
   "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "mbakke",
   "repository": {
     "type": "git",
