@@ -45,10 +45,14 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                         line = line.split('"')[1]
                     }
                     const fileName = path.join(path.dirname(element.origin), line)
-                    if (this.hasIncludes(fileName)) {
-                        includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                    if (fs.existsSync(fileName)) {
+                        if (this.hasIncludes(fileName)) {
+                            includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                        } else {
+                            includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                        }
                     } else {
-                        includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                        includes.push(new MissIncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
                     }
                 }
             }
@@ -84,3 +88,23 @@ class IncludeFile extends vscode.TreeItem {
       dark: path.join(__filename, '..', '..', '..', 'resources', 'dark', 'mesh.png')
     };
   }
+
+class MissIncludeFile extends vscode.TreeItem {
+constructor(
+    public readonly label: string,
+    public readonly collapsibleState: vscode.TreeItemCollapsibleState,
+    public readonly origin: string
+) {
+    super(label, collapsibleState);
+    this.origin = this.origin;
+}
+command = {
+    "title": "Open Include File",
+    "command": "vscode.open",
+    "arguments": []
+}
+iconPath = {
+    light: path.join(__filename, '..', '..', '..', 'resources', 'light', 'mesh_missing.png'),
+    dark: path.join(__filename, '..', '..', '..', 'resources', 'dark', 'mesh_missing.png')
+};
+}

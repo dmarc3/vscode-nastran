@@ -1,6 +1,7 @@
 from typing import Optional
+import re
+import json
 import os
-from glob import glob
 
 from pygls.server import LanguageServer
 from lsprotocol.types import (
@@ -15,26 +16,14 @@ from lsprotocol.types import (
     SemanticTokens,
 )
 
-from utils.read_docs import get_docs
+# Read regex strings from syntax
+REGEX_KEY = {}
+with open(os.path.join('syntaxes', 'nastran.json')) as f:
+    d = json.load(f)
+for key in d['repository'].keys():
+    REGEX_KEY[key.upper()] = d['repository'][key]['match']
 
-def determine_version() -> str:
-    filename = os.path.join(os.path.dirname(__file__), '..', 'package.json')
-    with open(filename, 'r') as f:
-        lines = f.readlines()
-    for i, line in enumerate(lines):
-        if '"aliases": [' in line:
-            break
-    return lines[i+1].split('"')[1]
-
-VERSION = determine_version()
-
-# Build section dict
-SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
-SECTION_KEY = {}
-for section in SECTIONS:
-    files = glob(os.path.join('utils', 'docs', 'MSC_Nastran', section, '*.md'))
-    cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
-    SECTION_KEY[section] = cards
+from utils.read_docs import get_docs, SECTION_KEY
 
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
@@ -47,11 +36,13 @@ class NastranLanguageServer(LanguageServer):
 # Initialize server class
 server = NastranLanguageServer("NastranLanguageServer", "v0.1")
 
-def get_section_MSC_Nastran(line, lines):
+def get_section(line, lines) -> str:
     # Determine index of current line
     ind = lines.index(line)
     # Strip to left of string
     raw = line.lstrip()
+    if raw.startswith('*'):
+        return 'BULK'
     if raw.startswith('$') and not raw.startswith('$S700'):
         return ''
     
@@ -86,11 +77,7 @@ def get_section_MSC_Nastran(line, lines):
         if any([name for name in cards if name.startswith(card)]):
             return section
 
-    return ''
-
-DETECT_SECTION = {
-    "MSC Nastran": get_section_MSC_Nastran,
-}
+    return 'BULK'
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -105,24 +92,48 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     # Acquire current line
     doc = server.workspace.get_document(params.text_document.uri)
     line = doc.lines[params.position.line]
-    # Strip leading white space
-    card = line.lstrip()
-
-    # If special character detected, strip everything after that character
-    for char in [",", "*", " ", "=", "\n", "("]:
-        if char in card:
-            card = card.split(char)[0].strip()
+    # Find what section of Nastran file cursor is at
+    section = get_section(line, doc.lines)
+    if not section:
+        return None
+    # Execute regex search
+    if section == 'BULK' and 'param' in line.lstrip().lower():
+        # Process PARAM
+        logic = (params.position.character >= line.lower().index('param')) and (params.position.character <= line.lower().index('param')+len('param'))
+        if logic:
+            card = re.match(REGEX_KEY[section], line)
+            if card:
+                card = card.groups()[0]
+                if not card:
+                    card = ''
+            else:
+                card = ''
+        else:
+            card = re.search(REGEX_KEY['PARAM'], line)
+            if card:
+                card = card.groups()[0]
+                if not card:
+                    card = ''
+            else:
+                card = ''
+    else:
+        card = re.match(REGEX_KEY[section], line)
+        if card:
+            card = card.groups()[0]
+            if not card:
+                card = ''
+        else:
+            card = ''
+    # Calculate hover text
+    hover_txt = get_docs(card, section=section)
     # If card is not blank and not a comment, find hover text
-    if "$" not in card or card != "":
+    if "$" not in line or line != "":
         # Only provide hover if cursor is near or on top of card
         logic = (params.position.character >= line.index(card))
         logic = logic and (params.position.character  <= line.index(card)+len(card))
         if logic:
-            # Find what section of Nastran file cursor is at
-            section = DETECT_SECTION[VERSION](line, doc.lines)
-            # Calculate hover text
-            hover_txt = get_docs(card, section=section, version=VERSION)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
+            # contents = MarkupContent(kind=MarkupKind.Markdown, value=card)
             # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)
             return Hover(contents=contents)
     return None
@@ -154,13 +165,21 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
     # For each line in the document...
     for lineno, line in enumerate(doc.lines):
         # Determine the section of current line
-        section = DETECT_SECTION[VERSION](line, doc.lines)
+        section = get_section(line, doc.lines)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
         if section == "BULK" and not line.lstrip().startswith('$') and "," not in line and "'" not in line and '\t' not in line:
-            # Determine if long or short format
-            n = 16 if "*" in line else 8
+            # Determine long or short field
+            if line.startswith('*'):
+                count = 1
+                parent = doc.lines[lineno-count]
+                while parent.startswith('*'):
+                    count += 1
+                    parent = doc.lines[lineno-count]
+                n = 16 if "*" in parent else 8
+            else:
+                n = 16 if "*" in line else 8
             # Split the line by fields
             bulk_line_end = len(line) if len(line)<108 else 108
             if '$' in line:
@@ -194,25 +213,6 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
             last_line = lineno
             last_start = start
                 
-        # Process the SUBSTRUCTURE section
-        if section == "SUBS":
-            # Skip ENDSUBS and SUBTRUCTURE cards
-            if "ENDSUBS" not in line and "SUBSTRUCTURE" not in line:
-                # Find start of SUBTRUCTURE card
-                start = len(line) - len(line.lstrip())
-                # Find end of SUBTRUCTURE card
-                end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
-                # Save SemanticToken data
-                data += [
-                    (lineno - last_line),
-                    (start - last_start),
-                    (end - start),
-                    1,
-                    0
-                ]
-                last_line = lineno
-                last_start = start
-        
         # Process DMAP section
         if section == "DMAP":
             # Skip comments and ALTER lines

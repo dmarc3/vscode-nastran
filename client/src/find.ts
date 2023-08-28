@@ -34,7 +34,7 @@ export function find(str, includes) {
                 if (!(include in found)) {
                     found[include] = []
                 }
-                found[include].push([line, lineno])
+                found[include].push([line.replace(/[\n\r]+/g, ''), lineno])
             } 
         }
     }
