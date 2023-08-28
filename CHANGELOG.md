@@ -2,8 +2,18 @@
 
 All notable changes to the "nastran" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.0] - 2023-08-28
 
-## [Unreleased]
+### Added
 
-- Initial release
+- Syntax highlighting and documentation hover support for:
+  - Nastran keyword
+  - Section dividers
+  - File Management
+  - Executive Control
+  - Case Control
+  - Bulk Data
+  - Parameters
+- Include file hierarchy tree view for easy navigation of model
+- "Find All" command for performing search through entire model
+- Nastran execution command

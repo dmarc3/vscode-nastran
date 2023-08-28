@@ -136,7 +136,7 @@
             {
                 "1":
                 {
-                    "name": "markup.inserted.subs.nastran"
+                    "name": "markup.inserted.fms.nastran"
                 }
             },
             "match": "^\\s*(?i)(RESTART|PROJ|MEMLIST|INIT|INCLUDE|EXPAND|DEFINE|DBUPDATE|DBUNLOAD|DBSETDEL|DBLOCATE|DBLOAD|DBFIX|DBDIR|DBDICT|DBCLEAN|CONNECT|ASSIGN|ACQUIRE)"
