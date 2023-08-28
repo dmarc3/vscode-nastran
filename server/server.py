@@ -1,7 +1,7 @@
 from typing import Optional
-import re, json
+import re
+import json
 import os
-from glob import glob
 
 from pygls.server import LanguageServer
 from lsprotocol.types import (
@@ -41,6 +41,8 @@ def get_section(line, lines) -> str:
     ind = lines.index(line)
     # Strip to left of string
     raw = line.lstrip()
+    if raw.startswith('*'):
+        return 'BULK'
     if raw.startswith('$') and not raw.startswith('$S700'):
         return ''
     
@@ -75,7 +77,7 @@ def get_section(line, lines) -> str:
         if any([name for name in cards if name.startswith(card)]):
             return section
 
-    return ''
+    return 'BULK'
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -168,8 +170,16 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
         if section == "BULK" and not line.lstrip().startswith('$') and "," not in line and "'" not in line and '\t' not in line:
-            # Determine if long or short format
-            n = 16 if "*" in line else 8
+            # Determine long or short field
+            if line.startswith('*'):
+                count = 1
+                parent = doc.lines[lineno-count]
+                while parent.startswith('*'):
+                    count += 1
+                    parent = doc.lines[lineno-count]
+                n = 16 if "*" in parent else 8
+            else:
+                n = 16 if "*" in line else 8
             # Split the line by fields
             bulk_line_end = len(line) if len(line)<108 else 108
             if '$' in line:
@@ -203,25 +213,6 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
             last_line = lineno
             last_start = start
                 
-        # Process the SUBSTRUCTURE section
-        if section == "SUBS":
-            # Skip ENDSUBS and SUBTRUCTURE cards
-            if "ENDSUBS" not in line and "SUBSTRUCTURE" not in line:
-                # Find start of SUBTRUCTURE card
-                start = len(line) - len(line.lstrip())
-                # Find end of SUBTRUCTURE card
-                end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
-                # Save SemanticToken data
-                data += [
-                    (lineno - last_line),
-                    (start - last_start),
-                    (end - start),
-                    1,
-                    0
-                ]
-                last_line = lineno
-                last_start = start
-        
         # Process DMAP section
         if section == "DMAP":
             # Skip comments and ALTER lines
