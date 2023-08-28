@@ -1,4 +1,5 @@
 from typing import Optional
+import re, json
 import os
 from glob import glob
 
@@ -15,15 +16,14 @@ from lsprotocol.types import (
     SemanticTokens,
 )
 
-from utils.read_docs import get_docs
+# Read regex strings from syntax
+REGEX_KEY = {}
+with open(os.path.join('syntaxes', 'nastran.json')) as f:
+    d = json.load(f)
+for key in d['repository'].keys():
+    REGEX_KEY[key.upper()] = d['repository'][key]['match']
 
-# Build section dict
-SECTIONS = ['FMS', 'EXEC', 'CASE', 'BULK']
-SECTION_KEY = {}
-for section in SECTIONS:
-    files = glob(os.path.join('utils', 'docs', section, '*.md'))
-    cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
-    SECTION_KEY[section] = cards
+from utils.read_docs import get_docs, SECTION_KEY
 
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
@@ -36,7 +36,7 @@ class NastranLanguageServer(LanguageServer):
 # Initialize server class
 server = NastranLanguageServer("NastranLanguageServer", "v0.1")
 
-def get_section(line, lines):
+def get_section(line, lines) -> str:
     # Determine index of current line
     ind = lines.index(line)
     # Strip to left of string
@@ -90,35 +90,46 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     # Acquire current line
     doc = server.workspace.get_document(params.text_document.uri)
     line = doc.lines[params.position.line]
-    # Strip leading white space
-    card = line.lstrip()
-
-    # If special character detected, strip everything after that character
-    if card.lower().startswith('param'):
-        if ',' in card:
-            card = card.split(',')
-        elif ' ' in card:
-            card = card.split(' ')
-        ind = 0
-        count = 0
-        while count < params.position.character:
-            count += len(card[ind])
-            ind += 1
-        card = card[ind-1]
+    # Find what section of Nastran file cursor is at
+    section = get_section(line, doc.lines)
+    if not section:
+        return None
+    # Execute regex search
+    if section == 'BULK' and 'param' in line.lstrip().lower():
+        # Process PARAM
+        logic = (params.position.character >= line.lower().index('param')) and (params.position.character <= line.lower().index('param')+len('param'))
+        if logic:
+            card = re.match(REGEX_KEY[section], line)
+            if card:
+                card = card.groups()[0]
+                if not card:
+                    card = ''
+            else:
+                card = ''
+        else:
+            card = re.search(REGEX_KEY['PARAM'], line)
+            if card:
+                card = card.groups()[0]
+                if not card:
+                    card = ''
+            else:
+                card = ''
     else:
-        for char in [",", "*", " ", "=", "\n", "("]:
-            if char in card:
-                card = card.split(char)[0].strip()
+        card = re.match(REGEX_KEY[section], line)
+        if card:
+            card = card.groups()[0]
+            if not card:
+                card = ''
+        else:
+            card = ''
+    # Calculate hover text
+    hover_txt = get_docs(card, section=section)
     # If card is not blank and not a comment, find hover text
-    if "$" not in card or card != "":
+    if "$" not in line or line != "":
         # Only provide hover if cursor is near or on top of card
         logic = (params.position.character >= line.index(card))
         logic = logic and (params.position.character  <= line.index(card)+len(card))
         if logic:
-            # Find what section of Nastran file cursor is at
-            section = get_section(line, doc.lines)
-            # Calculate hover text
-            hover_txt = get_docs(card, section=section)
             contents = MarkupContent(kind=MarkupKind.Markdown, value=hover_txt)
             # contents = MarkupContent(kind=MarkupKind.Markdown, value=card)
             # contents = MarkupContent(kind=MarkupKind.Markdown, value=section)

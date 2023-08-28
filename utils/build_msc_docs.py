@@ -147,7 +147,7 @@ def process_url(docs, driver):
                 docs[section][card]['MARKDOWN'] = out
                 if '*' in card:
                     card = card.replace('*', '')
-                with open(os.path.join('docs', section, card+'.md'), 'w', encoding='utf-8') as f:
+                with open(os.path.join('docs', 'tmp', section, card+'.md'), 'w', encoding='utf-8') as f:
                     f.write(out)
                 end = time()
                 print(f"  Processing {card}...".ljust(30) + "Completed in " + f"{(end-start):.2f}".rjust(5) + " seconds!")
@@ -180,12 +180,16 @@ def get_urls(driver):
         # "DMAP": [
         #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/dmap/modules1/TOC.Detailed.Descriptions.of.xhtml",
         # ],
-        "PARAM": [
-            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/parameters.xhtml",
-            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.Parameter.Descriptions.xhtml",
-        ]
+        # "PARAM": [
+        #     "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/parameters.xhtml",
+        # ],
+        "PLOT": [
+            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.X.Y.Output.Command.xhtml",
+            # "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.OUTPUT.POST.Commands.xhtml",
+            "https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/casecontrol4b.xhtml",
+        ],
     }
-    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={}, DMAP={}, PARAM={})
+    docs = dict(BULK={}, CASE={}, EXEC={}, FMS={}, DMAP={}, PARAM={}, PLOT={})
     for section in urls:
         for url in urls[section]:
             print(f"  Processing {section}")
@@ -224,6 +228,22 @@ def get_urls(driver):
                     card = link.text
                     docs[section][card] = {}
                     docs[section][card]['URL'] = URL+hyperlink
+            elif section == "PLOT":
+                search_str = [
+                    # "MSCNastran20224-XYOutputCommandSummary",
+                    # "MSCNastran20224-OUTPUTPOSTCommands",
+                    "MSCNastran20224-OUTPUTPLOTCommands",
+                ]
+                for search in search_str:
+                    print(search)
+                    li = soup.find('ul', {"id": search}).find_all('li')
+                    for link in li:
+                        if link.text in ['$', '/']:
+                            continue
+                        hyperlink = link.find('a')['href']
+                        card = link.text
+                        docs[section][card] = {}
+                        docs[section][card]['URL'] = URL+hyperlink
             elif section == "BULK":
                 suburls = [
                     "MSCNastran20224-EntriesAB",
