@@ -1,4 +1,4 @@
-## [BCMOVE ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCMOVE.xhtml) - Movement of Bodies in Contact
+## [BCMOVE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCMOVE.xhtml) - Movement of Bodies in Contact
 
 Defines movement of bodies in contact used in SOL 101 and SOL 400.
 
