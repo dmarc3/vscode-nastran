@@ -1,4 +1,4 @@
-## [MATTF ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTF.xhtml) - Material Failure Model Temperature Variation
+## [MATTF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTF.xhtml) - Material Failure Model Temperature Variation
 
 Describes the temperature, strain rate, or other type of variation of material failure properties used in conjunction with MATF in SOL 400.
 

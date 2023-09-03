@@ -1,4 +1,4 @@
-## [BCMATL ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCMATL.xhtml) - 3D Contact Region by Element Materials
+## [BCMATL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCMATL.xhtml) - 3D Contact Region by Element Materials
 
 Defines a 3D contact region by element material. All elements with the specified materials define a contact body used in SOL 700.
 

@@ -1,4 +1,4 @@
-## [MATF ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATF.xhtml) - Material Failure Model
+## [MATF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATF.xhtml) - Material Failure Model
 
 Specifies failure model properties for linear elastic materials to be used for static, quasi static or transient dynamic analysis. Up to three criteria may be specified for each material. For progressive failure (ITYPE=2) only the first criterion will contribute to failure. The other two, if specified, will only provide output of failure index. SOL 400 (only with extended property entries), and all linear solution sequences between SOL101 and SOL112 (only with CPYRAM or CHEXA/PCOMPLS) are supported.
 

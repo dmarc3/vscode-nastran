@@ -1,4 +1,4 @@
-## [BSURF ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BSURF.xhtml) - Contact Body or Surface
+## [BSURF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BSURF.xhtml) - Contact Body or Surface
 
 Defines a contact body or surface by Element IDs.
 

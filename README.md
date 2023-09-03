@@ -1,5 +1,7 @@
 # Nastran Extension for Visual Studio Code
 
+#### [Repository](https://github.com/dmarc3/vscode-nastran)&nbsp;&nbsp;|&nbsp;&nbsp;[Issues](https://github.com/dmarc3/vscode-nastran/issues)&nbsp;&nbsp;|&nbsp;&nbsp;[Changelog](https://github.com/dmarc3/vscode-nastran/blob/main/CHANGELOG.md)&nbsp;&nbsp;|&nbsp;&nbsp;[License](https://github.com/dmarc3/vscode-nastran/blob/main/LICENSE.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Contribution Guidelines](https://github.com/dmarc3/vscode-nastran/blob/main/CONTRIBUTING.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Code of Conduct](https://github.com/dmarc3/vscode-nastran/blob/main/CODE_OF_CONDUCT.md)
+
 This [Visual Studio Code](https://code.visualstudio.com/) extension aims to build [`Nastran`](https://software.nasa.gov/software/LAR-16804-GS) "language" support with features akin to what software developers are accustomed to in their Integrated Development Environments (IDEs) while programming. `Nastran` stands for "**NA**SA **STR**uctural **AN**alysis" and is a finite element analysis software used to predict the behavior of a physical structure. While `Nastran` is not a programming language itself, `Nastran` models share many similarites to a programming language. These models are composed of text files built with a defined structure using keywords to identify model parameters and can be "compiled" and executed.
 
  The ultimate goal of this project is to provide a more efficient means of manipulating `Nastran` finite element models at the text file level through elimination of some of the key pain points and provide a more IDE-like experience.
@@ -13,9 +15,6 @@ In order to use this extension, the user must have the following installed:
 
 - Python 3.7+
   - [`pygls`](https://github.com/openlawlibrary/pygls)
-
-> **Note**
-> The goal is to eventually remove the python dependency and have this project entirely self-contained.
 
 ## Usage
 
@@ -53,7 +52,7 @@ Currently supported features include:
     &nbsp;
     ![Find All Example](./resources/find_command.gif)
 
-5. `Nastran` execution command (keybound to `F5`)
+5. `Nastran` execution command (keybound to `F6`)
     - `Nastran` [keyword arguments](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
 
     &nbsp;
@@ -80,7 +79,3 @@ Please create an issue as bugs are discovered. Provide specific details includin
   - Case Control: `entity.name.tag.css`
   - Bulk Data: `constant.language`
   - Parameters: `constant.regexp`
-
-## Release Notes
-
-See [changelog](./CHANGELOG.md).
