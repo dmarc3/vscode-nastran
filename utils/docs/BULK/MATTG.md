@@ -1,4 +1,4 @@
-## [MATTG ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTG.xhtml) - Temperature Variation of Interlaminar Materials
+## [MATTG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTG.xhtml) - Temperature Variation of Interlaminar Materials
 
 Specifies gasket material property temperature variation to be used in SOL 400.
 
