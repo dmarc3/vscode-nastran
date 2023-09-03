@@ -17,3 +17,16 @@ All notable changes to the "nastran" extension will be documented in this file.
 - Include file hierarchy tree view for easy navigation of model
 - "Find All" command for performing search through entire model
 - Nastran execution command
+
+## [1.0.1] - 2023-08-28
+
+### Added
+
+- Updated keybind for executing Nastran from `F5` to `F6` to avoid default `vscode` keybinds
+
+## [1.0.2] - 2023-09-03
+
+### Added
+
+- Added Contribution guidelines, list of contributors, and Code of Conduct
+- Fixes bug related to compatability with newest versions of Python and regex changes ([#17](https://github.com/dmarc3/vscode-nastran/issues/17))

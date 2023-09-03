@@ -3,7 +3,7 @@ on:
       tags:
       - "*"
 
-name: Deploy Extension
+name: deploy
 jobs:
   deploy:
     runs-on: ubuntu-latest
