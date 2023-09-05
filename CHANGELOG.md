@@ -35,4 +35,4 @@ All notable changes to the "nastran" extension will be documented in this file.
 
 ### Added
 
-- Fixes Include Hierarchy bug for include call-outs spanning multiple lines ([TBD](https://github.com/dmarc3/vscode-nastran/issues/17))
+- Fixes Include Hierarchy bug for include call-outs spanning multiple lines ([#30](https://github.com/dmarc3/vscode-nastran/issues/30))
