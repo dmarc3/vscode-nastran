@@ -35,14 +35,22 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     private getIncludes(element: IncludeFile): IncludeFile[] {
         const lines = fs.readFileSync(element.origin).toString().split("\n");
         var includes = []
-        for (var line of lines) {
+        for (var [index, line] of lines.entries()) {
             if (line.toLowerCase().includes('include')) {
                 if (line.toLowerCase().startsWith('include')) {
                     if (line.includes("'")) {
-                        line = line.split("'")[1]
+                        var line_split = line.split("'")
+                        if (line_split.length < 3) {
+                            line_split = (line + lines[index+1]).split("'")
+                        }
+                        line = line_split[1]
                     } 
                     if (line.includes('"')) {
-                        line = line.split('"')[1]
+                        var line_split = line.split('"')
+                        if (line_split.length < 3) {
+                            line_split = (line + lines[index+1]).split('"')
+                        }
+                        line = line_split[1]
                     }
                     const fileName = path.join(path.dirname(element.origin), line)
                     if (fs.existsSync(fileName)) {
