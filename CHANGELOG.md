@@ -30,3 +30,9 @@ All notable changes to the "nastran" extension will be documented in this file.
 
 - Added Contribution guidelines, list of contributors, and Code of Conduct
 - Fixes bug related to compatability with newest versions of Python and regex changes ([#17](https://github.com/dmarc3/vscode-nastran/issues/17))
+
+## [1.0.3] - 2023-09-05
+
+### Added
+
+- Fixes Include Hierarchy bug for include call-outs spanning multiple lines ([#30](https://github.com/dmarc3/vscode-nastran/issues/30))
