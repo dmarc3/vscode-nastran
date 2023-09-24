@@ -8,10 +8,11 @@ from lsprotocol.types import (
     HoverParams,
     MarkupContent,
     MarkupKind,
-    TEXT_DOCUMENT_SEMANTIC_TOKENS_FULL,
+    TEXT_DOCUMENT_SEMANTIC_TOKENS_RANGE,
     SemanticTokensLegend,
-    SemanticTokensParams,
+    SemanticTokensRangeParams,
     SemanticTokens,
+    SemanticTokensPartialResult,
 )
 
 from utils.read_docs import get_docs
@@ -26,7 +27,7 @@ class NastranLanguageServer(LanguageServer):
         super().__init__(*args)
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v0.1")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.4")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -70,13 +71,13 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     return None
 
 @server.feature(
-    TEXT_DOCUMENT_SEMANTIC_TOKENS_FULL,
+    TEXT_DOCUMENT_SEMANTIC_TOKENS_RANGE,
     SemanticTokensLegend(
         token_types=["field", "subs", "dmap", "file"],
         token_modifiers=[],
     )
 )
-def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
+def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialResult:
     """Semantic token provider
 
     Args:
@@ -93,8 +94,9 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
     last_start = 0
     data = []
     
-    # For each line in the document...
-    for lineno, line in enumerate(doc.lines):
+    # For each line in the current range...
+    for lineno in range(params.range.start.line, params.range.end.line):
+        line = doc.lines[lineno]
         # Determine the section of current line
         section = get_section(line, doc.lines)
         last_start = 0
@@ -144,25 +146,25 @@ def semantic_tokens(params: SemanticTokensParams) -> SemanticTokens:
             last_line = lineno
             last_start = start
                 
-        # Process DMAP section
-        if section == "DMAP":
-            # Skip comments and ALTER lines
-            if line.lstrip()[0] != "$":
-                if "ALTER" not in line:
-                    # Find end of DMAP card
-                    start = len(line) - len(line.lstrip())
-                    # Find end of DMAP card
-                    end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
-                    # Save SemanticToken data
-                    data += [
-                        (lineno - last_line),
-                        (start - last_start),
-                        (end - start),
-                        2,
-                        0
-                    ]
-                    last_line = lineno
-                    last_start = start
+        # # Process DMAP section
+        # if section == "DMAP":
+        #     # Skip comments and ALTER lines
+        #     if line.lstrip()[0] != "$":
+        #         if "ALTER" not in line:
+        #             # Find end of DMAP card
+        #             start = len(line) - len(line.lstrip())
+        #             # Find end of DMAP card
+        #             end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
+        #             # Save SemanticToken data
+        #             data += [
+        #                 (lineno - last_line),
+        #                 (start - last_start),
+        #                 (end - start),
+        #                 2,
+        #                 0
+        #             ]
+        #             last_line = lineno
+        #             last_start = start
 
     return SemanticTokens(data=data)
 
