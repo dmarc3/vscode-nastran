@@ -36,3 +36,9 @@ All notable changes to the "nastran" extension will be documented in this file.
 ### Added
 
 - Fixes Include Hierarchy bug for include call-outs spanning multiple lines ([#30](https://github.com/dmarc3/vscode-nastran/issues/30))
+
+## [1.0.4] - 2023-09-23
+
+### Added
+
+- Updated server semantic token-ing logic to load for partial range to improve performance while working with large files.
