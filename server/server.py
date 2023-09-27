@@ -13,9 +13,13 @@ from lsprotocol.types import (
     SemanticTokensRangeParams,
     SemanticTokens,
     SemanticTokensPartialResult,
+    TEXT_DOCUMENT_COMPLETION,
+    CompletionItem,
+    CompletionList,
+    CompletionParams,
 )
 
-from utils.read_docs import get_docs
+from utils.read_docs import get_docs, get_completion_item, SECTION_KEY
 from utils.parse_file import get_section, exec_regex, REGEX_KEY
 
 class NastranLanguageServer(LanguageServer):
@@ -27,7 +31,7 @@ class NastranLanguageServer(LanguageServer):
         super().__init__(*args)
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v1.0.4")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.5")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -167,6 +171,16 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
         #             last_start = start
 
     return SemanticTokens(data=data)
+
+@server.feature(TEXT_DOCUMENT_COMPLETION)
+def completions(params: CompletionParams) -> CompletionList:
+    doc = server.workspace.get_document(params.text_document.uri)
+    line = doc.lines[params.position.line].strip()
+    items = []
+    for card in SECTION_KEY['BULK']:
+        if card.startswith(line.upper()):
+            items.append(CompletionItem(label=get_completion_item(get_docs(card, 'BULK'))))
+    return CompletionList(is_incomplete=True, items=items)
 
 # Start server
 server.start_io()
