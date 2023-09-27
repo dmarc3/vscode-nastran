@@ -42,12 +42,12 @@ Currently supported features include:
     &nbsp;
     ![Documentation Hover Example](./resources/documentation_hover.gif)
 
-3. Include file hierarchy tree view for easy navigation of model. Open top level `Nastran` run deck and run command to parse include paths and generate tree view. Command tied to "refresh" button on view.
+3. Include file hierarchy tree view for easy navigation of model. Open top level `Nastran` run deck and run command (keybound to `F7`) to parse include paths and generate tree view. Command tied to "refresh" button on view.
 
     &nbsp;
     ![Include Hierarchy Example](./resources/include_hierarchy.gif)
 
-4. "Find All" command (keybound to `ALT + F`) to search model for all substring occurences and provide hyperlink to location in model.
+4. "Find All" command (keybound to `ALT + F`) to search model for all substring occurrences and provide hyperlink to location in model.
 
     &nbsp;
     ![Find All Example](./resources/find_command.gif)
@@ -55,8 +55,10 @@ Currently supported features include:
 5. `Nastran` execution command (keybound to `F6`)
     - `Nastran` [keyword arguments](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
 
+6. Text completions with field names for rapid editing
+
     &nbsp;
-    ![Execution Example](./resources/execution.gif)
+    ![Text Completions Example](./resources/completions.gif)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
 
@@ -70,8 +72,8 @@ If you have an idea for a feature, please create an issue and flag it as a `Feat
 
 Please create an issue as bugs are discovered. Provide specific details including screen shots or specific `Nastran` cards causing the bug.
 
-- VS Code does not support hover pane resizing. Depending on the resolution of the monitor, text may be wrapped to a new line and not be presented correctly. Users may find it helpful to reduce font size (`CTRL + -`) till hover text is no longer being wrapped or to minimize the explorer pane (`CTRL + B`).
-- Extension was developed using VS Code's `Dark (Visual Studio)` theme. The keyword sections where given colors based off of commonly defined [scopes](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide). All colors should update for the themes packaged with VS Code but the chosen color may not be ideal or be distinguishable relative to adjacent colors. The following scopes are defined for each section / keywords:
+- vscode does not support hover pane resizing. Depending on the resolution of the monitor, text may be wrapped to a new line and not be presented correctly. Users may find it helpful to reduce font size (`CTRL + -`) till hover text is no longer being wrapped or to minimize the explorer pane (`CTRL + B`).
+- Extension was developed using vscode's `Dark (Visual Studio)` theme. The keyword sections where given colors based off of commonly defined [scopes](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide). All colors should update for the themes packaged with vscode but the chosen color may not be ideal or be distinguishable relative to adjacent colors. The following scopes are defined for each section / keywords:
   - Nastran Keyword: `string.regexp`
   - Section Dividers: `invalid`
   - File Management: `markup.inserted`
