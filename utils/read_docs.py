@@ -60,11 +60,6 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
         if os.path.exists(filename):
             out = open(filename, 'r', encoding='utf-8').read()
             return out
-    elif section == 'CASE':
-        filename = os.path.join('utils', 'docs', section, 'PLOT', card+'.md')
-        if os.path.exists(filename):
-            out = open(filename, 'r', encoding='utf-8').read()
-            return out
     # Search for partial card name
     if any([name for name in SECTION_KEY[section] if name.startswith(card)]):
         for name in SECTION_KEY[section]:
@@ -74,17 +69,19 @@ def read_MSC_Nastran_docs(card: str, section: str) -> str:
         filename = os.path.join('utils', 'docs', section, card+'.md')
         if os.path.exists(filename):
             out = open(filename, 'r', encoding='utf-8').read()
-        elif section == 'BULK':
-            filename = os.path.join('utils', 'docs', section, 'PARAM', card+'.md')
-            if os.path.exists(filename):
-                out = open(filename, 'r', encoding='utf-8').read()
-        elif section == 'CASE':
-            filename = os.path.join('utils', 'docs', section, 'PLOT', card+'.md')
-            if os.path.exists(filename):
-                out = open(filename, 'r', encoding='utf-8').read()
 
+    return out
+
+def get_completion_item(text: str) -> str:
+    try:
+        example = text.split('```nastran\n', 1)[1].split('```\n', 1)[0]
+        out = '\n'.join(example.split('\n')[1:]).strip()+'\n'
+        if ' See ' in out:
+            out=''
+    except IndexError:
+        out=''
     return out
 
 if __name__ == "__main__":
     # Used for debugging
-    print(read_MSC_Nastran_docs('CSCALE', 'CASE'))
+    print(get_completion_item(get_docs('GRID')))
