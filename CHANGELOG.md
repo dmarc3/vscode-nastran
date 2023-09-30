@@ -50,3 +50,9 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 - Added keybind (`F7`) for include hierarchy update
 - Added text completion for rapid editing ([#36](https://github.com/dmarc3/vscode-nastran/issues/36))
 - Added unittesting for `read_docs.py`
+
+## [1.0.6] - TBD
+
+### Added
+
+- Added command to insert long and short field delineation comments (`F9` and `F10` keybinds)
