@@ -60,6 +60,8 @@ Currently supported features include:
     &nbsp;
     ![Text Completions Example](./resources/completions.gif)
 
+7. Command to insert short and long field delineation comments
+
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
 
 - `*.f06` and `*.f04` syntax highlighting
