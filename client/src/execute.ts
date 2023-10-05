@@ -1,12 +1,15 @@
 import * as vscode from "vscode";
+import * as path from "path";
 // import * as cp from "child_process";
 
 export function executeNastran(rundeck, context) {
+    if (path.extname(rundeck) !== '.f06') {
     var keywords = context.globalState.get('keywords')
     if (keywords == undefined) {
         keywords = ""
     }
     vscode.window.activeTerminal.sendText(`nastran ${rundeck} ${keywords}`)
+    }
 }
 
 export async function setKeywords(context) {

@@ -55,4 +55,4 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 
 ### Added
 
-- Added command to insert long and short field delineation comments (`F9` and `F10` keybinds)
+- Added command to insert long and short field delineation comments (`CTRL`+`ALT`+`\` and `CTRL`+`SHIFT`+`\` keybinds respectively)

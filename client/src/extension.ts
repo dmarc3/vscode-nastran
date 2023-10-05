@@ -21,6 +21,8 @@ function getClientOptions(): LanguageClientOptions {
         documentSelector: [
             { scheme: "file", language: "nastran" },
             { scheme: "untitled", language: "nastran" },
+            { scheme: "file", language: "f06" },
+            { scheme: "untitled", language: "f06" },
         ],
         markdown: {
             isTrusted: true,

@@ -32,7 +32,22 @@
           "light": "./resources/light/logo.png",
           "dark": "./resources/dark/logo.png"
         },
-        "configuration": "./language-configuration.json"
+        "configuration": "./nastran-configuration.json"
+      },
+      {
+        "id": "f06",
+        "aliases": [
+          "MSC Nastran",
+          "Nastran"
+        ],
+        "extensions": [
+          ".f06"
+        ],
+        "icon": {
+          "light": "./resources/light/logo.png",
+          "dark": "./resources/dark/logo.png"
+        },
+        "configuration": "./f06-configuration.json"
       }
     ],
     "grammars": [
@@ -40,6 +55,11 @@
         "language": "nastran",
         "scopeName": "source.nastran",
         "path": "./syntaxes/nastran.json"
+      },
+      {
+        "language": "f06",
+        "scopeName": "source.f06",
+        "path": "./syntaxes/f06.json"
       }
     ],
     "views": {
@@ -102,13 +122,13 @@
       },
       {
         "command": "insert_short_comment",
-        "key": "f9",
-        "mac": "f9"
+        "key": "ctrl+shift+/",
+        "mac": "ctrl+shift+/"
       },
       {
         "command": "insert_long_comment",
-        "key": "f10",
-        "mac": "f10"
+        "key": "ctrl+alt+/",
+        "mac": "ctrl+alt+/"
       }
     ],
     "menus": {
@@ -132,6 +152,11 @@
       }
     },
     "semanticTokenTypes": [
+      {
+        "id": "comments",
+        "superType": "comment",
+        "description": "Line comment."
+      },
       {
         "id": "field",
         "superType": "punctuation",

@@ -72,6 +72,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     readonly onDidChangeTreeData: vscode.Event<IncludeFile | undefined | null | void> = this._onDidChangeTreeData.event;
   
     refresh(): void {
+      this.includes = [];
       this._onDidChangeTreeData.fire();
     }
 

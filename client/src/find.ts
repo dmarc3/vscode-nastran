@@ -5,16 +5,18 @@ import * as vscode from "vscode";
 export async function executeFind(includes) {
     // Get selected text
     var editor = vscode.window.activeTextEditor;
-    const selection = editor.document.getText(editor.selection)
-    // If text not selected, ask user to type text
-    var str = ""
-    if (!selection) {str = await getUserInput()} else {str = editor.document.getText(editor.selection)}
-    // Find occurences of text
-    const found = find(str, includes)
-    // Process WebView
-    if (found){
-        const uri = await createFindFile(str, found, includes)
-        vscode.commands.executeCommand("vscode.open", uri)
+    if (path.extname(vscode.window.activeTextEditor.document.fileName) !== ".f06") {
+        const selection = editor.document.getText(editor.selection)
+        // If text not selected, ask user to type text
+        var str = ""
+        if (!selection) {str = await getUserInput()} else {str = editor.document.getText(editor.selection)}
+        // Find occurences of text
+        const found = find(str, includes)
+        // Process WebView
+        if (found){
+            const uri = await createFindFile(str, found, includes)
+            vscode.commands.executeCommand("vscode.open", uri)
+        }
     }
 }
 
