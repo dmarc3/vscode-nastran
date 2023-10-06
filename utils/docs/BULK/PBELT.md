@@ -1,4 +1,4 @@
-## [PBELT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBELT.xhtml) - Belt Property- SOL 700
+## [PBELT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBELT.xhtml) - Belt Property- SOL 700
 
 Defines the properties of a belt element referenced by a CROD entry. Used in SOL700 only.
 

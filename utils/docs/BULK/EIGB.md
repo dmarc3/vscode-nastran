@@ -1,4 +1,4 @@
-## [EIGB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGB.xhtml) - Buckling Analysis Set
+## [EIGB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGB.xhtml) - Buckling Analysis Set
 
 Defines data needed to perform buckling analysis.
 

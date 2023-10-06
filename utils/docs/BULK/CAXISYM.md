@@ -1,4 +1,4 @@
-## [CAXISYM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAXISYM.xhtml) - Axisymmetric Line Elements Connection - SOL 400
+## [CAXISYM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAXISYM.xhtml) - Axisymmetric Line Elements Connection - SOL 400
 
 Defines two or three node axisymmetric thick shell elements.
 

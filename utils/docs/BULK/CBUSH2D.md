@@ -1,4 +1,4 @@
-## [CBUSH2D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH2D.xhtml) - 2-D Linear-Nonlinear Connection
+## [CBUSH2D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH2D.xhtml) - 2-D Linear-Nonlinear Connection
 
 Defines the connectivity of a two-dimensional Linear-Nonlinear element.
 

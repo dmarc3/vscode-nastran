@@ -1,4 +1,4 @@
-## [TTEMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TTEMP.xhtml) - Temperature Distribution of Transient Response
+## [TTEMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TTEMP.xhtml) - Temperature Distribution of Transient Response
 
 Defines a time-dependent temperature distribution for the nonlinear transient analysis in SOL 400.
 

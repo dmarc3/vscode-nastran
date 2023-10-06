@@ -1,4 +1,4 @@
-## [VIEW3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VIEW3D.xhtml) - View Factor Definition - Gaussian Integration Method
+## [VIEW3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VIEW3D.xhtml) - View Factor Definition - Gaussian Integration Method
 
 Defines parameters to control and/or request the Gaussian Integration method of view factor calculation for a specified cavity.
 

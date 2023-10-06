@@ -1,4 +1,4 @@
-## [PSHELL1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHELL1.xhtml) - Properties of shell elements for SOL 700 only
+## [PSHELL1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHELL1.xhtml) - Properties of shell elements for SOL 700 only
 
 Defines the properties of shell elements with variable shell thickness for SOL 700 only.
 

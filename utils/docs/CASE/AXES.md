@@ -1,4 +1,4 @@
-## [AXES](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.AXES.xhtml) - Orientation of Observer’s Coordinate System
+## [AXES](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.AXES.xhtml) - Orientation of Observer’s Coordinate System
 
 Assigns axes of the basic coordinate system to the observer’s coordinate system.
 

@@ -1,4 +1,4 @@
-## [ABINFL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABINFL.xhtml) - Inflator Model to be Used With GBAG or COUPLE Entries
+## [ABINFL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABINFL.xhtml) - Inflator Model to be Used With GBAG or COUPLE Entries
 
 Defines an inflator model suited for airbag analyses. The inflator model is defined as part of the GBAG or COUPLE surface. Used in SOL 700 only.
 

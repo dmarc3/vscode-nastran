@@ -1,4 +1,4 @@
-## [ISTRESS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.ISTRESS.xhtml) - Initial Stress Values in SOL 400
+## [ISTRESS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.ISTRESS.xhtml) - Initial Stress Values in SOL 400
 
 Defines initial stress values. This is used in SOL 400 only.
 

@@ -1,4 +1,4 @@
-## [AUXCASE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AUXCASE.Case.xhtml) - Auxiliary Model Case Control Delimiter
+## [AUXCASE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AUXCASE.Case.xhtml) - Auxiliary Model Case Control Delimiter
 
 Indicates (delimits) the beginning of Case Control commands for an auxiliary model in SOL 200.
 

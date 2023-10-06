@@ -1,4 +1,4 @@
-## [PFPANEL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PFPANEL.Case.xhtml) - Acoustic Panel Participation Factor Output Request
+## [PFPANEL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PFPANEL.Case.xhtml) - Acoustic Panel Participation Factor Output Request
 
 Requests the form and type of acoustic panel participation factor output.
 

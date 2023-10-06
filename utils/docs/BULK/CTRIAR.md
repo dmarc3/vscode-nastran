@@ -1,4 +1,4 @@
-## [CTRIAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIAR.xhtml) - Triangular Plate Element Connection
+## [CTRIAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIAR.xhtml) - Triangular Plate Element Connection
 
 Defines an isoparametric membrane-bending triangular plate element. This element has a normal rotational (drilling) degrees-of-freedom. It is   a companion   to the CQUADR element.
 

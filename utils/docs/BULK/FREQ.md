@@ -1,4 +1,4 @@
-## [FREQ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ.xhtml) - Frequency List
+## [FREQ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ.xhtml) - Frequency List
 
 Defines a set of frequencies to be used in the solution of frequency response problems.
 

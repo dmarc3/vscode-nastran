@@ -1,4 +1,4 @@
-## [SCALE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.SCALE.xhtml) - Scale Factor
+## [SCALE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.SCALE.xhtml) - Scale Factor
 
 Defines reduction, as a scale factor, of model’s dimensions so that model fits on a plot frame.
 

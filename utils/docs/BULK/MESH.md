@@ -1,4 +1,4 @@
-## [MESH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MESH1.xhtml) - Mesh Generator
+## [MESH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MESH1.xhtml) - Mesh Generator
 
 Defines a mesh. Used in SOL 700 only.
 

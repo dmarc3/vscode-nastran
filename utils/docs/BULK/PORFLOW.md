@@ -1,4 +1,4 @@
-## [PORFLOW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFLOW.xhtml) - Porous Flow Boundary
+## [PORFLOW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFLOW.xhtml) - Porous Flow Boundary
 
 Defines the material properties for the in- or outflow of an Eulerian mesh through a porous area of the couple surface. Used in SOL 700 only.
 

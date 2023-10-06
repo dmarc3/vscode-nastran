@@ -1,4 +1,4 @@
-## [INFLCG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLCG.xhtml) - Airbag Cold Gas Inflator Model
+## [INFLCG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLCG.xhtml) - Airbag Cold Gas Inflator Model
 
 Defines the cold gas-inflator characteristics of a COUPLE and/or GBAG subsurface. Used in SOL 700 only.
 

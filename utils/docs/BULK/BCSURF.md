@@ -1,4 +1,4 @@
-## [BCSURF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCSURF.xhtml) - Contact entry by element faces
+## [BCSURF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCSURF.xhtml) - Contact entry by element faces
 
 Define a contact region by element faces for SOLs 101, 103, 105, 107, 108, 109, 110, 111, 112, 200 and 400. This has three forms based the FORM (the 6th) field. “FACE” (default) is to define contact face by element face IDs, “GRID” is to define the same by grid point ids, and “RIGID” is to define a rigid face.
 

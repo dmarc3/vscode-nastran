@@ -1,4 +1,4 @@
-## [PVISC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PVISC.xhtml) - Viscous Damping Element Property
+## [PVISC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PVISC.xhtml) - Viscous Damping Element Property
 
 Defines properties of a one-dimensional viscous damping element (CVISC entry).
 

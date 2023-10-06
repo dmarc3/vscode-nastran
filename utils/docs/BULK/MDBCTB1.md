@@ -1,4 +1,4 @@
-## [MDBCTB1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCTB1.xhtml) - Defines a Contact Table for Bodies in Different Modules
+## [MDBCTB1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCTB1.xhtml) - Defines a Contact Table for Bodies in Different Modules
 
 MDBCTB1 specifies a list of contact pairs (for bodies residing in different Modules) through the MDBCNCT option for SOL 101 and SOL 400. This contact table is activated in the BCONTACT Case Control command.
 

@@ -1,4 +1,4 @@
-## [COSMSEL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.COSMSEL.Case.xhtml) - Select CoSIM Service
+## [COSMSEL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.COSMSEL.Case.xhtml) - Select CoSIM Service
 
 Activates Co-Simulation service and select the definition of co-simulation.
 

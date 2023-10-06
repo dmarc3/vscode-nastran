@@ -1,4 +1,4 @@
-## [ABSNMVS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABSNMVS.xhtml) - Meta data group String name/value pairs
+## [ABSNMVS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABSNMVS.xhtml) - Meta data group String name/value pairs
 
 Associate String Name/Value pairs with meta data collectors (ABSTRCT).
 

@@ -1,4 +1,4 @@
-## [CONNECT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.CONNECT.xhtml) - User Defined Service and Group Evaluator Data
+## [CONNECT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.CONNECT.xhtml) - User Defined Service and Group Evaluator Data
 
 Defines the newly introduced Simulation Component Architecture (SCA) User Defined Service (UDS) into MSC Nastran via a new CONNECT SERVICE statement. Bulk Data entries such as NLRSFD and MATUDS refer to this new service.
 

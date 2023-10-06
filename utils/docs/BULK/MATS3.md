@@ -1,4 +1,4 @@
-## [MATS3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATS3.xhtml) - Advanced Orthotropic, Nonlinear Elastic Materials for Axisymmetric Elements
+## [MATS3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATS3.xhtml) - Advanced Orthotropic, Nonlinear Elastic Materials for Axisymmetric Elements
 
 Specifies NLELAST option for advanced orthotropic, nonlinear elastic materials at axisymmetric conditions in SOL 400.
 

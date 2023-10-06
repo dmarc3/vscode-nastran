@@ -1,4 +1,4 @@
-## [ACCELERATION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACCELERATION.Case.xhtml) - Acceleration Output Request
+## [ACCELERATION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACCELERATION.Case.xhtml) - Acceleration Output Request
 
 Requests form and type of acceleration vector output.
 

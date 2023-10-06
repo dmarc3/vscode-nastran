@@ -1,4 +1,4 @@
-## [TABLEH1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEH1.xhtml) - Heat Transfer Coefficient Table or Nusselt Number Table, Form 1
+## [TABLEH1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEH1.xhtml) - Heat Transfer Coefficient Table or Nusselt Number Table, Form 1
 
 Defines a tabular function referenced by TABLEHT for convection heat transfer coefficient or Nusselt number.
 

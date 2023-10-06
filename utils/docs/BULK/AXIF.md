@@ -1,4 +1,4 @@
-## [AXIF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXIF.xhtml) - Fluid Related Axisymmetric Parameters
+## [AXIF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXIF.xhtml) - Fluid Related Axisymmetric Parameters
 
 Defines basic parameters and the existence of an axisymmetric fluid analysis.
 

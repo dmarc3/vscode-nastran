@@ -1,4 +1,4 @@
-## [TF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TF.xhtml) - Dynamic Transfer Function
+## [TF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TF.xhtml) - Dynamic Transfer Function
 
 Defines a dynamic transfer function of the form
 

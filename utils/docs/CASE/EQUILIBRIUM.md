@@ -1,4 +1,4 @@
-## [EQUILIBRIUM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EQUILIBRIUM.Case.xhtml) - Equilibrium Force Output Request
+## [EQUILIBRIUM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EQUILIBRIUM.Case.xhtml) - Equilibrium Force Output Request
 
 Specifies options for equilibrium force balance output of applied loads, single point constraint forces and forces due to multi-point constraints and rigid elements.
 

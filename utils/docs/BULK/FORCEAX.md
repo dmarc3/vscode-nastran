@@ -1,4 +1,4 @@
-## [FORCEAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCEAX.xhtml) - Conical Shell Static Force
+## [FORCEAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCEAX.xhtml) - Conical Shell Static Force
 
 Defines a static concentrated force on a conical shell ring.
 

@@ -1,4 +1,4 @@
-## [PCOMPG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPG.xhtml) - Layered Composite Element Property (Alternate to PCOMP Entry)
+## [PCOMPG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPG.xhtml) - Layered Composite Element Property (Alternate to PCOMP Entry)
 
 Defines global (external) ply IDs and properties for a composite material laminate.
 

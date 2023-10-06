@@ -1,4 +1,4 @@
-## [YLDVM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDVM.xhtml) - von Mises Yield Model
+## [YLDVM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDVM.xhtml) - von Mises Yield Model
 
 Defines a bilinear or piecewise-linear yield model with isotropic hardening, using the von Mises yield criterion. Used in SOL 700 only.
 

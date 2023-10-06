@@ -1,4 +1,4 @@
-## [PSHLPF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHLPF.xhtml) - Property of Perforated Shell Element
+## [PSHLPF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHLPF.xhtml) - Property of Perforated Shell Element
 
 Specifies properties for perforated shell of trim component, TRMC, in porous elastic material.
 

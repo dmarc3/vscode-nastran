@@ -1,4 +1,4 @@
-## [FSICTRL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FSICTRL.xhtml) - Defines the analysis type for OpenFSI fluid structure analysis simulations in SOL 400.
+## [FSICTRL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FSICTRL.xhtml) - Defines the analysis type for OpenFSI fluid structure analysis simulations in SOL 400.
 
 #### Format:
 

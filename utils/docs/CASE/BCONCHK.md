@@ -1,4 +1,4 @@
-## [BCONCHK (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCONCHK.Case.xhtml) - Contact Model Check
+## [BCONCHK (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCONCHK.Case.xhtml) - Contact Model Check
 
 This entry is used to activate contact model check before analysis in SOL 101, 103, 105, 107~112, 200 and 400.
 

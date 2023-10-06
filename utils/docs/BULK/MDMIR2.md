@@ -1,4 +1,4 @@
-## [MDMIR2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMIR2.xhtml) - Module Reposition by Mirroring - Option 2
+## [MDMIR2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMIR2.xhtml) - Module Reposition by Mirroring - Option 2
 
 Defines a Module mirror by specifying a pair of coordinate system axes on the mirror plane in Module 0.
 

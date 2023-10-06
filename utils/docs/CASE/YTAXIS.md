@@ -1,4 +1,4 @@
-## [YTAXIS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTAXIS.xhtml) - Y Axis Plot Control
+## [YTAXIS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTAXIS.xhtml) - Y Axis Plot Control
 
 Controls the plotting of the y-axis on upper half frame curves only.
 

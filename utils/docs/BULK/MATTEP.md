@@ -1,4 +1,4 @@
-## [MATTEP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTEP.xhtml) - Thermo-Elastic-Plastic Material Properties - SOL 400
+## [MATTEP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTEP.xhtml) - Thermo-Elastic-Plastic Material Properties - SOL 400
 
 Specifies temperature-dependent elasto-plastic material properties to be used for static, quasi static or transient dynamic analysis in SOL 400 only.
 

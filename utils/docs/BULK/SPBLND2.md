@@ -1,4 +1,4 @@
-## [SPBLND2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPBLND2.xhtml) - Curve Based Spline Blending
+## [SPBLND2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPBLND2.xhtml) - Curve Based Spline Blending
 
 Defines a curve based blending of two splines.
 

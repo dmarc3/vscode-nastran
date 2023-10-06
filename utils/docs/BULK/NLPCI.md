@@ -1,4 +1,4 @@
-## [NLPCI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLPCI.xhtml) - Parameters for Arc-Length Methods in Nonlinear Static Analysis
+## [NLPCI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLPCI.xhtml) - Parameters for Arc-Length Methods in Nonlinear Static Analysis
 
 Defines a set of parameters for the arc-length incremental solution strategies in nonlinear static analysis (SOL 106 and SOL 400).  This entry will be used if a subcase contains an NLPARM command (NLPARM = ID).
 

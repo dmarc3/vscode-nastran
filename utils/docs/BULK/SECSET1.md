@@ -1,4 +1,4 @@
-## [SECSET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SECSET1.xhtml) - Free Boundary Degree-of-Freedom, Alternate Form of SECSET
+## [SECSET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SECSET1.xhtml) - Free Boundary Degree-of-Freedom, Alternate Form of SECSET
 
 Defines boundary degrees-of-freedom to be free (c-set) during generalized dynamic reduction or component mode synthesis calculations.
 

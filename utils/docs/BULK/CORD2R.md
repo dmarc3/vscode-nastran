@@ -1,4 +1,4 @@
-## [CORD2R](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2R.xhtml) - Rectangular Coordinate System Definition, Form 2
+## [CORD2R](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2R.xhtml) - Rectangular Coordinate System Definition, Form 2
 
 Defines a rectangular coordinate system using the coordinates of three points.
 

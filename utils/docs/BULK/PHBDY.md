@@ -1,4 +1,4 @@
-## [PHBDY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PHBDY.xhtml) - CHBDYP Geometric Element Definition
+## [PHBDY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PHBDY.xhtml) - CHBDYP Geometric Element Definition
 
 A property entry referenced by CHBDYP entries to give auxiliary geometric information for boundary condition surface elements.
 

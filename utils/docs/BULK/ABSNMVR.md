@@ -1,4 +1,4 @@
-## [ABSNMVR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABSNMVR.xhtml) - Meta data group Real Name/Value pairs
+## [ABSNMVR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ABSNMVR.xhtml) - Meta data group Real Name/Value pairs
 
 Associate Real Name/Value pairs to meta data collectors (ABSTRCT).
 

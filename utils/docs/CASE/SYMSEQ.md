@@ -1,4 +1,4 @@
-## [SYMSEQ (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SYMSEQ.Case.xhtml) - Symmetry Sequence Coefficients
+## [SYMSEQ (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SYMSEQ.Case.xhtml) - Symmetry Sequence Coefficients
 
 Specifies the coefficients for combining symmetry subcases into the total structure.
 

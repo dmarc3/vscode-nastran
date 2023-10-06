@@ -1,4 +1,4 @@
-## [BCONPRP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRP.xhtml) - Physical Contact Parameters of Touching Bodies in SOLs 101 and 400
+## [BCONPRP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRP.xhtml) - Physical Contact Parameters of Touching Bodies in SOLs 101 and 400
 
 Defines physical contact parameters of touching bodies used in SOLs 101 and 400 only. The parameters defined here are referenced by the BCONECT entry. This entry is used in conjunction with the BCONPRG entry.
 
@@ -173,7 +173,7 @@ where T A  is the contacting grid temperature and T B   is the face temperatur
 6. Parameters BGM, BGN, BGSN, BGST and DQNEAR are not supported in segment to segment contact analysis.
 
 
-## [BCONPRP-700](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRP.700.xhtml) - Physical Contact Parameters of Touching Bodies in SOL 700
+## [BCONPRP-700](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRP.700.xhtml) - Physical Contact Parameters of Touching Bodies in SOL 700
 
 Defines physical contact parameters of touching bodies used in SOL 700 only.
 

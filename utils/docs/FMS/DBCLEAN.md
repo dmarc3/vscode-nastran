@@ -1,4 +1,4 @@
-## [DBCLEAN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBCLEAN.xhtml) - Deletes Database Versions and/or Projects
+## [DBCLEAN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBCLEAN.xhtml) - Deletes Database Versions and/or Projects
 
 Deletes one or more versions and/or projects from the database.
 

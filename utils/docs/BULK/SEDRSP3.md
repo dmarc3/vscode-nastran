@@ -1,4 +1,4 @@
-## [SEDRSP3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDRSP3.xhtml) - Defines External Response with User-Supplied Routines
+## [SEDRSP3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDRSP3.xhtml) - Defines External Response with User-Supplied Routines
 
 Defines constituents from multiple PART SE for an external response using user-supplied routine(s).
 

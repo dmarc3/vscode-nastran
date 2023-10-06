@@ -1,4 +1,4 @@
-## [SVECTOR (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SVECTOR.Case.xhtml) - Solution Set Eigenvector Output Request
+## [SVECTOR (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SVECTOR.Case.xhtml) - Solution Set Eigenvector Output Request
 
 Requests the form and type of solution set eigenvector output.
 

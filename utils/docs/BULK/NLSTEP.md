@@ -1,4 +1,4 @@
-## [NLSTEP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLSTEP.xhtml) - Describes the Control Parameters for Mechanical, Thermal and Coupled Analysis in SOL 400 and for Contact Analysis in SOL 101.
+## [NLSTEP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLSTEP.xhtml) - Describes the Control Parameters for Mechanical, Thermal and Coupled Analysis in SOL 400 and for Contact Analysis in SOL 101.
 
 Specifies the convergence criteria, step size control and numerical procedure for time/load stepping in SOL 400. For multi-physics, it controls both structural and thermal analysis. Defines analysis preference and control parameters for contact analysis in SOL 101.
 

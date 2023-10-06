@@ -1,4 +1,4 @@
-## [AETRIA3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AETRIA3.xhtml) - Triangular Aerodynamic Element Connection
+## [AETRIA3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AETRIA3.xhtml) - Triangular Aerodynamic Element Connection
 
 Defines the connectivity of a triangular aerodynamic element.
 

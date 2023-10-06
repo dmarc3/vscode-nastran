@@ -1,4 +1,4 @@
-## [HARMONICS (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HARMONICS.Case.xhtml) - Harmonic Analysis or Printout Control
+## [HARMONICS (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HARMONICS.Case.xhtml) - Harmonic Analysis or Printout Control
 
 Controls the number of harmonics output in axisymmetric shell or axisymmetric fluid problems; controls the number of harmonics to be used for analysis in cyclic symmetry problems.
 

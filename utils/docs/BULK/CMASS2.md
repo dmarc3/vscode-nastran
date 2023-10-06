@@ -1,4 +1,4 @@
-## [CMASS2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMASS2.xhtml) - Scalar Mass Property and Connection
+## [CMASS2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMASS2.xhtml) - Scalar Mass Property and Connection
 
 Defines a scalar mass element without reference to a property entry.
 

@@ -1,4 +1,4 @@
-## [EIGP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGP.xhtml) - Poles in Complex Plane
+## [EIGP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGP.xhtml) - Poles in Complex Plane
 
 Defines poles that are used in complex eigenvalue extraction by the Determinant method.
 

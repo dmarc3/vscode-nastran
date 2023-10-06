@@ -1,4 +1,4 @@
-## [MONSUM1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUM1.xhtml) - Linear combination of two or more monitor points.
+## [MONSUM1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUM1.xhtml) - Linear combination of two or more monitor points.
 
 Defines a new monitor result that is the weighted sum of existing monitor results. The location of the computed MONSUM1 is specified. The existing monitor points do not need to be of the same type but they must be of similar type (See Remark  3. )
 

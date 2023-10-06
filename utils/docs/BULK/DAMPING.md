@@ -1,4 +1,4 @@
-## [DAMPING](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DAMPING.xhtml) - Parameter and Hybrid Damping Specification
+## [DAMPING](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DAMPING.xhtml) - Parameter and Hybrid Damping Specification
 
 Specifies the values for parameter damping and/or selects optional HYBRID damping.
 

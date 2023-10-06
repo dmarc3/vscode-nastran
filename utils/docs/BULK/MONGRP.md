@@ -1,4 +1,4 @@
-## [MONGRP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONGRP.xhtml) - Specification of a Monitor Group
+## [MONGRP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONGRP.xhtml) - Specification of a Monitor Group
 
 Defines a collection of monitor points into a group available for postprocessing.
 

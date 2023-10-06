@@ -1,4 +1,4 @@
-## [DLINK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DLINK.xhtml) - Multiple Design Variable Linking
+## [DLINK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DLINK.xhtml) - Multiple Design Variable Linking
 
 Relates one design variable to one or more other design variables.
 

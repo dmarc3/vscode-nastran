@@ -1,4 +1,4 @@
-## [CAERO5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO5.xhtml) - Aerodynamic Panel Element Configuration
+## [CAERO5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO5.xhtml) - Aerodynamic Panel Element Configuration
 
 Defines an aerodynamic macro element for Piston theory.
 

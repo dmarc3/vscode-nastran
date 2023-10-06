@@ -1,4 +1,4 @@
-## [DBLOCATE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBLOCATE.xhtml) - Attaches Secondary Databases
+## [DBLOCATE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBLOCATE.xhtml) - Attaches Secondary Databases
 
 Obtains data blocks or parameters from prior versions of the primary database, or other databases. DBLOCATE may also be used to compress the primary database and to migrate databases created in prior MSC Nastran versions.
 

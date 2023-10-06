@@ -1,4 +1,4 @@
-## [DBLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBLOAD.xhtml) - Loads a Database from a FORTRAN File
+## [DBLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBLOAD.xhtml) - Loads a Database from a FORTRAN File
 
 Recovers data blocks or parameters from a database created by the DBUNLOAD statement.
 

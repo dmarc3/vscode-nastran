@@ -1,4 +1,4 @@
-## [CQUAD8](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUAD8.xhtml) - Curved Quadrilateral Shell Element Connection
+## [CQUAD8](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUAD8.xhtml) - Curved Quadrilateral Shell Element Connection
 
 Defines a curved quadrilateral shell or plane strain element with eight grid points.
 

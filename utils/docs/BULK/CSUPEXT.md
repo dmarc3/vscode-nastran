@@ -1,4 +1,4 @@
-## [CSUPEXT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSUPEXT.xhtml) - Superelement Exterior Point Definition
+## [CSUPEXT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSUPEXT.xhtml) - Superelement Exterior Point Definition
 
 Assigns exterior points to a superelement.
 

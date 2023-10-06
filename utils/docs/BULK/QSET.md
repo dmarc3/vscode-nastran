@@ -1,4 +1,4 @@
-## [QSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QSET.xhtml) - Generalized Degree-of-Freedom
+## [QSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QSET.xhtml) - Generalized Degree-of-Freedom
 
 Defines generalized degrees-of-freedom (q-set) to be used for dynamic reduction or component mode synthesis.
 

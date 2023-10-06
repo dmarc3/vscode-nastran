@@ -1,4 +1,4 @@
-## [PCONV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONV.xhtml) - Convection Property Definition
+## [PCONV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONV.xhtml) - Convection Property Definition
 
 Specifies the free convection boundary condition properties of a boundary condition surface element used for heat transfer analysis.
 

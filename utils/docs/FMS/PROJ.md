@@ -1,4 +1,4 @@
-## [PROJ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.PROJ.xhtml) - Defines Database Project-Identifier
+## [PROJ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.PROJ.xhtml) - Defines Database Project-Identifier
 
 Defines the current or default project identifier, project-ID.
 

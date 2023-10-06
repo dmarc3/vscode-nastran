@@ -1,4 +1,4 @@
-## [CIFQUAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFQUAD.xhtml) - Planar InterFace Cohesive Zone Modeling Element
+## [CIFQUAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFQUAD.xhtml) - Planar InterFace Cohesive Zone Modeling Element
 
 Linear/Quadratic, eight-noded planar interface element used to simulate the onset and progress of delamination in SOL 400 only.
 

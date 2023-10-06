@@ -1,4 +1,4 @@
-## [DEACTEL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DEACTEL.Case.xhtml) - Elements to be Deactivated for SOL 400 Analysis
+## [DEACTEL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DEACTEL.Case.xhtml) - Elements to be Deactivated for SOL 400 Analysis
 
 Indicates which DEACTEL Bulk Data entry is used to control the elements to be deactivated in a single physics job, or a particular physics pass of a coupled job. SOL 400 for NLSTATIC, and NLTRAN, as well Perturbation analyses only.
 

@@ -1,4 +1,4 @@
-## [INIT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.INIT.xhtml) - Creates a DBset
+## [INIT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.INIT.xhtml) - Creates a DBset
 
 Creates a temporary or permanent DBset. For the SCRATCH and MASTER DBsets, all or some of their space may be allocated to real memory.
 

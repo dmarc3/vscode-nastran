@@ -1,4 +1,4 @@
-## [BNDGRID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDGRID.xhtml) - Boundary Grid Points
+## [BNDGRID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDGRID.xhtml) - Boundary Grid Points
 
 Specifies a list of grid point identification numbers on design boundaries or surfaces for shape optimization (SOL 200).
 

@@ -1,4 +1,4 @@
-## [GRIDB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDB.xhtml) - Axisymmetric Grid Point
+## [GRIDB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDB.xhtml) - Axisymmetric Grid Point
 
 Defines the location of a geometric grid point on a fluid point (RINGFL entry) for an axisymmetric fluid model and/or axisymmetric structure.  Also defines the boundary of the fluid.
 

@@ -1,4 +1,4 @@
-## [AERO](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AERO.xhtml) - Aerodynamic Physical Data
+## [AERO](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AERO.xhtml) - Aerodynamic Physical Data
 
 Gives basic aerodynamic parameters for unsteady aerodynamics.
 

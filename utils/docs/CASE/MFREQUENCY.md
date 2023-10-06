@@ -1,4 +1,4 @@
-## [MFREQUENCY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MFREQUENCY.Case.xhtml) - Master Frequency Set Selection Frequency Response
+## [MFREQUENCY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MFREQUENCY.Case.xhtml) - Master Frequency Set Selection Frequency Response
 
 Selects the set of forcing frequencies to be used in frequency analysis as master frequencies for K, B, and K4 matrix generation at each master frequency, in frequency dependent analysis.
 

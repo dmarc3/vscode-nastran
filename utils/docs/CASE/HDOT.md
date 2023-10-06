@@ -1,4 +1,4 @@
-## [HDOT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HDOT.Case.xhtml) - Heat Transfer Rate of Change of Enthalpy Output Request
+## [HDOT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HDOT.Case.xhtml) - Heat Transfer Rate of Change of Enthalpy Output Request
 
 Requests form of rate of change of enthalpy vector output in transient heat transfer analysis (SOL 159).
 

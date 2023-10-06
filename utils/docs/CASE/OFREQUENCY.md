@@ -1,4 +1,4 @@
-## [OFREQUENCY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OFREQUENCY.Case.xhtml) - Output Frequency Set
+## [OFREQUENCY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OFREQUENCY.Case.xhtml) - Output Frequency Set
 
 Selects a set of frequencies for output requests.
 

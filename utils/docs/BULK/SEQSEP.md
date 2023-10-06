@@ -1,4 +1,4 @@
-## [SEQSEP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQSEP.xhtml) - Superelement Sequences
+## [SEQSEP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQSEP.xhtml) - Superelement Sequences
 
 Used with the CSUPER entry to define the correspondence of the exterior grid points between an identical or mirror-image superelement and its primary superelement.
 

@@ -1,4 +1,4 @@
-## [EOSNA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSNA.xhtml) - Noble-Abel equation of state - SOL700
+## [EOSNA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSNA.xhtml) - Noble-Abel equation of state - SOL700
 
 Defines the properties of Noble-Abel equation of state where the pressure  p  is defined as:
 

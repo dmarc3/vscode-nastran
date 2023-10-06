@@ -1,4 +1,4 @@
-## [CFAST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CFAST.xhtml) - A Shell Patch Fastener Connection
+## [CFAST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CFAST.xhtml) - A Shell Patch Fastener Connection
 
 Defines a fastener with material orientation connecting two surface patches. Large displacement and large rotational effects are supported when in SOL 400.
 

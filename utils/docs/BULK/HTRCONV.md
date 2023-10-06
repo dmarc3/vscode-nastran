@@ -1,4 +1,4 @@
-## [HTRCONV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HTRCONV.xhtml) - Air Bag Convection
+## [HTRCONV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HTRCONV.xhtml) - Air Bag Convection
 
 Defines the heat transfer through convection for a COUPLE and/or GBAG surface.
 

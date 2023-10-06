@@ -1,4 +1,4 @@
-## [CELAS2D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS2D.xhtml) - Scalar Spring Connection for SOL 700 Only
+## [CELAS2D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS2D.xhtml) - Scalar Spring Connection for SOL 700 Only
 
 Defines a scalar spring connection for use in SOL 700 only.
 

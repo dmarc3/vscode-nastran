@@ -1,4 +1,4 @@
-## [TSTEP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TSTEP.Case.xhtml) - Transient Time Step Set Selection
+## [TSTEP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TSTEP.Case.xhtml) - Transient Time Step Set Selection
 
 Selects integration and output time steps for linear or nonlinear transient analysis.
 

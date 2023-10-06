@@ -1,4 +1,4 @@
-## [BCNURB2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCNURB2.xhtml) - Defines a 2D Rigid Contact Body Made up of NURBS in SOLs 101 and 400
+## [BCNURB2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCNURB2.xhtml) - Defines a 2D Rigid Contact Body Made up of NURBS in SOLs 101 and 400
 
 Defines a 2D rigid contact body made up of NURBS used in SOLs 101 and 400 only.
 

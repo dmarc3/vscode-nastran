@@ -1,4 +1,4 @@
-## [RADLST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADLST.xhtml) - Listing of Enclosure Radiation Faces
+## [RADLST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADLST.xhtml) - Listing of Enclosure Radiation Faces
 
 Identifies the individual CHBDYi surface elements that comprise the entire radiation enclosure.
 

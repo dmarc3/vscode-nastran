@@ -1,4 +1,4 @@
-## [WETSURF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETSURF.xhtml) - Wetted surface used in OpenFSI in SOL 400
+## [WETSURF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETSURF.xhtml) - Wetted surface used in OpenFSI in SOL 400
 
 Defines a wetted surface used in OpenFSI fluid structure interaction simulations in SOL 400 only.
 

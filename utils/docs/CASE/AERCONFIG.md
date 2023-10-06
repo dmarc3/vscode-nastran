@@ -1,4 +1,4 @@
-## [AERCONFIG (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AERCONFIG.Case.xhtml) - Aerodynamic Model to be Used for the Rigid Aerodynamics
+## [AERCONFIG (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AERCONFIG.Case.xhtml) - Aerodynamic Model to be Used for the Rigid Aerodynamics
 
 Enables the user to select a different mesh for the rigid portion of the aerodynamics than for the elastic portion.
 

@@ -1,4 +1,4 @@
-## [DTI,UNITS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.UNITS.xhtml) - Unit Definitions
+## [DTI,UNITS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.UNITS.xhtml) - Unit Definitions
 
 Defines units necessary for conversion during the analysis for the Nastran/ADAMS interface or a Nastran fatigue analysis.
 

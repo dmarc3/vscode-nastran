@@ -1,4 +1,4 @@
-## [XFACT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.XFACT.xhtml)
+## [XFACT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.XFACT.xhtml)
 
 Default=0.5 for both STRUCT and FLUID.
 

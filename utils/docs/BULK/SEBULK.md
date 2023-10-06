@@ -1,4 +1,4 @@
-## [SEBULK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBULK1.xhtml) - Partition Superelement Connection
+## [SEBULK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBULK1.xhtml) - Partition Superelement Connection
 
 Defines superelement boundary search options and a repeated, mirrored, or collector superelement.
 

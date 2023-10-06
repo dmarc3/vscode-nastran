@@ -1,4 +1,4 @@
-## [RIGID (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RIGID.Case.xhtml) - Rigid Element Method
+## [RIGID (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RIGID.Case.xhtml) - Rigid Element Method
 
 Selects rigid elements processing method for RBAR, RBAR1, RJOINT, RROD, RTRPLT, RTRPLT1, RBE1, RBE2, and RBE3.
 

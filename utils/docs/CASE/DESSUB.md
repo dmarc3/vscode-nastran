@@ -1,4 +1,4 @@
-## [DESSUB (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESSUB.Case.xhtml) - Design Constraints Request at the Subcase Level
+## [DESSUB (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESSUB.Case.xhtml) - Design Constraints Request at the Subcase Level
 
 Selects the design constraints to be used in a design optimization task for the current subcase.
 

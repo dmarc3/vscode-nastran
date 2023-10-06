@@ -1,4 +1,4 @@
-## [PLOAD4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD4.xhtml) - Pressure Load on Surface and Faces of Solid Elements
+## [PLOAD4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD4.xhtml) - Pressure Load on Surface and Faces of Solid Elements
 
 Defines a pressure load on a face of a CHEXA, CPENTA, CPYRAM, CTETRA, CTRIA3, CTRIA6, CTRIAR, CQUAD4, CQUAD8, or CQUADR element. See Remark  15.
 

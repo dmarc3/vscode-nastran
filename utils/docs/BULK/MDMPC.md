@@ -1,4 +1,4 @@
-## [MDMPC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMPC.xhtml) - Multipoint Constraint Between Two or More Modules
+## [MDMPC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMPC.xhtml) - Multipoint Constraint Between Two or More Modules
 
 Defines a multipoint constraint equation of the form
 

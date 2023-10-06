@@ -1,4 +1,4 @@
-## [RBAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBAR.xhtml) - Rigid Bar
+## [RBAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBAR.xhtml) - Rigid Bar
 
 Defines a rigid bar with six degrees-of-freedom at each end.
 

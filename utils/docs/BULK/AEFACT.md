@@ -1,4 +1,4 @@
-## [AEFACT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEFACT.xhtml) - Aerodynamic Lists
+## [AEFACT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEFACT.xhtml) - Aerodynamic Lists
 
 Defines real numbers for aeroelastic analysis.
 

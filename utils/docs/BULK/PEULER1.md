@@ -1,4 +1,4 @@
-## [PEULER1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PEULER1.xhtml) - Eulerian Element Properties
+## [PEULER1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PEULER1.xhtml) - Eulerian Element Properties
 
 Eulerian element properties. The initial conditions of these elements are defined in geometric regions. Used in SOL 700 only.
 

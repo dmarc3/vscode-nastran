@@ -1,4 +1,4 @@
-## [HFREQ,  HFREQFL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HFREQ.HFREQFL.xhtml)
+## [HFREQ,  HFREQFL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HFREQ.HFREQFL.xhtml)
 
 Default    = 1.+30
 

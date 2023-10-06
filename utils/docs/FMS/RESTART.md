@@ -1,4 +1,4 @@
-## [RESTART](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.RESTART.xhtml) - Reuses Database From a Previous Run
+## [RESTART](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.RESTART.xhtml) - Reuses Database From a Previous Run
 
 Requests that data stored in a previous run be used in the current run.
 

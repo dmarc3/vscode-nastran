@@ -1,4 +1,4 @@
-## [ESLRCF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ESLRCF.user.rc.file.xhtml)
+## [ESLRCF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ESLRCF.user.rc.file.xhtml)
 
 Character*8, must be lower case. Default = blank
 

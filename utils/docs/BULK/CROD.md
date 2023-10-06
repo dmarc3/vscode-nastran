@@ -1,4 +1,4 @@
-## [CROD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CROD.xhtml) - Rod Element Connection
+## [CROD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CROD.xhtml) - Rod Element Connection
 
 Defines a tension-compression-torsion element.
 

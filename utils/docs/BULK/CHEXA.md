@@ -1,4 +1,4 @@
-## [CHEXA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHEXA.xhtml) - Six-Sided Solid Element Connection
+## [CHEXA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHEXA.xhtml) - Six-Sided Solid Element Connection
 
 Defines the connections of the six-sided solid element with eight to twenty grid points or the six-sided solid shell element with eight grid points.
 

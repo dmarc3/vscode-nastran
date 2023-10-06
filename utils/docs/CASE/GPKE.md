@@ -1,4 +1,4 @@
-## [GPKE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPKE.Case.xhtml) - Grid Point Kinetic Energy Output Request
+## [GPKE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPKE.Case.xhtml) - Grid Point Kinetic Energy Output Request
 
 Requests the output of the kinetic energy at selected grid points in normal modes analysis only.
 

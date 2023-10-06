@@ -1,4 +1,4 @@
-## [TODYNA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TODYNA.xhtml) - Defines the Start of Direct Text to Dytran
+## [TODYNA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TODYNA.xhtml) - Defines the Start of Direct Text to Dytran
 
 All bulk data entries between TODYNA and ENDDYNA will be passed directly from SOL 700 to Dytran. Used in SOL 700 only.
 

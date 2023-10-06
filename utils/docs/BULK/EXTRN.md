@@ -1,4 +1,4 @@
-## [EXTRN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EXTRN.xhtml) - Partitioned External Superelement Connection
+## [EXTRN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EXTRN.xhtml) - Partitioned External Superelement Connection
 
 Defines a boundary connection for an external superelement.
 

@@ -1,4 +1,4 @@
-## [SEDV (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEDV.Case.xhtml) - Superelement Design Variable Processing
+## [SEDV (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEDV.Case.xhtml) - Superelement Design Variable Processing
 
 Specifies the superelement identification numbers for which the design variables will be processed.
 

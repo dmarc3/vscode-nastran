@@ -1,4 +1,4 @@
-## [XYPEAK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPEAK.xhtml) - Print Curve Summary
+## [XYPEAK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPEAK.xhtml) - Print Curve Summary
 
 Print only the summary for all curves. The summary output is titled:
 

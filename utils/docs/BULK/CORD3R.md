@@ -1,4 +1,4 @@
-## [CORD3R](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD3R.xhtml) - Moving Rectangular Coordinate System
+## [CORD3R](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD3R.xhtml) - Moving Rectangular Coordinate System
 
 Defines a moving rectangular coordinate system using three points in SOL 700 only.
 

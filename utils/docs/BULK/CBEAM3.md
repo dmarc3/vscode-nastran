@@ -1,4 +1,4 @@
-## [CBEAM3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEAM3.xhtml) - Three-Node Beam Element Connection
+## [CBEAM3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEAM3.xhtml) - Three-Node Beam Element Connection
 
 Defines a three-node beam element.
 

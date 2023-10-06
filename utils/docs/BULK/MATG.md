@@ -1,4 +1,4 @@
-## [MATG ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATG.xhtml) - Gasket Material Properties
+## [MATG ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATG.xhtml) - Gasket Material Properties
 
 Specifies gasket material properties to be used in SOL 400.
 

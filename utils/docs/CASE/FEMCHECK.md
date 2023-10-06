@@ -1,4 +1,4 @@
-## [FEMCHECK (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FEMCHECK.Case.xhtml) - Specifies model checking options
+## [FEMCHECK (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FEMCHECK.Case.xhtml) - Specifies model checking options
 
 Specifies model checking options at the start of the run. Specifically checks for RBE3 elements with unconnected independent (Gij) grids and RBE2 elements with unconnected dependent (GMi) grids. Also validates some other case controls in Frequency and Transient analysis before start of the run. RBE2 will only result in WARNING messages, and all other options will result in FATAL messages.
 

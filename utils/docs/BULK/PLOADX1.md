@@ -1,4 +1,4 @@
-## [PLOADX1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOADX1.xhtml) - Pressure Load on Axisymmetric Element
+## [PLOADX1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOADX1.xhtml) - Pressure Load on Axisymmetric Element
 
 Defines surface traction to be used with CAXISYM, CQUADX, CTRIAX, and CTRIAX6 axisymmetric elements.
 

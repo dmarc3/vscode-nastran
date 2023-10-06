@@ -1,4 +1,4 @@
-## [IPSTRAIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.IPSTRAIN.xhtml) - Initial Equivalent Plastic Strain Values in SOL 400
+## [IPSTRAIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.IPSTRAIN.xhtml) - Initial Equivalent Plastic Strain Values in SOL 400
 
 Defines initial equivalent plastic strain values. This is the initial plastic strain option used in SOL 400 only. (NOTE: This entry is SINGLE FIELD ONLY! Double field will fatal)
 

@@ -1,4 +1,4 @@
-## [MONPNT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT1.xhtml) - Integrated Load Monitor Point
+## [MONPNT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT1.xhtml) - Integrated Load Monitor Point
 
 Defines an integrated load monitor point at a point (x,y,z) in a user defined coordinate system. The integrated loads about this point over the associated nodes will be computed and printed for statics, dynamics and static aeroelastic trim analyses and form integrated loads on the nonlinear static aeroelastic database.
 

@@ -1,4 +1,4 @@
-## [MONCARL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MONCARL.Case.xhtml) - Control for Monte-Carlo simulation
+## [MONCARL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MONCARL.Case.xhtml) - Control for Monte-Carlo simulation
 
 Control for Monte-Carlo simulation using the non-parametric variability method (NPVM). This Case Control command can be used in SOL 111 only.
 

@@ -1,4 +1,4 @@
-## [RANDPS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RANDPS.xhtml) - Power Spectral Density Specification
+## [RANDPS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RANDPS.xhtml) - Power Spectral Density Specification
 
 Defines load set power spectral density factors for use in random analysis having the frequency dependent form
 

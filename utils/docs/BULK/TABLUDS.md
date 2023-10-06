@@ -1,4 +1,4 @@
-## [TABLUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLUDS.xhtml) - User Defined Failure For Nonlinear Explicit Analysis.
+## [TABLUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLUDS.xhtml) - User Defined Failure For Nonlinear Explicit Analysis.
 
 Specifies that a user routine is being used to define an arbitrary function. Use in SOL700 only.
 

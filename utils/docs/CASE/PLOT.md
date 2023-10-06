@@ -1,4 +1,4 @@
-## [PLOT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PLOT.xhtml) - Undeformed or Deformed Plot Request
+## [PLOT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PLOT.xhtml) - Undeformed or Deformed Plot Request
 
 Generates an undeformed plot of the model or a deformed plot for a subcase, mode number or time step.
 

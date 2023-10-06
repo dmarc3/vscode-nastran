@@ -1,4 +1,4 @@
-## [ALTER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ALTER.xhtml) - Inserts and/or Deletes DMAP Statements
+## [ALTER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ALTER.xhtml) - Inserts and/or Deletes DMAP Statements
 
 Inserts and/or deletes DMAP statements in a subDMAP.
 

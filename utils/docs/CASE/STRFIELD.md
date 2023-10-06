@@ -1,4 +1,4 @@
-## [STRFIELD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.STRFIELD.Case.xhtml) - Grid Point Stress Output Request
+## [STRFIELD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.STRFIELD.Case.xhtml) - Grid Point Stress Output Request
 
 Requests the computation of grid point stresses for graphical postprocessing and mesh stress discontinuities.
 

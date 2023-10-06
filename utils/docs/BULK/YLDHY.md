@@ -1,4 +1,4 @@
-## [YLDHY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDHY.xhtml) - Hydrodynamic Yield Model
+## [YLDHY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDHY.xhtml) - Hydrodynamic Yield Model
 
 Defines a yield model with zero yield stress. Used in SOL 700 only.
 

@@ -1,4 +1,4 @@
-## [MDBOLT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBOLT.xhtml) - Defines the Multi-Point Constraints for a Bolt Between Two Modules
+## [MDBOLT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBOLT.xhtml) - Defines the Multi-Point Constraints for a Bolt Between Two Modules
 
 Defines a rigid bolt between two Modules by a set of MPC constraints.
 

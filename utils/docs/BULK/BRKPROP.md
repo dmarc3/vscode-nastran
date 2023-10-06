@@ -1,4 +1,4 @@
-## [BRKPROP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BRKPROP.xhtml) - Specifies Property of Brake System for Brake Squeal Analysis Using SOL 400
+## [BRKPROP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BRKPROP.xhtml) - Specifies Property of Brake System for Brake Squeal Analysis Using SOL 400
 
 Defines property of brake system for brake squeal calculations.
 

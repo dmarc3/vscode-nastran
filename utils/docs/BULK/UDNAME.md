@@ -1,4 +1,4 @@
-## [UDNAME](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UDNAME.xhtml) - User Defined File Name
+## [UDNAME](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UDNAME.xhtml) - User Defined File Name
 
 Provides the name of a file that can be referenced from other bulk data entries such as FTGLOAD, TABLRPC, and MATDIGI.
 

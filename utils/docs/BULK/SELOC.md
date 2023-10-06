@@ -1,4 +1,4 @@
-## [SELOC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELOC.xhtml) - Partitioned Superelement Location
+## [SELOC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELOC.xhtml) - Partitioned Superelement Location
 
 Defines a partitioned superelement relocation by listing three noncolinear points in the superelement and three corresponding points not belonging to the superelement.
 

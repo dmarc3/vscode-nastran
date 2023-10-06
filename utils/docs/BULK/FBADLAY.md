@@ -1,4 +1,4 @@
-## [FBADLAY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBADLAY.xhtml) - Dynamic Load Time Delay for FRF Based Assembly (FBA)
+## [FBADLAY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBADLAY.xhtml) - Dynamic Load Time Delay for FRF Based Assembly (FBA)
 
 Defines the time delay term  ![bulkfgil03618.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/../../../assets/bulkfgil03618.jpg?_LANG=enus)  in the equations of motion of the dynamic loading function for frequency dependent loads in an FRF Based Assembly (FBA) process.
 

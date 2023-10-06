@@ -1,4 +1,4 @@
-## [GENUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GENUDS.xhtml) - User Data for Notify User Defined Service or Subroutine
+## [GENUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GENUDS.xhtml) - User Data for Notify User Defined Service or Subroutine
 
 The GENUDS defines integer, real and character type data that will be passed to the notify method in runtime info interface. The notify method will be called at start of load case, start of increment, end of increment and end of load case.
 

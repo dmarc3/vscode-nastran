@@ -1,4 +1,4 @@
-## [MATHP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATHP.xhtml) - Hyperelastic Material Properties
+## [MATHP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATHP.xhtml) - Hyperelastic Material Properties
 
 Specifies material properties for use in fully nonlinear (i.e., large strain and large rotation) hyperelastic analysis of rubber-like materials (elastomers).
 

@@ -1,4 +1,4 @@
-## [SURFACE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.SURFACE.xhtml) - Surface Definition
+## [SURFACE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.SURFACE.xhtml) - Surface Definition
 
 Defines a surface for the calculation of grid point stresses, strains, or mesh stress discontinuities.
 

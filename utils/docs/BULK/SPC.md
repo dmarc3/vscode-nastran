@@ -1,4 +1,4 @@
-## [SPC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPC.xhtml) - Single-Point Constraint
+## [SPC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPC.xhtml) - Single-Point Constraint
 
 Defines a set of single-point constraints and enforced motion (enforced displacements in static analysis and enforced displacements, velocities or acceleration in dynamic analysis).
 

@@ -1,4 +1,4 @@
-## [RSPINR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSPINR.xhtml) - Relative Spin Rates Between Rotors
+## [RSPINR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSPINR.xhtml) - Relative Spin Rates Between Rotors
 
 Specifies the relative spin rates between rotors for complex eigenvalue, frequency response, and static analysis and rotor damping parameters.
 

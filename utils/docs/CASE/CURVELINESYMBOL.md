@@ -1,4 +1,4 @@
-## [CURVELINESYMBOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.CURVELINESYMBOL.xhtml) - Curve, Line and Symbol Selection
+## [CURVELINESYMBOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.CURVELINESYMBOL.xhtml) - Curve, Line and Symbol Selection
 
 Selects lines and/or symbols to be drawn through the x-y points.
 

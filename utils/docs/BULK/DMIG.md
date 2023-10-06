@@ -1,4 +1,4 @@
-## [DMIG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIG.xhtml) - Direct Matrix Input at Points
+## [DMIG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIG.xhtml) - Direct Matrix Input at Points
 
 Defines direct input matrices related to grid, extra, and/or scalar points. The matrix is defined by a single header entry and one or more column entries. A column entry is required for each column with nonzero elements.
 

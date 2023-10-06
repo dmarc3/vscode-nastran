@@ -1,4 +1,4 @@
-## [MDBCPAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCPAR.xhtml) - Defines Candidates Modules for Automatic Contact Detection Across Modules
+## [MDBCPAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCPAR.xhtml) - Defines Candidates Modules for Automatic Contact Detection Across Modules
 
 Defines modules as candidates for automatic contact detection across modules.
 

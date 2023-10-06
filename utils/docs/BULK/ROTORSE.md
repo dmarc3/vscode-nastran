@@ -1,4 +1,4 @@
-## [ROTORSE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTORSE.xhtml) - Rotor Superelement Identification
+## [ROTORSE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTORSE.xhtml) - Rotor Superelement Identification
 
 Specifies grids that compose the rotor line model. An alternate to the ROTORG entry when superelements are used.
 

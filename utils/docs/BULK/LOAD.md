@@ -1,4 +1,4 @@
-## [LOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOAD.xhtml) - Static Load Combination (Superposition)
+## [LOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOAD.xhtml) - Static Load Combination (Superposition)
 
 Defines a static load as a linear combination of load sets defined via FORCE, MOMENT, FORCE1, MOMENT1, FORCE2, MOMENT2, DAREA (if these entries have been converted), PLOAD, PLOAD1, PLOAD2, PLOADB3, PLOAD4, PLOADX1, SLOAD, RFORCE, and GRAV, ACCEL and ACCEL1 entries. In addition, all the thermal loads are also supported in the NASTRAN thermal analysis (SOL 153 and SOL 400 with analysis=hstat) such as QBDY1, QBDY2, QBDY3, QVECT, QVOL, SLOAD, QHBDY Bulk Data entries.
 

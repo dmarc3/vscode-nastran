@@ -1,4 +1,4 @@
-## [FLOW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOW.xhtml) - Flow Boundary Condition
+## [FLOW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOW.xhtml) - Flow Boundary Condition
 
 Defines the properties of a material for the boundaries of an Eulerian mesh. Used in SOL 700 only.
 

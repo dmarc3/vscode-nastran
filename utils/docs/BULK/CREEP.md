@@ -1,4 +1,4 @@
-## [CREEP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CREEP.xhtml) - Creep Characteristics
+## [CREEP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CREEP.xhtml) - Creep Characteristics
 
 Defines creep characteristics based on experimental data or known empirical creep law. This entry will be activated if a MAT1, MAT2, or MAT9 entry with the same MID is used and the NLPARM entry is prepared for creep analysis. The creep formulation is principally suited for isotropic materials and, in general, when used with anisotropic materials may produce incorrect results. However, slightly anisotropic materials may produce acceptable results.
 

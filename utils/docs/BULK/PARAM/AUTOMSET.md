@@ -1,4 +1,4 @@
-## [AUTOMSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.AUTOMSET.xhtml)
+## [AUTOMSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.AUTOMSET.xhtml)
 
 Character, Default = NO (Except in SOL 400 with ANALYSIS=STATICS)
 

@@ -1,4 +1,4 @@
-## [FLOWT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWT.xhtml) - Time Dependent Flow Boundary
+## [FLOWT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWT.xhtml) - Time Dependent Flow Boundary
 
 Defines the material properties for the in- or outflow of material trough the boundary of an Euler mesh. Inflow velocity and material properties can be chosen time dependent. Used in SOL 700 only.
 

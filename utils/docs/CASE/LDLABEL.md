@@ -1,4 +1,4 @@
-## [LDLABEL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LDLABEL.Case.xhtml) - Label assigned to a subcase (static load case) in the external superelement creation run
+## [LDLABEL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LDLABEL.Case.xhtml) - Label assigned to a subcase (static load case) in the external superelement creation run
 
 Assigns a character string to an external superelement creation run's subcase in order to identify the static load in the assembly run.
 

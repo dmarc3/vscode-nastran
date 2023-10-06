@@ -1,4 +1,4 @@
-## [NLSTEP (Case) ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLSTEP.Case.xhtml) - Nonlinear Control Parameters for Mechanical, Thermal, and Coupled Analysis Selection
+## [NLSTEP (Case) ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLSTEP.Case.xhtml) - Nonlinear Control Parameters for Mechanical, Thermal, and Coupled Analysis Selection
 
 Selects integration and output time steps for static and transient nonlinear analysis in SOL 400.
 

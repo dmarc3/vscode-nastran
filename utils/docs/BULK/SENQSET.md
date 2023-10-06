@@ -1,4 +1,4 @@
-## [SENQSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SENQSET.xhtml) - Superelement Internal Generalized Degree-of-Freedom
+## [SENQSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SENQSET.xhtml) - Superelement Internal Generalized Degree-of-Freedom
 
 Defines number of internally generated scalar points for superelement dynamic reduction.
 

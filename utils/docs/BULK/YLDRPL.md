@@ -1,4 +1,4 @@
-## [YLDRPL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDRPL.xhtml) - Rate Power Law Yield Model
+## [YLDRPL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDRPL.xhtml) - Rate Power Law Yield Model
 
 Defines a rate power law yield model where the yield stress is a function of effective plastic strain and strain rate. Used in SOL 700 only.
 

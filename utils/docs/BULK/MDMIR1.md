@@ -1,4 +1,4 @@
-## [MDMIR1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMIR1.xhtml) - Module Reposition by Mirroring - Option 1
+## [MDMIR1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMIR1.xhtml) - Module Reposition by Mirroring - Option 1
 
 Defines reposition of a Module with a mirror plane defined by three non-collinear points in Module 0.
 

@@ -1,4 +1,4 @@
-## [PLSOLID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLSOLID.xhtml) - Fully Nonlinear Solid Element Properties
+## [PLSOLID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLSOLID.xhtml) - Fully Nonlinear Solid Element Properties
 
 Defines a fully nonlinear (i.e., large strain and large rotation) hyperelastic solid element.
 

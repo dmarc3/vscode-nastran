@@ -1,4 +1,4 @@
-## [MDBCNCT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCNCT.xhtml) - Defines the Touching and Touched Contact Bodies in Different Modules
+## [MDBCNCT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCNCT.xhtml) - Defines the Touching and Touched Contact Bodies in Different Modules
 
 Defines the touching and touched contact and used in SOLs 101, 103, 105, 107, 108, 109, 110, 111, 112 and 400 for general contact, glued, step glue or permanent glue between contact bodies residing in different Modules.
 

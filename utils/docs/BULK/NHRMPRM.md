@@ -1,4 +1,4 @@
-## [NHRMPRM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NHRMPRM.xhtml) - Parameters for Nonlinear frequency response analysis (SOL 128)
+## [NHRMPRM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NHRMPRM.xhtml) - Parameters for Nonlinear frequency response analysis (SOL 128)
 
 #### Format:
 

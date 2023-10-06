@@ -1,4 +1,4 @@
-## [COSMSRV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMSRV.xhtml) - Define the Co-Simulation service
+## [COSMSRV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMSRV.xhtml) - Define the Co-Simulation service
 
 Defines the co-simulation service for analysis on a coupled group and exchanged physical quantities. It is supported only in SOL 400.
 

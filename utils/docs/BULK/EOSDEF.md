@@ -1,4 +1,4 @@
-## [EOSDEF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSDEF.xhtml) - Deflagration - SOL 700 only
+## [EOSDEF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSDEF.xhtml) - Deflagration - SOL 700 only
 
 EOSDEF defines the properties of the deflagration equation of state, and the reaction rate to model the burning of solid propellants. The burning of the solid propellant produces hot gas.
 

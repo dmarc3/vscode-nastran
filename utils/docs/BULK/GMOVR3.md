@@ -1,4 +1,4 @@
-## [GMOVR3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GMOVR3.xhtml) - RBE3 SOL400 Rigid = Lagrange perturbation coincident grid override.
+## [GMOVR3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GMOVR3.xhtml) - RBE3 SOL400 Rigid = Lagrange perturbation coincident grid override.
 
 Allows override values to the MDLPRM, GMOVR3 entry.
 

@@ -1,4 +1,4 @@
-## [CSSCHD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSSCHD.xhtml) - Aerodynamic Control Surface Schedule Input
+## [CSSCHD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSSCHD.xhtml) - Aerodynamic Control Surface Schedule Input
 
 Defines a scheduled control surface deflection as a function of Mach number and angle of attack.
 

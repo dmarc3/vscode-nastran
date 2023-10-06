@@ -1,4 +1,4 @@
-## [PBEMN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEMN1.xhtml) - Nonlinear Property Extensions for a PBEAM or PBEAML Entry
+## [PBEMN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEMN1.xhtml) - Nonlinear Property Extensions for a PBEAM or PBEAML Entry
 
 Specifies additional nonlinear properties for elements that point to a PBEAM or PBEAML entry in SOL 400.
 

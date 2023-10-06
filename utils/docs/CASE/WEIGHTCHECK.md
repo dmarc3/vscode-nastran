@@ -1,4 +1,4 @@
-## [WEIGHTCHECK (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.WEIGHTCHECK.Case.xhtml) - Rigid Body Mass Reduction Check
+## [WEIGHTCHECK (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.WEIGHTCHECK.Case.xhtml) - Rigid Body Mass Reduction Check
 
 At each stage of the mass matrix reduction, compute rigid body mass and compare with the rigid body mass in the g-set.
 

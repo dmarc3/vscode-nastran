@@ -1,4 +1,4 @@
-## [PFASTT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PFASTT.xhtml) - Frequency Dependent and material nonlinear CFAST Property
+## [PFASTT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PFASTT.xhtml) - Frequency Dependent and material nonlinear CFAST Property
 
 Defines the frequency dependent and material nonlinear properties for a PFAST Bulk Data entry.
 

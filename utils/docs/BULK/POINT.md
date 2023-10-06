@@ -1,4 +1,4 @@
-## [POINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.POINT.xhtml) - Geometric Point Entry
+## [POINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.POINT.xhtml) - Geometric Point Entry
 
 Define edge point for SELOC entries or profile PBMSECT entries.
 

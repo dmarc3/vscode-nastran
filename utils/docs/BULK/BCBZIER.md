@@ -1,4 +1,4 @@
-## [BCBZIER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBZIER.xhtml) - Defines a Rigid Contact Body Made up of Bezier Surfaces in SOLs 101 and 400
+## [BCBZIER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBZIER.xhtml) - Defines a Rigid Contact Body Made up of Bezier Surfaces in SOLs 101 and 400
 
 Defines a rigid contact body made up of Bezier surfaces used in SOLs 101 and 400 only.
 

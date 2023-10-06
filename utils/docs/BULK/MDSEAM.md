@@ -1,4 +1,4 @@
-## [MDSEAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDSEAM.xhtml) - A Shell Patch SEAM Connection Between Two Modules
+## [MDSEAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDSEAM.xhtml) - A Shell Patch SEAM Connection Between Two Modules
 
  Defines a SEAM connecting two surface patches in two Modules.
 

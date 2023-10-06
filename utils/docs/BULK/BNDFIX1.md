@@ -1,4 +1,4 @@
-## [BNDFIX1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDFIX1.xhtml) - Fixed Boundary Degrees-of-Freedom, Alternate Form of BNDFIX Entry
+## [BNDFIX1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDFIX1.xhtml) - Fixed Boundary Degrees-of-Freedom, Alternate Form of BNDFIX Entry
 
 Defines analysis set (a-set) degrees-of-freedom to be fixed (b-set) during generalized dynamic reduction or component mode synthesis calculations.
 

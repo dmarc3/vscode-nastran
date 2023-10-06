@@ -1,4 +1,4 @@
-## [SPCD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCD.xhtml) - Enforced Motion Value
+## [SPCD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCD.xhtml) - Enforced Motion Value
 
 Defines an enforced displacement value for static analysis and an enforced motion value (displacement, velocity or acceleration) in dynamic analysis.
 

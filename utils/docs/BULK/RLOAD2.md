@@ -1,4 +1,4 @@
-## [RLOAD2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RLOAD2.xhtml) - Frequency Response Dynamic Excitation, Form 2
+## [RLOAD2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RLOAD2.xhtml) - Frequency Response Dynamic Excitation, Form 2
 
 Defines a frequency-dependent dynamic excitation of the form.
 

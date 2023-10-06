@@ -1,4 +1,4 @@
-## [NLRGAP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLRGAP1.xhtml) - Nonlinear Load Proportional to Gap
+## [NLRGAP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLRGAP1.xhtml) - Nonlinear Load Proportional to Gap
 
 Defines a nonlinear radial (circular) gap for transient response or nonlinear harmonic response.
 

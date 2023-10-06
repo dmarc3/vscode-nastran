@@ -1,4 +1,4 @@
-## [LINK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.LINK.xhtml) - Links a Main SubDMAP
+## [LINK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.LINK.xhtml) - Links a Main SubDMAP
 
 Links a main subDMAP to form a solution sequence.
 

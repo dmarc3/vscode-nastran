@@ -1,4 +1,4 @@
-## [VIEW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VIEW1.xhtml) - View Factor Definition
+## [VIEW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VIEW1.xhtml) - View Factor Definition
 
 Defines radiation cavity and shadowing for radiation view factor calculations.
 

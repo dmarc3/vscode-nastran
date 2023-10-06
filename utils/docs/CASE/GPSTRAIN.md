@@ -1,4 +1,4 @@
-## [GPSTRAIN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPSTRAIN.Case.xhtml) - Grid Point Strain Output Request
+## [GPSTRAIN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPSTRAIN.Case.xhtml) - Grid Point Strain Output Request
 
 Requests grid point strains.
 

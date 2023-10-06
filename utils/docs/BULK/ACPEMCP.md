@@ -1,4 +1,4 @@
-## [ACPEMCP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACPEMCP.xhtml) - Trim Component Interface Coupling and Constraints Definition
+## [ACPEMCP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACPEMCP.xhtml) - Trim Component Interface Coupling and Constraints Definition
 
 Defines the interface coupling conditions and constraints of a trim component.
 

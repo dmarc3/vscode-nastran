@@ -1,4 +1,4 @@
-## [ROTHYBD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTHYBD.xhtml) - Hybrid damping for rotors
+## [ROTHYBD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTHYBD.xhtml) - Hybrid damping for rotors
 
 Specifies hybrid damping data for rotors.
 

@@ -1,4 +1,4 @@
-## [SPCADD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCADD.xhtml) - Single-Point Constraint Set Combination
+## [SPCADD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCADD.xhtml) - Single-Point Constraint Set Combination
 
 Defines a single-point constraint set as a union of single-point constraint sets defined on SPC or SPC1 entries.
 

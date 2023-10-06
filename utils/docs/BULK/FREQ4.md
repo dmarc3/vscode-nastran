@@ -1,4 +1,4 @@
-## [FREQ4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ4.xhtml) - Frequency List, Alternate Form 4
+## [FREQ4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ4.xhtml) - Frequency List, Alternate Form 4
 
 Defines a set of frequencies used in the solution of modal frequency-response problems by specifying the amount of “spread” around each natural frequency and the number of equally spaced excitation frequencies within the spread.
 

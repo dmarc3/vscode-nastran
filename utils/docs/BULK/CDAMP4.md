@@ -1,4 +1,4 @@
-## [CDAMP4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP4.xhtml) - Scalar Damper Property and Connection to Scalar Points Only
+## [CDAMP4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP4.xhtml) - Scalar Damper Property and Connection to Scalar Points Only
 
 Defines a scalar damper element that connected only to scalar points and without reference to a material or property entry.
 

@@ -1,4 +1,4 @@
-## [GUST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GUST.xhtml) - Aerodynamic Gust Load Description
+## [GUST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GUST.xhtml) - Aerodynamic Gust Load Description
 
 Defines a stationary vertical gust for use in aeroelastic response analysis.
 

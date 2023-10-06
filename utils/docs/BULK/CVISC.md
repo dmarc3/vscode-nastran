@@ -1,4 +1,4 @@
-## [CVISC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CVISC.xhtml) - Viscous Damper Connection
+## [CVISC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CVISC.xhtml) - Viscous Damper Connection
 
 Defines a viscous damper element.
 

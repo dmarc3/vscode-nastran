@@ -1,4 +1,4 @@
-## [YTLOG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTLOG.xhtml) - Logarithmic or Linear Y Axis
+## [YTLOG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTLOG.xhtml) - Logarithmic or Linear Y Axis
 
 Selects logarithmic or linear y-axis for upper half frame curves only.
 

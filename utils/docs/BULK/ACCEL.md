@@ -1,4 +1,4 @@
-## [ACCEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACCEL.xhtml) - Acceleration Load
+## [ACCEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACCEL.xhtml) - Acceleration Load
 
 Defines static acceleration loads, which may vary over a region of the structural model. The load variation is based upon the tabular input defined on this Bulk Data entry.
 

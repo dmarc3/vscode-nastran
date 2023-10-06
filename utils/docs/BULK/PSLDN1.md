@@ -1,4 +1,4 @@
-## [PSLDN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSLDN1.xhtml) - Nonlinear Property Extensions for a PSOLID Entry
+## [PSLDN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSLDN1.xhtml) - Nonlinear Property Extensions for a PSOLID Entry
 
 Specifies additional nonlinear properties for solid elements that point to a PSOLID entry in SOL 400.
 

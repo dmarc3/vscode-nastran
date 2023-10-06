@@ -1,4 +1,4 @@
-## [MATSORT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATSORT.xhtml) - Advanced Orthotropic, Nonlinear Elastic Material for Shell Elements
+## [MATSORT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATSORT.xhtml) - Advanced Orthotropic, Nonlinear Elastic Material for Shell Elements
 
 Specifies NLELAST option for advanced 3D orthotropic, nonlinear elastic materials in SOL 400.
 

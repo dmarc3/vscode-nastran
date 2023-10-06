@@ -1,4 +1,4 @@
-## [PLOTTER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PLOTTER1.xhtml) - Plot File Format
+## [PLOTTER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PLOTTER1.xhtml) - Plot File Format
 
 Selects format of plot file for interpretation by plotter postprocessor.
 

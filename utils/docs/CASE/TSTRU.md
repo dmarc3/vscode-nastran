@@ -1,4 +1,4 @@
-## [TSTRU (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TSTRU.Case.xhtml) - Temperature Set ID for a Structures Run
+## [TSTRU (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TSTRU.Case.xhtml) - Temperature Set ID for a Structures Run
 
 Defines a temperature set ID for a structures run based on a heat transfer subcase.
 

@@ -1,4 +1,4 @@
-## [FRFSPC1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFSPC1.xhtml) - FRF Component Single-Point Constraint for FRF Based Assembly (FBA)
+## [FRFSPC1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFSPC1.xhtml) - FRF Component Single-Point Constraint for FRF Based Assembly (FBA)
 
 Defines single-point constraints for FRF component connection points in an FRF Based Assembly (FBA) process.
 

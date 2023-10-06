@@ -1,4 +1,4 @@
-## [SURFINI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SURFINI.xhtml) - Eulerian Initialization Surface
+## [SURFINI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SURFINI.xhtml) - Eulerian Initialization Surface
 
 Defines a surface that is used for initialization of regions of an Eulerian mesh. Used in SOL 700 only.
 

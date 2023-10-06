@@ -1,4 +1,4 @@
-## [TABSCTL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABSCTL.xhtml) - Load Stepping Control Table - SOL 400
+## [TABSCTL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABSCTL.xhtml) - Load Stepping Control Table - SOL 400
 
 This option allows the user to provide user criteria for load stepping control. It is referred to by an NLSTEP entry. The criteria defined herein are used for controlling the load step size. The criteria come in two flavors as defined in the NLSTEP entry: limit and target. When used as limits, the time step will be reduced if the criterion would be violated. When used as target, the time step will also be increased if the calculated results are less than what is specified by the criteria.
 

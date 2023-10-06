@@ -1,4 +1,4 @@
-## [HYDROC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDROC.xhtml) - Hydrostatic Pressure Loading on Surface and Faces of Shell or Solid Elements using fluid cavities.
+## [HYDROC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDROC.xhtml) - Hydrostatic Pressure Loading on Surface and Faces of Shell or Solid Elements using fluid cavities.
 
 Defines a hydrostatic pressure load on a face of a CHEXA, CPENTA, CPYRAM, CTETRA, CTRIA3, CTRIA6, CTRIAR, CQUAD4, CQUAD8, or CQUADR element using fluid cavity data. The HYDROC entry is NOT supported in SOL101 because SOL 101 does not support the Fluid Structure Interface.
 

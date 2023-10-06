@@ -1,4 +1,4 @@
-## [LOADCYH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYH.xhtml) - Harmonic Load Input for Cyclic Symmetry
+## [LOADCYH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYH.xhtml) - Harmonic Load Input for Cyclic Symmetry
 
 Defines the harmonic coefficients of a static or dynamic load for use in cyclic symmetry analysis.
 

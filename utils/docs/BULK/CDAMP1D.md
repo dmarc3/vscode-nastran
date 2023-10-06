@@ -1,4 +1,4 @@
-## [CDAMP1D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP1D.xhtml) - Scalar Damper Connection for SOL 700 Only
+## [CDAMP1D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP1D.xhtml) - Scalar Damper Connection for SOL 700 Only
 
 Defines a scalar damper connection for use in SOL 700 only.
 

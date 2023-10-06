@@ -1,4 +1,4 @@
-## [COMPMATT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.COMPMATT.xhtml)
+## [COMPMATT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.COMPMATT.xhtml)
 
 Default = NO, SOL 106 and SOL 400 only
 

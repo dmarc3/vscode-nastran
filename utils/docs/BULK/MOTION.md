@@ -1,4 +1,4 @@
-## [MOTION](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOTION.xhtml) - Specifies Motion Direction in Brake System for Brake Squeal Analysis Using SOL 400
+## [MOTION](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOTION.xhtml) - Specifies Motion Direction in Brake System for Brake Squeal Analysis Using SOL 400
 
 Defines motion direction of brake system for brake squeal calculations.
 

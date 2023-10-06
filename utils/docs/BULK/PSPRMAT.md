@@ -1,4 +1,4 @@
-## [PSPRMAT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSPRMAT.xhtml) - Spring and damper elements for translation and rotation - SOL 700
+## [PSPRMAT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSPRMAT.xhtml) - Spring and damper elements for translation and rotation - SOL 700
 
 Defines linear and nonlinear spring element property for translation. Used in SOL 700 only.
 

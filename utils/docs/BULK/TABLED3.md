@@ -1,4 +1,4 @@
-## [TABLED3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLED3.xhtml) - Dynamic Load Tabular Function, Form 3
+## [TABLED3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLED3.xhtml) - Dynamic Load Tabular Function, Form 3
 
 Defines a tabular function for use in generating frequency-dependent and time-dependent dynamic loads.  Also contains parametric data for use with the table.
 

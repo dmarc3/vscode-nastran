@@ -1,4 +1,4 @@
-## [SEBNDRY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBNDRY.xhtml) - Superelement Boundary-Point Definition
+## [SEBNDRY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBNDRY.xhtml) - Superelement Boundary-Point Definition
 
 Defines a list of grid points in a partitioned superelement for the automatic boundary search between a specified superelement or between all other superelements in the model.
 

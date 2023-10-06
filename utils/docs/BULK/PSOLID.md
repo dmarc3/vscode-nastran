@@ -1,4 +1,4 @@
-## [PSOLID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSOLID.xhtml) - Properties of Solid Elements
+## [PSOLID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSOLID.xhtml) - Properties of Solid Elements
 
 Defines the properties of solid elements (CHEXA, CPENTA, CPYRAM and CTETRA entries).
 

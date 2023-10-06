@@ -1,4 +1,4 @@
-## [ELAFORCES (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ELAFORCES.Case.xhtml) - Elastic Forces Output Request
+## [ELAFORCES (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ELAFORCES.Case.xhtml) - Elastic Forces Output Request
 
 Requests the form and type of elastic forces output.
 

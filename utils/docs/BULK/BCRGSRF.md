@@ -1,4 +1,4 @@
-## [BCRGSRF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCRGSRF.xhtml) - Rigid Contact Surface List in SOLs 101 and 400
+## [BCRGSRF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCRGSRF.xhtml) - Rigid Contact Surface List in SOLs 101 and 400
 
 Defines a list of rigid contact surfaces used in SOLs 101 and 400 only.
 

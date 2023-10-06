@@ -1,4 +1,4 @@
-## [SPC1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPC1.xhtml) - Single-Point Constraint, Alternate Form
+## [SPC1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPC1.xhtml) - Single-Point Constraint, Alternate Form
 
 Defines a set of single-point constraints.
 

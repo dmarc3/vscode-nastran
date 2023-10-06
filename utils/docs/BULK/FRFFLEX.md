@@ -1,4 +1,4 @@
-## [FRFFLEX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFFLEX.xhtml) - FRF Component Flexible Connection Specification for FRF Based Assembly (FBA)
+## [FRFFLEX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFFLEX.xhtml) - FRF Component Flexible Connection Specification for FRF Based Assembly (FBA)
 
 Defines properties for flexible connections between FRF components in an FRF Based Assembly (FBA) process.
 

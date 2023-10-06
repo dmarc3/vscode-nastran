@@ -1,4 +1,4 @@
-## [COHFRIC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COHFRIC.xhtml) - Cohesive Friction
+## [COHFRIC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COHFRIC.xhtml) - Cohesive Friction
 
 Allows friction and sticking during tensile conditions at the coupling surface. Use SOL700 only.
 

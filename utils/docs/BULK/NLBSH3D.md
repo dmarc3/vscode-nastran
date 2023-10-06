@@ -1,4 +1,4 @@
-## [NLBSH3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLBSH3D.xhtml) - Nonlinear 3-dimensional rotor loading
+## [NLBSH3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLBSH3D.xhtml) - Nonlinear 3-dimensional rotor loading
 
 Defines connectivity of a three-dimensional nonlinear load as a function of relative deflection and velocity of a grid pair which in turn is a function of rotor speed.
 

@@ -1,4 +1,4 @@
-## [PBSH2DT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBSH2DT.xhtml) - 2-D Linear/Nonlinear Connection Properties using Table Lookup
+## [PBSH2DT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBSH2DT.xhtml) - 2-D Linear/Nonlinear Connection Properties using Table Lookup
 
 Defines frequency-dependent properties of a two-dimensional element (CBUSH2D) using TABLED1 lookup.
 

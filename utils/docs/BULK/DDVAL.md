@@ -1,4 +1,4 @@
-## [DDVAL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DDVAL.xhtml) - Discrete Design Variable Values
+## [DDVAL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DDVAL.xhtml) - Discrete Design Variable Values
 
 Defines real, discrete design variable values for use in discrete variable optimization, topometry optimization or rotordynamics.
 

@@ -1,4 +1,4 @@
-## [AXISYMMETRIC (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AXISYMMETRIC.Case.xhtml) - Conical Shell Boundary Conditions
+## [AXISYMMETRIC (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AXISYMMETRIC.Case.xhtml) - Conical Shell Boundary Conditions
 
 Selects boundary conditions for an axisymmetric shell problem or specifies the existence of fluid harmonics for hydroelastic problems.
 

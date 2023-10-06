@@ -1,4 +1,4 @@
-## [MAT3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT3.xhtml) - CTRIAX6 or PSHLN2 or PLCOMP Material Property Definition
+## [MAT3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT3.xhtml) - CTRIAX6 or PSHLN2 or PLCOMP Material Property Definition
 
 Defines the material properties for linear orthotropic materials used by the CTRIAX6 element entry. It also is allowed with orthotropic materials on the PSHLN2 and PLCOMP entries.
 

@@ -1,4 +1,4 @@
-## [MEFFMASS (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MEFFMASS.Case.xhtml) - Modal Effective Mass Output Request
+## [MEFFMASS (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MEFFMASS.Case.xhtml) - Modal Effective Mass Output Request
 
 Requests the output of the modal effective mass, participation factors, and modal effective mass fractions in normal modes analysis.
 

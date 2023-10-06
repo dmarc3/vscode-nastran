@@ -1,4 +1,4 @@
-## [SPOINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPOINT.xhtml) - Scalar Point Definition
+## [SPOINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPOINT.xhtml) - Scalar Point Definition
 
 Defines scalar points.
 

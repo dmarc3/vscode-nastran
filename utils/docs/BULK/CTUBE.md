@@ -1,4 +1,4 @@
-## [CTUBE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTUBE.xhtml) - Tube Element Connection
+## [CTUBE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTUBE.xhtml) - Tube Element Connection
 
 Defines a tension-compression-torsion tube element.
 

@@ -1,4 +1,4 @@
-## [FBODYLD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FBODYLD.Case.xhtml) - Free Body Load Output Request
+## [FBODYLD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FBODYLD.Case.xhtml) - Free Body Load Output Request
 
 Selects a set of submodels for which free body loads are to be produced and stored.
 

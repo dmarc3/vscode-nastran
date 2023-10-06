@@ -1,4 +1,4 @@
-## [CORD1R](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD1R.xhtml) - Rectangular Coordinate System Definition, Form 1
+## [CORD1R](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD1R.xhtml) - Rectangular Coordinate System Definition, Form 1
 
 Defines a rectangular coordinate system using three grid points.
 

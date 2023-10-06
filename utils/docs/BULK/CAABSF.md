@@ -1,4 +1,4 @@
-## [CAABSF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAABSF.xhtml) - Frequency-Dependent Acoustic Absorber Element
+## [CAABSF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAABSF.xhtml) - Frequency-Dependent Acoustic Absorber Element
 
 Defines a frequency-dependent acoustic absorber element in coupled fluid-structural analysis.
 

@@ -1,4 +1,4 @@
-## [INITGAS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INITGAS.xhtml) - Gasbag or Coupling Surface Inital Gas Fraction Definition
+## [INITGAS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INITGAS.xhtml) - Gasbag or Coupling Surface Inital Gas Fraction Definition
 
 Specifies the initial gas composition inside a gasbag or Euler coupling surface. Used in SOL 700 only.
 

@@ -1,4 +1,4 @@
-## [BFRlC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BFRlC.xhtml) - Contact Friction
+## [BFRlC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BFRlC.xhtml) - Contact Friction
 
 Defines frictional properties between two bodies in contact using the slideline contact in SOL 106 and SOL 129. SOL 400 is the recommended approach for contact analysis.
 

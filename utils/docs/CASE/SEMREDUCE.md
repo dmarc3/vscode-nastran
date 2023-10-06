@@ -1,4 +1,4 @@
-## [SEMREDUCE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEMREDUCE.Case.xhtml) - Superelement Mass and Damping Assembly and Reduction
+## [SEMREDUCE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEMREDUCE.Case.xhtml) - Superelement Mass and Damping Assembly and Reduction
 
 Specifies the superelement identification numbers for which the mass and damping matrices will be assembled and reduced. In buckling analysis, the differential stiffness matrices will be assembled and reduced.
 

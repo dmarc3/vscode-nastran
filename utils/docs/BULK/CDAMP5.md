@@ -1,4 +1,4 @@
-## [CDAMP5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP5.xhtml) - Scalar Damper with Material Property
+## [CDAMP5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP5.xhtml) - Scalar Damper with Material Property
 
 Defines a damping element that refers to a material property entry and connection to grid or scalar points. This element is intended for heat transfer analysis only.
 

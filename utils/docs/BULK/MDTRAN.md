@@ -1,4 +1,4 @@
-## [MDTRAN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDTRAN.xhtml) - Module Reposition by Translation
+## [MDTRAN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDTRAN.xhtml) - Module Reposition by Translation
 
 Defines a Module translation by specifying a vector in Module 0.
 

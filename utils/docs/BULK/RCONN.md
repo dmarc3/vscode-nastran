@@ -1,4 +1,4 @@
-## [RCONN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RCONN.xhtml) - Rigid Connection
+## [RCONN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RCONN.xhtml) - Rigid Connection
 
 Defines a rigid connection between the different parts of Lagrangian meshes (tied surfaces). Used in SOL 700 only.
 

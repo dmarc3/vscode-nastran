@@ -1,4 +1,4 @@
-## [ROTSEKE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ROTSEKE.Case.xhtml) - Rotor Modal Strain and Kinetic Energies Output Request
+## [ROTSEKE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ROTSEKE.Case.xhtml) - Rotor Modal Strain and Kinetic Energies Output Request
 
 Requests rotor modal strain and kinetic energies at selected rotors and sort method.
 

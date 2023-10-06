@@ -1,4 +1,4 @@
-## [YLDPOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDPOL.xhtml) - Polynomial Yield Model
+## [YLDPOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDPOL.xhtml) - Polynomial Yield Model
 
 Defines a polynomial yield model where the yield stress is a function of effective plastic strain. Used in SOL 700 only.
 

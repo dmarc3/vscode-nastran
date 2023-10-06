@@ -1,4 +1,4 @@
-## [AXSLOT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXSLOT.xhtml) - Axisymmetric Slot Analysis Parameters
+## [AXSLOT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXSLOT.xhtml) - Axisymmetric Slot Analysis Parameters
 
 Defines the harmonic index and the default values for acoustic analysis entries.
 

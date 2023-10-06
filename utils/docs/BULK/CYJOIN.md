@@ -1,4 +1,4 @@
-## [CYJOIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CYJOIN.xhtml) - Cyclic Symmetry Boundary Points
+## [CYJOIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CYJOIN.xhtml) - Cyclic Symmetry Boundary Points
 
 Defines the boundary points of a segment in cyclic symmetry problems.
 

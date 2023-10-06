@@ -1,4 +1,4 @@
-## [HYDSTAT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDSTAT.xhtml) - Hydrostatic Preset of Density in Euler Elements
+## [HYDSTAT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDSTAT.xhtml) - Hydrostatic Preset of Density in Euler Elements
 
 Initializes the Euler element densities in accordance to a hydrostatic pressure profile. Used in SOL 700 only.
 

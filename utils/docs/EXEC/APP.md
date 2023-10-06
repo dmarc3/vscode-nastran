@@ -1,4 +1,4 @@
-## [APP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.APP.xhtml) - Specifies Solution Sequence Approach
+## [APP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.APP.xhtml) - Specifies Solution Sequence Approach
 
 Selects heat transfer analysis in the linear static solution sequence SOL 101, or a coupled analysis combining heat transfer and structural analysis in SOL 153.
 

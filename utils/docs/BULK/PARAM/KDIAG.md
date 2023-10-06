@@ -1,4 +1,4 @@
-## [KDIAG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.KDIAG.xhtml)
+## [KDIAG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.KDIAG.xhtml)
 
 Default =    -1.0 (SOLs 106, 153, and SOL 400 with non-contact analysis), or 0.0 ( SOL 400 with contact analysis)
 

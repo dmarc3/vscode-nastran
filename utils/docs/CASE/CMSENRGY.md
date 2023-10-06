@@ -1,4 +1,4 @@
-## [CMSENRGY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CMSENRGY.Case.xhtml) - Component Modal Synthesis Energy Output Request
+## [CMSENRGY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CMSENRGY.Case.xhtml) - Component Modal Synthesis Energy Output Request
 
 Requests the form and type of component modal synthesis (CMS) energy output.
 

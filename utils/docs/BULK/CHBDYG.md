@@ -1,4 +1,4 @@
-## [CHBDYG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYG.xhtml) - Geometric Surface Element Definition (Grid Form)
+## [CHBDYG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYG.xhtml) - Geometric Surface Element Definition (Grid Form)
 
 Defines a boundary condition surface element without reference to a property entry.
 

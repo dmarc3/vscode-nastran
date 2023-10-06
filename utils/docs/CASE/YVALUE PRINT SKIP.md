@@ -1,4 +1,4 @@
-## [YVALUE PRINT SKIP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YVALUE.PRINT.SKIP.xhtml) - Print Values on Y Axis Tic Marks
+## [YVALUE PRINT SKIP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YVALUE.PRINT.SKIP.xhtml) - Print Values on Y Axis Tic Marks
 
 Specifies how often to print the y-values alongside the y-axis tic marks applies on whole frame curves only.
 

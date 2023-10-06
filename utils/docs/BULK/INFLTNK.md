@@ -1,4 +1,4 @@
-## [INFLTNK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLTNK.xhtml) - Airbag Tanktest Inflator Model
+## [INFLTNK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLTNK.xhtml) - Airbag Tanktest Inflator Model
 
 Defines the Tanktest-inflator characteristics of a COUPLE and/or GBAG subsurface. Used in SOL 700 only.
 

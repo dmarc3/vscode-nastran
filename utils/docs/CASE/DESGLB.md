@@ -1,4 +1,4 @@
-## [DESGLB (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESGLB.Case.xhtml) - Request Design Constraints at the Global Level
+## [DESGLB (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESGLB.Case.xhtml) - Request Design Constraints at the Global Level
 
 Selects the design constraints to be applied at the global level in a design optimization task.
 

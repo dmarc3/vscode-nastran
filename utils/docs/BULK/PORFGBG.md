@@ -1,4 +1,4 @@
-## [PORFGBG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFGBG.xhtml) - Flow Between Two Air Bags Through a Hole
+## [PORFGBG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFGBG.xhtml) - Flow Between Two Air Bags Through a Hole
 
 Defines a hole in a couple and/or GBAG (sub)surface, connected to another GBAG. Used in SOL 700 only.
 

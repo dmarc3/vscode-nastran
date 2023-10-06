@@ -1,4 +1,4 @@
-## [ELSUM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ELSUM.Case.xhtml) - Element Summary Output Request
+## [ELSUM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ELSUM.Case.xhtml) - Element Summary Output Request
 
 Requests that a summary of element properties grouped by element type and/or element property type are to be printed.
 

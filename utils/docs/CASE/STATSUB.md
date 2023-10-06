@@ -1,4 +1,4 @@
-## [STATSUB (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.STATSUB.Case.xhtml) - Static Solution Selection for Differential Stiffness
+## [STATSUB (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.STATSUB.Case.xhtml) - Static Solution Selection for Differential Stiffness
 
 Selects the static solution to use in forming the differential stiffness for static analysis, buckling analysis, normal modes, complex eigenvalue, frequency response and transient response analysis.
 

@@ -1,4 +1,4 @@
-## [MASSSET (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MASSSET.Case.xhtml) - Mass Combination Selection
+## [MASSSET (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MASSSET.Case.xhtml) - Mass Combination Selection
 
 Selection of a mass combination in multiple mass combination analysis (MMC). This case control command can be used in various solutions sequences SOLs 101, 103, 107-112, 144-146, 200 and 400.
 

@@ -1,4 +1,4 @@
-## [SHRUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SHRUDS.xhtml) - User-defined Shear Model for Elements.
+## [SHRUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SHRUDS.xhtml) - User-defined Shear Model for Elements.
 
 Specifies that a user subroutine is being used to define the shear modulus. Use in SOL700 only.
 

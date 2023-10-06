@@ -1,4 +1,4 @@
-## [CACINF3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CACINF3.xhtml) - Acoustic Conjugate Infinite Element Base Connection
+## [CACINF3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CACINF3.xhtml) - Acoustic Conjugate Infinite Element Base Connection
 
 Defines an acoustic conjugate infinite element with triangular base.
 

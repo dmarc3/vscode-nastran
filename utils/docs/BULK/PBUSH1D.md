@@ -1,4 +1,4 @@
-## [PBUSH1D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH1D.xhtml) - Rod Type Spring-and-Damper Property
+## [PBUSH1D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH1D.xhtml) - Rod Type Spring-and-Damper Property
 
 Defines linear and nonlinear properties of a one-dimensional spring and damper element (CBUSH1D entry).
 

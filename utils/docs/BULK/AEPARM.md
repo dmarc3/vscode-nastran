@@ -1,4 +1,4 @@
-## [AEPARM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEPARM.xhtml) - General Controller for Use in Trim
+## [AEPARM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEPARM.xhtml) - General Controller for Use in Trim
 
 Defines a general aerodynamic trim variable degree-of-freedom (aerodynamic extra point). The forces associated with this controller will be derived from AEDW, AEFORCE and AEPRESS input data.
 

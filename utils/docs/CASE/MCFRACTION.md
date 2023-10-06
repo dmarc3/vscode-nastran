@@ -1,4 +1,4 @@
-## [MCFRACTION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MCFRACTION.Case.xhtml) - Modal Contribution Fractions Output Request
+## [MCFRACTION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MCFRACTION.Case.xhtml) - Modal Contribution Fractions Output Request
 
 Requests the form and type of modal contribution fraction output.
 

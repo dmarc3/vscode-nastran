@@ -1,4 +1,4 @@
-## [MDCONCT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDCONCT.xhtml) - Module Boundary Point Connections
+## [MDCONCT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDCONCT.xhtml) - Module Boundary Point Connections
 
 Explicitly defines grid and scalar connection procedures for a module to module operation.
 

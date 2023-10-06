@@ -1,4 +1,4 @@
-## [RADMT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADMT.xhtml) - Radiation Boundary Material Property Temperature Dependence
+## [RADMT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADMT.xhtml) - Radiation Boundary Material Property Temperature Dependence
 
 Specifies table references for temperature dependent RADM entry radiation boundary properties.
 

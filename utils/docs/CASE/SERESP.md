@@ -1,4 +1,4 @@
-## [SERESP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SERESP.Case.xhtml) - Superelement Response Sensitivity
+## [SERESP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SERESP.Case.xhtml) - Superelement Response Sensitivity
 
 Specifies the superelement identification numbers for which the design sensitivity matrices will be generated.
 

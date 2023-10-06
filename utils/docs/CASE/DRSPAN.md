@@ -1,4 +1,4 @@
-## [DRSPAN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DRSPAN.Case.xhtml) - Response Spanning Set Selection
+## [DRSPAN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DRSPAN.Case.xhtml) - Response Spanning Set Selection
 
 Selects a set of DRESP1 entries for the current subcase that are to be used in a DRESP2 or DRESP3 response that spans subcases.
 

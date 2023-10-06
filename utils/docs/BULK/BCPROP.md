@@ -1,4 +1,4 @@
-## [BCPROP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPROP.xhtml) - 3D Contact Region by Element Properties
+## [BCPROP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPROP.xhtml) - 3D Contact Region by Element Properties
 
 Defines a 3D contact region by element properties. All elements with the specified properties define a contact body.
 

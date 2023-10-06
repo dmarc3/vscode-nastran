@@ -1,4 +1,4 @@
-## [XBAXIS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XBAXIS.xhtml) - X-Axis Plot Control
+## [XBAXIS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XBAXIS.xhtml) - X-Axis Plot Control
 
 Controls the plotting of the x-axis on lower half frame curves only.
 

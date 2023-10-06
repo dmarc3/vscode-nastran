@@ -1,4 +1,4 @@
-## [MDEXCLD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDEXCLD.xhtml) - Module to Module Excluded Boundary Point Definitions
+## [MDEXCLD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDEXCLD.xhtml) - Module to Module Excluded Boundary Point Definitions
 
 Defines a list of grid points in a Module that will be excluded during the attachment to another Module.
 

@@ -1,4 +1,4 @@
-## [QBDY1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QBDY1.xhtml) - Boundary Heat Flux Load for CHBDYj Elements, Form 1
+## [QBDY1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QBDY1.xhtml) - Boundary Heat Flux Load for CHBDYj Elements, Form 1
 
 Defines a uniform heat flux into CHBDYj elements.
 

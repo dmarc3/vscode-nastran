@@ -1,4 +1,4 @@
-## [FLSYM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLSYM.xhtml) - Axisymmetric Symmetry Control
+## [FLSYM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLSYM.xhtml) - Axisymmetric Symmetry Control
 
 Defines the relationship between the axisymmetric fluid and a structural boundary having symmetric constraints. The purpose is to allow fluid boundary matrices to conform to structural symmetry definitions.
 

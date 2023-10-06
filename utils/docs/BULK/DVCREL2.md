@@ -1,4 +1,4 @@
-## [DVCREL2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVCREL2.xhtml) - Design Variable to Connectivity Property Relation
+## [DVCREL2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVCREL2.xhtml) - Design Variable to Connectivity Property Relation
 
 Defines the relation between a connectivity property and design variables with a user-supplied equation.
 

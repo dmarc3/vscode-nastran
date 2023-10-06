@@ -1,4 +1,4 @@
-## [SUPORT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPORT1.xhtml) - Fictitious Support, Alternate Form
+## [SUPORT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPORT1.xhtml) - Fictitious Support, Alternate Form
 
 Defines determinate reaction degrees-of-freedom (r-set) in a free body-analysis. SUPORT1 must be requested by the SUPORT1 Case Control command.
 

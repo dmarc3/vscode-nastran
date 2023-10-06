@@ -1,4 +1,4 @@
-## [PORHOLE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORHOLE.xhtml) - Holes in Air Bag Surface
+## [PORHOLE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORHOLE.xhtml) - Holes in Air Bag Surface
 
 Defines a hole in a COUPLE and/or GBAG surface. Used in SOL 700 only.
 

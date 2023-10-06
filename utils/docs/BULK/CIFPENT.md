@@ -1,4 +1,4 @@
-## [CIFPENT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFPENT.xhtml) - Solid InterFace Cohesive Zone Modeling Element
+## [CIFPENT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFPENT.xhtml) - Solid InterFace Cohesive Zone Modeling Element
 
 Linear/Quadratic, fifteen-node, three-dimensional interface elelement used to simulate the onset and progress of delamination in SOL 400 only.
 

@@ -1,4 +1,4 @@
-## [BALL EDGE TICS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.BALL.EDGE.TICS.xhtml) - Controls Drawing of Tic Marks on Lower Half
+## [BALL EDGE TICS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.BALL.EDGE.TICS.xhtml) - Controls Drawing of Tic Marks on Lower Half
 
 Specifies how to draw tic marks on lower half of frame.
 

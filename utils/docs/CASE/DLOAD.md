@@ -1,4 +1,4 @@
-## [DLOAD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DLOAD.Case.xhtml) - Dynamic Load Set Selection
+## [DLOAD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DLOAD.Case.xhtml) - Dynamic Load Set Selection
 
 Selects a dynamic load or an acoustic source to be applied in a transient or frequency response problem.
 

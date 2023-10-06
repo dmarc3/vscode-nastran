@@ -1,4 +1,4 @@
-## [BCONP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONP.xhtml) - Contact Parameters
+## [BCONP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONP.xhtml) - Contact Parameters
 
 Defines the parameters for a contact region and its properties for slideline contact in SOL 106 or SOL 129. SOL 400 is the preferred method for contact analysis, see BCBODY1, BCONECT, BCONPRG, BCONPRP, BCPARA and BCTABL1.
 

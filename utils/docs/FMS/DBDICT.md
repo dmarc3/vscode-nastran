@@ -1,4 +1,4 @@
-## [DBDICT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBDICT.xhtml) - Prints Database Directory Tables
+## [DBDICT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBDICT.xhtml) - Prints Database Directory Tables
 
 DBDICT prints the following database directory tables:
 - Data blocks described by an NDDL DATABLK statement.

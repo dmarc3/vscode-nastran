@@ -1,4 +1,4 @@
-## [AELISTC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELISTC.xhtml) - Character Item List
+## [AELISTC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELISTC.xhtml) - Character Item List
 
 Defines a list of 8-character strings.
 

@@ -1,4 +1,4 @@
-## [B2PP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.B2PP.Case.xhtml) - Direct Input Damping Matrix Selection
+## [B2PP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.B2PP.Case.xhtml) - Direct Input Damping Matrix Selection
 
 Selects direct input damping matrix or matrices.
 

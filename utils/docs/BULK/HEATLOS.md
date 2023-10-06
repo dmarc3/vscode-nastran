@@ -1,4 +1,4 @@
-## [HEATLOS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HEATLOS.xhtml) - Heat Loss Through Convection or Radiation of the Airbag Surface - SOL 700
+## [HEATLOS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HEATLOS.xhtml) - Heat Loss Through Convection or Radiation of the Airbag Surface - SOL 700
 
 Defines the heat-transfer model to be used with GBAG or COUPLE. Used in SOL 700 only.
 

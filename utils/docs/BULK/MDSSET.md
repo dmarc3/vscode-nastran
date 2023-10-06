@@ -1,4 +1,4 @@
-## [MDSSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDSSET.xhtml) - Set Definition for Structural Elements or Grid Points in Modules
+## [MDSSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDSSET.xhtml) - Set Definition for Structural Elements or Grid Points in Modules
 
 Defines a set of structural grid points or element identification numbers in a Module to be referenced by the ACMODL Bulk Data entry.
 

@@ -1,4 +1,4 @@
-## [RADBC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADBC.xhtml) - Space Radiation Specification
+## [RADBC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADBC.xhtml) - Space Radiation Specification
 
 Specifies an CHBDYi element face for application of radiation boundary conditions.
 

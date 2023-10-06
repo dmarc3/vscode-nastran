@@ -1,4 +1,4 @@
-## [CASPIV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.CASPIV.xhtml)
+## [CASPIV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.CASPIV.xhtml)
 
 Default = 1.0e-10
 

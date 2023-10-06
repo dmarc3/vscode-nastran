@@ -1,4 +1,4 @@
-## [CELAS4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS4.xhtml) - Scalar Spring Property and Connection to Scalar Points Only
+## [CELAS4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS4.xhtml) - Scalar Spring Property and Connection to Scalar Points Only
 
 Defines a scalar spring element that is connected only to scalar points, without reference to a property entry.
 

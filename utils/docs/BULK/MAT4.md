@@ -1,4 +1,4 @@
-## [MAT4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT4.xhtml) - Heat Transfer Material Properties, Isotropic
+## [MAT4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT4.xhtml) - Heat Transfer Material Properties, Isotropic
 
 Defines the constant or temperature-dependent thermal material properties for conductivity, heat capacity, density, dynamic viscosity, heat generation, reference enthalpy, and latent heat associated with a single-phase change.
 

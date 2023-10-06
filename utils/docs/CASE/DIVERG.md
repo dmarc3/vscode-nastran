@@ -1,4 +1,4 @@
-## [DIVERG (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DIVERG.Case.xhtml) - Static Aeroelastic Divergence Request
+## [DIVERG (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DIVERG.Case.xhtml) - Static Aeroelastic Divergence Request
 Selects the divergence parameters in a static aeroelastic divergence problem.
 #### Format:
 

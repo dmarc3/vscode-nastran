@@ -1,4 +1,4 @@
-## [MDRJNT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRJNT.xhtml) - Rigid Joint Between Two Modules
+## [MDRJNT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRJNT.xhtml) - Rigid Joint Between Two Modules
 
 Defines a rigid joint element connecting two coinciding grid points in two different Modules.
 

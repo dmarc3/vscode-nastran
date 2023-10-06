@@ -1,4 +1,4 @@
-## [PBUSH2D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH2D.xhtml) - 2-D Linear/Nonlinear Connection Properties
+## [PBUSH2D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH2D.xhtml) - 2-D Linear/Nonlinear Connection Properties
 
 Defines linear and nonlinear properties of a two-dimensional element (CBUSH2D entry).
 

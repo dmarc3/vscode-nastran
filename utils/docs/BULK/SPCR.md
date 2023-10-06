@@ -1,4 +1,4 @@
-## [SPCR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCR.xhtml) - Enforced Relative Motion Value
+## [SPCR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCR.xhtml) - Enforced Relative Motion Value
 
 Defines an enforced relative displacement value for a load step in SOL 400.
 

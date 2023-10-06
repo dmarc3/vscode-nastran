@@ -1,4 +1,4 @@
-## [YTGRID LINES](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTGRID.LINES.xhtml) - Plot Y Axis Grid Lines
+## [YTGRID LINES](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTGRID.LINES.xhtml) - Plot Y Axis Grid Lines
 
 Controls the drawing of the grid lines parallel to the y-axis at the x-axis tic marks on upper half frame curves only.
 

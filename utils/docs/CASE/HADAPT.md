@@ -1,4 +1,4 @@
-## [HADAPT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HADAPT.Case.xhtml) - Mesh Adaptivity Activation and Control
+## [HADAPT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.HADAPT.Case.xhtml) - Mesh Adaptivity Activation and Control
 
 Specifies Mesh adaptivity control parameters in SOLs 101 and 400.
 

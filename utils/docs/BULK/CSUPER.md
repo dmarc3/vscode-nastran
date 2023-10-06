@@ -1,4 +1,4 @@
-## [CSUPER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSUPER.xhtml) - Secondary Superelement Connection
+## [CSUPER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSUPER.xhtml) - Secondary Superelement Connection
 
 Defines the grid or scalar point   connections for identical or mirror image superelements or superelements from an external source. These are all known as secondary superelements.
 

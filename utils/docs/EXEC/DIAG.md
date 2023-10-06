@@ -1,4 +1,4 @@
-## [DIAG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.DIAG.xhtml) - Requests Diagnostic Output
+## [DIAG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.DIAG.xhtml) - Requests Diagnostic Output
 
 Requests diagnostic output or special options.
 

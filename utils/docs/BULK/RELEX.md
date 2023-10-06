@@ -1,4 +1,4 @@
-## [RELEX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RELEX.xhtml) - External Definition of a Rigid Ellipsoid- SOL 700
+## [RELEX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RELEX.xhtml) - External Definition of a Rigid Ellipsoid- SOL 700
 
 Defines a rigid ellipsoid whose properties and motion are defined by either ATB. Used in SOL700 only.
 

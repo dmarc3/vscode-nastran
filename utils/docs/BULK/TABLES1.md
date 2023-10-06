@@ -1,4 +1,4 @@
-## [TABLES1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLES1.xhtml) - Material Property Table, Form 1
+## [TABLES1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLES1.xhtml) - Material Property Table, Form 1
 
 Defines a tabular function for stress-dependent material properties such as the stress-strain curve (MATS1 entry), creep parameters (CREEP entry) and hyperelastic material parameters (MATHP entry).
 

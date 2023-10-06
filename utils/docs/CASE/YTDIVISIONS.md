@@ -1,4 +1,4 @@
-## [YTDIVISIONS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTDIVISIONS.xhtml) - The Spacing on Y Axis
+## [YTDIVISIONS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTDIVISIONS.xhtml) - The Spacing on Y Axis
 
 Specifies spacing of tic marks on the y-axis for upper half frame curves only.
 

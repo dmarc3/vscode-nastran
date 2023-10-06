@@ -1,4 +1,4 @@
-## [PEMMAPC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PEMMAPC.xhtml)
+## [PEMMAPC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PEMMAPC.xhtml)
 
 PEMMAPC is used to generate lists of GRD IDs of the coupling surfaces. 'PARAM,PEMMAPC,1' (default is 0) will produce following files in 'mapping_control' subdirectory of job submit directory.
 

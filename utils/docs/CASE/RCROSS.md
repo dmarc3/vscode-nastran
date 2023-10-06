@@ -1,4 +1,4 @@
-## [RCROSS (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RCROSS.Case.xhtml) - Cross-Power Spectral Density and Cross-Correlation Function Output Request
+## [RCROSS (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RCROSS.Case.xhtml) - Cross-Power Spectral Density and Cross-Correlation Function Output Request
 
 Requests computation and output of cross-power spectral density and cross-correlation functions in random analysis.
 

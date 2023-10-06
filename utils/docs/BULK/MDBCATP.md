@@ -1,4 +1,4 @@
-## [MDBCATP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCATP.xhtml) - Defines Parameters of Across Modules for Automatic Contact Generation
+## [MDBCATP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBCATP.xhtml) - Defines Parameters of Across Modules for Automatic Contact Generation
 
 Defines parameters for detecting contact pairs across modules for automatic contact generation (ACG). It is similar to BCAUTOP but is used for contact pair detection across modules, all the parameters for contact bodies in BCAUTOP are excluded.
 

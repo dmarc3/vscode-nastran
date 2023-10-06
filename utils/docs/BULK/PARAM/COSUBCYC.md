@@ -1,4 +1,4 @@
-## [COSUBCYC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.COSUBCYC.xhtml)
+## [COSUBCYC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.COSUBCYC.xhtml)
 
 Default = 1, SOL 700 only
 

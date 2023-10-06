@@ -1,4 +1,4 @@
-## [CORD2S](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2S.xhtml) - Spherical Coordinate System Definition, Form 2
+## [CORD2S](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2S.xhtml) - Spherical Coordinate System Definition, Form 2
 
 Defines a spherical coordinate system using the coordinates of three points.
 

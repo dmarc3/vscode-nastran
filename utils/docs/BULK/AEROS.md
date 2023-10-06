@@ -1,4 +1,4 @@
-## [AEROS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEROS.xhtml) - Static Aeroelasticity Physical Data
+## [AEROS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEROS.xhtml) - Static Aeroelasticity Physical Data
 
 Defines basic parameters for static aeroelasticity.
 

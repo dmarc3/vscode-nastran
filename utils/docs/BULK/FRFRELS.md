@@ -1,4 +1,4 @@
-## [FRFRELS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFRELS.xhtml) - FRF Component Grid Point Release for FRF Based Assembly (FBA)
+## [FRFRELS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFRELS.xhtml) - FRF Component Grid Point Release for FRF Based Assembly (FBA)
 
 Defines the degrees-of-freedom of FRF component connection grid points that are not to be connected in an FRF Based Assembly (FBA) process.
 
