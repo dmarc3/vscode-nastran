@@ -1,4 +1,4 @@
-## [FLFACT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLFACT.xhtml) - Aerodynamic Physical Data
+## [FLFACT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLFACT.xhtml) - Aerodynamic Physical Data
 
 Used to specify density ratios, Mach numbers, reduced frequencies, and velocities for flutter analysis.
 

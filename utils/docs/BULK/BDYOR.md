@@ -1,4 +1,4 @@
-## [BDYOR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BDYOR.xhtml) - CHBDYi Entry Default Values
+## [BDYOR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BDYOR.xhtml) - CHBDYi Entry Default Values
 
 Defines default values for the CHBDYP, CHBDYG, and CHBDYE entries.
 

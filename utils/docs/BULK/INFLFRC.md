@@ -1,4 +1,4 @@
-## [INFLFRC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLFRC.xhtml) - Hybrid Inflator Gas Fraction Definition
+## [INFLFRC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLFRC.xhtml) - Hybrid Inflator Gas Fraction Definition
 
 Defines the gas fractions as a function of time for hybrid inflators. Used in SOL 700 only.
 

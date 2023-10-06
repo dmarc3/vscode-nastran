@@ -1,4 +1,4 @@
-## [NOLIN3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NOLIN3.xhtml) - Nonlinear Load as a Positive Variable Raised to a Power
+## [NOLIN3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NOLIN3.xhtml) - Nonlinear Load as a Positive Variable Raised to a Power
 
 Defines a forcing function for transient response or nonlinear harmonic response of the form
 

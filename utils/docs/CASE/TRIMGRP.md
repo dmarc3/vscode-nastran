@@ -1,4 +1,4 @@
-## [TRIMGRP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TRIMGRP.Case.xhtml) - Selection of Trim Component(s)
+## [TRIMGRP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TRIMGRP.Case.xhtml) - Selection of Trim Component(s)
 
 Selects a set of trim components for analysis.
 

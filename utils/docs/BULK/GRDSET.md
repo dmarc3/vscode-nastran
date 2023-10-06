@@ -1,4 +1,4 @@
-## [GRDSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRDSET.xhtml) - GRID Entry Defaults
+## [GRDSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRDSET.xhtml) - GRID Entry Defaults
 
 Defines default options for fields 3, 7, 8, and 9 of all GRID entries.
 

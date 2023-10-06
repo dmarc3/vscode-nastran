@@ -1,4 +1,4 @@
-## [COSMINP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMINP.xhtml) - Define the physical quantities of input in Co-Simulation service
+## [COSMINP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMINP.xhtml) - Define the physical quantities of input in Co-Simulation service
 
 Defines the physical quantities of input which Nastran will receive from the co-simulation partner in Co-simulation analysis. It is supported in SOL 400 only.
 

@@ -1,4 +1,4 @@
-## [MAXMIN(DEF) (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXMIN.DEF.Case.xhtml) - Defines Parameters for Monitoring Maximums and Minimums (new form)
+## [MAXMIN(DEF) (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXMIN.DEF.Case.xhtml) - Defines Parameters for Monitoring Maximums and Minimums (new form)
 
 Defines parameters and output options for the monitoring of maximums and minimums in data recovery. MAXMIN(DEF) must be specified above all subcases. The MAXMIN(ELEM) and/or MAXMIN(GRID) Case Control command is then required to print the max/min results.
 

@@ -1,4 +1,4 @@
-## [HGSUPPR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HGSUPPR.xhtml) - Hourglass Suppression Method - SOL700
+## [HGSUPPR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HGSUPPR.xhtml) - Hourglass Suppression Method - SOL700
 
 Defines the hourglass suppression method and the corresponding hourglass damping coefficients. Used in SOL 700 only.
 

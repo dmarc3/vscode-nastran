@@ -1,4 +1,4 @@
-## [MAT1F](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT1F.xhtml) - Isotropic Material Frequency Dependence
+## [MAT1F](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT1F.xhtml) - Isotropic Material Frequency Dependence
 
 Specifies frequency-dependent material properties on MAT1 entry fields via TABLEDi entries.
 

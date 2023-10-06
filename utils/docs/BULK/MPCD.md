@@ -1,4 +1,4 @@
-## [MPCD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MPCD.xhtml) - Load Selectable Value for  of Non Homogenous Multipoint Constraint
+## [MPCD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MPCD.xhtml) - Load Selectable Value for  of Non Homogenous Multipoint Constraint
 
 Defines a load selectable value for  ![bulkno06056.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/../../../assets/bulkno06056.jpg?_LANG=enus)  of a MPCY entry.
 

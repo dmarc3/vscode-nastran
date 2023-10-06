@@ -1,4 +1,4 @@
-## [WETELME](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETELME.xhtml) - Wetted element in OpenFSI by side in SOL 400
+## [WETELME](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETELME.xhtml) - Wetted element in OpenFSI by side in SOL 400
 
 Defines a wetted element used in OpenFSI fluid structure interaction simulations in SOL 400 only.
 

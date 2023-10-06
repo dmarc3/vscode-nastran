@@ -1,4 +1,4 @@
-## [PLOTID (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PLOTID.Case.xhtml) - Plotter Identification
+## [PLOTID (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PLOTID.Case.xhtml) - Plotter Identification
 
 Defines a character string that will appear on the first frame of any plotter output.
 

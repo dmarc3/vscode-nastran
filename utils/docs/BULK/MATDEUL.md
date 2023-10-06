@@ -1,4 +1,4 @@
-## [MATDEUL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATDEUL.xhtml) - General Constitutive Model to be Used for the Eulerian Materials - SOL 700
+## [MATDEUL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATDEUL.xhtml) - General Constitutive Model to be Used for the Eulerian Materials - SOL 700
 
 Defines a complete constitutive model as a combination of an equation of state, a shear model, a yield model, a failure model, a spall model (PMIN), and corotational frame. Used in SOL 700 only.
 

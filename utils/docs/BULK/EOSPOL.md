@@ -1,4 +1,4 @@
-## [EOSPOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSPOL.xhtml) - Polynomial Equation of State for Solids - SOL 700 only
+## [EOSPOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSPOL.xhtml) - Polynomial Equation of State for Solids - SOL 700 only
 
 Defines the properties of a polynomial equation of state where the pressure  p  is defined in SOL 700 as follows:
 

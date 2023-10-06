@@ -1,4 +1,4 @@
-## [MXICODE0](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MXICODE0.xhtml)
+## [MXICODE0](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MXICODE0.xhtml)
 
 Default = 5
 

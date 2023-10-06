@@ -1,4 +1,4 @@
-## [STOCHAS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.STOCHAS.xhtml) - Randomization of Model Parameters
+## [STOCHAS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.STOCHAS.xhtml) - Randomization of Model Parameters
 
 Specifies statistics used in randomization selected model parameters.
 

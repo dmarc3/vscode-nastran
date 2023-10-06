@@ -1,4 +1,4 @@
-## [HDF5OUT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HDF5OUT1.xhtml) - HDF5 output parameters
+## [HDF5OUT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HDF5OUT1.xhtml) - HDF5 output parameters
 
 HDF5 output parameters.
 

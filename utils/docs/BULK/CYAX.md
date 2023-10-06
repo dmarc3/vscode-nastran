@@ -1,4 +1,4 @@
-## [CYAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CYAX.xhtml) - Grid Points on Axis of Symmetry
+## [CYAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CYAX.xhtml) - Grid Points on Axis of Symmetry
 
 Lists grid points that lie on the axis of symmetry in cyclic symmetry analysis.
 

@@ -1,4 +1,4 @@
-## [ELIST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ELIST.xhtml) - Element List
+## [ELIST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ELIST.xhtml) - Element List
 
 Defines a list of CQUAD4 and CTRIA3 structural elements for virtual fluid mass.
 

@@ -1,4 +1,4 @@
-## [BCSEG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCSEG.xhtml) - Contact Segment Defined Using Grids
+## [BCSEG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCSEG.xhtml) - Contact Segment Defined Using Grids
 
 Grids which are part of an element to be used in contact analyses in SOL 700 only.
 

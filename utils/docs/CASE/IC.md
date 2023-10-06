@@ -1,4 +1,4 @@
-## [IC (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.IC.Case.xhtml) - Transient Analysis Initial Condition Set Selection
+## [IC (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.IC.Case.xhtml) - Transient Analysis Initial Condition Set Selection
 
 Selects the initial conditions for transient analysis (SOLs 109, 112, 129, 159 and 400).
 

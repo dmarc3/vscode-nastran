@@ -1,4 +1,4 @@
-## [GPFORCE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPFORCE.Case.xhtml) - Grid Point Force Output Request
+## [GPFORCE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPFORCE.Case.xhtml) - Grid Point Force Output Request
 
 Requests grid point force balance at selected grid points.
 

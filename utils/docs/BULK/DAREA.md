@@ -1,4 +1,4 @@
-## [DAREA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DAREA.xhtml) - Load Scale Factor
+## [DAREA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DAREA.xhtml) - Load Scale Factor
 
 Defines scale (area) factors for static and dynamic loads.  In dynamic analysis, DAREA is used in conjunction with ACSRCE, RLOADi and TLOADi entries.
 

@@ -1,4 +1,4 @@
-## [DISPLACEMENT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DISPLACEMENT.Case.xhtml) - Displacement Output Request
+## [DISPLACEMENT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DISPLACEMENT.Case.xhtml) - Displacement Output Request
 
 Requests the form and type of displacement or pressure vector output. Note: PRESSURE and VECTOR are equivalent commands.
 

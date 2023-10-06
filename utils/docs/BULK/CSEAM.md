@@ -1,4 +1,4 @@
-## [CSEAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSEAM.xhtml) - A Shell Patch SEAM Connection
+## [CSEAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSEAM.xhtml) - A Shell Patch SEAM Connection
 
 Defines a SEAM connecting two surface patches.
 

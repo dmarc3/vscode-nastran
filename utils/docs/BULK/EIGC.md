@@ -1,4 +1,4 @@
-## [EIGC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGC.xhtml) - Complex Eigenvalue Extraction Data
+## [EIGC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGC.xhtml) - Complex Eigenvalue Extraction Data
 
 Defines data needed to perform complex eigenvalue analysis.
 

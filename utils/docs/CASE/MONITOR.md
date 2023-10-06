@@ -1,4 +1,4 @@
-## [MONITOR (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MONITOR.Case.xhtml) - Print Selection for Monitor Data
+## [MONITOR (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MONITOR.Case.xhtml) - Print Selection for Monitor Data
 
 Specifies options in the printing of monitor data.
 

@@ -1,4 +1,4 @@
-## [PAERO1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO1.xhtml) - Aerodynamic Panel Property
+## [PAERO1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO1.xhtml) - Aerodynamic Panel Property
 
 Defines associated bodies for the panels in the Doublet-Lattice method.
 

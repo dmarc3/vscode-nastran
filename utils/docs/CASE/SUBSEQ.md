@@ -1,4 +1,4 @@
-## [SUBSEQ (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUBSEQ.Case.xhtml) - Subcase Sequence Coefficients
+## [SUBSEQ (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUBSEQ.Case.xhtml) - Subcase Sequence Coefficients
 
 Gives the coefficients for forming a linear combination of the previous subcases.
 

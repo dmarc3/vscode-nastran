@@ -1,4 +1,4 @@
-## [FLUX (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FLUX.Case.xhtml) - Heat Transfer Gradient and Flux Output Request
+## [FLUX (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FLUX.Case.xhtml) - Heat Transfer Gradient and Flux Output Request
 
 Requests the form and type of gradient and flux output in heat transfer analysis.
 

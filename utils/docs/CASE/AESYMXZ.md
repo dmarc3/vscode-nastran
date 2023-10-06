@@ -1,4 +1,4 @@
-## [AESYMXZ (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AESYMXZ.Case.xhtml) - Aerodynamic Flow Symmetry About The XZ Plane
+## [AESYMXZ (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AESYMXZ.Case.xhtml) - Aerodynamic Flow Symmetry About The XZ Plane
 
 Aerodynamic XZ plane of symmetry flag. This is used to support symmetric models about the centerline.
 

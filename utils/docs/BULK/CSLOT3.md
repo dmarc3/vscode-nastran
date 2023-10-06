@@ -1,4 +1,4 @@
-## [CSLOT3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSLOT3.xhtml) - Three Point Slot Element Connection
+## [CSLOT3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSLOT3.xhtml) - Three Point Slot Element Connection
 
 Defines an element connecting three points that solve the wave equation in two dimensions.  Used in the acoustic cavity analysis for the definition of evenly spaced radial slots.
 

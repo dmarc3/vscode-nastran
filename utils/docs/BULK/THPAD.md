@@ -1,4 +1,4 @@
-## [THPAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.THPAD.xhtml) - ROMAC’s THPAD User Defined Service Element Property
+## [THPAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.THPAD.xhtml) - ROMAC’s THPAD User Defined Service Element Property
 
 Allows the user to provide the parameters for a tilting pad bearing for use with ROMAC’s THPAD service.
 

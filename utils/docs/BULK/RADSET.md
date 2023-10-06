@@ -1,4 +1,4 @@
-## [RADSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADSET.xhtml) - Identifies a Set of Radiation Cavities
+## [RADSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADSET.xhtml) - Identifies a Set of Radiation Cavities
 
 Specifies which radiation cavities are to be included for radiation enclosure analysis.
 

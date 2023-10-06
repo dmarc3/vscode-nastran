@@ -1,4 +1,4 @@
-## [MAT10F](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT10F.xhtml) - Fluid Frequency Dependence
+## [MAT10F](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT10F.xhtml) - Fluid Frequency Dependence
 
 Specifies frequency-dependent material properties on MAT10 entry fields via TABLEDi entries.
 

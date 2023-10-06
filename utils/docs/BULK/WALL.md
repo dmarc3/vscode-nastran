@@ -1,4 +1,4 @@
-## [WALL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WALL.xhtml) - Rigid Wall
+## [WALL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WALL.xhtml) - Rigid Wall
 
 Defines a rigid plane through which specified Lagrangian grid points cannot penetrate. Finite or infinite size (FINITE), Orthotropic friction (ORTHO) a mass and an initial velocity (MOVING) and Force output option (FORCES) can be defined. Used in SOL 700 only.
 

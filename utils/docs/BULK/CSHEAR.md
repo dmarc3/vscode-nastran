@@ -1,4 +1,4 @@
-## [CSHEAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSHEAR.xhtml) - Shear Panel Element Connection
+## [CSHEAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSHEAR.xhtml) - Shear Panel Element Connection
 
 Defines a shear panel element and effective extensional stiffener rods.
 

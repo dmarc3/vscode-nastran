@@ -1,4 +1,4 @@
-## [MDFSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDFSET.xhtml) - Set Definition for Fluid Elements or Grid Points in Modules
+## [MDFSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDFSET.xhtml) - Set Definition for Fluid Elements or Grid Points in Modules
 
 Defines a set of fluid grid points or element identification numbers in a Module to be referenced by the ACMODL Bulk Data entry.
 

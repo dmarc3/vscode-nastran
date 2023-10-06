@@ -1,4 +1,4 @@
-## [FSLIST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FSLIST.xhtml) - Free Surface List
+## [FSLIST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FSLIST.xhtml) - Free Surface List
 
 Defines the fluid points (RINGFL entry) that lie on a free surface boundary.
 

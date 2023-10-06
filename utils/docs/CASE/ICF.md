@@ -1,4 +1,4 @@
-## [ICF (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ICF.Case.xhtml) - Inter-Component Forces (ICF) Output Request
+## [ICF (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ICF.Case.xhtml) - Inter-Component Forces (ICF) Output Request
 
 Requests the form and type of inter-component force (ICF) vector output from an FBA job.
 

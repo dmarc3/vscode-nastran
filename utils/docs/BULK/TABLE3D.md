@@ -1,4 +1,4 @@
-## [TABLE3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLE3D.xhtml) - Tabular Function with Three Variables
+## [TABLE3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLE3D.xhtml) - Tabular Function with Three Variables
 
 Specify a function of three variables for the CORD3G entry only.
 

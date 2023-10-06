@@ -1,4 +1,4 @@
-## [TIC3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIC3.xhtml) - Transient Analysis Initial Velocity with Increment Options
+## [TIC3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIC3.xhtml) - Transient Analysis Initial Velocity with Increment Options
 
 Allows for the definition of a velocity field of grid points consisting of a rotation and a translation specification. Used in SOL 700 only.
 

@@ -1,4 +1,4 @@
-## [PERMEAB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PERMEAB.xhtml) - Air Bag Permeability
+## [PERMEAB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PERMEAB.xhtml) - Air Bag Permeability
 
 Defines the permeability of a COUPLE and/or GBAG (sub)surface.
 

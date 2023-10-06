@@ -1,4 +1,4 @@
-## [SUPER (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUPER.Case.xhtml) - Superelement Subcase Assignment
+## [SUPER (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUPER.Case.xhtml) - Superelement Subcase Assignment
 
 Assigns a subcase(s) to a superelement or set of superelements.
 

@@ -1,4 +1,4 @@
-## [PACBAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PACBAR.xhtml) - Acoustic Barrier Property
+## [PACBAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PACBAR.xhtml) - Acoustic Barrier Property
 
 Defines the properties of the acoustic barrier element.
 

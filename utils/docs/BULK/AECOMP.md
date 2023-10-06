@@ -1,4 +1,4 @@
-## [AECOMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AECOMP.xhtml) - Component for an Integrated Load Monitor Point
+## [AECOMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AECOMP.xhtml) - Component for an Integrated Load Monitor Point
 
 Defines a component for use in monitor point definition or external splines.
 

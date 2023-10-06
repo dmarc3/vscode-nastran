@@ -1,4 +1,4 @@
-## [PLPLANE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLPLANE.xhtml) - Fully Nonlinear Plane Element Properties
+## [PLPLANE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLPLANE.xhtml) - Fully Nonlinear Plane Element Properties
 
 Defines the properties of a fully nonlinear (i.e., large strain and large rotation, etc.) plane strain, plane stress, or axisymmetric element. Please refer to PSHLN2.
 

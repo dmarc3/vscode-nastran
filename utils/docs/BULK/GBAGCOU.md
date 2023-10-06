@@ -1,4 +1,4 @@
-## [GBAGCOU](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GBAGCOU.xhtml) - General Coupling to Gas-Bag Switch
+## [GBAGCOU](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GBAGCOU.xhtml) - General Coupling to Gas-Bag Switch
 
 Defines a switch from full gas dynamics to uniform pressure formulation. Used in SOL 700 only.
 

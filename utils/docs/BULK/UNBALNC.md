@@ -1,4 +1,4 @@
-## [UNBALNC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UNBALNC.xhtml) - Specifies an Unbalanced Load for Rotordynamic Transient or Frequency Response Analysis
+## [UNBALNC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UNBALNC.xhtml) - Specifies an Unbalanced Load for Rotordynamic Transient or Frequency Response Analysis
 
 Used in rotordynamic analyses to specify a rotating unbalance load in terms of a cylindrical system with the rotor rotation as the z-axis.
 

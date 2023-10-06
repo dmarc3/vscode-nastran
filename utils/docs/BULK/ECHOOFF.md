@@ -1,4 +1,4 @@
-## [ECHOOFF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ECHOOFF.xhtml) - Deactivate Printed Echo
+## [ECHOOFF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ECHOOFF.xhtml) - Deactivate Printed Echo
 
 Marks the point or points in the input file to deactivate printed echo of the input file.
 

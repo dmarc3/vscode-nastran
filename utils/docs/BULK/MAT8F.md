@@ -1,4 +1,4 @@
-## [MAT8F](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT8F.xhtml) - Shell Element Orthotropic Material Frequency Dependence
+## [MAT8F](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT8F.xhtml) - Shell Element Orthotropic Material Frequency Dependence
 
 Specifies frequency-dependent material properties on MAT8 entry fields via TABLEDi entries.
 

@@ -1,4 +1,4 @@
-## [NLFREQ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLFREQ.xhtml) - Frequency List for Nonlinear Harmonic Response
+## [NLFREQ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLFREQ.xhtml) - Frequency List for Nonlinear Harmonic Response
 
 Defines explicit forcing frequencies for nonlinear harmonic response.
 

@@ -1,4 +1,4 @@
-## [XYPLOT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPLOT.xhtml) - Generate X-Y Plots for a Plotter
+## [XYPLOT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPLOT.xhtml) - Generate X-Y Plots for a Plotter
 
 Generates X-Y Plots for a plotter.
 

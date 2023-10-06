@@ -1,4 +1,4 @@
-## [TEMPN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPN1.xhtml) - TOP/BOT/MID Grid Point Temperature Field for Heat Shell Element in SOL 400
+## [TEMPN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPN1.xhtml) - TOP/BOT/MID Grid Point Temperature Field for Heat Shell Element in SOL 400
 
 Defines initial temperature at grid points of heat shell elements with linear or quadratic temperature distribution across the thickness direction.
 

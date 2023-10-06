@@ -1,4 +1,4 @@
-## [BJOIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BJOIN.xhtml)
+## [BJOIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BJOIN.xhtml)
 
 Defines (multiple) pairs of grid points of one-dimensional and/or shell elements to be joined during the analysis in SOL 700. When the failure criterion for a grid-point pair is satisfied, the grid-point pair is removed from the join and the grid-point motion is computed for the separate grid points. The join ceases to exist when all pairs of the join have failed, after which all of the grid points of the join are treated as separate grid points.
 

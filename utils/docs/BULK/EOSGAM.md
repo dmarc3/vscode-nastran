@@ -1,4 +1,4 @@
-## [EOSGAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSGAM.xhtml) - Gamma Law Gas Equation of State - SOL 700 only
+## [EOSGAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSGAM.xhtml) - Gamma Law Gas Equation of State - SOL 700 only
 
 Defines the properties of a Gamma Law equation of state where the pressure p is defined as:
 

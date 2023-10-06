@@ -1,4 +1,4 @@
-## [AEFORCE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEFORCE.xhtml) - Parametric Force for Aerodynamics
+## [AEFORCE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEFORCE.xhtml) - Parametric Force for Aerodynamics
 
 Defines a vector of absolute or “per unit dynamic pressure” forces associated with a particular control vector. This force vector may be defined on either the aerodynamic mesh (ks-set) or the structural mesh (g-set). The force vector will be used in static aeroelastic trim.
 

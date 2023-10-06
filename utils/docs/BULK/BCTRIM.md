@@ -1,4 +1,4 @@
-## [BCTRIM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTRIM.xhtml) - Defines the Geometry of a Trimming Curve
+## [BCTRIM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTRIM.xhtml) - Defines the Geometry of a Trimming Curve
 
 Defines the geometry of a trimming curve used to specify a NURBS for a rigid contact body.
 

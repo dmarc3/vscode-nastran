@@ -1,4 +1,4 @@
-## [RGYRO](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RGYRO.xhtml) - Rotordynamic Analysis Parameters
+## [RGYRO](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RGYRO.xhtml) - Rotordynamic Analysis Parameters
 
 Specifies synchronous or asynchronous analysis, reference rotor, and rotation speed of the reference rotor.
 

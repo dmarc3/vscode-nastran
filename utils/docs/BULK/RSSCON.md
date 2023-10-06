@@ -1,4 +1,4 @@
-## [RSSCON](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSSCON.xhtml) - Shell-to-Solid Element Connector
+## [RSSCON](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSSCON.xhtml) - Shell-to-Solid Element Connector
 
 Defines multipoint constraints to model clamped connections of shell-to-solid elements.
 

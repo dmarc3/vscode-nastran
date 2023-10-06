@@ -1,4 +1,4 @@
-## [LOADCYN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYN.xhtml) - Physical Load Input for Cyclic Symmetry
+## [LOADCYN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYN.xhtml) - Physical Load Input for Cyclic Symmetry
 
 Defines a physical static or dynamic load for use in cyclic symmetry analysis.
 

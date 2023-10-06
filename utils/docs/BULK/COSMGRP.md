@@ -1,4 +1,4 @@
-## [COSMGRP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMGRP.xhtml) - Define the coupled area in Co-Simulation service
+## [COSMGRP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMGRP.xhtml) - Define the coupled area in Co-Simulation service
 
 COSMGRP defines the coupled area where Nastran will exchange input and output data with co-simulation partner in Co-simulation analysis. It is supported in SOL 400 only.
 

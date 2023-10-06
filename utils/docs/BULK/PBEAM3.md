@@ -1,4 +1,4 @@
-## [PBEAM3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEAM3.xhtml) - Three-node Beam Property
+## [PBEAM3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEAM3.xhtml) - Three-node Beam Property
 
 Defines the properties of a three-node beam element (CBEAM3 entry).
 

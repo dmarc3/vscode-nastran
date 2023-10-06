@@ -1,4 +1,4 @@
-## [NLLOAD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLLOAD.Case.xhtml) - Nonlinear Load Output Request
+## [NLLOAD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLLOAD.Case.xhtml) - Nonlinear Load Output Request
 
 Requests the form and type of nonlinear load output for transient problems.
 

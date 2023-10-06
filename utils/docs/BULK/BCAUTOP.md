@@ -1,4 +1,4 @@
-## [BCAUTOP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCAUTOP.xhtml) - Automatic contact generation property.
+## [BCAUTOP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCAUTOP.xhtml) - Automatic contact generation property.
 
 Specifies parameters for automatic contact generation (ACG). With ACG, the code automatically generates the contact bodies based on the grids and elements given, then establishes the contact pairs in which two contact bodies are in contact or may come into contact potentially based on the DISTANCE tolerance. Please refer to the section of   Chapter 9: Contact  , SOL 400 User’s Guide for details.
 

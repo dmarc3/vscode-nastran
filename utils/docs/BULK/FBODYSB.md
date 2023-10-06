@@ -1,4 +1,4 @@
-## [FBODYSB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBODYSB.xhtml) - Equilibrated Free-Body Subsystems Definition
+## [FBODYSB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBODYSB.xhtml) - Equilibrated Free-Body Subsystems Definition
 
 Defines an equilibrated free-body subsystem.
 

@@ -1,4 +1,4 @@
-## [LFREQ, LFREQFL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.LFREQ.LFREQFL.xhtml)
+## [LFREQ, LFREQFL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.LFREQ.LFREQFL.xhtml)
 
 Default    = 0.0
 

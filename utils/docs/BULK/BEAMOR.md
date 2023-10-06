@@ -1,4 +1,4 @@
-## [BEAMOR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BEAMOR.xhtml) - CBEAM Entry Default Values
+## [BEAMOR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BEAMOR.xhtml) - CBEAM Entry Default Values
 
 Defines default values for field 3 and fields 6 through 9 of the CBEAM entry.
 

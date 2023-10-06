@@ -1,4 +1,4 @@
-## [AECONFIG (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AECONFIG.Case.xhtml) - Aeroelastic Configuration Name
+## [AECONFIG (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AECONFIG.Case.xhtml) - Aeroelastic Configuration Name
 
 Assigns the aerodynamic configuration parameter used to locate the associated datablocks on the aerodynamic and aeroelastic databases.
 

@@ -1,4 +1,4 @@
-## [SPLINE7](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE7.xhtml) - Finite Beam Spline
+## [SPLINE7](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE7.xhtml) - Finite Beam Spline
 
 Defines a 6DOF finite beam spline for interpolating motion and/or forces between two meshes.
 

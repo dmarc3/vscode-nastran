@@ -1,4 +1,4 @@
-## [DVPSURF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVPSURF.xhtml) - Design Variable to Control Surface Setting Relation
+## [DVPSURF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVPSURF.xhtml) - Design Variable to Control Surface Setting Relation
 
 Defines the relationship between a control surface setting in a particular subcase and a design variable.       
 

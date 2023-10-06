@@ -1,4 +1,4 @@
-## [SUBSEQ1 (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUBSEQ1.Case.xhtml) - Subcase Factors for Combination
+## [SUBSEQ1 (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUBSEQ1.Case.xhtml) - Subcase Factors for Combination
 
 Gives the factors for linear combination of a specific group of SUBCASEs.
 

@@ -1,4 +1,4 @@
-## [SEDLINK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDLINK.xhtml) - Multiple Design Variable Linking Across PART SE Boundary
+## [SEDLINK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDLINK.xhtml) - Multiple Design Variable Linking Across PART SE Boundary
 
 Relates one design variable of a PART SE to one or more other design variables from other PART SEs.
 

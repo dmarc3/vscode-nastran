@@ -1,4 +1,4 @@
-## [AXIC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXIC.xhtml) - Conical Shell Problem Flag
+## [AXIC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AXIC.xhtml) - Conical Shell Problem Flag
 
 Defines the existence of an axisymmetric conical shell problem.
 

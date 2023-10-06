@@ -1,4 +1,4 @@
-## [FORCE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FORCE.Case.xhtml) - Element Force Output or Particle Velocity Request
+## [FORCE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FORCE.Case.xhtml) - Element Force Output or Particle Velocity Request
 
 Requests the form and type of element force output, or particle velocity output, in coupled fluid-structural analysis. Note:  ELFORCE is an equivalent command.
 

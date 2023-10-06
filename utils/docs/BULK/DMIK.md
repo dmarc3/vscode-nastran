@@ -1,4 +1,4 @@
-## [DMIK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIK.xhtml) - Direct Matrix Input at ks-Set of the Aerodynamic Mesh
+## [DMIK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIK.xhtml) - Direct Matrix Input at ks-Set of the Aerodynamic Mesh
 
 Defines direct input matrices related to physical (displacement) degrees-of-freedom (ks-set) of aerodynamic grid points. These include WKK, WTFACT and input forces associated with AEFORCE entries. The matrix is described by a single header entry and one or more column entries. A column entry is required for each column with nonzero elements.
 

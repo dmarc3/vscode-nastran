@@ -1,4 +1,4 @@
-## [MONCNCM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONCNCM.xhtml) - Nondimensional Normal Force and Pitching Moment
+## [MONCNCM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONCNCM.xhtml) - Nondimensional Normal Force and Pitching Moment
 
 Provides a stripwise aerodynamic normal force and pitching moment coefficients for CAERO1 based aerodynamics.
 

@@ -1,4 +1,4 @@
-## [SELOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELOAD.xhtml) - Selects and/or Scales External Superelement Loads
+## [SELOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELOAD.xhtml) - Selects and/or Scales External Superelement Loads
 
 Selects and/or scales external superelement loads identified by a label, subcase identification number, load case identification number or column number.
 

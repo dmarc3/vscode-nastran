@@ -1,4 +1,4 @@
-## [TABLEST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEST.xhtml) - Material Property Temperature-Dependence Table
+## [TABLEST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEST.xhtml) - Material Property Temperature-Dependence Table
 
 Specifies the material property tables for nonlinear elastic temperature-dependent materials.
 

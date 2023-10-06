@@ -1,4 +1,4 @@
-## [CTRIA3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIA3.xhtml) - Triangular Plate Element Connection
+## [CTRIA3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIA3.xhtml) - Triangular Plate Element Connection
 
 Defines an isoparametric membrane-bending or plane strain triangular plate element.
 

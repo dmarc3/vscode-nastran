@@ -1,4 +1,4 @@
-## [ACPMCP1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACPMCP11.xhtml) - Analytical Trim Component Interface Coupling and Constraints Definition
+## [ACPMCP1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACPMCP11.xhtml) - Analytical Trim Component Interface Coupling and Constraints Definition
 
 Defines the interface coupling conditions of a 1D analytical trim component.
 

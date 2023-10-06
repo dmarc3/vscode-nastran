@@ -1,4 +1,4 @@
-## [MATHE ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATHE.xhtml) - Hyperelastic Material Properties
+## [MATHE ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATHE.xhtml) - Hyperelastic Material Properties
 
 Specifies hyperelastic (rubber-like) material properties for nonlinear (large strain and large rotation) analysis in SOL 400 only.
 

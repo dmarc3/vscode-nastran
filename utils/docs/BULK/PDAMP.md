@@ -1,4 +1,4 @@
-## [PDAMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDAMP.xhtml) - Scalar Damper Property
+## [PDAMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDAMP.xhtml) - Scalar Damper Property
 
 Specifies the damping value of a scalar damper element using defined CDAMP1 or CDAMP3 entries.
 

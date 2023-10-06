@@ -1,4 +1,4 @@
-## [AEROF (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AEROF.Case.xhtml) - Aerodynamic Force Output Request
+## [AEROF (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AEROF.Case.xhtml) - Aerodynamic Force Output Request
 
 Requests the aerodynamic loads on aerodynamic control points.
 

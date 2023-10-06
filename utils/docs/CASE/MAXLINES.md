@@ -1,4 +1,4 @@
-## [MAXLINES (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXLINES.Case.xhtml) - Maximum Number of Output Lines
+## [MAXLINES (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXLINES.Case.xhtml) - Maximum Number of Output Lines
 
 Sets the maximum number of output lines.
 

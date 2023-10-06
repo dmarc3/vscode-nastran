@@ -1,4 +1,4 @@
-## [MAT2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT2.xhtml) - Shell Element Anisotropic Material Property Definition
+## [MAT2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT2.xhtml) - Shell Element Anisotropic Material Property Definition
 
 Defines the material properties for linear anisotropic materials for two-dimensional elements.
 

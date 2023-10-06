@@ -1,4 +1,4 @@
-## [WETLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETLOAD.xhtml) - Load set and associated wetted surface for OpenFSI in SOL 400
+## [WETLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.WETLOAD.xhtml) - Load set and associated wetted surface for OpenFSI in SOL 400
 
 Defines the load set and associated wetted surface for OpenFSI fluid structure interaction simulations in SOL 400 only.
 

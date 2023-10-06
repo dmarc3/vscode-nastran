@@ -1,4 +1,4 @@
-## [MAT5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT5.xhtml) - Thermal Material Property Definition
+## [MAT5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT5.xhtml) - Thermal Material Property Definition
 
 Defines the thermal material properties for anisotropic materials.
 

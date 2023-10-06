@@ -1,4 +1,4 @@
-## [BEGIN BULK (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BEGIN.BULK.Case.xhtml) - Case Control and Bulk Data Delimiter
+## [BEGIN BULK (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BEGIN.BULK.Case.xhtml) - Case Control and Bulk Data Delimiter
 
 Designates the end of the Case Control Section and/or the beginning of a Bulk Data Section.
 

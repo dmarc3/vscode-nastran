@@ -1,4 +1,4 @@
-## [OLDSEQ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.OLDSEQ.xhtml)
+## [OLDSEQ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.OLDSEQ.xhtml)
 
 ![parameters01787.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/../../../assets/parameters01787.jpg?_LANG=enus)  
 

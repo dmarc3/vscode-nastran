@@ -1,4 +1,4 @@
-## [MATTORT ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTORT.xhtml) - Thermoelastic Orthotropic Material
+## [MATTORT ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTORT.xhtml) - Thermoelastic Orthotropic Material
 
 Specifies temperature-dependent properties of elastic orthotropic materials for linear and nonlinear analyses used in SOL 400.
 

@@ -1,4 +1,4 @@
-## [MPRES (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MPRES.Case.xhtml) - Fluid Pressure Output Request
+## [MPRES (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MPRES.Case.xhtml) - Fluid Pressure Output Request
 
 Requests the pressure for selected wetted surface elements when virtual mass (MFLUID) is used.
 

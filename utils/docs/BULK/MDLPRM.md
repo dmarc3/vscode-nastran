@@ -1,4 +1,4 @@
-## [MDLPRM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLPRM.xhtml) - Model Parameters
+## [MDLPRM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLPRM.xhtml) - Model Parameters
 
 Specifies parameters which affect the solution of the structural model.
 

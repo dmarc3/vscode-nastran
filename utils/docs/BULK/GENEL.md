@@ -1,4 +1,4 @@
-## [GENEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GENEL.xhtml) - General Element
+## [GENEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GENEL.xhtml) - General Element
 
 Defines a general element.
 

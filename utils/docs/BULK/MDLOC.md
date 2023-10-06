@@ -1,4 +1,4 @@
-## [MDLOC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLOC.xhtml) - Module Reposition by Translation and/or Rotation
+## [MDLOC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLOC.xhtml) - Module Reposition by Translation and/or Rotation
 
 Defines reposition of a Module by listing three non-collinear points in the Module and three corresponding points in Module 0.
 

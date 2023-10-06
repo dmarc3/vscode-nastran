@@ -1,4 +1,4 @@
-## [MDBNDRY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBNDRY.xhtml) - Module to Module Boundary Point Definitions
+## [MDBNDRY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBNDRY.xhtml) - Module to Module Boundary Point Definitions
 
 Defines a list of grid points in a module for the automatic boundary search between a specified Module or between all other Modules. In other words, the automatic boundary search will only search for connections in this list.
 

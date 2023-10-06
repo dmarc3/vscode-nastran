@@ -1,4 +1,4 @@
-## [CAERO3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO3.xhtml) - Aerodynamic Panel Element Configuration
+## [CAERO3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO3.xhtml) - Aerodynamic Panel Element Configuration
 
 Defines the aerodynamic edges of a Mach Box lifting surface.  If no cranks are present, this entry defines the aerodynamic Mach Box lifting surface.
 

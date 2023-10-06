@@ -1,4 +1,4 @@
-## [NLPARM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLPARM.xhtml) - Parameters for Nonlinear Static Analysis Control
+## [NLPARM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLPARM.xhtml) - Parameters for Nonlinear Static Analysis Control
 
 Defines a set of parameters for nonlinear static analysis iteration strategy. NLSTEP is the preferred option for SOL 400.
 

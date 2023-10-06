@@ -1,4 +1,4 @@
-## [MASSSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MASSSET.xhtml) - Mass Combination Definition
+## [MASSSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MASSSET.xhtml) - Mass Combination Definition
 
 The MASSSET bulk data entry defines a linear combination of mass cases to form the subcase-dependent mass which is selected by associated MASSSET case control. The subcase mass is defined as follows by the MASSSET bulk:
 

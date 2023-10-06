@@ -1,4 +1,4 @@
-## [BDYLIST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BDYLIST.xhtml) - Fluid Boundary List
+## [BDYLIST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BDYLIST.xhtml) - Fluid Boundary List
 
 Defines the boundary between a fluid and a structure.
 

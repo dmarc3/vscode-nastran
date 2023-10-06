@@ -1,4 +1,4 @@
-## [GRID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRID.xhtml) - Grid Point
+## [GRID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRID.xhtml) - Grid Point
 
 Defines the location of a geometric grid point, the directions of its displacement, and its permanent single-point constraints.
 

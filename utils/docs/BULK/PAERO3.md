@@ -1,4 +1,4 @@
-## [PAERO3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO3.xhtml) - Aerodynamic Panel Property
+## [PAERO3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO3.xhtml) - Aerodynamic Panel Property
 
 Defines the number of Mach boxes in the flow direction and the location of cranks and control surfaces of a Mach box lifting surface.
 

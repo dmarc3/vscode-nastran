@@ -1,4 +1,4 @@
-## [TICEUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICEUDS.xhtml) - User-defined Transient Initial Conditions of Euler Elements or Lagrangian grid points.
+## [TICEUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICEUDS.xhtml) - User-defined Transient Initial Conditions of Euler Elements or Lagrangian grid points.
 
 Defines the initial values of element or grid point variables at the beginning of the analysis by a user written subroutine. Use in SOL700 only.
 

@@ -1,4 +1,4 @@
-## [WMODAL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.WMODAL.xhtml)
+## [WMODAL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.WMODAL.xhtml)
 
 Default = NO
 

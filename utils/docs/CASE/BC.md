@@ -1,4 +1,4 @@
-## [BC (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BC.Case.xhtml) - Boundary Condition Identification
+## [BC (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BC.Case.xhtml) - Boundary Condition Identification
 
 Identifies multiple boundary conditions for normal modes, buckling, and flutter analysis in SOLs 103, 105, 145, and 200.
 

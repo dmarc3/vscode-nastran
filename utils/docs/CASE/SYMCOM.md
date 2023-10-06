@@ -1,4 +1,4 @@
-## [SYMCOM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SYMCOM.Case.xhtml) - Symmetry Combination Subcase Delimiter
+## [SYMCOM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SYMCOM.Case.xhtml) - Symmetry Combination Subcase Delimiter
 
 Delimits and identifies a symmetry combination subcase.
 

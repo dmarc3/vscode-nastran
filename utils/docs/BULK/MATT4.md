@@ -1,4 +1,4 @@
-## [MATT4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT4.xhtml) - Thermal Material Temperature Dependence
+## [MATT4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT4.xhtml) - Thermal Material Temperature Dependence
 
 Specifies table references for temperature-dependent MAT4 material properties.
 

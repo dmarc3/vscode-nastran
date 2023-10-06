@@ -1,4 +1,4 @@
-## [DTI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.xhtml) - Direct Table Input
+## [DTI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.xhtml) - Direct Table Input
 
 Defines table data blocks.
 

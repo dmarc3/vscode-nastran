@@ -1,4 +1,4 @@
-## [MONPNT3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT3.xhtml) - Integrated Load Monitor Point
+## [MONPNT3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT3.xhtml) - Integrated Load Monitor Point
 
 Sums select Grid Point Forces to a user chosen monitor point.
 

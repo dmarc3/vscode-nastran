@@ -1,4 +1,4 @@
-## [TABLFTG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLFTG.xhtml) - Fatigue Loading Tabular Data
+## [TABLFTG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLFTG.xhtml) - Fatigue Loading Tabular Data
 
 Defines tabular data for specifying fatigue cyclic loading variation.
 

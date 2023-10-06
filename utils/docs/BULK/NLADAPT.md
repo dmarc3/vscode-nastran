@@ -1,4 +1,4 @@
-## [NLADAPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLADAPT.xhtml) - Additional Parameters for Automatic Load or Time Stepping
+## [NLADAPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLADAPT.xhtml) - Additional Parameters for Automatic Load or Time Stepping
 
 Defines additional parameters for automatic load or time stepping used with enhanced nonlinear in SOL 400.   NLADAPT is an obsolete option from MD Nastran 2010 onwards. It is recommended that NLADAPT be replaced by NLSTEP .
 

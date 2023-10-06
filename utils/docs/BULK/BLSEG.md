@@ -1,4 +1,4 @@
-## [BLSEG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BLSEG.xhtml) - Boundary Line Segments
+## [BLSEG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BLSEG.xhtml) - Boundary Line Segments
 
 Defines a curve that consists of a number of line segments via grid numbers that may come in contact with another body.
 

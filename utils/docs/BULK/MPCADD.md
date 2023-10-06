@@ -1,4 +1,4 @@
-## [MPCADD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MPCADD.xhtml) - Multipoint Constraint Set Combination
+## [MPCADD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MPCADD.xhtml) - Multipoint Constraint Set Combination
 
 Defines a multipoint constraint set as a union of multipoint constraint sets defined via MPC entries.
 

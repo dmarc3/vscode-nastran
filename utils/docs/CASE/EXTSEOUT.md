@@ -1,4 +1,4 @@
-## [EXTSEOUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTSEOUT.Case1.xhtml) - External Superelement Creation Specification
+## [EXTSEOUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTSEOUT.Case1.xhtml) - External Superelement Creation Specification
 
 Request the creation of an external superelement in SOLs 101, 103, 107 through 112, or 400 only.
 

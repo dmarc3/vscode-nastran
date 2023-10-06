@@ -1,4 +1,4 @@
-## [NOLIN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NOLIN1.xhtml) - Nonlinear Load as a Tabular Function
+## [NOLIN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NOLIN1.xhtml) - Nonlinear Load as a Tabular Function
 
 Defines a forcing function for transient response or nonlinear harmonic response of the form
 

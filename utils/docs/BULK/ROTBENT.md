@@ -1,4 +1,4 @@
-## [ROTBENT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTBENT.xhtml) - Define kinks and offsets to be applied on a rotor, pull the rotor on to its bearing and then carry out rotordynamic analysis (SOL 400 only).
+## [ROTBENT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTBENT.xhtml) - Define kinks and offsets to be applied on a rotor, pull the rotor on to its bearing and then carry out rotordynamic analysis (SOL 400 only).
 
 Specifies rotor initial deformation due to kink and offset.
 

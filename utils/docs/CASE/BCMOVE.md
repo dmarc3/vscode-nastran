@@ -1,4 +1,4 @@
-## [BCMOVE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCMOVE.Case.xhtml) - Contact Body Movement Selection
+## [BCMOVE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCMOVE.Case.xhtml) - Contact Body Movement Selection
 
 Selects movement of bodies in contact in SOL 400.
 

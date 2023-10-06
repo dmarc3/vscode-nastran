@@ -1,4 +1,4 @@
-## [DESOBJ (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESOBJ.Case.xhtml) - Design Objective
+## [DESOBJ (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESOBJ.Case.xhtml) - Design Objective
 
 Selects the DRESP1, DRESP2 or DRESP3 entry to be used as the design objective.
 

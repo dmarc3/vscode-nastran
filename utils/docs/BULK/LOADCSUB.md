@@ -1,4 +1,4 @@
-## [LOADCSUB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCSUB.xhtml) - Define Solution Load Combinations Using Subcase Number
+## [LOADCSUB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCSUB.xhtml) - Define Solution Load Combinations Using Subcase Number
 
 Used only in PAA to define a loading combination using the LOADNAMEs used in Case Control for Parts.
 

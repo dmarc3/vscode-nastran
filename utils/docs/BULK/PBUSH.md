@@ -1,4 +1,4 @@
-## [PBUSH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH.xhtml) - Generalized Spring-and-Damper Property
+## [PBUSH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSH.xhtml) - Generalized Spring-and-Damper Property
 
 Defines the nominal property values for a generalized spring-and-damper structural element.
 

@@ -1,4 +1,4 @@
-## [ACPOWER (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACPOWER.Case.xhtml) - Acoustic Power Output Request
+## [ACPOWER (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACPOWER.Case.xhtml) - Acoustic Power Output Request
 
 Requests output of the power radiated from the wetted surface. 
  

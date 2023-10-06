@@ -1,4 +1,4 @@
-## [MONPNT2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT2.xhtml) - Internal Load Monitor Point
+## [MONPNT2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONPNT2.xhtml) - Internal Load Monitor Point
 
 Element Monitor Output Results Item.
 

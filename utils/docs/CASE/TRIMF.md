@@ -1,4 +1,4 @@
-## [TRIMF (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TRIMF.Case.xhtml) - Trim Load Output Specification
+## [TRIMF (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TRIMF.Case.xhtml) - Trim Load Output Specification
 
 Specifies options for the output of trim loads from a static aeroelastic analysis as FORCE/MOMENT Bulk Data entries.
 

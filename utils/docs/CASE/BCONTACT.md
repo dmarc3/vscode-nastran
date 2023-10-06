@@ -1,4 +1,4 @@
-## [BCONTACT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCONTACT.Case.xhtml) - Selects 3D Contact Surfaces
+## [BCONTACT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCONTACT.Case.xhtml) - Selects 3D Contact Surfaces
 
 This entry activates contact analysis and selects contact definition tables.
 

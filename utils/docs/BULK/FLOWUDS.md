@@ -1,4 +1,4 @@
-## [FLOWUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWUDS.xhtml) - User Defined Flow Boundary.
+## [FLOWUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWUDS.xhtml) - User Defined Flow Boundary.
 
 Defines a flow boundary on an Eulerian mesh specified by a user subroutine. Use in SOL700 only.
 

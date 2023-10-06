@@ -1,4 +1,4 @@
-## [STEPFCTL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.STEPFCTL.xhtml)
+## [STEPFCTL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.STEPFCTL.xhtml)
 
 Real > 0, Default = 0.9, SOL 700 only.
 

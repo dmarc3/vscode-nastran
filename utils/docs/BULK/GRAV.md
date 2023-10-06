@@ -1,4 +1,4 @@
-## [GRAV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRAV.xhtml) - Acceleration or Gravity Load
+## [GRAV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRAV.xhtml) - Acceleration or Gravity Load
 
 Defines acceleration vectors for gravity or other acceleration loading.
 

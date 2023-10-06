@@ -1,4 +1,4 @@
-## [TABL3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABL3D.xhtml) - Multi-Dimensional Table
+## [TABL3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABL3D.xhtml) - Multi-Dimensional Table
 
 Specifies a table where an entry can be a function of up to 4 variables such as strain, temperature, strain rate, etc. for SOL 400.
 

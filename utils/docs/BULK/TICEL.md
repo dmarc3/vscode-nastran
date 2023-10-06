@@ -1,4 +1,4 @@
-## [TICEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICEL.xhtml) - Transient Initial Conditions of Elements
+## [TICEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICEL.xhtml) - Transient Initial Conditions of Elements
 
 Defines the initial values of element variables at the beginning of the analysis. Used in SOL 700 only.
 

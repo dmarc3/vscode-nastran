@@ -1,4 +1,4 @@
-## [PCOMPF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPF.xhtml) - Integration Procedure Used in Conjunction with PCOMP or PCOMPG
+## [PCOMPF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPF.xhtml) - Integration Procedure Used in Conjunction with PCOMP or PCOMPG
 
 Defines the integration procedure for through the thickness integration of composite shells in SOL 400 only.
 

@@ -1,4 +1,4 @@
-## [FRF (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FRF.Case.xhtml) - Frequency Response Function (FRF) Generation and/or FRF Based Assembly (FBA) Specification
+## [FRF (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FRF.Case.xhtml) - Frequency Response Function (FRF) Generation and/or FRF Based Assembly (FBA) Specification
 
 Specifies the information needed for FRF generation and/or the FBA process. SOLs 108 and 111 only.
 

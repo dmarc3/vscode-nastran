@@ -1,4 +1,4 @@
-## [HYDROS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDROS.xhtml) - Hydrostatic Pressure Loading on Surface and Faces of Shell or Solid Elements using element or grid sets
+## [HYDROS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HYDROS.xhtml) - Hydrostatic Pressure Loading on Surface and Faces of Shell or Solid Elements using element or grid sets
 
 Defines a hydrostatic pressure load on a face of a CHEXA, CPENTA, CPYRAM, CTETRA, CTRIA3, CTRIA6, CTRIAR, CQUAD4, CQUAD8, or CQUADR element using element set data.
 

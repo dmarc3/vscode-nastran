@@ -1,4 +1,4 @@
-## [PAERO5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO5.xhtml) - Aerodynamic Panel Property
+## [PAERO5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PAERO5.xhtml) - Aerodynamic Panel Property
 
 Defines properties of each strip element for Piston theory.
 

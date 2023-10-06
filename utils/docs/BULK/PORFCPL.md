@@ -1,4 +1,4 @@
-## [PORFCPL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFCPL.xhtml) - Flow Between Two Coupling Surfaces Through a Hole
+## [PORFCPL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFCPL.xhtml) - Flow Between Two Coupling Surfaces Through a Hole
 
 Defines an interaction between two coupling surfaces through a hole. Used in SOL 700 only.
 

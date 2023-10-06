@@ -1,4 +1,4 @@
-## [COUOPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUOPT.xhtml) - Coupling Surface Pressure Definition
+## [COUOPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUOPT.xhtml) - Coupling Surface Pressure Definition
 
 Defines the interaction factor and a pressure load from the covered side acting on a BSURF, BCPROP, BCMATL, BCSEG, BCBOX. Used in SOL 700 only.
 

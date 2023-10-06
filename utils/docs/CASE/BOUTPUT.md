@@ -1,4 +1,4 @@
-## [BOUTPUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BOUTPUT.Case.xhtml) - Line Contact or 3D Contact Output Requests
+## [BOUTPUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BOUTPUT.Case.xhtml) - Line Contact or 3D Contact Output Requests
 
 Selects contact regions for output.
 

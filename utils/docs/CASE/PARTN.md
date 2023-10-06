@@ -1,4 +1,4 @@
-## [PARTN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PARTN.Case.xhtml) - Partitioning Vector Specifications
+## [PARTN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PARTN.Case.xhtml) - Partitioning Vector Specifications
 
 Specifies a list of   grid point identification numbers that will be partitioned with the DMAP module MATMOD (Option 17).
 

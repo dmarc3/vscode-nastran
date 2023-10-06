@@ -1,4 +1,4 @@
-## [PFAST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PFAST.xhtml) - CFAST Fastener Property
+## [PFAST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PFAST.xhtml) - CFAST Fastener Property
 
 Defines the CFAST fastener property values.
 

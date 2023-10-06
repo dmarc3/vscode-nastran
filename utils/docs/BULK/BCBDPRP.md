@@ -1,4 +1,4 @@
-## [BCBDPRP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBDPRP.xhtml) - Contact Body Parameters in SOLs 101 and 400
+## [BCBDPRP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBDPRP.xhtml) - Contact Body Parameters in SOLs 101 and 400
 
 Defines contact body parameters used in SOLs 101 and 400 only. The parameters defined here are referenced by the BCBODY1 entry.
 

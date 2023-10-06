@@ -1,4 +1,4 @@
-## [MATDIGI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATDIGI.xhtml) - Material Digimat
+## [MATDIGI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATDIGI.xhtml) - Material Digimat
 
 Defines material data for the advanced composites with Digimat from e-Xstream engineering (SOL 400 only). For more information about e-Xstream engineering and Digimat, please contact support@e-xstream.com or consult   http://www.e-xstream.com/
 

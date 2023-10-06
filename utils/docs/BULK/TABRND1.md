@@ -1,4 +1,4 @@
-## [TABRND1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABRND1.xhtml) - Power Spectral Density Table
+## [TABRND1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABRND1.xhtml) - Power Spectral Density Table
 
 Defines power spectral density as a tabular function of frequency for use in random analysis.  Referenced by the RANDPS entry.
 

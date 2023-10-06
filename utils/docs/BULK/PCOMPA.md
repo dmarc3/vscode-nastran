@@ -1,4 +1,4 @@
-## [PCOMPA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPA.xhtml) - Additional Data for Layered Composite Element Property - SOL 700
+## [PCOMPA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOMPA.xhtml) - Additional Data for Layered Composite Element Property - SOL 700
 
 Defines additional properties of a multi-ply laminate composite material. Used in SOL 700 only.
 

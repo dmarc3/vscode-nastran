@@ -1,4 +1,4 @@
-## [RANDT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RANDT1.xhtml) - Autocorrelation Function Time Lag
+## [RANDT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RANDT1.xhtml) - Autocorrelation Function Time Lag
 
 Defines time lag constants for use in random analysis autocorrelation function calculation.
 

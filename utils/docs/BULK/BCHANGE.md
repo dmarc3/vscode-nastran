@@ -1,4 +1,4 @@
-## [BCHANGE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCHANGE.xhtml) - Changes Definitions of Contact Bodies
+## [BCHANGE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCHANGE.xhtml) - Changes Definitions of Contact Bodies
 
 Changes definitions of contact bodies used in SOL 101 and SOL 400.
 

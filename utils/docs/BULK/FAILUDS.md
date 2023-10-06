@@ -1,4 +1,4 @@
-## [FAILUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILUDS.xhtml) - User Defined Failure For Nonlinear Explicit Analysis - SOL 700 only
+## [FAILUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILUDS.xhtml) - User Defined Failure For Nonlinear Explicit Analysis - SOL 700 only
 
 User defined simple failure of Eulerian materials. Use in SOL700 only.
 

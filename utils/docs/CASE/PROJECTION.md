@@ -1,4 +1,4 @@
-## [PROJECTION](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PROJECTION.xhtml) - Separation Between Projection Plane and Observer
+## [PROJECTION](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PROJECTION.xhtml) - Separation Between Projection Plane and Observer
 
 Defines the separation along the r-axis, and between the observer and the projection plane, if not already specified on the VANTAGE POINT command. Used by stereoscopic projections only.
 

@@ -1,4 +1,4 @@
-## [TEMPBC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPBC.xhtml) - Grid Point Temperatures
+## [TEMPBC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPBC.xhtml) - Grid Point Temperatures
 
 Defines the temperature boundary conditions for heat transfer analysis.  Applies to steady-state and transient conditions (SOLs 153 and 159 only).
 

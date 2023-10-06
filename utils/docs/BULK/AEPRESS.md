@@ -1,4 +1,4 @@
-## [AEPRESS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEPRESS.xhtml) - Parametric Pressure Loading for Aerodynamics
+## [AEPRESS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEPRESS.xhtml) - Parametric Pressure Loading for Aerodynamics
 
 Defines a vector of pressure/unit dynamic pressure associated with a particular control vector. From this pressure vector, a force vector on the aerodynamic grids will be defined for use in nonlinear static aeroelastic trim.
 

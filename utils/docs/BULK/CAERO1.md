@@ -1,4 +1,4 @@
-## [CAERO1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO1.xhtml) - Aerodynamic Panel Element Connection
+## [CAERO1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO1.xhtml) - Aerodynamic Panel Element Connection
 
 Defines an aerodynamic macro element (panel) in terms of two leading edge locations and side chords.  This is used for Doublet-Lattice theory for subsonic aerodynamics and the ZONA51 theory for supersonic aerodynamics.
 

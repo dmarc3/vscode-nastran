@@ -1,4 +1,4 @@
-## [SPCOFF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCOFF.xhtml) - Excludes Degrees-of-Freedom from the AUTOSPC Operation
+## [SPCOFF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCOFF.xhtml) - Excludes Degrees-of-Freedom from the AUTOSPC Operation
 
 Defines a set of degrees-of-freedom to be excluded from the AUTOSPC operation.  See  Constraint and Mechanism Problem Identification in SubDMAP SEKR  in the  MSC Nastran Reference Guide  for a description of the AUTOSPC operation.
 

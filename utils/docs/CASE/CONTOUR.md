@@ -1,4 +1,4 @@
-## [CONTOUR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.CONTOUR.xhtml) - Contour Plot Options
+## [CONTOUR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.CONTOUR.xhtml) - Contour Plot Options
 
 Specifies contour plot options for stress, displacement, or temperature.
 

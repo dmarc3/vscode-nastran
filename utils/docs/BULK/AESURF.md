@@ -1,4 +1,4 @@
-## [AESURF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESURF.xhtml) - Aerodynamic Control Surface
+## [AESURF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESURF.xhtml) - Aerodynamic Control Surface
 
 Specifies an aerodynamic control surface as a member of the set of aerodynamic extra points. The forces associated with this controller will be derived from rigid rotation of the aerodynamic model about the hinge line(s) and from AEDW, AEFORCE and AEPRESS input data. The mass properties of the control surface can be specified using an AESURFS entry.
 

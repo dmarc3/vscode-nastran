@@ -1,4 +1,4 @@
-## [BSQUEAL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BSQUEAL.Case.xhtml) - Brake Squeal Analysis Data Selection
+## [BSQUEAL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BSQUEAL.Case.xhtml) - Brake Squeal Analysis Data Selection
 
 Selects data for brake squeal analysis in SOL 400.
 

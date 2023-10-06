@@ -1,4 +1,4 @@
-## [TIRE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TIRE.Case.xhtml) - Tire Set Selection
+## [TIRE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TIRE.Case.xhtml) - Tire Set Selection
 
 The TIRE case control entry defines the tires to be included in the analysis by selecting the TIRE bulk data entry. This case control command can be used in solutions sequences SOLs 103, 107-112, 200 and 400.
 

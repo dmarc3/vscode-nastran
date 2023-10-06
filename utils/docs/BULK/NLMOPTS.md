@@ -1,4 +1,4 @@
-## [NLMOPTS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLMOPTS.xhtml) - Nonlinear Multiple Options
+## [NLMOPTS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLMOPTS.xhtml) - Nonlinear Multiple Options
 
 Specifies nonlinear material options and composite options. The nonlinear material options are for advanced materials used in SOL400. The composite options (TSHEAR and INLAM, CPROJ) are applicable to all solution sequences in which Layered Solid Elements (PCOMPLS) are available, namely, SOL 400, SOL 200 (analysis only), and all linear solution sequences between SOL 101 and SOL 112.
 

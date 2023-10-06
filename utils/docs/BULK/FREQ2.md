@@ -1,4 +1,4 @@
-## [FREQ2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ2.xhtml) - Frequency List, Alternate Form 2
+## [FREQ2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ2.xhtml) - Frequency List, Alternate Form 2
 
 Defines a set of frequencies to be used in the solution of frequency response problems by specification of a starting frequency, final frequency, and the number of logarithmic increments desired.
 

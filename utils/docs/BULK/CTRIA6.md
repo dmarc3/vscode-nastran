@@ -1,4 +1,4 @@
-## [CTRIA6](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIA6.xhtml) - Curved Triangular Shell Element Connection
+## [CTRIA6](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIA6.xhtml) - Curved Triangular Shell Element Connection
 
 Defines a curved triangular shell element or plane strain with six grid points.
 

@@ -1,4 +1,4 @@
-## [PCONVM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONVM.xhtml) - Forced Convection Property Definition
+## [PCONVM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONVM.xhtml) - Forced Convection Property Definition
 
 Specifies the forced convection boundary condition properties of a boundary condition surface element used for heat transfer analysis.
 

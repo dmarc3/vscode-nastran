@@ -6,6 +6,7 @@ import * as vscode from "vscode";
 import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
 import { executeNastran, setKeywords, showKeywords } from "./execute";
+import { insertComment } from "./insert";
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -75,6 +76,20 @@ export function activate(context: vscode.ExtensionContext): void {
     );
     vscode.commands.registerCommand('execute', () => {
         executeNastran(path.basename(vscode.window.activeTextEditor.document.fileName), context)
+        }
+    );
+    vscode.commands.registerCommand('insert_short_comment', () => {
+        insertComment(
+            vscode.window.activeTextEditor,
+            '$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n'
+        )
+        }
+    );
+    vscode.commands.registerCommand('insert_long_comment', () => {
+        insertComment(
+            vscode.window.activeTextEditor,
+            '$---1---$-------2-------$-------3-------$-------4-------$-------5-------$---6---$\n'
+        )
         }
     );
     vscode.commands.registerCommand('set_keywords', () => {

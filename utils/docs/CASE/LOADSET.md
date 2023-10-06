@@ -1,4 +1,4 @@
-## [LOADSET (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOADSET.Case.xhtml) - Static Load Set Selection
+## [LOADSET (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOADSET.Case.xhtml) - Static Load Set Selection
 
 Selects a sequence of static load sets to be applied to the structural model. The load sets may be referenced by dynamic load commands.
 

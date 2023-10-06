@@ -1,4 +1,4 @@
-## [VCCT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VCCT.xhtml) - Virtual Crack Closure Technique - SOL 400
+## [VCCT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.VCCT.xhtml) - Virtual Crack Closure Technique - SOL 400
 
 #### Format:
 

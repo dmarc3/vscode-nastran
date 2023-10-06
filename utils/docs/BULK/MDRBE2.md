@@ -1,4 +1,4 @@
-## [MDRBE2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRBE2.xhtml) - Rigid Body Element Between Two or More Modules, Form 2
+## [MDRBE2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRBE2.xhtml) - Rigid Body Element Between Two or More Modules, Form 2
 
 Defines a rigid body with independent degrees-of-freedom that are specified at a single grid point and with dependent degrees-of-freedom that are specified at an arbitrary number of grid points. All grid points may be defined in different Modules.
 

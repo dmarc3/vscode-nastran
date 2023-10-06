@@ -1,4 +1,4 @@
-## [PBARL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBARL.xhtml) - Simple Beam Cross-Section Property
+## [PBARL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBARL.xhtml) - Simple Beam Cross-Section Property
 
 Defines the properties of a simple beam element (CBAR entry) by cross-sectional dimensions.
 

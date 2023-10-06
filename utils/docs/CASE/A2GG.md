@@ -1,4 +1,4 @@
-## [A2GG (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.A2GG.Case.xhtml) - Selects a Direct Input Fluid-Structure Coupling Matrix
+## [A2GG (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.A2GG.Case.xhtml) - Selects a Direct Input Fluid-Structure Coupling Matrix
 
 Selects a direct input fluid-structure coupling matrix.
 

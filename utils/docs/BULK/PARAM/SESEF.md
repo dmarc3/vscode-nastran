@@ -1,4 +1,4 @@
-## [SESEF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.SESEF.xhtml)
+## [SESEF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.SESEF.xhtml)
 
 Default    = -1 (SOLs 103 and 115 only)
 

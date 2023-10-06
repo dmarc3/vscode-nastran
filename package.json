@@ -3,7 +3,7 @@
   "displayName": "vscode-nastran",
   "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "mbakke",
   "repository": {
     "type": "git",
@@ -68,6 +68,14 @@
         "title": "Nastran: Show execution keywords."
       },
       {
+        "command": "insert_short_comment",
+        "title": "Nastran: Insert short field delineation comment."
+      },
+      {
+        "command": "insert_long_comment",
+        "title": "Nastran: Insert long field delineation comment."
+      },
+      {
         "command": "includeHierarchy.buildHierarchy",
         "title": "Nastran: Build include tree hierarchy.",
         "icon": {
@@ -91,6 +99,16 @@
         "command": "includeHierarchy.buildHierarchy",
         "key": "f7",
         "mac": "f7"
+      },
+      {
+        "command": "insert_short_comment",
+        "key": "f9",
+        "mac": "f9"
+      },
+      {
+        "command": "insert_long_comment",
+        "key": "f10",
+        "mac": "f10"
       }
     ],
     "menus": {

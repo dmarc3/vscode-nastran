@@ -1,4 +1,4 @@
-## [PEN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PEN.xhtml) - Pen Color and Size Assignments
+## [PEN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PEN.xhtml) - Pen Color and Size Assignments
 
 Generates a message on the printed output which may be used to inform the plotter operator as to what size and color pen point to mount in the various pen holders.
 

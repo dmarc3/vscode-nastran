@@ -1,4 +1,4 @@
-## [CQUADX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUADX.xhtml) - Axisymmetric Quadrilateral Element (Fully Nonlinear or Linear Harmonic)
+## [CQUADX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUADX.xhtml) - Axisymmetric Quadrilateral Element (Fully Nonlinear or Linear Harmonic)
 
 Defines an axisymmetric quadrilateral element with up to nine grid points for use in fully nonlinear (i.e., large strain and large rotations) analysis or a linear harmonic or rotordynamic analysis. The element has between four and nine grid points
 

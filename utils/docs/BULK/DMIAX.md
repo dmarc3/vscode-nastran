@@ -1,4 +1,4 @@
-## [DMIAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIAX.xhtml) - Direct Matrix Input for Axisymmetric Analysis
+## [DMIAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIAX.xhtml) - Direct Matrix Input for Axisymmetric Analysis
 
 Defines axisymmetric (fluid or structure) related direct input matrix terms.
 

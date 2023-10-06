@@ -1,4 +1,4 @@
-## [POINTAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.POINTAX.xhtml) - Conical Shell Point
+## [POINTAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.POINTAX.xhtml) - Conical Shell Point
 
 Defines the location of a point on an axisymmetric shell ring at which loads may be applied via the FORCE or MOMENT entries and at which displacements may be requested. These points are not subject to constraints via MPCAX, SPCAX, or OMITAX entries.
 

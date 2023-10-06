@@ -1,4 +1,4 @@
-## [VIEW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.VIEW.xhtml) - Angular Relationship of Observer’s Coordinate System
+## [VIEW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.VIEW.xhtml) - Angular Relationship of Observer’s Coordinate System
 
 Defines the angular relationship between observer’s coordinate system (r, s, and t axes specified on the AXES command) and basic coordinate system.
 

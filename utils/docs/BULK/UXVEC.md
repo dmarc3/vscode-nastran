@@ -1,4 +1,4 @@
-## [UXVEC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UXVEC.xhtml) - Control Parameter State
+## [UXVEC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UXVEC.xhtml) - Control Parameter State
 
 Specification of a vector of aerodynamic control point (extra point) values. These data define the control positions corresponding to user defined nonlinear control forces that have been defined by AEDW, AEPRESS and AEFORCE entries. Only nonzero values need to be defined.
 

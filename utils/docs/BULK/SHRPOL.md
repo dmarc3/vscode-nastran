@@ -1,4 +1,4 @@
-## [SHRPOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SHRPOL.xhtml) - Polynomial Shear Model
+## [SHRPOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SHRPOL.xhtml) - Polynomial Shear Model
 
 Defines an elastic shear model with a polynomial shear modulus. Used in SOL 700 only.
 

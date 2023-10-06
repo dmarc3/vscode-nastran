@@ -1,4 +1,4 @@
-## [DV3PASS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.DV3PASS.xhtml)
+## [DV3PASS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.DV3PASS.xhtml)
 
 Integer, Default = 1 for SOL 200 with nonlinear property sensitivity evaluation.
 

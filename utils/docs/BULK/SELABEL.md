@@ -1,4 +1,4 @@
-## [SELABEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELABEL.xhtml) - Superelement Output Label
+## [SELABEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SELABEL.xhtml) - Superelement Output Label
 
 Defines a label or name to be printed in the superelement output headings.
 

@@ -1,4 +1,4 @@
-## [NSM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSM.xhtml) - Non Structural Mass Entry by ID
+## [NSM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSM.xhtml) - Non Structural Mass Entry by ID
 
 Defines a set of non structural mass.
 

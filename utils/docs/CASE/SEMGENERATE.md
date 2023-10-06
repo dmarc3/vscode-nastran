@@ -1,4 +1,4 @@
-## [SEMGENERATE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEMGENERATE.Case.xhtml) - Superelement Matrix Generation
+## [SEMGENERATE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEMGENERATE.Case.xhtml) - Superelement Matrix Generation
 
 Specifies the superelement identification numbers for which stiffness, mass, and damping matrices will be generated.
 

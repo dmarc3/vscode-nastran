@@ -1,4 +1,4 @@
-## [COUPINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUPINT.xhtml) - Coupling Surface Interaction
+## [COUPINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUPINT.xhtml) - Coupling Surface Interaction
 
 Defines the surrounding variables when a segment of a coupling surface fails. Used in SOL 700 only.
 

@@ -1,4 +1,4 @@
-## [PBUSHT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSHT.xhtml) - Frequency Dependent or Nonlinear Force Deflection Spring and Damper Property
+## [PBUSHT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBUSHT.xhtml) - Frequency Dependent or Nonlinear Force Deflection Spring and Damper Property
 
 Defines the frequency dependent properties or the stress dependent properties for a generalized spring and damper structural element.
 

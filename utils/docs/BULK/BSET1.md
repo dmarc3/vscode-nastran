@@ -1,4 +1,4 @@
-## [BSET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BSET1.xhtml) - Fixed Analysis Degrees-of-Freedom, Alternate Form of BSET Entry
+## [BSET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BSET1.xhtml) - Fixed Analysis Degrees-of-Freedom, Alternate Form of BSET Entry
 
 Defines analysis set (a-set) degrees-of-freedom to be fixed (b-set) during generalized dynamic reduction or component mode synthesis calculations.
 

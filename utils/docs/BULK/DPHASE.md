@@ -1,4 +1,4 @@
-## [DPHASE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DPHASE.xhtml) - Dynamic Load Phase Lead
+## [DPHASE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DPHASE.xhtml) - Dynamic Load Phase Lead
 
 Defines the phase lead term  θ   in the equation of the dynamic loading function.
 

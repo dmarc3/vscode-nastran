@@ -1,4 +1,4 @@
-## [YLDJC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDJC.xhtml) - Johnson-Cook Yield Model
+## [YLDJC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDJC.xhtml) - Johnson-Cook Yield Model
 
 Defines a Johnson-Cook yield model where the yield stress is a function of effective plastic strain, strain rate, and temperature. Used in SOL 700 only.
 

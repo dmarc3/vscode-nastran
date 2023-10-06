@@ -1,4 +1,4 @@
-## [MAT9F](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT9F.xhtml) - Solid Element Anisotropic Frequency Dependence
+## [MAT9F](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT9F.xhtml) - Solid Element Anisotropic Frequency Dependence
 
 Specifies frequency-dependent material properties on MAT9 entry fields via TABLEDi entries.
 

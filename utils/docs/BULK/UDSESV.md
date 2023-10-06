@@ -1,4 +1,4 @@
-## [UDSESV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UDSESV.xhtml) - Define the number and names of user state variables for material user subroutines (SOL 400 only)
+## [UDSESV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UDSESV.xhtml) - Define the number and names of user state variables for material user subroutines (SOL 400 only)
 
 Define the number and names of the user state variables. Each state variable has default nominal name if a user name is not given. This is a global entry.
 

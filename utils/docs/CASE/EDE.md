@@ -1,4 +1,4 @@
-## [EDE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EDE.Case.xhtml) - Element Energy Loss Per Cycle Output Request
+## [EDE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EDE.Case.xhtml) - Element Energy Loss Per Cycle Output Request
 
 Requests the output of the energy loss per cycle in selected elements.
 

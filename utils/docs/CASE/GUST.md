@@ -1,4 +1,4 @@
-## [GUST (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GUST.Case.xhtml) - Aerodynamic Gust Load Requests
+## [GUST (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GUST.Case.xhtml) - Aerodynamic Gust Load Requests
 
 Selects the gust field in an aeroelastic response problem.
 

@@ -1,4 +1,4 @@
-## [CK1, CK2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.CK1.CK2.xhtml)
+## [CK1, CK2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.CK1.CK2.xhtml)
 
 Default    = (   1.0, 0.0)
 

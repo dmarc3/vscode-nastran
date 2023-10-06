@@ -1,4 +1,4 @@
-## [BAROR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BAROR.xhtml) - CBAR Entry Default Values
+## [BAROR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BAROR.xhtml) - CBAR Entry Default Values
 
 Defines default values for field 3 and fields 6 through 8 of the CBAR entry.
 

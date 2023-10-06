@@ -1,4 +1,4 @@
-## [RANDOM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RANDOM.Case.xhtml) - Random Analysis Set Selection
+## [RANDOM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RANDOM.Case.xhtml) - Random Analysis Set Selection
 
 Selects the RANDPS and RANDT1 Bulk Data entries to be used in random analysis.
 

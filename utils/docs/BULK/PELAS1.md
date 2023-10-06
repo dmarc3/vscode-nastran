@@ -1,4 +1,4 @@
-## [PELAS1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAS1.xhtml) - Defines a spring property designated by a force-deflection curve for SOL 700. Used in SOL 700 only.
+## [PELAS1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAS1.xhtml) - Defines a spring property designated by a force-deflection curve for SOL 700. Used in SOL 700 only.
 
 #### Format:
 

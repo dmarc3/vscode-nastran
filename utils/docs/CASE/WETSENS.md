@@ -1,4 +1,4 @@
-## [WETSENS (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.WETSENS.Case.xhtml) - Sensitivity Wetted Grids for SOL 108/111
+## [WETSENS (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.WETSENS.Case.xhtml) - Sensitivity Wetted Grids for SOL 108/111
 
 Select SOLUTION frequencies and RESPONSE DOFs for the generation of sensitivity for wetted grids.
 

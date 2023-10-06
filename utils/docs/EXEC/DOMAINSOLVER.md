@@ -1,4 +1,4 @@
-## [DOMAINSOLVER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.DOMAINSOLVER.xhtml) - Domain Decomposition Solution Method
+## [DOMAINSOLVER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.DOMAINSOLVER.xhtml) - Domain Decomposition Solution Method
 
 Selects domain decomposition solution methods.
 

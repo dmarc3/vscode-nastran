@@ -1,4 +1,4 @@
-## [SESUP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SESUP.xhtml) - Fictitious Support
+## [SESUP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SESUP.xhtml) - Fictitious Support
 
 Defines determinate reaction superelement degrees-of-freedom in a free-body analysis.
 

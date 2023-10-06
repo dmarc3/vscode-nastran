@@ -1,4 +1,4 @@
-## [RSPLINE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSPLINE.xhtml) - Interpolation Constraint Element
+## [RSPLINE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RSPLINE.xhtml) - Interpolation Constraint Element
 
 Defines multipoint constraints for the interpolation of displacements at grid points.
 

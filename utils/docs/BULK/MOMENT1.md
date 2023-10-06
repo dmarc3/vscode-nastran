@@ -1,4 +1,4 @@
-## [MOMENT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMENT1.xhtml) - Follower Moment, Alternate Form 1
+## [MOMENT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMENT1.xhtml) - Follower Moment, Alternate Form 1
 
 Defines a concentrated moment at a grid point by specifying a magnitude and two grid points that determine the direction.
 

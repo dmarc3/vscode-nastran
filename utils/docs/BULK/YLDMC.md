@@ -1,4 +1,4 @@
-## [YLDMC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDMC.xhtml) - Mohr-Coulomb Yield Model
+## [YLDMC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDMC.xhtml) - Mohr-Coulomb Yield Model
 
 Defines a Mohr-Coulomb yield model. Used in SOL 700 only.
 

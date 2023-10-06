@@ -1,4 +1,4 @@
-## [DTI,ESTDATA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.ESTDATA.xhtml) - Superelement Estimation Data Overrides
+## [DTI,ESTDATA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.ESTDATA.xhtml) - Superelement Estimation Data Overrides
 
 Provides override data for time and space estimation for superelement processing operations.
 

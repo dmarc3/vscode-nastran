@@ -1,4 +1,4 @@
-## [AESYMXY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AESYMXY.Case.xhtml) - Aerodynamic Flow Symmetry About The XY Plane
+## [AESYMXY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AESYMXY.Case.xhtml) - Aerodynamic Flow Symmetry About The XY Plane
 
 Aerodynamic XY plane of symmetry flag. This is used to indicate whether the aerodynamic model has symmetry with respect to the ground.
 

@@ -1,4 +1,4 @@
-## [BCPATCH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPATCH.xhtml) - Defines a Rigid Contact Body Made up of Quadrilateral Patches in SOLs 101 and 400
+## [BCPATCH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPATCH.xhtml) - Defines a Rigid Contact Body Made up of Quadrilateral Patches in SOLs 101 and 400
 
 Defines a rigid contact body made up of quadrilateral patches used in SOLs 101 and 400 only.
 

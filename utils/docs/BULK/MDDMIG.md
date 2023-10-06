@@ -1,4 +1,4 @@
-## [MDDMIG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDDMIG.xhtml) - Direct Matrix Input at Points Defined in Two or More Modules
+## [MDDMIG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDDMIG.xhtml) - Direct Matrix Input at Points Defined in Two or More Modules
 
 Defines direct input matrices related to grid, extra, and/or scalar points defined in two or more Modules. The matrix is defined by a single header entry and one or more column entries. A column entry is required for each column with nonzero elements.
 

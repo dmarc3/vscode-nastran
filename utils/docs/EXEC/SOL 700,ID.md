@@ -1,4 +1,4 @@
-## [SOL 700,ID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SOL.700.ID.xhtml) - Executes MSC Nastran Explicit Nonlinear (SOL 700)
+## [SOL 700,ID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SOL.700.ID.xhtml) - Executes MSC Nastran Explicit Nonlinear (SOL 700)
 
 #### Format:
 

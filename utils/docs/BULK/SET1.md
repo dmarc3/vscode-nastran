@@ -1,4 +1,4 @@
-## [SET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET1.xhtml) - Set Definition
+## [SET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET1.xhtml) - Set Definition
 
 Defines a list of structural grid points or element identification numbers.
 

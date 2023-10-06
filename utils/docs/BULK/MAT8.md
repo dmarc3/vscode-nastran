@@ -1,4 +1,4 @@
-## [MAT8](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT8.xhtml) - Shell Element Orthotropic Material Property Definition
+## [MAT8](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT8.xhtml) - Shell Element Orthotropic Material Property Definition
 
 Defines the material property for an orthotropic material for isoparametric shell elements.
 

@@ -1,4 +1,4 @@
-## [MATT3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT3.xhtml) - MAT3 Material Temperature Dependence
+## [MATT3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT3.xhtml) - MAT3 Material Temperature Dependence
 
 Specifies temperature-dependent material properties on MAT3 entry fields via TABLEMi entries that are temperature dependent.
 

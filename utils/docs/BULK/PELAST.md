@@ -1,4 +1,4 @@
-## [PELAST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAST.xhtml) - Frequency Dependent or Nonlinear Elastic Property
+## [PELAST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAST.xhtml) - Frequency Dependent or Nonlinear Elastic Property
 
 Defines the frequency dependent or nonlinear properties for a PELAS Bulk Data entry.
 

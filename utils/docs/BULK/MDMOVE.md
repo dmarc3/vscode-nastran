@@ -1,4 +1,4 @@
-## [MDMOVE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMOVE.xhtml) - Defines a Module repositioning sequence
+## [MDMOVE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDMOVE.xhtml) - Defines a Module repositioning sequence
 
 Defines a Module repositioning sequence by referencing MDMIRi, MDROTi, and MDTRAN entries.
 

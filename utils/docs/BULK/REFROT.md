@@ -1,4 +1,4 @@
-## [REFROT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.REFROT.xhtml) - Defines the reference rotor for non-reference rotors in residual (SE 0). Applicable only for Complex Eigenvalue analysis (SOL 107 / 110 / 200 / 400 (ANALYSIS=DCEIG or MCEIG))
+## [REFROT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.REFROT.xhtml) - Defines the reference rotor for non-reference rotors in residual (SE 0). Applicable only for Complex Eigenvalue analysis (SOL 107 / 110 / 200 / 400 (ANALYSIS=DCEIG or MCEIG))
 
 Specifies the reference rotor for non-reference rotors.
 

@@ -1,4 +1,4 @@
-## [RTRPLT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RTRPLT1.xhtml) - Rigid Triangular Plate (Alternative Format)
+## [RTRPLT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RTRPLT1.xhtml) - Rigid Triangular Plate (Alternative Format)
 
 Alternative format to define a rigid triangular plate element connecting three grid points.
 

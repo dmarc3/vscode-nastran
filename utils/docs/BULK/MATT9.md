@@ -1,4 +1,4 @@
-## [MATT9](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT9.xhtml) - Solid Element Anisotropic Material Temperature Dependence
+## [MATT9](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT9.xhtml) - Solid Element Anisotropic Material Temperature Dependence
 
 Specifies temperature-dependent material properties on MAT9 entry fields via TABLEMk entries.
 

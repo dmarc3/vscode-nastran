@@ -1,4 +1,4 @@
-## [DVBSHAP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVBSHAP.xhtml) - Design Variable to Boundary Shapes
+## [DVBSHAP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVBSHAP.xhtml) - Design Variable to Boundary Shapes
 
 Associates a design variable identification number to a linear combination of boundary shape vectors from a particular auxiliary model.
 

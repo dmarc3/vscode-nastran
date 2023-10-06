@@ -1,4 +1,4 @@
-## [EIGRL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGRL.xhtml) - Real Eigenvalue Extraction Data, Lanczos Method
+## [EIGRL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGRL.xhtml) - Real Eigenvalue Extraction Data, Lanczos Method
 
 Defines data needed to perform real eigenvalue (vibration or buckling) analysis with the Lanczos method.
 

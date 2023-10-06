@@ -1,4 +1,4 @@
-## [TLEFT TICS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.TLEFT.TICS.xhtml) - Controls Drawing of Tic Marks on All Edges
+## [TLEFT TICS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.TLEFT.TICS.xhtml) - Controls Drawing of Tic Marks on All Edges
 
 Specifies how to draw tic marks on the left edge of the upper half of the frame.
 

@@ -1,4 +1,4 @@
-## [ACTRIM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACTRIM.xhtml) - ACTRAN Trimmed Material Matrices for SOL 108/111
+## [ACTRIM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACTRIM.xhtml) - ACTRAN Trimmed Material Matrices for SOL 108/111
 
 Defines ACTRAN trimmed material matrices.
 

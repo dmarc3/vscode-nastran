@@ -1,4 +1,4 @@
-## [MATT8](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT8.xhtml) - Shell Orthotropic Material Temperature Dependence
+## [MATT8](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT8.xhtml) - Shell Orthotropic Material Temperature Dependence
 
 Specifies temperature-dependent material properties on MAT8 entry fields via TABLEMi entries.
 

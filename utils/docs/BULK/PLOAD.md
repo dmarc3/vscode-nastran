@@ -1,4 +1,4 @@
-## [PLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD.xhtml) - Static Pressure Load
+## [PLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD.xhtml) - Static Pressure Load
 
 Defines a uniform static pressure load on a triangular or quadrilateral surface comprised of surface elements and/or the faces of solid elements.
 

@@ -1,4 +1,4 @@
-## [PRAC2D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRAC2D.xhtml) - CRAC2D Element Property
+## [PRAC2D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRAC2D.xhtml) - CRAC2D Element Property
 
 Defines the properties and stress evaluation techniques to be used with the CRAC2D structural element.
 

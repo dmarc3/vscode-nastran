@@ -1,4 +1,4 @@
-## [TSTEP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TSTEP.xhtml) - Transient Time Step
+## [TSTEP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TSTEP.xhtml) - Transient Time Step
 
 Defines time step intervals at which a solution will be generated and output in transient analysis.
 

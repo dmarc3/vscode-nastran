@@ -1,4 +1,4 @@
-## [DSYM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DSYM.Case.xhtml) - Dihedral Symmetry Option in Cyclic Symmetry
+## [DSYM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DSYM.Case.xhtml) - Dihedral Symmetry Option in Cyclic Symmetry
 Provides for either one or two planes of overall symmetry in DIH-type cyclic symmetry problems.
 
 #### Format:

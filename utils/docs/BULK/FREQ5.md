@@ -1,4 +1,4 @@
-## [FREQ5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ5.xhtml) - Frequency List, Alternate Form 5
+## [FREQ5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ5.xhtml) - Frequency List, Alternate Form 5
 
 Defines a set of frequencies used in the solution of modal frequency-response problems by specification of a frequency range and fractions of the natural frequencies within that range.
 

@@ -1,4 +1,4 @@
-## [CONM2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONM2.xhtml) - Concentrated Mass Element Connection, Rigid Body Form
+## [CONM2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONM2.xhtml) - Concentrated Mass Element Connection, Rigid Body Form
 
 Defines a concentrated mass at a grid point.
 

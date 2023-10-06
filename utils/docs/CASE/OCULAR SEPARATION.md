@@ -1,4 +1,4 @@
-## [OCULAR SEPARATION](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.OCULAR.SEPARATION.xhtml) - Separation of the Vantage Points
+## [OCULAR SEPARATION](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.OCULAR.SEPARATION.xhtml) - Separation of the Vantage Points
 
 Defines the separation of the left and right eye vantage points along the s-axis for stereoscopic projections.
 

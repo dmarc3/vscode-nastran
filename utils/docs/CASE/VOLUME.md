@@ -1,4 +1,4 @@
-## [VOLUME](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.VOLUME.xhtml) - Volume Definition
+## [VOLUME](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.VOLUME.xhtml) - Volume Definition
 
 Defines a volume for the calculation of grid point stresses, strains, or mesh stress discontinuities.
 

@@ -1,4 +1,4 @@
-## [PBCOMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBCOMP.xhtml) - Beam Property (Alternate Form of PBEAM)
+## [PBCOMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBCOMP.xhtml) - Beam Property (Alternate Form of PBEAM)
 
 Alternate form of the PBEAM entry to define properties of a uniform cross-sectional beam referenced by a CBEAM entry. This entry is also used to specify lumped areas of the beam cross section for nonlinear analysis and/or composite analysis.
 

@@ -1,4 +1,4 @@
-## [FREQ3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ3.xhtml) - Frequency List, Alternate 3
+## [FREQ3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ3.xhtml) - Frequency List, Alternate 3
 
 Defines a set of excitation frequencies for modal frequency-response solutions by specifying number of excitation frequencies between two modal frequencies.
 

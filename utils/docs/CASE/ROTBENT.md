@@ -1,4 +1,4 @@
-## [ROTBENT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ROTBENT.Case.xhtml) - Specifying rotor initial deformation and requesting outputs of initial deformation
+## [ROTBENT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ROTBENT.Case.xhtml) - Specifying rotor initial deformation and requesting outputs of initial deformation
 
 Specifies rotor the initial deformation (kink and offset) parameters.
 

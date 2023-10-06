@@ -1,4 +1,4 @@
-## [DBUPDATE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBUPDATE.xhtml) - Specifies Database Directory Update Interval
+## [DBUPDATE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBUPDATE.xhtml) - Specifies Database Directory Update Interval
 
 Specifies the maximum length of CPU time between database directory updates to the MASTER DBset. This statement is intended to be used if the INIT MASTER(RAM=r) option is specified.
 

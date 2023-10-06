@@ -1,4 +1,4 @@
-## [K42GG (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.K42GG.Case.xhtml) - Direct Input Stiffness Element Damping Selection
+## [K42GG (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.K42GG.Case.xhtml) - Direct Input Stiffness Element Damping Selection
 
 Selects direct input structural element damping matrix or matrices.
 

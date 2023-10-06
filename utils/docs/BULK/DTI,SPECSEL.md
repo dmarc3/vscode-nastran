@@ -1,4 +1,4 @@
-## [DTI,SPECSEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SPECSEL.xhtml) - Response Spectra Input Correlation Table
+## [DTI,SPECSEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SPECSEL.xhtml) - Response Spectra Input Correlation Table
 
 Correlates spectra lines specified on TABLED1 entries with damping values.
 

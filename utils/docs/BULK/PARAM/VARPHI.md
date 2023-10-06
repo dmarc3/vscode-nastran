@@ -1,4 +1,4 @@
-## [VARPHI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.VARPHI.xhtml)
+## [VARPHI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.VARPHI.xhtml)
 
 Default =  ![parameters01829.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/../../../assets/parameters01829.jpg?_LANG=enus) /4 (0.78539816)
 

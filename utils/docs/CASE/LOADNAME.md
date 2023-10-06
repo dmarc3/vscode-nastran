@@ -1,4 +1,4 @@
-## [LOADNAME (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOADNAME.Case.xhtml) - Name to be Associated with a SUBCASE in PAA
+## [LOADNAME (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOADNAME.Case.xhtml) - Name to be Associated with a SUBCASE in PAA
 
 Provides a name to be associated with a loading condition.
 

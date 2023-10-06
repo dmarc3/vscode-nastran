@@ -1,4 +1,4 @@
-## [INCLUDE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.INCLUDE1.xhtml) - Inserts External File
+## [INCLUDE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.INCLUDE1.xhtml) - Inserts External File
 
 Inserts an external file into the input file. The INCLUDE statement may appear anywhere within the input data file.
 

@@ -1,4 +1,4 @@
-## [UNGLUE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.UNGLUE.Case.xhtml) - Contact Body Unglue Selection
+## [UNGLUE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.UNGLUE.Case.xhtml) - Contact Body Unglue Selection
 
 Selects the grids should use standard contact instead of glued contact in glued bodies in SOL 400.
 

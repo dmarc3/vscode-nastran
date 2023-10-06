@@ -1,4 +1,4 @@
-## [MATT2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT2.xhtml) - Anisotropic Material Temperature Dependence
+## [MATT2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATT2.xhtml) - Anisotropic Material Temperature Dependence
 
 Specifies temperature-dependent material properties on MAT2 entry fields via TABLEMj entries.
 

@@ -1,4 +1,4 @@
-## [SET3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET3.xhtml) - Defines a List of Grids, Elements, Points or Modules
+## [SET3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET3.xhtml) - Defines a List of Grids, Elements, Points or Modules
 
 Defines a list of grids, elements, points or modules.
 

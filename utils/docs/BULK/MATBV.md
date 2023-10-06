@@ -1,4 +1,4 @@
-## [MATBV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATBV.xhtml) - Material Bulk Viscosity - SOL700
+## [MATBV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATBV.xhtml) - Material Bulk Viscosity - SOL700
 
 Defines the bulk viscosity for materials. Used in SOL700 only.
 

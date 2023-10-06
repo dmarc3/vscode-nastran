@@ -1,4 +1,4 @@
-## [RADM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADM.xhtml) - Radiation Boundary Material Property
+## [RADM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADM.xhtml) - Radiation Boundary Material Property
 
 Defines the radiation properties of a boundary element for heat transfer analysis.
 

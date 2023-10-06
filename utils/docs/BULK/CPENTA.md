@@ -1,4 +1,4 @@
-## [CPENTA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CPENTA.xhtml) - Five-Sided Solid Element Connection
+## [CPENTA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CPENTA.xhtml) - Five-Sided Solid Element Connection
 
 Defines the connections of a five-sided solid element with six to fifteen grid points.
 

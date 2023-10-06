@@ -1,4 +1,4 @@
-## [DCONADD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DCONADD.xhtml) - Design Constraint Set Combination
+## [DCONADD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DCONADD.xhtml) - Design Constraint Set Combination
 
 Defines the design constraints for a subcase as a union of DCONSTR entries.
 

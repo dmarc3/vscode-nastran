@@ -1,4 +1,4 @@
-## [MONSUM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUM.xhtml) - Linear Combinations of Monitor Point Components
+## [MONSUM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUM.xhtml) - Linear Combinations of Monitor Point Components
 
 Defines a new monitor result that is the weighted sum of existing monitor results. The existing monitor points do not need to be of the same type but they must be of similar type (see Remark  5. )
 

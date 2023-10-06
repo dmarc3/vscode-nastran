@@ -1,4 +1,4 @@
-## [TDISPLACEMENT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TDISPLACEMENT.Case.xhtml) - Displacement Output Request for trim components, TRMC
+## [TDISPLACEMENT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TDISPLACEMENT.Case.xhtml) - Displacement Output Request for trim components, TRMC
 
 Requests the form and type of displacement output for TRMC.
 

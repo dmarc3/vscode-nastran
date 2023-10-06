@@ -1,4 +1,4 @@
-## [TIM2PSD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIM2PSD.xhtml) - FFT conversion tool for use in random vibration fatigue analysis
+## [TIM2PSD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIM2PSD.xhtml) - FFT conversion tool for use in random vibration fatigue analysis
 
 Fast Fourier Transformation (FFT) conversion tool for use in SOL 108 or SOL 111 random vibration fatigue analysis. This entry is used to convert time history data into power spectral density (PSD) functions directly input to the fatigue analysis.
 

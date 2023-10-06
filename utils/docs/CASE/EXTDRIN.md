@@ -1,4 +1,4 @@
-## [EXTDRIN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTDRIN.Case.xhtml) - External Superelement Data Recovery Restart Run Request
+## [EXTDRIN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTDRIN.Case.xhtml) - External Superelement Data Recovery Restart Run Request
 
 Requests the job to perform an external superelement data recovery restart.  Also specifies the storage media of the boundary solution data.
 

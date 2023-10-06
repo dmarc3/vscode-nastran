@@ -1,4 +1,4 @@
-## [TRMCPL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TRMCPL1.xhtml) - Trim Component Interface Coupling Parameters
+## [TRMCPL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TRMCPL1.xhtml) - Trim Component Interface Coupling Parameters
 
 Defines the interface coupling parameters for computing interface coupling matrices.
 

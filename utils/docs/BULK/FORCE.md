@@ -1,4 +1,4 @@
-## [FORCE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCE.xhtml) - Static Force
+## [FORCE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCE.xhtml) - Static Force
 
 Defines a static concentrated force at a grid point by specifying a vector.
 

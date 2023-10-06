@@ -1,4 +1,4 @@
-## [EXPAND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.EXPAND.xhtml) - Concatenates New DBset Members
+## [EXPAND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.EXPAND.xhtml) - Concatenates New DBset Members
 
 Concatenates additional DBset members on an existing permanent DBset previously defined with an INIT statement.
 

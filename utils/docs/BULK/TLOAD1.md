@@ -1,4 +1,4 @@
-## [TLOAD1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TLOAD1.xhtml) - Transient Response Dynamic Excitation, Form 1
+## [TLOAD1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TLOAD1.xhtml) - Transient Response Dynamic Excitation, Form 1
 
 Defines a time-dependent dynamic load or enforced motion of the form
 

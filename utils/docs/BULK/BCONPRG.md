@@ -1,4 +1,4 @@
-## [BCONPRG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRG.xhtml) - Geometric Contact Parameters of Touching Bodies
+## [BCONPRG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRG.xhtml) - Geometric Contact Parameters of Touching Bodies
 
 Defines geometric contact parameters used to determine if contact occurs between bodies. For segment-to-segment contact it also defines additional numerical parameters used to apply the constraints. The parameters defined here are referenced by the BCONECT entry. This entry is used in conjunction with the BCONPRP entry.
 
@@ -30,7 +30,7 @@ BCONPRG 90              ICOORD  1       IGLUE   1
 └───────────┴──────────────────────────────────────────────────────────────────────────┘
 ```
 
-## [BCONPRG-700](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRG.700.xhtml) - Geometric Contact Parameters of Touching Bodies in SOL 700
+## [BCONPRG-700](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONPRG.700.xhtml) - Geometric Contact Parameters of Touching Bodies in SOL 700
 
 Defines geometric contact parameters of touching bodies used in SOL 700 only.
 

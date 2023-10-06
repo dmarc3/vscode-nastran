@@ -1,4 +1,4 @@
-## [LOADCLID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCLID.xhtml) - Define Solution Load Combinations Using Part Load ID
+## [LOADCLID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCLID.xhtml) - Define Solution Load Combinations Using Part Load ID
 
 Define a loading combination in PAA using the Load ID from SUBCASEs of the Parts.
 

@@ -1,4 +1,4 @@
-## [FLSPOUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FLSPOUT.Case.xhtml) - Control for Fluid-Structure Mode Participation Output
+## [FLSPOUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.FLSPOUT.Case.xhtml) - Control for Fluid-Structure Mode Participation Output
 
 Control for fluid-structure mode participation output.
 

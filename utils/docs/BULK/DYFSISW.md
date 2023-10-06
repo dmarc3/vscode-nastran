@@ -1,4 +1,4 @@
-## [DYFSISW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DYFSISW.xhtml) - Fluid Structure Interaction Activation Switch
+## [DYFSISW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DYFSISW.xhtml) - Fluid Structure Interaction Activation Switch
 
 Allows activating or deactivating Fluid Structure Interaction and Eulerian solver. Used in SOL 700 only.
 

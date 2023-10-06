@@ -1,4 +1,4 @@
-## [MATVE ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATVE.xhtml) - Visco-Elastic Material Properties
+## [MATVE ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATVE.xhtml) - Visco-Elastic Material Properties
 
 Specifies visco-elastic material properties to be used for quasi-static or dynamic analysis in SOL 400.
 

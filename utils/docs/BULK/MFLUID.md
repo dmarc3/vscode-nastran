@@ -1,4 +1,4 @@
-## [MFLUID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MFLUID.xhtml) - Fluid Volume Properties
+## [MFLUID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MFLUID.xhtml) - Fluid Volume Properties
 
 Defines the properties of an incompressible fluid volume for the purpose of generating a virtual mass matrix.
 

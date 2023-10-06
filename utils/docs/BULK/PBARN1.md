@@ -1,4 +1,4 @@
-## [PBARN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBARN1.xhtml) - Nonlinear Property Extensions for a PBAR or PBARL Entry
+## [PBARN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBARN1.xhtml) - Nonlinear Property Extensions for a PBAR or PBARL Entry
 
 Specifies additional nonlinear properties for elements that point to a PBAR or PBARL entry in SOL 400.
 

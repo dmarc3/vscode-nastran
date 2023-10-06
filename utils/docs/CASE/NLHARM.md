@@ -1,4 +1,4 @@
-## [NLHARM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLHARM.Case.xhtml) - Nonlinear Harmonic Analysis Parameter Selection
+## [NLHARM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLHARM.Case.xhtml) - Nonlinear Harmonic Analysis Parameter Selection
 
 Selects the parameters used for nonlinear harmonic response analysis.
 

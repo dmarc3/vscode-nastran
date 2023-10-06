@@ -1,4 +1,4 @@
-## [SEUSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEUSET.xhtml) - Superelement Degree-of-Freedom Set Definition
+## [SEUSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEUSET.xhtml) - Superelement Degree-of-Freedom Set Definition
 
 Defines a degree-of-freedom set for a superelement.
 

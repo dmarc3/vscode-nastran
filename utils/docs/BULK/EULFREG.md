@@ -1,4 +1,4 @@
-## [EULFREG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EULFREG.xhtml) - Body force for Eulerian Regions - SOL700
+## [EULFREG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EULFREG.xhtml) - Body force for Eulerian Regions - SOL700
 
 Defines the acceleration field for sets of Eulerian regions, The Eulerian regions are defined by geometric shapes. For each coordinate direction a time-depended acceleration can be defined.
 

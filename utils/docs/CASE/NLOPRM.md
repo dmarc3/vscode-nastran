@@ -1,4 +1,4 @@
-## [NLOPRM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLOPRM.Case.xhtml) - Nonlinear Regular and Debug Output Control Parameters - SOL 400
+## [NLOPRM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLOPRM.Case.xhtml) - Nonlinear Regular and Debug Output Control Parameters - SOL 400
 
 Controls MSC Nastran nonlinear solution output, debug printout, debug POST and punch-out of contact constraints of MPC and MPCY Bulk Data entries.
 

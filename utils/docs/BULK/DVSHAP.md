@@ -1,4 +1,4 @@
-## [DVSHAP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVSHAP.xhtml) - Design Variable to Basis Vector(s)
+## [DVSHAP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVSHAP.xhtml) - Design Variable to Basis Vector(s)
 
 Defines a shape basis vector by relating a design variable identification number (DVID) to columns of a displacement matrix.
 

@@ -1,4 +1,4 @@
-## [NLIC (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLIC.Case.xhtml) - Nonlinear Initial Condition or Preload
+## [NLIC (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLIC.Case.xhtml) - Nonlinear Initial Condition or Preload
 
 Selects a previously executed load increment as the initial conditions or preload for a nonlinear or perturbation STEP in SOL 400.
 

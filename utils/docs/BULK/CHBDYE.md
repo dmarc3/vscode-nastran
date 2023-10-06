@@ -1,4 +1,4 @@
-## [CHBDYE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYE.xhtml) - Geometric Surface Element Definition (Element Form)
+## [CHBDYE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYE.xhtml) - Geometric Surface Element Definition (Element Form)
 
 Defines a boundary condition surface element with reference to a heat conduction element.
 

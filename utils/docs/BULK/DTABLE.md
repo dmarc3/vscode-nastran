@@ -1,4 +1,4 @@
-## [DTABLE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTABLE.xhtml) - Table Constants
+## [DTABLE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTABLE.xhtml) - Table Constants
 
 Defines a table of real constants that are used in equations (see DEQATN entry).
 

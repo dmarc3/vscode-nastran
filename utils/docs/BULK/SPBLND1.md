@@ -1,4 +1,4 @@
-## [SPBLND1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPBLND1.xhtml) - Strip Based Spline Blending
+## [SPBLND1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPBLND1.xhtml) - Strip Based Spline Blending
 
 Defines a strip based blending of two splines.
 

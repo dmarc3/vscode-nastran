@@ -1,4 +1,4 @@
-## [SELGENERATE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SELGENERATE.Case.xhtml) - Superelement Load Generation
+## [SELGENERATE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SELGENERATE.Case.xhtml) - Superelement Load Generation
 
 Specifies the superelement identification numbers for which static loads will be generated.
 

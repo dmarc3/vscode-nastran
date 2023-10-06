@@ -1,4 +1,4 @@
-## [CEND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.CEND.xhtml) - End of Executive Control Section Delimiter
+## [CEND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.CEND.xhtml) - End of Executive Control Section Delimiter
 
 Designates the end of   the Executive Control Section.
 

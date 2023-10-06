@@ -1,4 +1,4 @@
-## [OTIME (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OTIME.Case.xhtml) - Output Time Set
+## [OTIME (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OTIME.Case.xhtml) - Output Time Set
 
 Selects a set of times for output requests.
 

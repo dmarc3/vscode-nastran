@@ -1,4 +1,4 @@
-## [BCBODY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBODY.xhtml) - Flexible or Rigid Contact Body in 2D and 3D
+## [BCBODY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBODY.xhtml) - Flexible or Rigid Contact Body in 2D and 3D
 
 Defines a flexible or rigid contact body in 2D or 3D used in SOLs 101, 400, and 700 only. The BCBODY1 option is the preferred method to defining contact bodies for SOL 400.
 

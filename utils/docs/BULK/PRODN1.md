@@ -1,4 +1,4 @@
-## [PRODN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRODN1.xhtml) - Nonlinear Property Extensions for a PROD Entry
+## [PRODN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRODN1.xhtml) - Nonlinear Property Extensions for a PROD Entry
 
 Specifies additional nonlinear properties for elements that point to a PROD entry in SOL 400.
 

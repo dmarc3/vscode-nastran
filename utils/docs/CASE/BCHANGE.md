@@ -1,4 +1,4 @@
-## [BCHANGE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCHANGE.Case.xhtml) - Contact Bodies Definition Change Selection
+## [BCHANGE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BCHANGE.Case.xhtml) - Contact Bodies Definition Change Selection
 
 Selects the changes of the definition of contact bodies in SOL 400.
 

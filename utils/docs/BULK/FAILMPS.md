@@ -1,4 +1,4 @@
-## [FAILMPS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILMPS.xhtml) - Maximum Plastic Strain Failure Model - SOL 700 only
+## [FAILMPS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILMPS.xhtml) - Maximum Plastic Strain Failure Model - SOL 700 only
 
 Defines the properties of a failure model where failure occurs when the equivalent plastic strain exceeds the specified value. Used in SOL 700 only.
 

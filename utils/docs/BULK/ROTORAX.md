@@ -1,4 +1,4 @@
-## [ROTORAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTORAX.xhtml) - Axisymmetric Model Rotor Definition
+## [ROTORAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTORAX.xhtml) - Axisymmetric Model Rotor Definition
 
 Specifies list of elements, properties or grid points that comprise an axisymmetric model rotor.
 

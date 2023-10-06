@@ -1,4 +1,4 @@
-## [MAT9](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT9.xhtml) - Solid Element Anisotropic Material Property Definition
+## [MAT9](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT9.xhtml) - Solid Element Anisotropic Material Property Definition
 
 Defines the material properties for linear, temperature-independent, anisotropic materials for solid isoparametric elements (see PSOLID entry description).
 

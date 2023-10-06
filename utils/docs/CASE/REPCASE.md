@@ -1,4 +1,4 @@
-## [REPCASE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.REPCASE.Case.xhtml) - Repeat Output Subcase Delimiter
+## [REPCASE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.REPCASE.Case.xhtml) - Repeat Output Subcase Delimiter
 
 Delimits and identifies a repeated output subcase.
 

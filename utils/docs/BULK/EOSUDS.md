@@ -1,4 +1,4 @@
-## [EOSUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSUDS.xhtml) - User-defined Equation of State - SOL 700 only
+## [EOSUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSUDS.xhtml) - User-defined Equation of State - SOL 700 only
 
 Defines the frequency dependent properties for an isotropic poroelastic material. Use in SOL700 only.
 

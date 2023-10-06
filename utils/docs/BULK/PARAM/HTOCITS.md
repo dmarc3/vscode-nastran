@@ -1,4 +1,4 @@
-## [HTOCITS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HTOCITS.xhtml)
+## [HTOCITS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HTOCITS.xhtml)
 
 Default = 20 (SOL 106 only)
 

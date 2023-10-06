@@ -1,4 +1,4 @@
-## [BCNURBS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCNURBS.xhtml) - Defines a Rigid Contact Body Made up of NURBS in SOLs 101 and 400
+## [BCNURBS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCNURBS.xhtml) - Defines a Rigid Contact Body Made up of NURBS in SOLs 101 and 400
 
 Defines a rigid contact body made up of NURBS used in SOLs 101 and 400 only.
 

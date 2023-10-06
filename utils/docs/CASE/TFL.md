@@ -1,4 +1,4 @@
-## [TFL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TFL.Case.xhtml) - Transfer Function Set Selection
+## [TFL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TFL.Case.xhtml) - Transfer Function Set Selection
 
 Selects the transfer function set(s) to be added to the direct input matrices.
 

@@ -1,4 +1,4 @@
-## [ACFPMRESULT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACFPMRESULT.Case.xhtml) - Acoustic Field Point Mesh Results Output Request
+## [ACFPMRESULT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACFPMRESULT.Case.xhtml) - Acoustic Field Point Mesh Results Output Request
 
 Requests output of field point mesh results. This Case Control command can be used in SOL 108 and SOL 111 only.
 

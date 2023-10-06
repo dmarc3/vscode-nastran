@@ -1,4 +1,4 @@
-## [BENDL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BENDL.Case.xhtml) - BAR/BEAM end load Subcase Selection
+## [BENDL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.BENDL.Case.xhtml) - BAR/BEAM end load Subcase Selection
 
 Function to calculate bar end loads and shear flow.
 

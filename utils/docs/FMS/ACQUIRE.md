@@ -1,4 +1,4 @@
-## [ACQUIRE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ACQUIRE.xhtml) - Selects NDDL Schema
+## [ACQUIRE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ACQUIRE.xhtml) - Selects NDDL Schema
 
 Selects the NDDL schema and MSC Nastran delivery database to be used for primary database creation.
 

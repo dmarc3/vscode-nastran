@@ -1,4 +1,4 @@
-## [SOLUTION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SOLUTION.Case.xhtml) - Solution ID Selection
+## [SOLUTION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SOLUTION.Case.xhtml) - Solution ID Selection
 
 Selects the solution ID for a 3 rd  step external superelement data recovery restart in SOL 400.
 

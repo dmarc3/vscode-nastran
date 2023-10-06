@@ -1,4 +1,4 @@
-## [DMIJI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIJI.xhtml) - Direct Matrix Input at js-Set of the Interference Body
+## [DMIJI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIJI.xhtml) - Direct Matrix Input at js-Set of the Interference Body
 
 Defines direct input matrices related to collation degrees-of-freedom (js-set) of aerodynamic mesh points for the interference elements of CAERO2. These include W2GJ, FA2J and input pressures and downwashes associated with AEPRESS and AEDW entries. The matrix is described by a single header entry and one or more column entries. A column entry is required for each column with nonzero elements. For entering data for the slender elements of a CAERO2, or a CAERO1, 3, 4 or 5 use DMIJ or DMI.
 

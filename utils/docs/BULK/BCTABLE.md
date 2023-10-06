@@ -1,4 +1,4 @@
-## [BCTABLE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTABLE.xhtml) - Defines a Contact Table for General Contact
+## [BCTABLE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTABLE.xhtml) - Defines a Contact Table for General Contact
 
 Defines a contact table used in SOL 101, 400 and 700. SOL 200 (without calling SOL 400) SOL 144, 145 and 146 can only support permanent glue. When SOL 200 calls SOL 400 (or say SOL 400 optimization), it can support all contact types. The BCTABL1 option is the preferred method to define a contact table.
 

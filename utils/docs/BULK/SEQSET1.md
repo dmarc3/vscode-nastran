@@ -1,4 +1,4 @@
-## [SEQSET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQSET1.xhtml) - Superelement Generalized Degree-of-Freedom, Alternate Form
+## [SEQSET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQSET1.xhtml) - Superelement Generalized Degree-of-Freedom, Alternate Form
 
 Defines the generalized degrees-of-freedom of the superelement to be used in generalized dynamic reduction or component mode synthesis.
 

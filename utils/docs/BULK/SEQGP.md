@@ -1,4 +1,4 @@
-## [SEQGP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQGP.xhtml) - Grid and Scalar Point Resequencing
+## [SEQGP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEQGP.xhtml) - Grid and Scalar Point Resequencing
 
 Used to manually order the grid points and scalar points of the problem.  This entry is used to redefine the sequence of grid and scalar points to optimize bandwidth.
 

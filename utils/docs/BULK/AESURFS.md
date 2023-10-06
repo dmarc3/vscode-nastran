@@ -1,4 +1,4 @@
-## [AESURFS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESURFS.xhtml) - Structural Grids on an Aerodynamic Control Surface
+## [AESURFS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESURFS.xhtml) - Structural Grids on an Aerodynamic Control Surface
 
 Optional specification of the structural nodes associated with an aerodynamic control surface that has been defined on an AESURF entry. The mass associated with these structural nodes define the control surface moment(s) of inertia about the hinge line(s).
 

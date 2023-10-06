@@ -1,4 +1,4 @@
-## [DTI,SETREE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SETREE.xhtml) - Superelement Tree Definition
+## [DTI,SETREE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SETREE.xhtml) - Superelement Tree Definition
 
 Defines a superelement tree that determines the superelement processing order.
 

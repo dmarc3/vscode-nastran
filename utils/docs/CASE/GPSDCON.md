@@ -1,4 +1,4 @@
-## [GPSDCON (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPSDCON.Case.xhtml) - Grid Point Stress Discontinuity Output Request
+## [GPSDCON (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPSDCON.Case.xhtml) - Grid Point Stress Discontinuity Output Request
 
 Requests mesh stress discontinuities based on grid point stresses.
 

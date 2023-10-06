@@ -1,4 +1,4 @@
-## [SPLINE6](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE6.xhtml) - 3D Finite Surface Spline
+## [SPLINE6](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE6.xhtml) - 3D Finite Surface Spline
 
 Defines a 6DOF or 3DOF finite surface spline for interpolating motion and/or forces between two meshes.
 

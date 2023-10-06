@@ -1,4 +1,4 @@
-## [ASET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ASET1.xhtml) - Degrees-of-Freedom For the a-set, Alternate Form of ASET Entry
+## [ASET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ASET1.xhtml) - Degrees-of-Freedom For the a-set, Alternate Form of ASET Entry
 
 Defines degrees-of-freedom in the analysis set (a-set).
 

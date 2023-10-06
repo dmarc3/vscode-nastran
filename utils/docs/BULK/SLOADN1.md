@@ -1,4 +1,4 @@
-## [SLOADN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SLOADN1.xhtml) - Describes TOP/BOT/MID Scalar Load for Heat Shell Element in SOL 400
+## [SLOADN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SLOADN1.xhtml) - Describes TOP/BOT/MID Scalar Load for Heat Shell Element in SOL 400
 
 Defines concentrated static loads on grid points of heat shell elements with linear or quadratic temperature distribution through the thickness direction.
 

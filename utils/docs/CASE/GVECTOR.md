@@ -1,4 +1,4 @@
-## [GVECTOR (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GVECTOR.Case.xhtml) - Eigenvector Output Request in SOLs 200 and 400
+## [GVECTOR (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GVECTOR.Case.xhtml) - Eigenvector Output Request in SOLs 200 and 400
 
 Requests the form and type of eigenvector output in SOLs 200 and 400. For other solutions use  DISPLACEMENT   (Case)
 

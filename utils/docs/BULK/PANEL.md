@@ -1,4 +1,4 @@
-## [PANEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PANEL.xhtml) - Panel Definition for Coupled Fluid-Structural Analysis
+## [PANEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PANEL.xhtml) - Panel Definition for Coupled Fluid-Structural Analysis
 
 Defines one or more panels by referencing sets of grid points, elements or properties.
 

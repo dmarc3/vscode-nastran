@@ -1,4 +1,4 @@
-## [ITER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.ITER.xhtml) - Iterative Solver Options
+## [ITER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.ITER.xhtml) - Iterative Solver Options
 
 Defines options for the iterative solver in SOLs 101, 106, 108, 111, 153, 200 and 400.
 

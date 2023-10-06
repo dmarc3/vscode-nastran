@@ -1,4 +1,4 @@
-## [RINGAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RINGAX.xhtml) - Conical Shell Ring
+## [RINGAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RINGAX.xhtml) - Conical Shell Ring
 
 Defines a ring for conical shell problems.
 
