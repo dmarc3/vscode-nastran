@@ -1,4 +1,4 @@
-## [BCGRID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCGRID.xhtml) - Contact region by a list of grid points.
+## [BCGRID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCGRID.xhtml) - Contact region by a list of grid points.
 
 Define a contact region by a grid point list, for SOLs 101, 103, 105, 107, 108, 109, 110, 111, 112, 200 and 400.
 
@@ -42,7 +42,7 @@ BCGRID  2       3       3D                                              +
 4. The identification of BCGRID cannot be specified in the continuations of a BCONECT entry.
 5. If a BCRIGID is referenced by a BCONECT, COPTS and COPTM in the BCONPRG referenced by the BCONECT will be ignored.
 
-## [BCGRID (SOL 700 only)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCGRID.SOL.700.only.xhtml) - Contact Node Region
+## [BCGRID (SOL 700 only)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCGRID.SOL.700.only.xhtml) - Contact Node Region
 
 Grids to be included in contact analyses in SOL 700 only.
 

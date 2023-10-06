@@ -1,4 +1,4 @@
-## [RBJOINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBJOINT.xhtml) - Defines a Joint Between Two Rigid Bodies
+## [RBJOINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBJOINT.xhtml) - Defines a Joint Between Two Rigid Bodies
 
 Defines a joint between two rigid bodies. Used in SOL 700 only.
 

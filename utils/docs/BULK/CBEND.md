@@ -1,4 +1,4 @@
-## [CBEND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEND.xhtml) - Curved Beam or Pipe Element Connection
+## [CBEND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEND.xhtml) - Curved Beam or Pipe Element Connection
 
 Defines a curved beam, curved pipe, or elbow element.
 

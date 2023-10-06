@@ -1,4 +1,4 @@
-## [TOMVAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TOMVAR.xhtml) - Topometry Design Variable
+## [TOMVAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TOMVAR.xhtml) - Topometry Design Variable
 
 Defines a design region for topometry optimization (element-by-element optimization).
 

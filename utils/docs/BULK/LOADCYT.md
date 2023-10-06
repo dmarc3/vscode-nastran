@@ -1,4 +1,4 @@
-## [LOADCYT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYT.xhtml) - Table Load Input for Cyclic Symmetry
+## [LOADCYT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LOADCYT.xhtml) - Table Load Input for Cyclic Symmetry
 
 Specifies loads as a function of azimuth angle by references to tables that define scale factors of loads versus azimuth angles. This entry is used only when STYPE = “AXI” on the CYSYM entry.
 

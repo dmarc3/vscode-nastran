@@ -1,4 +1,4 @@
-## [LBSH3DG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LBSH3DG.xhtml) - Tables used by an NLBSH3D to find force as function of displacement, velocity and rotor speed
+## [LBSH3DG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LBSH3DG.xhtml) - Tables used by an NLBSH3D to find force as function of displacement, velocity and rotor speed
 
 Defines the force tables of NLBSH3D nonlinear loads as function of relative displacement or velocity and current rotor speed.
 

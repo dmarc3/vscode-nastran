@@ -1,4 +1,4 @@
-## [SET2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET2.xhtml) - Grid Point List
+## [SET2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SET2.xhtml) - Grid Point List
 
 Defines a list of structural grid points in terms of aerodynamic macro elements.
 

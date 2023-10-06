@@ -1,4 +1,4 @@
-## [PACCELERATION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PACCELERATION.Case.xhtml) - Particle Acceleration Output Request for SOL 108/111
+## [PACCELERATION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PACCELERATION.Case.xhtml) - Particle Acceleration Output Request for SOL 108/111
 
 Request the form and frequency steps of particle acceleration output.
 

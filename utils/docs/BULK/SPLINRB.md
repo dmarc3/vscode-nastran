@@ -1,4 +1,4 @@
-## [SPLINRB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINRB.xhtml) - Rigid Body Spline
+## [SPLINRB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINRB.xhtml) - Rigid Body Spline
 
 Defines a rigid body spline for interpolating motion or forces for aeroelastic problems on general aerodynamic geometries.
 

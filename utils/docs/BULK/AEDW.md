@@ -1,4 +1,4 @@
-## [AEDW](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEDW.xhtml) - Parametric Normal Wash Loading for Aerodynamics
+## [AEDW](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEDW.xhtml) - Parametric Normal Wash Loading for Aerodynamics
 
 Defines a downwash vector associated with a particular control vector of the associated aerodynamic configuration (AECONFIG). From this downwash vector, a force vector on the aerodynamic grids will be defined for use in nonlinear static aeroelastic trim.
 

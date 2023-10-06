@@ -1,4 +1,4 @@
-## [DVMREL1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVMREL1.xhtml) - Design Variable to Material Relation
+## [DVMREL1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVMREL1.xhtml) - Design Variable to Material Relation
 
 Defines the relation between a material property and design variables.
 

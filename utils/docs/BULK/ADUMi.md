@@ -1,4 +1,4 @@
-## [ADUMi](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ADUMi.xhtml) - Dummy Element Attributes
+## [ADUMi](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ADUMi.xhtml) - Dummy Element Attributes
 
 Defines attributes of the dummy elements (3 < i < 9).
 

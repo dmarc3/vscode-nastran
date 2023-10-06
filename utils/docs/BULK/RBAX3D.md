@@ -1,4 +1,4 @@
-## [RBAX3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBAX3D.xhtml) - Axisymmetric Harmonic Element Rigid Connection
+## [RBAX3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBAX3D.xhtml) - Axisymmetric Harmonic Element Rigid Connection
 
 Defines a rigid connection between a point on an axisymmetric harmonic element (CQUADX or CTRIAX) and a point on the axis of symmetry of that element.
 

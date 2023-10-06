@@ -1,4 +1,4 @@
-## [COSMOUT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMOUT.xhtml) - Define the physical quantities of output in Co-Simulation service
+## [COSMOUT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COSMOUT.xhtml) - Define the physical quantities of output in Co-Simulation service
 
 Defines the physical quantities of output which Nastran will yield and provide to the co-simulation partner in Co-simulation analysis. It is supported only in SOL 400.
 

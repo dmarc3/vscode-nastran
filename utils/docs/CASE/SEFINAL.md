@@ -1,4 +1,4 @@
-## [SEFINAL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEFINAL.Case.xhtml) - Final Superelement for Assembly
+## [SEFINAL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEFINAL.Case.xhtml) - Final Superelement for Assembly
 
 Specifies the superelement identification number for the final superelement to be assembled.
 

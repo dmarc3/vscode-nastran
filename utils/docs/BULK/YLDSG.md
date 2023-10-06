@@ -1,4 +1,4 @@
-## [YLDSG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDSG.xhtml) - Steinberg-Guinan Yield Model
+## [YLDSG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDSG.xhtml) - Steinberg-Guinan Yield Model
 
 Defines the Steinberg-Guinan yield model where the yield stress is a function of effective plastic strain, pressure and temperature. Used in SOL 700 only.
 

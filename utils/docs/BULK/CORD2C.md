@@ -1,4 +1,4 @@
-## [CORD2C](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2C.xhtml) - Cylindrical Coordinate System Definition, Form 2
+## [CORD2C](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD2C.xhtml) - Cylindrical Coordinate System Definition, Form 2
 
 Defines a cylindrical coordinate system using the coordinates of three points.
 

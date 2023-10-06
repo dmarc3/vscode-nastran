@@ -1,4 +1,4 @@
-## [CLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CLOAD.xhtml) - Static Load Combination for Superelement Loads (Superposition)
+## [CLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CLOAD.xhtml) - Static Load Combination for Superelement Loads (Superposition)
 
 Defines a static load as a linear combination of previously calculated superelement loads defined by the LSEQ entry in nonlinear static analysis (SOLs 106 or 153).
 

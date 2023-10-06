@@ -1,4 +1,4 @@
-## [ORIGIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.ORIGIN.xhtml) - Origin of Plot Frame
+## [ORIGIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.ORIGIN.xhtml) - Origin of Plot Frame
 
 Defines the origin of the plot frame with respect to the origin of the (r, s, t) coordinate system defined on the AXES command.
 

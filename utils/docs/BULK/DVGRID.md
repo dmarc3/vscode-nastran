@@ -1,4 +1,4 @@
-## [DVGRID](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVGRID.xhtml) - Design Variable to Grid Point Relation
+## [DVGRID](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVGRID.xhtml) - Design Variable to Grid Point Relation
 
 Defines the relationship between design variables and grid point locations.
 

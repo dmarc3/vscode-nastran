@@ -1,4 +1,4 @@
-## [MATTUSR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTUSR.xhtml) - Specifies Table Variation of User Defined Generic Materials
+## [MATTUSR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTUSR.xhtml) - Specifies Table Variation of User Defined Generic Materials
 
 Specifies table variation of user defined generic materials in SOL 400 only.
 

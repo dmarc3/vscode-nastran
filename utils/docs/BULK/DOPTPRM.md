@@ -1,4 +1,4 @@
-## [DOPTPRM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DOPTPRM.xhtml) - Design Optimization Parameters
+## [DOPTPRM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DOPTPRM.xhtml) - Design Optimization Parameters
 
 Overrides default values of parameters used in design optimization.
 

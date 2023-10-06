@@ -1,4 +1,4 @@
-## [BOLT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BOLT11.xhtml) - Bolt Model
+## [BOLT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BOLT11.xhtml) - Bolt Model
 
 Defines an easy-to-use pre-tension bolt model that supports nonlinear analysis and large rotation. BOLT1 allows bolt forces or displacements to be applied at a layer of elements along a cross-section in the bolt, thus modeling the effect of bolt pre-tension without the need for duplicating grid points or splitting the bolt finite element mesh into top and bottom sections around the bolt cross-section. The bolt's local coordinate system and axial direction are continuously updated to track bolt rotation. Used in SOL 400 with advanced nonlinear elements only.
 

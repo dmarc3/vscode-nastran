@@ -1,4 +1,4 @@
-## [BRKSYS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BRKSYS.xhtml) - Specifies Data for Brake System for Brake Squeal Analysis Using SOL 400
+## [BRKSYS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BRKSYS.xhtml) - Specifies Data for Brake System for Brake Squeal Analysis Using SOL 400
 
 Defines data for brake system for brake squeal calculations involving one wheel or multiple wheels with one axis or multi-axes.
 

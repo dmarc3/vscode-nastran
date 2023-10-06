@@ -1,4 +1,4 @@
-## [CDAMP1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP1.xhtml) - Scalar Damper Connection
+## [CDAMP1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP1.xhtml) - Scalar Damper Connection
 
 Defines a scalar damper element.
 

@@ -1,4 +1,4 @@
-## [GMBNDC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GMBNDC.xhtml) - Geometric Boundary - Curve
+## [GMBNDC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GMBNDC.xhtml) - Geometric Boundary - Curve
 
 Defines a geometric boundary consisting of element edges along a curve interface.  The boundary may consist of edges of shell, beam, or solid elements.
 

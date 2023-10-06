@@ -1,4 +1,4 @@
-## [BCBOX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBOX.xhtml) - 3D Contact Region
+## [BCBOX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBOX.xhtml) - 3D Contact Region
 
 Defines a 3D contact region - all elements within the region define a contact body in SOL 700.
 

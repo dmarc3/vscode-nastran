@@ -1,4 +1,4 @@
-## [HADAPTL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HADAPTL.xhtml) - Local Adaptive Mesh Refinement Control Parameters - SOL 101 & 400 (Linear)
+## [HADAPTL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HADAPTL.xhtml) - Local Adaptive Mesh Refinement Control Parameters - SOL 101 & 400 (Linear)
 
 Specifies Local Adaptive Mesh Refinement control parameters.
 

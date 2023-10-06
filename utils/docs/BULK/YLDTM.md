@@ -1,4 +1,4 @@
-## [YLDTM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDTM.xhtml) - Tanimura-Mimura Yield Model
+## [YLDTM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDTM.xhtml) - Tanimura-Mimura Yield Model
 
 Defines the Tanimura-Mimura yield model where the yield stress is a function of effective plastic strain, strain rate and temperature. Used in SOL 700 only.
 

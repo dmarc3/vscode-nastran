@@ -1,4 +1,4 @@
-## [AECOMPL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AECOMPL.xhtml) - Component for an Integrated Load Monitor Point
+## [AECOMPL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AECOMPL.xhtml) - Component for an Integrated Load Monitor Point
 
 Defines a component for use in aeroelastic monitor point definition or external splines as a union of other components.
 

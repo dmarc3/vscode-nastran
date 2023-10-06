@@ -1,4 +1,4 @@
-## [CMARKN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMARKN1.xhtml) - One-Noded Marker Connectivity Definition
+## [CMARKN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMARKN1.xhtml) - One-Noded Marker Connectivity Definition
 
 Defines a 1-noded marker element on a grid point. Used in SOL 700 only.
 

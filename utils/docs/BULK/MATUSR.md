@@ -1,4 +1,4 @@
-## [MATUSR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATUSR.xhtml) - Defines Generic Material Properties for Hypoelastic or User Material Model
+## [MATUSR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATUSR.xhtml) - Defines Generic Material Properties for Hypoelastic or User Material Model
 
 Specifies user-defined, generic material properties for hypoelastic material models and user defined material models in SOL 400 only. This entry is used in conjunction with the MATUDS option to activate user subroutine md_hypela2 for planar, shell or solid elements.
 

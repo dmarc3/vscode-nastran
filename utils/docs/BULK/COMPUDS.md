@@ -1,4 +1,4 @@
-## [COMPUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COMPUDS.xhtml) - Orthotropic Failure Model that allows to model Property Degradation
+## [COMPUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COMPUDS.xhtml) - Orthotropic Failure Model that allows to model Property Degradation
 
 Defines an orthotropic failure model for shell composites specified by a user subroutine. Used in SOL700 only.
 

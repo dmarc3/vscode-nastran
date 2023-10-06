@@ -1,4 +1,4 @@
-## [MATUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATUDS.xhtml) - Material User Defined Service or Subroutine
+## [MATUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATUDS.xhtml) - Material User Defined Service or Subroutine
 
 Allows the user to provide material routines for use with enhanced material models in SOL 400 only.
 

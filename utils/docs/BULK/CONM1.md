@@ -1,4 +1,4 @@
-## [CONM1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONM1.xhtml) - Concentrated Mass Element Connection, General Form
+## [CONM1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONM1.xhtml) - Concentrated Mass Element Connection, General Form
 
 Defines a 6 x 6 symmetric mass matrix at a geometric grid point.
 

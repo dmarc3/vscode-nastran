@@ -1,4 +1,4 @@
-## [SEBSET1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBSET1.xhtml) - Fixed Boundary Degree-of-Freedom, Alternate Form of SEBSET
+## [SEBSET1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEBSET1.xhtml) - Fixed Boundary Degree-of-Freedom, Alternate Form of SEBSET
 
 Defines boundary degrees-of-freedom to be fixed (b-set) during generalized dynamic reduction or component mode calculations.
 

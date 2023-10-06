@@ -1,4 +1,4 @@
-## [CMARKB2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMARKB2.xhtml) - Two-Noded Marker Connectivity Definition
+## [CMARKB2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMARKB2.xhtml) - Two-Noded Marker Connectivity Definition
 
 Defines a 2-noded marker beam element by means of connecting two grid points. Used in SOL 700 only.
 

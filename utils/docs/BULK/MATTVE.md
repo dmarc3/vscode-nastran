@@ -1,4 +1,4 @@
-## [MATTVE ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTVE.xhtml) - Thermo-Visco-Elastic Material Properties
+## [MATTVE ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTVE.xhtml) - Thermo-Visco-Elastic Material Properties
 
 Specifies temperature-dependent visco-elastic material properties in terms of Thermo-Rheologically Simple behavior to be used for quasi-static or transient dynamic analysis in SOL 400 only.
 

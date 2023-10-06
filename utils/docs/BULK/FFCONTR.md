@@ -1,4 +1,4 @@
-## [FFCONTR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FFCONTR.xhtml) - Closed Volume Intended for Fluid Filled Containers
+## [FFCONTR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FFCONTR.xhtml) - Closed Volume Intended for Fluid Filled Containers
 
 Defines the pressure within a closed volume. Intended for the use in (partially) filled containers, where dynamic fluid effects are negligible, e.g. top loading and hot filling. Used in SOL 700 only.
 

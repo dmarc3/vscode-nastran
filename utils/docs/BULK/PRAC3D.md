@@ -1,4 +1,4 @@
-## [PRAC3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRAC3D.xhtml) - CRAC3D Element Property
+## [PRAC3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PRAC3D.xhtml) - CRAC3D Element Property
 
 Defines the properties of the CRAC3D structural element.
 

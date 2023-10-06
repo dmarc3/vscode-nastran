@@ -1,4 +1,4 @@
-## [PLOAD2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD2.xhtml) - Uniform Normal Pressure Load on a Surface Element
+## [PLOAD2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD2.xhtml) - Uniform Normal Pressure Load on a Surface Element
 
 Defines a uniform static pressure load applied to CQUAD4, CSHEAR, or CTRIA3 two-dimensional elements.
 

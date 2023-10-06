@@ -1,4 +1,4 @@
-## [EIGR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGR.xhtml) - Real Eigenvalue Extraction Data
+## [EIGR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EIGR.xhtml) - Real Eigenvalue Extraction Data
 
 Defines data needed to perform real eigenvalue analysis.
 

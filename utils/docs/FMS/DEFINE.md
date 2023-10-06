@@ -1,4 +1,4 @@
-## [DEFINE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DEFINE.xhtml) - Parameter Definition
+## [DEFINE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DEFINE.xhtml) - Parameter Definition
 
 Assigns user-defined keywords (or cellnames) to a NASTRAN system cell. (See the NASTRAN statement for a description of “cellname”.) In addition, the DEFINE statement provides a mechanism to set default values for system cells.
 

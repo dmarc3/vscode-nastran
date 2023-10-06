@@ -1,4 +1,4 @@
-## [CRAC3D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CRAC3D.xhtml) - Three-Dimensional Crack Tip Element
+## [CRAC3D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CRAC3D.xhtml) - Three-Dimensional Crack Tip Element
 
 Defines a three-dimensional crack tip element.
 

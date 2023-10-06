@@ -1,4 +1,4 @@
-## [SACCELERATION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SACCELERATION.Case.xhtml) - Solution Set Acceleration Output Request
+## [SACCELERATION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SACCELERATION.Case.xhtml) - Solution Set Acceleration Output Request
 
 Requests the form and type of solution set acceleration output.
 

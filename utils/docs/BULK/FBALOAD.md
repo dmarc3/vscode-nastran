@@ -1,4 +1,4 @@
-## [FBALOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBALOAD.xhtml) - Load Scale Factor Specification for FRF Based Assembly (FBA) Process
+## [FBALOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FBALOAD.xhtml) - Load Scale Factor Specification for FRF Based Assembly (FBA) Process
 
 Defines the scale factor for frequency dependent loads in an FRF Based Assembly (FBA) process.
 

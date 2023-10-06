@@ -1,4 +1,4 @@
-## [UNGLUE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UNGLUE.xhtml) - Defines Grids that Should Be Eliminated From Glued Contact
+## [UNGLUE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.UNGLUE.xhtml) - Defines Grids that Should Be Eliminated From Glued Contact
 
 This entry may be used in SOLs 101 or 400 but is only necessary if glued contact has been specified and some of the grids should use standard contact instead of glued contact. This option is normally used for crack analysis where the grids along the crack are not glued but all other grids on a contact body have glued contact.
 

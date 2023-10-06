@@ -1,4 +1,4 @@
-## [ACSRCE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACSRCE.xhtml) - Acoustic Source Specification
+## [ACSRCE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ACSRCE.xhtml) - Acoustic Source Specification
 
 Defines acoustic source as a function of power vs. frequency.
 

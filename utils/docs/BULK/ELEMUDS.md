@@ -1,4 +1,4 @@
-## [ELEMUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ELEMUDS.xhtml) - Element Property User Defined Service or Subroutine
+## [ELEMUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ELEMUDS.xhtml) - Element Property User Defined Service or Subroutine
 
 Allows the user to provide element property routines for use with specified Nastran elements.
 

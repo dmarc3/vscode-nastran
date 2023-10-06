@@ -1,4 +1,4 @@
-## [NLFREQ1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLFREQ1.xhtml) - Frequency List for Nonlinear Harmonic Response, Alternate Form 1
+## [NLFREQ1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLFREQ1.xhtml) - Frequency List for Nonlinear Harmonic Response, Alternate Form 1
 
 Defines a set of forcing frequencies for nonlinear harmonic response by specification of a starting frequency, frequency increment, and the number of increments/decrements desired.
 

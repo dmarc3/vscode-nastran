@@ -1,4 +1,4 @@
-## [MKAERO2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MKAERO2.xhtml) - Mach Number - Frequency Table
+## [MKAERO2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MKAERO2.xhtml) - Mach Number - Frequency Table
 
 Provides a list of Mach numbers (m) and reduced frequencies (k) for aerodynamic matrix calculation.
 

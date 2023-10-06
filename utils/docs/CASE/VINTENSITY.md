@@ -1,4 +1,4 @@
-## [VINTENSITY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.VINTENSITY.Case.xhtml) - Vibration Intensity, VI, Output Request
+## [VINTENSITY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.VINTENSITY.Case.xhtml) - Vibration Intensity, VI, Output Request
 
 Request output of vibration intensity for structural elements in SOLs 108 and 111 only.
 

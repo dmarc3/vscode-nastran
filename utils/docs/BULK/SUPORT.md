@@ -1,4 +1,4 @@
-## [SUPORT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPORT.xhtml) - Fictitious Support
+## [SUPORT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPORT.xhtml) - Fictitious Support
 
 Defines determinate reaction degrees-of-freedom in a free body.
 

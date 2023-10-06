@@ -1,4 +1,4 @@
-## [LOAD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOAD.Case.xhtml) - External Static Load Set Selection
+## [LOAD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LOAD.Case.xhtml) - External Static Load Set Selection
 
 Selects an external static load set.
 

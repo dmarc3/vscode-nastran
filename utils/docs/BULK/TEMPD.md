@@ -1,4 +1,4 @@
-## [TEMPD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPD.xhtml) - Grid Point Temperature Field Default
+## [TEMPD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPD.xhtml) - Grid Point Temperature Field Default
 
 Defines a temperature value for all grid points of the structural model that have not been given a temperature on a TEMP or TEMPN1 (for heat transfer analysis) entries.
 

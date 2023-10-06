@@ -1,4 +1,4 @@
-## [SEKREDUCE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEKREDUCE.Case.xhtml) - Superelement Stiffness Matrix Assembly and Reduction
+## [SEKREDUCE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEKREDUCE.Case.xhtml) - Superelement Stiffness Matrix Assembly and Reduction
 
 Specifies the superelement identification numbers for which stiffness matrices are assembled and reduced.
 

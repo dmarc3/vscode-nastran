@@ -1,4 +1,4 @@
-## [NSML](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSML.xhtml) - Lumped Non Structural Mass Entry by ID
+## [NSML](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSML.xhtml) - Lumped Non Structural Mass Entry by ID
 
 Defines a set of lumped non structural mass.
 

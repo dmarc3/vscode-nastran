@@ -1,4 +1,4 @@
-## [FRFCOMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFCOMP.xhtml) - Frequency Response Function (FRF) Component Specification for FRF Based Assembly (FBA)
+## [FRFCOMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFCOMP.xhtml) - Frequency Response Function (FRF) Component Specification for FRF Based Assembly (FBA)
 
 Specifies the FRF components that are to be assembled as part of an FRF Based Assembly (FBA) process.
 

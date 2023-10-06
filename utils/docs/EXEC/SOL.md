@@ -1,4 +1,4 @@
-## [SOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SOL.xhtml) - Executes a Solution Sequence
+## [SOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SOL.xhtml) - Executes a Solution Sequence
 
 Specifies the solution sequence or main subDMAP to be executed.
 

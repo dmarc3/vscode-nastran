@@ -1,4 +1,4 @@
-## [QHBDY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QHBDY.xhtml) - Boundary Heat Flux Load
+## [QHBDY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QHBDY.xhtml) - Boundary Heat Flux Load
 
 Defines a uniform heat flux into a set of grid points.
 

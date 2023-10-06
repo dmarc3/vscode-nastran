@@ -1,4 +1,4 @@
-## [USETPRT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.USETPRT.xhtml)
+## [USETPRT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.USETPRT.xhtml)
 
 Default    = -1
 

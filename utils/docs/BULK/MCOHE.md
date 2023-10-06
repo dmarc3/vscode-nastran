@@ -1,4 +1,4 @@
-## [MCOHE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MCOHE.xhtml) - Interface Cohesive Zone Modeling Element Material Properties
+## [MCOHE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MCOHE.xhtml) - Interface Cohesive Zone Modeling Element Material Properties
 
 Specifies material cohesive properties for a fully nonlinear element used to simulate the onset and progress of delamination in SOL 400 only.
 

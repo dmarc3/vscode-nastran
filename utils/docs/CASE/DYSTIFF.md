@@ -1,4 +1,4 @@
-## [DYSTIFF (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DYSTIFF.Case.xhtml) - Dynamic Stiffness Output Request
+## [DYSTIFF (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DYSTIFF.Case.xhtml) - Dynamic Stiffness Output Request
 
 Requests the form and type of dynamic stiffness output in SOL 108, 111, 200 and SOL 400 only.
 

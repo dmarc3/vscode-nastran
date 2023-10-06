@@ -1,4 +1,4 @@
-## [CELAS3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS3.xhtml) - Scalar Spring Connection to Scalar Points Only
+## [CELAS3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CELAS3.xhtml) - Scalar Spring Connection to Scalar Points Only
 
 Defines a scalar spring element that connects only to scalar points.
 

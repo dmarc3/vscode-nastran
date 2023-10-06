@@ -1,4 +1,4 @@
-## [MAT1A](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT1A.xhtml) - Additional Material Properties for MAT1- SOL700
+## [MAT1A](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT1A.xhtml) - Additional Material Properties for MAT1- SOL700
 
 Specifies additional the material properties of MAT1 for solid elements. Use SOL700 only.
 

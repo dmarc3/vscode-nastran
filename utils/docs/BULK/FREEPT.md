@@ -1,4 +1,4 @@
-## [FREEPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREEPT.xhtml) - Fluid Free Surface Point
+## [FREEPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREEPT.xhtml) - Fluid Free Surface Point
 
 Defines the location of points on the surface of a fluid for recovery of surface displacements in a gravity field.
 

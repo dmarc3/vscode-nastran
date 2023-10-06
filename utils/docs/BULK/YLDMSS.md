@@ -1,4 +1,4 @@
-## [YLDMSS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDMSS.xhtml) - Multi-Surface Yield Model for Snow
+## [YLDMSS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDMSS.xhtml) - Multi-Surface Yield Model for Snow
 
 Defines the yield model for snow material. This entry must be used in combination with MATDEUL, EOSPOL and SHREL. Used in SOL 700 only.
 

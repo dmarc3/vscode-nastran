@@ -1,4 +1,4 @@
-## [PTITLE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PTITLE.xhtml) - Plot Frame Title
+## [PTITLE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.PTITLE.xhtml) - Plot Frame Title
 
 Defines a character string that will appear at the top of the plot frame on the line below the sequence number.
 

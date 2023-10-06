@@ -1,4 +1,4 @@
-## [LABEL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LABEL.Case.xhtml) - Output Label
+## [LABEL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.LABEL.Case.xhtml) - Output Label
 
 Defines a character string that will appear on the third heading line of each page of printer output.
 

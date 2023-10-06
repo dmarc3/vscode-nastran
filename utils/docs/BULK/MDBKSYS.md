@@ -1,4 +1,4 @@
-## [MDBKSYS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBKSYS.xhtml) - Defines Brake System for Modules
+## [MDBKSYS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDBKSYS.xhtml) - Defines Brake System for Modules
 
 Defines data for brake system for brake squeal calculations involving one wheel or multiple wheels with one axis or multi-axes in different modules.
 

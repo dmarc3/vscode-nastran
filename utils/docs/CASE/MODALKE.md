@@ -1,4 +1,4 @@
-## [MODALKE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MODALKE.Case.xhtml) - Modal Kinetic Energy Request
+## [MODALKE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MODALKE.Case.xhtml) - Modal Kinetic Energy Request
 
 Requests a modal kinetic energy calculation and specifies the output form.
 

@@ -1,4 +1,4 @@
-## [GRIDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDS.xhtml) - Slot Surface Point
+## [GRIDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDS.xhtml) - Slot Surface Point
 
 Defines a scalar degree-of-freedom with a two-dimensional location.  Used in defining pressure in slotted acoustic cavities.
 

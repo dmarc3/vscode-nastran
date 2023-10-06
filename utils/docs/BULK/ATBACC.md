@@ -1,4 +1,4 @@
-## [ATBACC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ATBACC.xhtml) - Acceleration Field applied to ATB Segments- SOL 700
+## [ATBACC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ATBACC.xhtml) - Acceleration Field applied to ATB Segments- SOL 700
 
 Defines an acceleration field that will be applied to ATB segments. Used in SOL700 only.
 

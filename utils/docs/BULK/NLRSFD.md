@@ -1,4 +1,4 @@
-## [NLRSFD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLRSFD.xhtml) - Nonlinear Transient Load Proportional to a Squeeze Film Damper
+## [NLRSFD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NLRSFD.xhtml) - Nonlinear Transient Load Proportional to a Squeeze Film Damper
 
 Defines a nonlinear transient radial squeeze film damper.
 

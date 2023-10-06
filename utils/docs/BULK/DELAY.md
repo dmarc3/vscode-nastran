@@ -1,4 +1,4 @@
-## [DELAY](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DELAY.xhtml) - Dynamic Load Time Delay
+## [DELAY](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DELAY.xhtml) - Dynamic Load Time Delay
 
 Defines the time delay term  τ  in the equations of the dynamic loading function.
 

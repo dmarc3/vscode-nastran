@@ -1,4 +1,4 @@
-## [SEEXCLUDE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEEXCLUDE.Case.xhtml) - Superelement Matrix and Load Assembly Exclusion
+## [SEEXCLUDE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEEXCLUDE.Case.xhtml) - Superelement Matrix and Load Assembly Exclusion
 
 Specifies the superelement identification numbers for which all matrices and loads will not be assembled into the downstream superelement.
 

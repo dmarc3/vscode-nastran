@@ -1,4 +1,4 @@
-## [SLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SLOAD.xhtml) - Static Scalar Load
+## [SLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SLOAD.xhtml) - Static Scalar Load
 
 Defines concentrated static loads on scalar or grid points.
 

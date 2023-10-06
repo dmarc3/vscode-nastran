@@ -1,4 +1,4 @@
-## [RADBND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADBND.xhtml) - Radiation Wavelength Band Definition
+## [RADBND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADBND.xhtml) - Radiation Wavelength Band Definition
 
 Specifies Planck’s second radiation constant and the wavelength breakpoints used for radiation exchange problems.
 

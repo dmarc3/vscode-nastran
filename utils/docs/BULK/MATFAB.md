@@ -1,4 +1,4 @@
-## [MATFAB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATFAB.xhtml) - Woven Fabric Material- SOL700
+## [MATFAB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATFAB.xhtml) - Woven Fabric Material- SOL700
 
 Defines the properties of a bi-directional woven fabric material for shell elements. Used in SOL700 only.
 

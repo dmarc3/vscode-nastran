@@ -1,4 +1,4 @@
-## [CONROD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONROD.xhtml) - Rod Element Property and Connection
+## [CONROD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONROD.xhtml) - Rod Element Property and Connection
 
 Defines a rod element without reference to a property entry.
 

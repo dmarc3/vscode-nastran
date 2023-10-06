@@ -1,4 +1,4 @@
-## [SEUPPLOT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.SEUPPLOT1.xhtml) - Superelement Plot Delimiter
+## [SEUPPLOT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.SEUPPLOT1.xhtml) - Superelement Plot Delimiter
 
 Assigns the subsequent PLOT or XYPLOT commands to a superelement and all of its upstream superelements.
 

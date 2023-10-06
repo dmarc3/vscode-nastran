@@ -1,4 +1,4 @@
-## [GRIDF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDF.xhtml) - Fluid Point
+## [GRIDF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDF.xhtml) - Fluid Point
 
 Defines a scalar degree-of-freedom for harmonic analysis of a fluid.
 

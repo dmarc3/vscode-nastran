@@ -1,4 +1,4 @@
-## [TABLEM2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEM2.xhtml) - Material Property Table, Form 2
+## [TABLEM2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLEM2.xhtml) - Material Property Table, Form 2
 
 Defines a tabular function for use in generating temperature-dependent material properties.  Also contains parametric data for use with the table.
 

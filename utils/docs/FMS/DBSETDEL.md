@@ -1,4 +1,4 @@
-## [DBSETDEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBSETDEL.xhtml) - Deletes a DBset
+## [DBSETDEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBSETDEL.xhtml) - Deletes a DBset
 
 Deletes a DBset, all of its members, and associated physical files.
 

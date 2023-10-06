@@ -1,4 +1,4 @@
-## [ACTRIM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACTRIM.Case.xhtml) - ACTRAN Trimmed Material Matrices for SOL 108/111
+## [ACTRIM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ACTRIM.Case.xhtml) - ACTRAN Trimmed Material Matrices for SOL 108/111
 
 Select ACTRAN trimmed material matrices.
 

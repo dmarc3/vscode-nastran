@@ -1,4 +1,4 @@
-## [SPCAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCAX.xhtml) - Conical Shell Single-Point Constraint
+## [SPCAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPCAX.xhtml) - Conical Shell Single-Point Constraint
 
 Defines a set of single-point constraints or enforced displacements for conical shell coordinates.
 

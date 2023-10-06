@@ -1,4 +1,4 @@
-## [GBAG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GBAG.xhtml) - Gas-Bag Pressure Definition
+## [GBAG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GBAG.xhtml) - Gas-Bag Pressure Definition
 
 Defines the pressure within an enclosed volume. Used in SOL 700 only.
 

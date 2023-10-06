@@ -1,4 +1,4 @@
-## [ENDJOB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ENDJOB.xhtml) - Terminates Job
+## [ENDJOB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ENDJOB.xhtml) - Terminates Job
 
 Terminates the job at a user-specified location in the FMS Section.
 

@@ -1,4 +1,4 @@
-## [RROD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RROD.xhtml) - Rigid Pin-Ended Element Connection
+## [RROD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RROD.xhtml) - Rigid Pin-Ended Element Connection
 
 Defines a pin-ended element that is rigid in translation.
 

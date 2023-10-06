@@ -1,4 +1,4 @@
-## [ROTOR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTOR.xhtml) - Rotor Model Definition
+## [ROTOR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.ROTOR.xhtml) - Rotor Model Definition
 
 Specifies list of grids, elements or properties that comprise the rotor 3D model.
 

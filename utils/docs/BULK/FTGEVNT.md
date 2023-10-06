@@ -1,4 +1,4 @@
-## [FTGEVNT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGEVNT.xhtml) - Fatigue Loading Events
+## [FTGEVNT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGEVNT.xhtml) - Fatigue Loading Events
 
 Groups simultaneously applied loads into loading events for pseudo-static fatigue analysis using SOL 101 or modal analysis using SOL 103 or random vibration fatigue using SOL 108 or SOL 111 by referencing FTGLOAD entries.
 

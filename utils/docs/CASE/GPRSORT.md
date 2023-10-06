@@ -1,4 +1,4 @@
-## [GPRSORT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPRSORT.Case.xhtml) - Composites Ply Results Sorted Output
+## [GPRSORT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.GPRSORT.Case.xhtml) - Composites Ply Results Sorted Output
 
 Request sorted output of composites ply results (stress, strain, and failure indices) by global ply ID for a given element set.
 

@@ -1,4 +1,4 @@
-## [NLAYERS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.NLAYERS.xhtml)
+## [NLAYERS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.NLAYERS.xhtml)
 
 Default = 5 for CQUAD4 and CTRIAR, 7 for CQUADR and CTRIAR, 3 for CAXISYM (minimum=1, maximum=12) (SOLs 106, 129, 153, 159, and 400)
 

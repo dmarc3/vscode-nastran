@@ -1,4 +1,4 @@
-## [CAMPBELL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CAMPBELL.Case.xhtml) - Campbell Diagram Parameters
+## [CAMPBELL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CAMPBELL.Case.xhtml) - Campbell Diagram Parameters
 
 Specifies Campbell Diagram parameters.
 

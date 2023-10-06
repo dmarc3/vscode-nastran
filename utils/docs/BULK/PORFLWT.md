@@ -1,4 +1,4 @@
-## [PORFLWT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFLWT.xhtml) - Time Dependent Porous Flow Boundary
+## [PORFLWT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORFLWT.xhtml) - Time Dependent Porous Flow Boundary
 
 Defines a time dependent flow trough a porous area of the couple surface. Used in SOL 700 only.
 

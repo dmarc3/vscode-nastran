@@ -1,4 +1,4 @@
-## [MOMAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMAX.xhtml) - Conical Shell Static Moment
+## [MOMAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMAX.xhtml) - Conical Shell Static Moment
 
 Defines a static concentrated moment load on a ring of a conical shell.
 

@@ -1,4 +1,4 @@
-## [CGAP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CGAP.xhtml) - Gap Element Connection
+## [CGAP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CGAP.xhtml) - Gap Element Connection
 
 Defines a gap or friction element.
 

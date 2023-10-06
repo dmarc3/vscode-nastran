@@ -1,4 +1,4 @@
-## [XVALUE PRINT SKIP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XVALUE.PRINT.SKIP.xhtml) - Print Values on X-Axis Tic Marks
+## [XVALUE PRINT SKIP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XVALUE.PRINT.SKIP.xhtml) - Print Values on X-Axis Tic Marks
 
 Specifies how often to print the x-values alongside the x-axis tic marks.
 

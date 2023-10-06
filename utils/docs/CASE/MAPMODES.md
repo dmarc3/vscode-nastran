@@ -1,4 +1,4 @@
-## [MAPMODES (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAPMODES.Case1.xhtml) - Perform mode mapping between two runs
+## [MAPMODES (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAPMODES.Case1.xhtml) - Perform mode mapping between two runs
 
 Instructs MSC Nastran to either write the modes from the current run to an op2 file or map the modes from the current run to those from a prior run.
 

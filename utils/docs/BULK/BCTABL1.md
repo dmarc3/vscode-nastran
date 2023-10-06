@@ -1,4 +1,4 @@
-## [BCTABL1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTABL1.xhtml) - Defines a Contact Table
+## [BCTABL1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCTABL1.xhtml) - Defines a Contact Table
 
 BCTABL1 specifies a list of contact pairs through the BCONECT option for SOLs 101, 103, 105, 107, 108, 109, 110, 111, 112, 144, 145, 146, 200, 400 and 700. Only SOL 101, 400 and 700 can support all contact types: touching contact, glued, step glue and permanent glue (see   Chapter 7: Contact Types   of  Nastran SOL 400 Getting Started Guide ). Note that SOL 700 calls it  “ tie ”  contact to glue (also step glue or permanent glue). SOL 103, 105, 107 - 112, 144, 145, 146 and standard 200 can only support permanent glue. When SOL 400 optimization, it can support all contact types. This contact table is activated in the BCONTACT Case Control command.
 

@@ -1,4 +1,4 @@
-## [INFLGAS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLGAS.xhtml) - Inflator Gas Definition
+## [INFLGAS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLGAS.xhtml) - Inflator Gas Definition
 
 Defines a thermically ideal gas to be used with a standard or hybrid inflator. Used in SOL 700 only.
 

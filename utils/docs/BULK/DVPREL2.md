@@ -1,4 +1,4 @@
-## [DVPREL2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVPREL2.xhtml) - Design Variable to Property Relation
+## [DVPREL2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVPREL2.xhtml) - Design Variable to Property Relation
 
 Defines the relation between an analysis model property and design variables with a user-supplied equation.
 

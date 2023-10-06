@@ -1,4 +1,4 @@
-## [PEMNPART](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PEMNPART.xhtml)
+## [PEMNPART](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PEMNPART.xhtml)
 
 PEMNPART can be utilized to partition a large trim component. The default value for PEMNPART is 1.  'PARAM,PEMNPART,n' will partition a large trim component into 'n' parts. The guidelines are:
 

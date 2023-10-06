@@ -1,4 +1,4 @@
-## [DBSAVE (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DBSAVE.Case.xhtml) - Saving Control Parameter of Datablocks for Advanced Nonlinear Elements
+## [DBSAVE (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DBSAVE.Case.xhtml) - Saving Control Parameter of Datablocks for Advanced Nonlinear Elements
 
 Selects saving of datablocks of advanced nonlinear elements for static and transient nonlinear analysis in SOL 400.
 

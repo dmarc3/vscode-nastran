@@ -1,4 +1,4 @@
-## [EXPORTLD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXPORTLD.Case.xhtml) - Saves a Load Vector on the Database for Subsequent Reuse
+## [EXPORTLD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXPORTLD.Case.xhtml) - Saves a Load Vector on the Database for Subsequent Reuse
 
 Saves the load vector for the current subcase on the database.
 

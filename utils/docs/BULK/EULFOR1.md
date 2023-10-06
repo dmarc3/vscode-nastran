@@ -1,4 +1,4 @@
-## [EULFOR1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EULFOR1.xhtml) - Body force for Eulerian Regions - SOL700
+## [EULFOR1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EULFOR1.xhtml) - Body force for Eulerian Regions - SOL700
 
 Alternative way to define an acceleration within a geometric region of the Euler model  regions are defined by geometric shapes which are defined by EULFREG entries.
 

@@ -1,4 +1,4 @@
-## [MDRROD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRROD.xhtml) - Rigid Pin-Ended Element Connection Between Two Modules
+## [MDRROD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDRROD.xhtml) - Rigid Pin-Ended Element Connection Between Two Modules
 
 Defines a pin-ended element that is rigid in translation between two Modules.
 

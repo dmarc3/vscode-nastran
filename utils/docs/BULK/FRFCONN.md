@@ -1,4 +1,4 @@
-## [FRFCONN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFCONN.xhtml) - FRF Component Explicit Connection for FRF Based Assembly (FBA)
+## [FRFCONN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFCONN.xhtml) - FRF Component Explicit Connection for FRF Based Assembly (FBA)
 
 Defines explicit connection data for FRF components in an FRF Based Assembly (FBA) process.
 

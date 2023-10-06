@@ -1,4 +1,4 @@
-## [BIAS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BIAS.xhtml) - MESH Bias Definition
+## [BIAS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BIAS.xhtml) - MESH Bias Definition
 
 Specifies a variation of the mesh-size in one direction for use in the MESH entry in SOL 700. The MESH entry can create a biased or non-uniform mesh. A uniform mesh consists of a number of planes separated by a fixed distance, but for a biased mesh the distance between subsequent planes can differ. The BIAS definition allows specifying the locations of planes in one direction. For a number of intervals the density of planes can be specified.
 

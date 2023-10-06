@@ -1,4 +1,4 @@
-## [TIC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIC.xhtml) - Transient Analysis Initial Condition
+## [TIC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIC.xhtml) - Transient Analysis Initial Condition
 
 Defines values for the initial conditions of variables used in structural transient analysis.  Both displacement and velocity values may be specified at independent degrees-of-freedom (See Remark  6. ).  This entry may not be used for heat transfer analysis.
 

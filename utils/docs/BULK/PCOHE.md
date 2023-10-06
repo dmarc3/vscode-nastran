@@ -1,4 +1,4 @@
-## [PCOHE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOHE.xhtml) - Interface Cohesive Zone Modeling Element Properties
+## [PCOHE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCOHE.xhtml) - Interface Cohesive Zone Modeling Element Properties
 
 Defines the properties of a fully nonlinear element used to simulate the onset and progress of delamination in SOL 400.
 

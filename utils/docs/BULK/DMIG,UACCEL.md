@@ -1,4 +1,4 @@
-## [DMIG,UACCEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIG.UACCEL.xhtml) - Direct Matrix Input of Enforced Static Acceleration
+## [DMIG,UACCEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DMIG.UACCEL.xhtml) - Direct Matrix Input of Enforced Static Acceleration
 
 Defines rigid body accelerations in the basic coordinate system.
 

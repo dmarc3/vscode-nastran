@@ -1,4 +1,4 @@
-## [STIME](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.STIME.xhtml)
+## [STIME](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.STIME.xhtml)
 
 Default = 0.0 (SOLs 109, 112, 129 and 159 only)
 

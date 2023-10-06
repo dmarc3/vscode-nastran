@@ -1,4 +1,4 @@
-## [SESET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SESET.xhtml) - Superelement Interior Point Definition
+## [SESET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SESET.xhtml) - Superelement Interior Point Definition
 
 Defines interior grid points for a superelement.
 

@@ -1,4 +1,4 @@
-## [VANTAGE POINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.VANTAGE.POINT.xhtml) - Location of the Observer
+## [VANTAGE POINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.VANTAGE.POINT.xhtml) - Location of the Observer
 
 Defines the location of the observer with respect to the model in the (r, s, t) coordinate system defined on the AXES command for perspective and stereoscopic projections only.
 

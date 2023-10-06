@@ -1,4 +1,4 @@
-## [METHOD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.METHOD.Case.xhtml) - Real Eigenvalue Extraction Method Selection
+## [METHOD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.METHOD.Case.xhtml) - Real Eigenvalue Extraction Method Selection
 
 Selects the real eigenvalue extraction parameters.
 

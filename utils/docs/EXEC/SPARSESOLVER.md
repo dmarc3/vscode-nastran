@@ -1,4 +1,4 @@
-## [SPARSESOLVER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SPARSESOLVER.xhtml) - Sparse Solver Options
+## [SPARSESOLVER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.SPARSESOLVER.xhtml) - Sparse Solver Options
 
 Specifies options used in sparse solution of equations operations.
 

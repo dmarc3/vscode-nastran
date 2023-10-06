@@ -1,4 +1,4 @@
-## [DSAPRT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DSAPRT.Case.xhtml) - Design Sensitivity Output Parameters
+## [DSAPRT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DSAPRT.Case.xhtml) - Design Sensitivity Output Parameters
 
 Specifies design sensitivity output parameters.
 

@@ -1,4 +1,4 @@
-## [TIRE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIRE.xhtml) - Selection of Tires used in the Analysis
+## [TIRE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TIRE.xhtml) - Selection of Tires used in the Analysis
 
 The TIRE bulk data entry facilitates the selection of all the CDTire/NVH tires to be used in the simulation. This is done by specifying the name of each CDTire/NVH tire that is to be included in the simulation on the tire bulk data entry.
 

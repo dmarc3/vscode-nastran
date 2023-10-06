@@ -1,4 +1,4 @@
-## [SWLDPRM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SWLDPRM.xhtml) - Parameters for CFAST, CWELD, and CSEAM Connector Elements
+## [SWLDPRM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SWLDPRM.xhtml) - Parameters for CFAST, CWELD, and CSEAM Connector Elements
 
 Overrides default values of parameters for CFAST, CWELD, and CSEAM connectivity search.
 

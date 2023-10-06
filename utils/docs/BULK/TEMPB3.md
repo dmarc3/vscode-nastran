@@ -1,4 +1,4 @@
-## [TEMPB3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPB3.xhtml) - CBEAM3 Element Temperature Field
+## [TEMPB3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPB3.xhtml) - CBEAM3 Element Temperature Field
 
 Defines a temperature field for the three-node beam element (CBEAM3 entry).
 

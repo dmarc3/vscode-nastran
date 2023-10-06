@@ -1,4 +1,4 @@
-## [PLOADB3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOADB3.xhtml) - Applied distributed load on CBEAM3 elements
+## [PLOADB3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOADB3.xhtml) - Applied distributed load on CBEAM3 elements
 
 Defines a distributed load to a CBEAM3 element over entire length of the beam axis.
 

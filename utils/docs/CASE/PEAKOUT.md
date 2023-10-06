@@ -1,4 +1,4 @@
-## [PEAKOUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PEAKOUT.Case.xhtml) - Control peaks identification process for frequency response analysis
+## [PEAKOUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.PEAKOUT.Case.xhtml) - Control peaks identification process for frequency response analysis
 
 #### Format:
 

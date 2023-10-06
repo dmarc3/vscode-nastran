@@ -1,4 +1,4 @@
-## [CPYRAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CPYRAM.xhtml) - Five-Sided Solid Element Connection
+## [CPYRAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CPYRAM.xhtml) - Five-Sided Solid Element Connection
 
 Defines the connections of the five-sided solid element with five or thirteen grid points.
 

@@ -1,4 +1,4 @@
-## [TEMPAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPAX.xhtml) - Conical Shell Temperature
+## [TEMPAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPAX.xhtml) - Conical Shell Temperature
 
 Defines temperature sets for conical shell problems.
 

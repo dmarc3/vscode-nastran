@@ -1,4 +1,4 @@
-## [FTGLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGLOAD.xhtml) - Fatigue Cyclic Loading Variation
+## [FTGLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGLOAD.xhtml) - Fatigue Cyclic Loading Variation
 
 Defines cyclic loading variation for pseudo-static fatigue analysis using SOL 101 or modal analysis using SOL 103 or random PSD, deterministic, sine sweep and/or static offset loading for SOL 108 and SOL 111.
 

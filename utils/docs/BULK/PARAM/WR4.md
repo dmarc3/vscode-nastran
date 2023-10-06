@@ -1,4 +1,4 @@
-## [WR3, WR4, WRH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.WR3.WR4.WRH.xhtml)
+## [WR3, WR4, WRH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.WR3.WR4.WRH.xhtml)
 
 Default = 0.0, no rotor damping or circulation terms.
 

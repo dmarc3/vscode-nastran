@@ -1,4 +1,4 @@
-## [TRIM2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TRIM2.xhtml) - Trim Variable Definition
+## [TRIM2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TRIM2.xhtml) - Trim Variable Definition
 
 Defines the state of the aerodynamic extra points for a trim analysis. All undefined extra points will be set to zero.
 

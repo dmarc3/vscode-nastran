@@ -1,4 +1,4 @@
-## [YTMIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTMIN.xhtml) - Minimum Y Axis Value
+## [YTMIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTMIN.xhtml) - Minimum Y Axis Value
 
 Specifies the minimum value on the y-axis for upper half frame curves only.
 

@@ -1,4 +1,4 @@
-## [PORUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORUDS.xhtml) - User-defined Porosity Model Specified by a User Defined Service.
+## [PORUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PORUDS.xhtml) - User-defined Porosity Model Specified by a User Defined Service.
 
 Defines a porosity model of a COUPLE surface through a user-written subroutine. Use in SOL700 only.
 

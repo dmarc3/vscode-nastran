@@ -1,4 +1,4 @@
-## [CONTRLT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONTRLT.xhtml) - Thermal Control Element for Heat Transfer Analysis
+## [CONTRLT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONTRLT.xhtml) - Thermal Control Element for Heat Transfer Analysis
 
 Defines the control mechanism for QVECT, QVOL, QBDY3, RADBC, CONV, and CONVM in heat transfer analysis (SOL 159 and SOL 400 with analysis=htran).
 

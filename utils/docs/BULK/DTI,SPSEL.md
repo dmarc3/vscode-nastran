@@ -1,4 +1,4 @@
-## [DTI,SPSEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SPSEL.xhtml) - Response Spectra Generation Correlation Table
+## [DTI,SPSEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.SPSEL.xhtml) - Response Spectra Generation Correlation Table
 
 Correlates output requests with frequency and damping ranges.
 

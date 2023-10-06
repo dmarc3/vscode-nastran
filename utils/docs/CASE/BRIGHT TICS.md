@@ -1,4 +1,4 @@
-## [BRIGHT TICS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.BRIGHT.TICS.xhtml) - Controls Drawing of Tic Marks on Right Edge
+## [BRIGHT TICS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.BRIGHT.TICS.xhtml) - Controls Drawing of Tic Marks on Right Edge
 
 Specifies how to draw tic marks on right edge of lower half of frame.
 

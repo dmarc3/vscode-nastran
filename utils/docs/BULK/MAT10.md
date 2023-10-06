@@ -1,4 +1,4 @@
-## [MAT10](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT10.xhtml) - Fluid Material Property Definition
+## [MAT10](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MAT10.xhtml) - Fluid Material Property Definition
 
 Defines material properties for fluid elements in coupled fluid-structural analysis.
 

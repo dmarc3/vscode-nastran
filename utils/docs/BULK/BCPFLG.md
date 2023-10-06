@@ -1,4 +1,4 @@
-## [BCPFLG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPFLG.xhtml) - Defines a beam section segment flag
+## [BCPFLG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPFLG.xhtml) - Defines a beam section segment flag
 
 Defines a beam section branch and segment for segment to segment beam contact used in SOL 101 and 400 for general contact or in SOLs 101, 103, 105, 107 - 112, 200 and 400 for the permanently glued Contact.
 

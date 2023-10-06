@@ -1,4 +1,4 @@
-## [ICOPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ICOPT.xhtml)
+## [ICOPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ICOPT.xhtml)
 
 Default = 1, SOL 400 Only
 

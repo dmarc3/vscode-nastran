@@ -1,4 +1,4 @@
-## [PSHLN1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHLN1.xhtml) - Nonlinear Property Extensions for a PSHELL or PCOMP(G) Entry
+## [PSHLN1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHLN1.xhtml) - Nonlinear Property Extensions for a PSHELL or PCOMP(G) Entry
 
 Specifies additional nonlinear properties for shell elements that point to a PSHELL or PCOMP(G) entry in SOL 400.
 

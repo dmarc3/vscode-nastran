@@ -1,4 +1,4 @@
-## [SEALL (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEALL.Case.xhtml) - Superelement Generation and Assembly
+## [SEALL (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEALL.Case.xhtml) - Superelement Generation and Assembly
 
 Specifies the superelement identification numbers of Phase 1 processing in which all matrices and loads are generated and assembled. Controls execution of the solution sequence.
 

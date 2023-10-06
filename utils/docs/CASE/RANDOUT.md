@@ -1,4 +1,4 @@
-## [RANDOUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RANDOUT.Case.xhtml) - Control for EXCLUSIVE Random Result, PSDF, Output to HDF5 and/or OP2
+## [RANDOUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RANDOUT.Case.xhtml) - Control for EXCLUSIVE Random Result, PSDF, Output to HDF5 and/or OP2
 
 Control for exclusive random result, PSDF, output, to HDF5 and/or OP2
 

@@ -1,4 +1,4 @@
-## [SUPORT1 (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUPORT1.Case.xhtml) - Fictitious Support Set Selection
+## [SUPORT1 (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SUPORT1.Case.xhtml) - Fictitious Support Set Selection
 
 Selects the fictitious support set (SUPORT1 only) to be applied to the model.
 

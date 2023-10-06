@@ -1,4 +1,4 @@
-## [RJOINT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RJOINT.xhtml) - Rigid Joint
+## [RJOINT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RJOINT.xhtml) - Rigid Joint
 
 Defines a rigid joint element connecting two coinciding grid points.
 

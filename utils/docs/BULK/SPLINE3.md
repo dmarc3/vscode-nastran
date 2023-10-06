@@ -1,4 +1,4 @@
-## [SPLINE3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE3.xhtml) - Aeroelastic Constraint Equation
+## [SPLINE3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE3.xhtml) - Aeroelastic Constraint Equation
 
 Defines a constraint equation for aeroelastic problems.  Useful for control surface constraints.
 

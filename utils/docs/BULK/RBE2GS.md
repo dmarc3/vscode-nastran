@@ -1,4 +1,4 @@
-## [RBE2GS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBE2GS.xhtml) - Internally Generate an RBE2 Element
+## [RBE2GS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBE2GS.xhtml) - Internally Generate an RBE2 Element
 
 Defines an RBE2 connecting the two closest grids to GS.
 

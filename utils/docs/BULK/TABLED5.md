@@ -1,4 +1,4 @@
-## [TABLED5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLED5.xhtml) - Dynamic Load Tabular Function, Form 5
+## [TABLED5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLED5.xhtml) - Dynamic Load Tabular Function, Form 5
 
 Defines a value as a function of two variables for use in generating frequency-dependent and time-dependent dynamic loads.
 

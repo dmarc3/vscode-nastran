@@ -1,4 +1,4 @@
-## [RCROSS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RCROSS.xhtml) - Cross-Power Spectral Density and Cross-Correlation Functions Output
+## [RCROSS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RCROSS.xhtml) - Cross-Power Spectral Density and Cross-Correlation Functions Output
 
 Defines a pair of response quantities for computing the cross-power spectral density and cross-correlation functions in random analysis.
 

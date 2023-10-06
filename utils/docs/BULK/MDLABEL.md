@@ -1,4 +1,4 @@
-## [MDLABEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLABEL.xhtml) - Module Output Label
+## [MDLABEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDLABEL.xhtml) - Module Output Label
 
 Defines a label or name to be printed in the Module’s results output page headings.
 

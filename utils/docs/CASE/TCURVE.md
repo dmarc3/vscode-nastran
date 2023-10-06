@@ -1,4 +1,4 @@
-## [TCURVE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.TCURVE.xhtml) - Curve Title
+## [TCURVE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.TCURVE.xhtml) - Curve Title
 
 Defines a character string that will appear at the top of the plot frame.
 

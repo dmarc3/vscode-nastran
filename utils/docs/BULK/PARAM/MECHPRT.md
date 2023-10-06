@@ -1,4 +1,4 @@
-## [MECHPRT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MECHPRT.xhtml)
+## [MECHPRT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MECHPRT.xhtml)
 
 Default = NO
 

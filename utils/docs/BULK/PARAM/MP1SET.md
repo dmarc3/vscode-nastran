@@ -1,4 +1,4 @@
-## [MP1SET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MP1SET.xhtml)
+## [MP1SET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.MP1SET.xhtml)
 
 Character “F” or “G” (default, see below)
 

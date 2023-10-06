@@ -1,4 +1,4 @@
-## [AESTAT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESTAT.xhtml) - Static Aeroelasticity Trim Variables
+## [AESTAT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AESTAT.xhtml) - Static Aeroelasticity Trim Variables
 
 Specifies rigid body motions to be used as trim variables in static aeroelasticity.
 

@@ -1,4 +1,4 @@
-## [RSDAMP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RSDAMP.Case.xhtml) - Specifying Damping for the Residual Structure
+## [RSDAMP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RSDAMP.Case.xhtml) - Specifying Damping for the Residual Structure
 
 Requests parameter and hybrid damping for the residual structure.
 

@@ -1,4 +1,4 @@
-## [AELINK](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELINK.xhtml) - Links Aeroelastic Variables
+## [AELINK](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELINK.xhtml) - Links Aeroelastic Variables
 
 Defines relationships between or among AESTAT and AESURF entries, such that:
 

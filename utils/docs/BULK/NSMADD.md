@@ -1,4 +1,4 @@
-## [NSMADD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSMADD.xhtml) - Non Structural Mass Set Combination
+## [NSMADD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSMADD.xhtml) - Non Structural Mass Set Combination
 
 Defines non structural mass as the sum of the sets listed.
 

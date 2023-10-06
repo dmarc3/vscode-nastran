@@ -1,4 +1,4 @@
-## [S1, S1G, S1M](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.S1.S1G.S1M.xhtml)
+## [S1, S1G, S1M](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.S1.S1G.S1M.xhtml)
 
 Default    = -1
 

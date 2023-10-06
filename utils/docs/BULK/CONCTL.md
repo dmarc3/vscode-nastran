@@ -1,4 +1,4 @@
-## [CONCTL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONCTL.xhtml) - Parameter SWLDPRM override for CFAST, CSEAM, and CWELD Connector Elements
+## [CONCTL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONCTL.xhtml) - Parameter SWLDPRM override for CFAST, CSEAM, and CWELD Connector Elements
 
 This entry provides local connector search algorithm control to override SWLDPRM values.
 

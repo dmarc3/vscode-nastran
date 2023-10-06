@@ -1,4 +1,4 @@
-## [CBEAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEAM.xhtml) - Beam Element Connection
+## [CBEAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBEAM.xhtml) - Beam Element Connection
 
 Defines a beam element.
 

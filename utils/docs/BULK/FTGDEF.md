@@ -1,4 +1,4 @@
-## [FTGDEF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGDEF.xhtml) - Fatigue Element Definitions
+## [FTGDEF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FTGDEF.xhtml) - Fatigue Element Definitions
 
 Defines elements and their associated fatigue properties to be considered for fatigue analysis for time domain SOLutions 101, 103, 112 and frequency domain SOLutions 108 and 111.
 

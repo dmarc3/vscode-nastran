@@ -1,4 +1,4 @@
-## [TICREG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICREG.xhtml) - Transient Initial Conditions of Eulerian Regions
+## [TICREG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TICREG.xhtml) - Transient Initial Conditions of Eulerian Regions
 
 Defines the initial values sets for Eulerian regions. The Eulerian regions are defined by geometric shapes. Used in SOL 700 only.
 

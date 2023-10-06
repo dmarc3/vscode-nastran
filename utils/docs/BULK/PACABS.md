@@ -1,4 +1,4 @@
-## [PACABS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PACABS.xhtml) - Acoustic Absorber Property
+## [PACABS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PACABS.xhtml) - Acoustic Absorber Property
 
 Defines the properties of the acoustic absorber element.
 

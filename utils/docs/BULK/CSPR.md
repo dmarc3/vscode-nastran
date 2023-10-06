@@ -1,4 +1,4 @@
-## [CSPR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSPR.xhtml) - Springs With Offsets
+## [CSPR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSPR.xhtml) - Springs With Offsets
 
 Springs for use in SOL 700 only.
 

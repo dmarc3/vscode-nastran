@@ -1,4 +1,4 @@
-## [HADACRI](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HADACRI.xhtml) - Mesh Adaptivity Criterion and Corresponding Parameters - SOL 101 & 400 (Linear)
+## [HADACRI](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.HADACRI.xhtml) - Mesh Adaptivity Criterion and Corresponding Parameters - SOL 101 & 400 (Linear)
 
 Specifies Mesh refinement criterion for adaptive mesh refinement and corresponding parameters.
 

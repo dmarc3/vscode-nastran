@@ -1,4 +1,4 @@
-## [BOUTPUT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BOUTPUT.xhtml) - Output for Slideline Contact
+## [BOUTPUT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BOUTPUT.xhtml) - Output for Slideline Contact
 
 Defines secondary nodes at which output is requested.
 

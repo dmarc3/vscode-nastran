@@ -1,4 +1,4 @@
-## [CDAMP3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP3.xhtml) - Scalar Damper Connection to Scalar Points Only
+## [CDAMP3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CDAMP3.xhtml) - Scalar Damper Connection to Scalar Points Only
 
 Defines a scalar damper element that is connected only to scalar points.
 

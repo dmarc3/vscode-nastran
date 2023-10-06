@@ -1,4 +1,4 @@
-## [SETREE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SETREE.xhtml) - Superelement Tree Definition (Alternate Form of DTI,SETREE)
+## [SETREE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SETREE.xhtml) - Superelement Tree Definition (Alternate Form of DTI,SETREE)
 
 Specifies superelement reduction order.
 

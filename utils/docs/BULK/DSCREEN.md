@@ -1,4 +1,4 @@
-## [DSCREEN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DSCREEN.xhtml) - Design Constraint Screening Data
+## [DSCREEN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DSCREEN.xhtml) - Design Constraint Screening Data
 
 Defines screening data for constraint deletion.
 

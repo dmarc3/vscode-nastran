@@ -1,4 +1,4 @@
-## [DETSPH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DETSPH.xhtml) - Spherical Detonation Wave
+## [DETSPH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DETSPH.xhtml) - Spherical Detonation Wave
 
 Defines the ignition point from which a spherical detonation wave travels, causing the reaction of high explosive materials. Used in SOL 700 only.
 

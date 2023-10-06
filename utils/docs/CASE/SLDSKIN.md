@@ -1,4 +1,4 @@
-## [SLDSKIN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SLDSKIN.Case.xhtml) - PSHELL entries listed on this entry will have MID2-MID4 fields removed
+## [SLDSKIN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SLDSKIN.Case.xhtml) - PSHELL entries listed on this entry will have MID2-MID4 fields removed
 
 Requests that PSHELL entries listed on this entry, when the THICKNESS  ≤ TOL have their MID2 through MID4 fields removed; thus, converting the elements membrane elements.
 

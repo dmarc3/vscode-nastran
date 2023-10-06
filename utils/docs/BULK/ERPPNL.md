@@ -1,4 +1,4 @@
-## [ERPPNL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ERPPNL.xhtml) - Equivalent Radiated Power Definition
+## [ERPPNL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ERPPNL.xhtml) - Equivalent Radiated Power Definition
 
 Defines one or more panels by referencing sets of elements or properties.
 

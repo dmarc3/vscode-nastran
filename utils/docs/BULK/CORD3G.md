@@ -1,4 +1,4 @@
-## [CORD3G](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD3G.xhtml) - General Coordinate System
+## [CORD3G](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CORD3G.xhtml) - General Coordinate System
 
 Defines a general coordinate system using three rotational angles as functions of coordinate values in the reference coordinate system.  The CORD3G entry is used with the MAT9 entry to orient material principal axes for 3-D composite analysis.
 

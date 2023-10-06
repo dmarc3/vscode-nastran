@@ -1,4 +1,4 @@
-## [AUTOSPC (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AUTOSPC.Case.xhtml) - Constrains Stiffness Singularities via m-sets or s-sets
+## [AUTOSPC (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AUTOSPC.Case.xhtml) - Constrains Stiffness Singularities via m-sets or s-sets
 
 Requests that stiffness singularities and near singularities be automatically constrained via single or multipoint constraints.
 

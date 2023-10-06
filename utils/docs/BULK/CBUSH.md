@@ -1,4 +1,4 @@
-## [CBUSH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH.xhtml) - Generalized Spring-and-Damper Connection
+## [CBUSH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH.xhtml) - Generalized Spring-and-Damper Connection
 
 Defines a generalized spring-and-damper structural element that may be nonlinear or frequency dependent.
 

@@ -1,4 +1,4 @@
-## [CAERO4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO4.xhtml) - Aerodynamic Macro-Strip Element Connection
+## [CAERO4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAERO4.xhtml) - Aerodynamic Macro-Strip Element Connection
 
 Defines an aerodynamic macro element for Strip theory.
 

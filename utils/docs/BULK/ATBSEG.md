@@ -1,4 +1,4 @@
-## [ATBSEG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ATBSEG.xhtml) - Interface to ATB Segments- SOL 700
+## [ATBSEG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ATBSEG.xhtml) - Interface to ATB Segments- SOL 700
 
 Defines the position and orientation of the ATB segments. The position and orientation as specified on the G.2 and G.3 entries in the ATB input file will be overruled by the definitions given here.
 

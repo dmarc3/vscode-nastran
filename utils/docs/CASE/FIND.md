@@ -1,4 +1,4 @@
-## [FIND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.FIND.xhtml) - Automatic Calculation of Scale, Origin, and Vantage Point
+## [FIND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.FIND.xhtml) - Automatic Calculation of Scale, Origin, and Vantage Point
 
 Requests the plotter to optimally compute any of the parameters that can be specified on the SCALE, ORIGIN i, and/or VANTAGE POINT commands.
 

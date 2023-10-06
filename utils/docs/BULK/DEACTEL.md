@@ -1,4 +1,4 @@
-## [DEACTEL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DEACTEL.xhtml) - Elements To Be Deactivated for SOL 400 Analysis
+## [DEACTEL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DEACTEL.xhtml) - Elements To Be Deactivated for SOL 400 Analysis
 
 This entry identifies the elements that do not participate in the analysis or do not participate in a particular physics pass of a coupled analysis. SOL 400 for NLSTATIC, and NLTRAN, as well Perturbation analyses only.
 

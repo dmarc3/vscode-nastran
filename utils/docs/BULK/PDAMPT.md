@@ -1,4 +1,4 @@
-## [PDAMPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDAMPT.xhtml) - Frequency-Dependent Damper Property
+## [PDAMPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDAMPT.xhtml) - Frequency-Dependent Damper Property
 
 Defines the frequency-dependent properties for a PDAMP Bulk Data entry.
 

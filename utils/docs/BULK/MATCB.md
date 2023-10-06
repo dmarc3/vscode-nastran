@@ -1,4 +1,4 @@
-## [MATCB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATCB.xhtml) - 2D and 3D Orthotropic Progressive Failure Properties
+## [MATCB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkmno/TOC.MATCB.xhtml) - 2D and 3D Orthotropic Progressive Failure Properties
 
 Specifies progressive failure properties for orthotropic materials via the Cuntze-Bold material model. A phenomenal-based material law for fiber reinforced plastics combined with the CUNTZE-BOLD failure criteria.
 

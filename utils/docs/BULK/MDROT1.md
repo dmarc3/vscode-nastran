@@ -1,4 +1,4 @@
-## [MDROT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDROT1.xhtml) - Module Reposition by Rotation - Option 1
+## [MDROT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDROT1.xhtml) - Module Reposition by Rotation - Option 1
 
 Defines a Module rotation by specifying a rotation vector and reference point in Module 0.
 

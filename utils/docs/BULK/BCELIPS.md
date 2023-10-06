@@ -1,4 +1,4 @@
-## [BCELIPS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCELIPS.xhtml) - Contact Ellipsoid List- SOL 700
+## [BCELIPS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCELIPS.xhtml) - Contact Ellipsoid List- SOL 700
 
 Defines a list of ellipsoid names (character strings) for use of contact analysis. Used in SOL700 only.
 

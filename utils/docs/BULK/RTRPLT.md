@@ -1,4 +1,4 @@
-## [RTRPLT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RTRPLT.xhtml) - Rigid Triangular Plate
+## [RTRPLT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RTRPLT.xhtml) - Rigid Triangular Plate
 
 Defines a rigid triangular plate.
 

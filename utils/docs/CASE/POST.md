@@ -1,4 +1,4 @@
-## [POST (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.POST.Case.xhtml) - Postprocessor Data Specifications
+## [POST (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.POST.Case.xhtml) - Postprocessor Data Specifications
 
 Controls selection of data to be output for postprocessing functions via the OUTPUT2 module interface for selected commercial postprocessor products.
 

@@ -1,4 +1,4 @@
-## [MFLUID (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MFLUID.Case.xhtml) - Fluid Boundary Element Selection
+## [MFLUID (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MFLUID.Case.xhtml) - Fluid Boundary Element Selection
 
 Selects the MFLUID Bulk Data entries to be used to specify the fluid-structure interface.
 

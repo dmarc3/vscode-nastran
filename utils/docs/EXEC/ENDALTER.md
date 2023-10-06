@@ -1,4 +1,4 @@
-## [ENDALTER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ENDALTER.xhtml) - End of DMAP Alter
+## [ENDALTER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ENDALTER.xhtml) - End of DMAP Alter
 
 Designates the end of an alter.
 

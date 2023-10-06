@@ -1,4 +1,4 @@
-## [QVECT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QVECT.xhtml) - Thermal Vector Flux Load
+## [QVECT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.QVECT.xhtml) - Thermal Vector Flux Load
 
 Defines thermal vector flux from a distant source into a face of one or more CHBDYi boundary condition surface elements.
 

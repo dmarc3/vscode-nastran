@@ -1,4 +1,4 @@
-## [FORCE1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCE1.xhtml) - Follower Force, Alternate Form 1
+## [FORCE1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FORCE1.xhtml) - Follower Force, Alternate Form 1
 
 Defines a concentrated force at a grid point by specification of a magnitude and two grid points that determine the direction.
 

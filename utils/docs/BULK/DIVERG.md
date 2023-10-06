@@ -1,4 +1,4 @@
-## [DIVERG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DIVERG.xhtml) - Divergence Analysis Data
+## [DIVERG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DIVERG.xhtml) - Divergence Analysis Data
 
 Defines Mach numbers (m) for a static aeroelastic divergence analysis.
 

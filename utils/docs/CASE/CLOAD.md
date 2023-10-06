@@ -1,4 +1,4 @@
-## [CLOAD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CLOAD.Case.xhtml) - Static Load Request for Upstream Superelement Loads
+## [CLOAD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.CLOAD.Case.xhtml) - Static Load Request for Upstream Superelement Loads
 
 Requests a CLOAD Bulk Data entry that defines a list of superelement loads and their scale factors in nonlinear static analysis only.
 

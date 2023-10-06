@@ -1,4 +1,4 @@
-## [RADMTX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADMTX.xhtml) - Radiation Exchange Matrix
+## [RADMTX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RADMTX.xhtml) - Radiation Exchange Matrix
 
 Provides the  ![bulkqrs07394.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/../../../assets/bulkqrs07394.jpg?_LANG=enus)  exchange factors for all the faces of a radiation enclosure specified in the corresponding RADLST entry.
 

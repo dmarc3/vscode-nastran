@@ -1,4 +1,4 @@
-## [MAXMIN (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXMIN.Case.xhtml) - MAXMIN Survey Output Request (old form)
+## [MAXMIN (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MAXMIN.Case.xhtml) - MAXMIN Survey Output Request (old form)
 
 Specifies options for max/min surveys of certain output data associated with grid points.
 

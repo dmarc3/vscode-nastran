@@ -1,4 +1,4 @@
-## [SUPAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPAX.xhtml) - Conical Shell Fictitious Support
+## [SUPAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SUPAX.xhtml) - Conical Shell Fictitious Support
 
 Defines determinate reaction degrees-of-freedom in free bodies for conical shell analysis.
 

@@ -1,4 +1,4 @@
-## [ECHO](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ECHO.xhtml) - Controls Printed Echo
+## [ECHO](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.ECHO.xhtml) - Controls Printed Echo
 
 Controls the echo (printout) of the Executive Control Section.
 

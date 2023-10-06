@@ -1,4 +1,4 @@
-## [MATTHE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTHE.xhtml) - Hyperelastic Material - Temperature Dependence
+## [MATTHE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATTHE.xhtml) - Hyperelastic Material - Temperature Dependence
 
 Specifies temperature-dependent properties of hyperelastic (rubber-like) materials (elastomers) for nonlinear (large strain and large rotation) analysis in SOLs 106, 129 and SOL 400 only.
 

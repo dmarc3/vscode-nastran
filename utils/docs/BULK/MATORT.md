@@ -1,4 +1,4 @@
-## [MATORT ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATORT.xhtml) - 3D Orthotropic Material Properties
+## [MATORT ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATORT.xhtml) - 3D Orthotropic Material Properties
 
 Specifies orthotropic material properties. Parameters for both isotropic and anisotropic yield conditions can also be specified along with elastic material properties. Can be specified for all 3-D and 2-D continuum elements and shells in SOL 400/700. Can also be specified with solid composite, solid shell composite and pyramid elements in all linear solution sequences between SOL 101 and SOL 112, and analysis only for SOL 200.
 

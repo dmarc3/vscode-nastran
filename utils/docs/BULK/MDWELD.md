@@ -1,4 +1,4 @@
-## [MDWELD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDWELD.xhtml) - Weld or Fastener Element Connection Between Two Modules
+## [MDWELD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDWELD.xhtml) - Weld or Fastener Element Connection Between Two Modules
 
 Defines a weld or fastener connecting two surface patches or points between two Modules.
 

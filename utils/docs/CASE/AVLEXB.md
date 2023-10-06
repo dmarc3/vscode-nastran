@@ -1,4 +1,4 @@
-## [AVLEXB (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AVLEXB.Case.xhtml) - Control for MSC Nastran-AVL EXCITE™ Interface
+## [AVLEXB (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.AVLEXB.Case.xhtml) - Control for MSC Nastran-AVL EXCITE™ Interface
 
 Control for MSC Nastran-AVL EXCITE TM  Interface: (1) EXB file export from SOL 103 and SOL 400, (2) EXCITE TM  results import and data recovery in SOL 111, 112 and 400.
 

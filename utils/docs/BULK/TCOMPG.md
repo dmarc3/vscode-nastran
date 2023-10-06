@@ -1,4 +1,4 @@
-## [TCOMPG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TCOMPG1.xhtml) - Layered Composite PEM 1D Analytical Trim Property
+## [TCOMPG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TCOMPG1.xhtml) - Layered Composite PEM 1D Analytical Trim Property
 
 Defines global (external) layer identification numbers and properties for a 1D analytical trim.
 

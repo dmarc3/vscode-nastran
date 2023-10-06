@@ -1,4 +1,4 @@
-## [OIMPERFECT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OIMPERFECT.Case.xhtml) - Request Output of Imperfection
+## [OIMPERFECT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.OIMPERFECT.Case.xhtml) - Request Output of Imperfection
 
 Request output imperfection vectors in SOL 400. Imperfection vectors are coordinate variations applied on grid points to express geometric imperfection.
 

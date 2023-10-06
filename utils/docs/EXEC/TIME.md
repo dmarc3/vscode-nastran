@@ -1,4 +1,4 @@
-## [TIME](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.TIME.xhtml) - Sets Maximum CPU and I/O Time
+## [TIME](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.TIME.xhtml) - Sets Maximum CPU and I/O Time
 
 Sets the maximum CPU and I/O time.
 

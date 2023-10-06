@@ -1,4 +1,4 @@
-## [BNDFREE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDFREE.xhtml) - Free Boundary Degrees-of-Freedom
+## [BNDFREE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BNDFREE.xhtml) - Free Boundary Degrees-of-Freedom
 
 Defines analysis set (a-set) degrees-of-freedom to be free (c-set) during generalized dynamic reduction or component modes calculations.
 

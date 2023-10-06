@@ -1,4 +1,4 @@
-## [DELCLUMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.DELCLUMP.xhtml)
+## [DELCLUMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.DELCLUMP.xhtml)
 
 Default = 0.5, SOL 700 only
 

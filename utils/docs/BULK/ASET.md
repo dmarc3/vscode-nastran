@@ -1,4 +1,4 @@
-## [ASET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ASET.xhtml) - Degrees-of-Freedom for the a-set
+## [ASET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.ASET.xhtml) - Degrees-of-Freedom for the a-set
 
 Defines degrees-of-freedom in the analysis set (a-set).
 

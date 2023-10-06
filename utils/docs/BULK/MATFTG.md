@@ -1,4 +1,4 @@
-## [MATFTG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATFTG1.xhtml) - Fatigue Material Properties
+## [MATFTG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATFTG1.xhtml) - Fatigue Material Properties
 
 Defines fatigue material properties for time domain based SOLs 101, 103, 112 and frequency domain based SOLs 108 and 111.
 

@@ -1,4 +1,4 @@
-## [MOMENT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMENT.xhtml) - Static Moment
+## [MOMENT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MOMENT.xhtml) - Static Moment
 
 Defines a static concentrated moment at a grid point by specifying a scale factor and a vector that determines the direction.
 

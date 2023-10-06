@@ -1,4 +1,4 @@
-## [ENDDYNA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ENDDYNA.xhtml) - Defines the End of Direct Text to Dytran
+## [ENDDYNA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ENDDYNA.xhtml) - Defines the End of Direct Text to Dytran
 
 All entries between TODYNA and ENDDYNA will be passed directly by SOL 700 to Dytran. Used in SOL 700 only.
 

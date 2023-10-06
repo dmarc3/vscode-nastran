@@ -1,4 +1,4 @@
-## [EOSIG](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSIG.xhtml) - Ignition and Growth Equation of State - SOL 700 only
+## [EOSIG](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSIG.xhtml) - Ignition and Growth Equation of State - SOL 700 only
 
 Defines the properties of Ignition and Growth equation of state and the reaction rate equation used to model high explosives. Used in SOL 700 only.
 

@@ -1,4 +1,4 @@
-## [YMIN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YMIN.xhtml) - Minimum Y Axis Value
+## [YMIN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YMIN.xhtml) - Minimum Y Axis Value
 
 Specifies the minimum value on the y-axis.
 

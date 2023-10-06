@@ -1,4 +1,4 @@
-## [NSM (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NSM.Case.xhtml) - Selects Nonstructural Mass Set Entries
+## [NSM (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NSM.Case.xhtml) - Selects Nonstructural Mass Set Entries
 
 Selects nonstructural mass (NSM) set for mass generation.
 

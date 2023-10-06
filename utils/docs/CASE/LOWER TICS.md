@@ -1,4 +1,4 @@
-## [LOWER TICS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.LOWER.TICS.xhtml) - Controls Drawing of Tic Marks on Lower Edge
+## [LOWER TICS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.LOWER.TICS.xhtml) - Controls Drawing of Tic Marks on Lower Edge
 
 Specifies how to draw tic marks on lower edge.
 

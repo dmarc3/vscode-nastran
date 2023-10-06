@@ -1,4 +1,4 @@
-## [AEQUAD4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEQUAD4.xhtml) - Quadrilateral Aerodynamic Element Connection
+## [AEQUAD4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AEQUAD4.xhtml) - Quadrilateral Aerodynamic Element Connection
 
 Defines the connectivity of a quadrilateral aerodynamic element.
 

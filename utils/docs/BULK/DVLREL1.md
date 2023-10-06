@@ -1,4 +1,4 @@
-## [DVLREL1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVLREL1.xhtml) - Defines the linear relation between analysis model loading and design variables in SOL 200 with Analysis = STATICS
+## [DVLREL1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DVLREL1.xhtml) - Defines the linear relation between analysis model loading and design variables in SOL 200 with Analysis = STATICS
 
 #### Format:
 

@@ -1,4 +1,4 @@
-## [HTOCTOL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HTOCTOL.xhtml)
+## [HTOCTOL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.HTOCTOL.xhtml)
 
 Default = 1.E-2  (SOL 106 only)
 

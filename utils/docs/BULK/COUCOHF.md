@@ -1,4 +1,4 @@
-## [COUCOHF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUCOHF.xhtml) - Cohesive Friction Model To Be Used For a COUPLE Entry
+## [COUCOHF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUCOHF.xhtml) - Cohesive Friction Model To Be Used For a COUPLE Entry
 
 Defines a cohesive friction model suited for Euler Coupled analyses. The friction model is defined as part of the coupling surface. Use SOL700 only.
 

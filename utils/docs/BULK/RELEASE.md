@@ -1,4 +1,4 @@
-## [RELEASE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RELEASE.xhtml) - Superelement Boundary Grid Point Release
+## [RELEASE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RELEASE.xhtml) - Superelement Boundary Grid Point Release
 
 Defines degrees-of-freedom for superelement exterior grid points that are not connected to the superelement.
 

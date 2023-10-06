@@ -1,4 +1,4 @@
-## [TMPSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TMPSET.xhtml) - Temperature Group Set Definition
+## [TMPSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TMPSET.xhtml) - Temperature Group Set Definition
 
 Define a time-dependent dynamic thermal load group for use in TTEMP Bulk Data entry in SOL 400.
 

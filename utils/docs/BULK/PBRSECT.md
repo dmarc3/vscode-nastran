@@ -1,4 +1,4 @@
-## [PBRSECT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBRSECT.xhtml) - Arbitrary Cross-Section for CBAR
+## [PBRSECT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBRSECT.xhtml) - Arbitrary Cross-Section for CBAR
 
 Defines the shape of arbitrary cross-section for CBAR element.
 

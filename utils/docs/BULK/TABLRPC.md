@@ -1,4 +1,4 @@
-## [TABLRPC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLRPC.xhtml) - Dynamic Load Tabular Function Referencing Channel Data File
+## [TABLRPC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TABLRPC.xhtml) - Dynamic Load Tabular Function Referencing Channel Data File
 
 Defines a tabular function for use in generating time-dependent loads from an externally defined channel data file.
 

@@ -1,4 +1,4 @@
-## [SECTAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SECTAX.xhtml) - Conical Shell Sector
+## [SECTAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SECTAX.xhtml) - Conical Shell Sector
 
 Defines a sector of a conical shell.
 

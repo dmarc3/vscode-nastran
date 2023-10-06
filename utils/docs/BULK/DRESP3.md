@@ -1,4 +1,4 @@
-## [DRESP3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DRESP3.xhtml) - Design Sensitivity Response using user-supplied routine(s)
+## [DRESP3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DRESP3.xhtml) - Design Sensitivity Response using user-supplied routine(s)
 
 Defines an external response using user-supplied routine(s).
 

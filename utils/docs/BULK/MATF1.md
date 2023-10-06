@@ -1,4 +1,4 @@
-## [MATF1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATF11.xhtml) - Frequency Dependent Isotropic Material Definition
+## [MATF1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATF11.xhtml) - Frequency Dependent Isotropic Material Definition
 
 Defines the frequency dependent properties for an isotropic poroelastic material.
 

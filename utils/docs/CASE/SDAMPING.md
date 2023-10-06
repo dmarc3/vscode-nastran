@@ -1,4 +1,4 @@
-## [SDAMPING (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SDAMPING.Case.xhtml) - Structural Damping Selection
+## [SDAMPING (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SDAMPING.Case.xhtml) - Structural Damping Selection
 
 Requests modal damping as a function of natural frequency in modal solutions or viscoelastic materials as a function of frequency in direct frequency response analysis.
 

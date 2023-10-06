@@ -1,4 +1,4 @@
-## [DTI,INDTA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.INDTA.xhtml) - Stress, Strain and/or Force Sort/Filter Item Code Override
+## [DTI,INDTA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DTI.INDTA.xhtml) - Stress, Strain and/or Force Sort/Filter Item Code Override
 
 Specifies or overrides default item codes for the sorting and filtering of element stresses, strains, and forces.
 

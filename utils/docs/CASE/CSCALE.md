@@ -1,4 +1,4 @@
-## [CSCALE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.CSCALE1.xhtml) - Character Scale Factor
+## [CSCALE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.CSCALE1.xhtml) - Character Scale Factor
 
 Defines scale factor for characters in the plot frame.
 

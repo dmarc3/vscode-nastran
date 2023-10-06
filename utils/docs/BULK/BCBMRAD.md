@@ -1,4 +1,4 @@
-## [BCBMRAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBMRAD.xhtml) - Modify Equivalent Radius for Beam-to-Beam Contact
+## [BCBMRAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCBMRAD.xhtml) - Modify Equivalent Radius for Beam-to-Beam Contact
 
 Allows the equivalent radius in beam-to-beam contact to be different for each beam cross section in SOL 101, SOL 400. The BCBMRAD entry is only used for node-to-segment beam-to-beam contact. For segment-to-segment beam contact, the beam cross section geometry is defined via PBARL or PBEAML
 

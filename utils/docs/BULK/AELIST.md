@@ -1,4 +1,4 @@
-## [AELIST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELIST.xhtml) - Aerodynamic List
+## [AELIST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.AELIST.xhtml) - Aerodynamic List
 
 Defines a list of aerodynamic elements or grid ID’s.
 

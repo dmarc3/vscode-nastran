@@ -1,4 +1,4 @@
-## [NSML1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSML1.xhtml) - Alternate Form for NSML Entry
+## [NSML1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSML1.xhtml) - Alternate Form for NSML Entry
 
 Defines lumped non structural mass entries by VALUE,ID list.
 

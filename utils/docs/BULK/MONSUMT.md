@@ -1,4 +1,4 @@
-## [MONSUMT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUMT.xhtml) - Linear combination of two or more monitor points with moment transfer
+## [MONSUMT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONSUMT.xhtml) - Linear combination of two or more monitor points with moment transfer
 
 Defines a new monitor result that is the sum of existing monitor results. The existing monitor points do not need to be of the same type but they must be of similar type (See Remark 3)  3. )
 

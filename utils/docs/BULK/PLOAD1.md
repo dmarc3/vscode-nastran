@@ -1,4 +1,4 @@
-## [PLOAD1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD1.xhtml) - Applied Load on CBAR, CBEAM or CBEND Elements
+## [PLOAD1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PLOAD1.xhtml) - Applied Load on CBAR, CBEAM or CBEND Elements
 
 Defines concentrated, uniformly distributed, or linearly distributed applied loads to the CBAR or CBEAM elements at user-chosen points along the axis. For the CBEND element, only distributed loads over an entire length may be defined.
 

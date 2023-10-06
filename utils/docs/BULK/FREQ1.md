@@ -1,4 +1,4 @@
-## [FREQ1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ1.xhtml) - Frequency List, Alternate Form 1
+## [FREQ1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FREQ1.xhtml) - Frequency List, Alternate Form 1
 
 Defines a set of frequencies to be used in the solution of frequency response problems by specification of a starting frequency, frequency increment, and the number of increments desired.
 

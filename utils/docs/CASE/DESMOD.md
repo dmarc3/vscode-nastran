@@ -1,4 +1,4 @@
-## [DESMOD (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESMOD.Case.xhtml) - Design Model Name
+## [DESMOD (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.DESMOD.Case.xhtml) - Design Model Name
 
 Assigns the design model parameter used to locate the associated datablocks for merging of two or more SOL 200 models using the MultiOpt application.
 

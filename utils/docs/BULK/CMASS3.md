@@ -1,4 +1,4 @@
-## [CMASS3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMASS3.xhtml) - Scalar Mass Connection to Scalar Points Only
+## [CMASS3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CMASS3.xhtml) - Scalar Mass Connection to Scalar Points Only
 
 Defines a scalar mass element that is connected only to scalar points.
 

@@ -1,4 +1,4 @@
-## [EOSJWL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSJWL.xhtml) - JWL Explosive Equation of State - SOL700
+## [EOSJWL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.EOSJWL.xhtml) - JWL Explosive Equation of State - SOL700
 
 Defines the properties of a  JWL  equation of state commonly used to calculate the pressure  ![bulkde03496.jpg](https://help-be.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/../../../assets/bulkde03496.jpg?_LANG=enus)   of the detonation products of high explosives
 

@@ -1,4 +1,4 @@
-## [ASSIGN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ASSIGN.xhtml) - Assigns Physical File
+## [ASSIGN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.ASSIGN.xhtml) - Assigns Physical File
 
 Assigns physical file names or other properties to DBset members or special FORTRAN files that are used by other FMS statements or DMAP modules. Also, assigns physical name and/or other properties to modal neutral files (.mnf) for MSC Nastran/ADAMS interface.
 

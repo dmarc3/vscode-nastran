@@ -1,4 +1,4 @@
-## [OMIT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.OMIT.xhtml) - Omitted Degrees-of-Freedom
+## [OMIT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.OMIT.xhtml) - Omitted Degrees-of-Freedom
 
 Defines degrees-of-freedom to be excluded (o-set) from the analysis set (a-set).
 

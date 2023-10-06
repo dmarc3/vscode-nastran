@@ -1,4 +1,4 @@
-## [CQUAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUAD.xhtml) - Fully Nonlinear Plane Strain Element
+## [CQUAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CQUAD.xhtml) - Fully Nonlinear Plane Strain Element
 
 Defines a plane strain quadrilateral element with up to nine grid points for use in fully nonlinear (i.e., large strain and large rotation) hyperelastic analysis.
 

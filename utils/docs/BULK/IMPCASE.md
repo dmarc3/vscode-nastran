@@ -1,4 +1,4 @@
-## [IMPCASE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.IMPCASE.xhtml) - Defines a collection of imperfection cases
+## [IMPCASE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.IMPCASE.xhtml) - Defines a collection of imperfection cases
 
 Defines a collection of imperfection cases by listing of identification numbers of IMPGEOM entries. Used in SOL 400.
 

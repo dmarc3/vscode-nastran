@@ -1,4 +1,4 @@
-## [SPLINE5](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE5.xhtml) - Linear Spline
+## [SPLINE5](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINE5.xhtml) - Linear Spline
 
 Defines a 1D beam spline for interpolating motion and/or forces for aeroelastic problems on aerodynamic geometries.
 

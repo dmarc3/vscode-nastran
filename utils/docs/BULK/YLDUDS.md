@@ -1,4 +1,4 @@
-## [YLDUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDUDS.xhtml) - User-defined Yield Model for Elements.
+## [YLDUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.YLDUDS.xhtml) - User-defined Yield Model for Elements.
 
 Specifies that a user subroutine is being used to define a simple yield model. Use in SOL700 only.
 

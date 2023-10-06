@@ -1,4 +1,4 @@
-## [LEAKAGE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LEAKAGE.xhtml) - Mass Loss Through Holes or Permeability of the GBAG or COUPLE Surface
+## [LEAKAGE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LEAKAGE.xhtml) - Mass Loss Through Holes or Permeability of the GBAG or COUPLE Surface
 
 Defines the porosity model to be used with GBAG or COUPLE. Used in SOL 700 only.
 

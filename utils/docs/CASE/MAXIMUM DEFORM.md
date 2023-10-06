@@ -1,4 +1,4 @@
-## [MAXIMUM DEFORM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.MAXIMUM.DEFORM.xhtml) - Length of Maximum Displacement
+## [MAXIMUM DEFORM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4b/TOC.MAXIMUM.DEFORM.xhtml) - Length of Maximum Displacement
 
 Defines the magnification of the maximum displacement. All other displacements are scaled accordingly.
 

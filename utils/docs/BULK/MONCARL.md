@@ -1,4 +1,4 @@
-## [MONCARL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONCARL.xhtml) - Parameters for Monte-Carlo simulation
+## [MONCARL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MONCARL.xhtml) - Parameters for Monte-Carlo simulation
 
 Parameters for conducting Monte-Carlo simulation using the non-parametric variability method (NPVM).
 

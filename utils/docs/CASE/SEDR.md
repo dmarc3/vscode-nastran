@@ -1,4 +1,4 @@
-## [SEDR (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEDR.Case.xhtml) - Superelement Data Recovery
+## [SEDR (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.SEDR.Case.xhtml) - Superelement Data Recovery
 
 Specifies the superelement identification numbers for which data recovery will be performed.
 

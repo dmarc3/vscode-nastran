@@ -1,4 +1,4 @@
-## [RVDOF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RVDOF.xhtml) - Degrees-of-Freedom Specification for Residual Vector Computations
+## [RVDOF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RVDOF.xhtml) - Degrees-of-Freedom Specification for Residual Vector Computations
 
 Specifies the degrees-of-freedom where unit loads are to be applied to obtain static solutions for use in residual vector computations.
 

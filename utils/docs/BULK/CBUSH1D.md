@@ -1,4 +1,4 @@
-## [CBUSH1D](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH1D.xhtml) - Rod Type Spring-and-Damper Connection
+## [CBUSH1D](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBUSH1D.xhtml) - Rod Type Spring-and-Damper Connection
 
 Defines the connectivity of a one-dimensional spring and viscous damper element.
 

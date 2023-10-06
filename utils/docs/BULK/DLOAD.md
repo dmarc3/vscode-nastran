@@ -1,4 +1,4 @@
-## [DLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DLOAD.xhtml) - Dynamic Load Combination or Superposition
+## [DLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.DLOAD.xhtml) - Dynamic Load Combination or Superposition
 
 Defines a dynamic loading condition for frequency response or transient response problems as a linear combination of load sets defined via RLOAD1, RLOAD2, TLOAD1, TLOAD2 and ACSRCE entries for frequency response or TLOAD1 or TLOAD2 entries for transient response.
 

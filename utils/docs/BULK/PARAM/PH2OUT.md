@@ -1,4 +1,4 @@
-## [PH2OUT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PH2OUT.xhtml)
+## [PH2OUT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.PH2OUT.xhtml)
 
 Default = 0, SOL 400 only
 

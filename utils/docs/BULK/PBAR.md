@@ -1,4 +1,4 @@
-## [PBAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBAR.xhtml) - Simple Beam Property
+## [PBAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBAR.xhtml) - Simple Beam Property
 
 Defines the properties of a simple beam element (CBAR entry).
 

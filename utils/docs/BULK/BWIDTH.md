@@ -1,4 +1,4 @@
-## [BWIDTH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BWIDTH.xhtml) - Boundary Line Segment Width or Thickness
+## [BWIDTH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BWIDTH.xhtml) - Boundary Line Segment Width or Thickness
 
 Defines widths or thicknesses for line segments in 3-D or 2-D slideline contact defined in the corresponding BLSEG Bulk Data entry for SOL 106 or SOL 129. SOL 400 general contact capability, defined with BCONTACT, BCTABL1, etc. is the recommended approach for contact analysis.
 

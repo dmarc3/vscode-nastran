@@ -1,4 +1,4 @@
-## [NVELOCITY (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NVELOCITY.Case.xhtml) - Velocity Normal Output Request
+## [NVELOCITY (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NVELOCITY.Case.xhtml) - Velocity Normal Output Request
 
 Request output of velocity normal for structural grids in SOLs 108 and 111 only.
 

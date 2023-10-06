@@ -1,4 +1,4 @@
-## [MDFAST](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDFAST.xhtml) - A Shell Patch Fastener Connection Between Two Modules
+## [MDFAST](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDFAST.xhtml) - A Shell Patch Fastener Connection Between Two Modules
 
 Defines a fastener with material orientation connecting two surface patches defined in two Modules.
 

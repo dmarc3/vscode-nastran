@@ -1,4 +1,4 @@
-## [INFLHB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLHB.xhtml) - Hybrid Inflator Model
+## [INFLHB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.INFLHB.xhtml) - Hybrid Inflator Model
 
 Defines the hybrid-inflator characteristics of a COUPLE and/or GBAG subsurface. Used in SOL 700 only.
 

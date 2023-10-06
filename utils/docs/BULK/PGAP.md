@@ -1,4 +1,4 @@
-## [PGAP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PGAP.xhtml) - Gap Element Property
+## [PGAP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PGAP.xhtml) - Gap Element Property
 
 Defines the properties of the gap element (CGAP entry).
 

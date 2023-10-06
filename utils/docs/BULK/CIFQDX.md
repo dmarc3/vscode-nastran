@@ -1,4 +1,4 @@
-## [CIFQDX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFQDX.xhtml) - Axisymmetric InterFace Cohesive Zone Modeling Element
+## [CIFQDX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CIFQDX.xhtml) - Axisymmetric InterFace Cohesive Zone Modeling Element
 
 Linear/Quadratic, eight-node, axisymmetric interface element used to simulate the onset and progress of delamination in SOL 400.
 

@@ -1,4 +1,4 @@
-## [ENDTIME (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ENDTIME.Case.xhtml) - Specifies Final Analysis Time
+## [ENDTIME (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ENDTIME.Case.xhtml) - Specifies Final Analysis Time
 
 Specifies final analysis time for SOL 700.
 

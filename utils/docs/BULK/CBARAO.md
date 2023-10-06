@@ -1,4 +1,4 @@
-## [CBARAO](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBARAO.xhtml) - Auxiliary Output Points Along Bar Element Axis (CBAR Entry)
+## [CBARAO](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CBARAO.xhtml) - Auxiliary Output Points Along Bar Element Axis (CBAR Entry)
 
 Defines a series of points along the axis of a bar element (CBAR entry) for stress and force recovery output. This entry is applicable in static and normal modes analysis only.
 

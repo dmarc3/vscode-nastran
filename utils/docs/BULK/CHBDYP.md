@@ -1,4 +1,4 @@
-## [CHBDYP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYP.xhtml) - Geometric Surface Element Definition (Property Form)
+## [CHBDYP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHBDYP.xhtml) - Geometric Surface Element Definition (Property Form)
 
 Defines a boundary condition surface element with reference to a PHBDY entry.
 

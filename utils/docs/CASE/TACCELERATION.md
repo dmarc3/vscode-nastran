@@ -1,4 +1,4 @@
-## [TACCELERATION (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TACCELERATION.Case.xhtml) - Acceleration Output Request for trim components, TRMC
+## [TACCELERATION (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.TACCELERATION.Case.xhtml) - Acceleration Output Request for trim components, TRMC
 
 Requests the form and type of acceleration output for TRMC.
 

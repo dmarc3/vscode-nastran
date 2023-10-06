@@ -1,4 +1,4 @@
-## [CAXIFi](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAXIFi.xhtml) - Fluid Element Connections
+## [CAXIFi](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAXIFi.xhtml) - Fluid Element Connections
 
 Defines an axisymmetric fluid element that connects i = 2, 3, or 4 fluid points.
 

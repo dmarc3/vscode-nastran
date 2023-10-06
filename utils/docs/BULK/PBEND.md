@@ -1,4 +1,4 @@
-## [PBEND](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEND.xhtml) - Curved Beam or Pipe Element Property
+## [PBEND](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PBEND.xhtml) - Curved Beam or Pipe Element Property
 
 Defines the properties of a curved beam, curved pipe,   or elbow element (CBEND entry).
 

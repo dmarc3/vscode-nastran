@@ -1,4 +1,4 @@
-## [NLSTRESS (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLSTRESS.Case.xhtml) - Nonlinear Element Stress Output Request
+## [NLSTRESS (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.NLSTRESS.Case.xhtml) - Nonlinear Element Stress Output Request
 
 Requests the form and type of nonlinear element stress output in SOLs 106 and 400.
 

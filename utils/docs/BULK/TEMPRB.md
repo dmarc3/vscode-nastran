@@ -1,4 +1,4 @@
-## [TEMPRB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPRB.xhtml) - One-Dimensional Element Temperature Field
+## [TEMPRB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMPRB.xhtml) - One-Dimensional Element Temperature Field
 
 Defines a temperature field for the CBAR, CBEAM, CBEND, CROD, CTUBE, and CONROD elements for determination of thermal loading, temperature-dependent material properties, or stress recovery.
 

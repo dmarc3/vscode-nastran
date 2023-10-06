@@ -1,4 +1,4 @@
-## [FLOWDEF](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWDEF.xhtml) - Default Flow Boundary
+## [FLOWDEF](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FLOWDEF.xhtml) - Default Flow Boundary
 
 Definition of default Eulerian flow boundary condition. Used in SOL 700 only.
 

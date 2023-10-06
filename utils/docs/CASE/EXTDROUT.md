@@ -1,4 +1,4 @@
-## [EXTDROUT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTDROUT.Case.xhtml) - External Superelement Boundary Solution Storage Request.
+## [EXTDROUT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.EXTDROUT.Case.xhtml) - External Superelement Boundary Solution Storage Request.
 
 Requests the job to store external superelement boundary displacements and column labels; e.g., eigenvalues, forcing frequencies, time steps. Also specifies the storage media of the boundary solution data.
 

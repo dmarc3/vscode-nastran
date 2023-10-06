@@ -1,4 +1,4 @@
-## [TEMP](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMP.xhtml) - Grid Point Temperature Field
+## [TEMP](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulktuv/TOC.TEMP.xhtml) - Grid Point Temperature Field
 
 Defines temperature at grid points for determination of thermal loading, temperature-dependent material properties, or stress recovery.
 

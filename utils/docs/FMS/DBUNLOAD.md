@@ -1,4 +1,4 @@
-## [DBUNLOAD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBUNLOAD.xhtml) - Unloads a Database to a FORTRAN File
+## [DBUNLOAD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/fms/TOC.DBUNLOAD.xhtml) - Unloads a Database to a FORTRAN File
 
 Stores data blocks or parameters from the primary database onto a FORTRAN file in a binary or neutral format, for purposes of database compression or database transfer between different computers.
 

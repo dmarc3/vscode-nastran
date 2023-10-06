@@ -1,4 +1,4 @@
-## [LSEQ](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LSEQ.xhtml) - Static Load Set Definition
+## [LSEQ](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.LSEQ.xhtml) - Static Load Set Definition
 
 Defines a sequence of static load sets.
 

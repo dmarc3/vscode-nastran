@@ -1,4 +1,4 @@
-## [MODESELECT (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MODESELECT.Case.xhtml) - Computed Mode Selection
+## [MODESELECT (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MODESELECT.Case.xhtml) - Computed Mode Selection
 
 Selects a subset of the computed modes for inclusion or exclusion in modal dynamic analysis.
 

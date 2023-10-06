@@ -1,4 +1,4 @@
-## [CSLOT4](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSLOT4.xhtml) - Four Point Slot Element Connection
+## [CSLOT4](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSLOT4.xhtml) - Four Point Slot Element Connection
 
 Defines an element connecting four points that solve the wave equation in two dimensions. Used in acoustic cavity analysis for the definition of evenly spaced radial slots.
 

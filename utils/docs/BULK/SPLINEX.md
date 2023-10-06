@@ -1,4 +1,4 @@
-## [SPLINEX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINEX.xhtml) - Externally-Evaluated Spline
+## [SPLINEX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SPLINEX.xhtml) - Externally-Evaluated Spline
 
 Defines the input for a spline that will be evaluated with a user-supplied procedure.
 

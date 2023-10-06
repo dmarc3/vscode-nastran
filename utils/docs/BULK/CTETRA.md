@@ -1,4 +1,4 @@
-## [CTETRA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTETRA.xhtml) - Four-Sided Solid Element Connection
+## [CTETRA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTETRA.xhtml) - Four-Sided Solid Element Connection
 
 Defines the connections of the four-sided solid element with four to ten grid points.
 

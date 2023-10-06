@@ -1,4 +1,4 @@
-## [CAMPBLL](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAMPBLL.xhtml) - Campbell Diagram Parameters
+## [CAMPBLL](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CAMPBLL.xhtml) - Campbell Diagram Parameters
 
 Specifies the parameters for Campbell Diagram generation and mode tracking analysis.
 

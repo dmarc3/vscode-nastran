@@ -1,4 +1,4 @@
-## [XYPAPLOT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPAPLOT.xhtml) - Generate X-Y Plots for a Printer
+## [XYPAPLOT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.XYPAPLOT.xhtml) - Generate X-Y Plots for a Printer
 
 Generates X-Y plots for a printer.
 

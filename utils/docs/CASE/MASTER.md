@@ -1,4 +1,4 @@
-## [MASTER (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MASTER.Case.xhtml) - Redefine the MASTER Subcase
+## [MASTER (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.MASTER.Case.xhtml) - Redefine the MASTER Subcase
 
 Allows the redefinition of a MASTER subcase.
 

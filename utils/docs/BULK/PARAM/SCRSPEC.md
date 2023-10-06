@@ -1,4 +1,4 @@
-## [SCRSPEC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.SCRSPEC.xhtml)
+## [SCRSPEC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.SCRSPEC.xhtml)
 
 Default    = -1 (SOLs 103 and 115 only)
 

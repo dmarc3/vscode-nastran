@@ -1,4 +1,4 @@
-## [FRFXIT1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFXIT1.xhtml) - Unit Load Degrees-of-Freedom Specification for Frequency Response Function (FRF) Computations
+## [FRFXIT1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FRFXIT1.xhtml) - Unit Load Degrees-of-Freedom Specification for Frequency Response Function (FRF) Computations
 
 Specifies degrees-of-freedom where unit loads are to be applied for Frequency Response Function (FRF) generation.
 

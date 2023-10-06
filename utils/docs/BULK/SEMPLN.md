@@ -1,4 +1,4 @@
-## [SEMPLN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEMPLN.xhtml) - Superelement Mirror Plane
+## [SEMPLN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEMPLN.xhtml) - Superelement Mirror Plane
 
 Defines a mirror plane for mirroring a partitioned superelement.
 

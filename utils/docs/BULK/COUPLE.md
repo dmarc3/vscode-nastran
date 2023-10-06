@@ -1,4 +1,4 @@
-## [COUPLE](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUPLE.xhtml) - General Euler-Lagrange Coupling Surface
+## [COUPLE](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.COUPLE.xhtml) - General Euler-Lagrange Coupling Surface
 
 Defines a coupling surface that acts as the interface between an Eulerian (finite volume) and a Lagrangian (finite element) domain. Used in SOL 700 only.
 

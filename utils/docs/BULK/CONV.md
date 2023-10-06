@@ -1,4 +1,4 @@
-## [CONV](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONV.xhtml) - Heat Boundary Element Free Convection Entry
+## [CONV](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CONV.xhtml) - Heat Boundary Element Free Convection Entry
 
 Specifies a free convection boundary condition for heat transfer analysis through connection to a surface element (CHBDYi entry).
 

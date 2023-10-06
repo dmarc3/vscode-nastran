@@ -1,4 +1,4 @@
-## [BCONUDS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONUDS.xhtml) - Contact Body User Defined Service
+## [BCONUDS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCONUDS.xhtml) - Contact Body User Defined Service
 
 Allows the user to provide contact routines for use with enhanced SOL 400 contact analysis.
 

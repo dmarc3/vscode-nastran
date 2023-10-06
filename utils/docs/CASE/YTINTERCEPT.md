@@ -1,4 +1,4 @@
-## [YTINTERCEPT](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTINTERCEPT.xhtml) - Location of Y Axis on X Axis
+## [YTINTERCEPT](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YTINTERCEPT.xhtml) - Location of Y Axis on X Axis
 
 Specifies the location of the y-axis on the x-axis for upper half frame curves only.
 

@@ -1,4 +1,4 @@
-## [CHACAB](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHACAB.xhtml) - Acoustic Absorber Element Connection
+## [CHACAB](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc1/TOC.CHACAB.xhtml) - Acoustic Absorber Element Connection
 
 Defines the acoustic absorber element in coupled fluid-structural analysis.
 

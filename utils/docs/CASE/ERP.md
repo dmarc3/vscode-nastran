@@ -1,4 +1,4 @@
-## [ERP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ERP.Case.xhtml) - Equivalent Radiated Power Panel Participation Factor Output Request
+## [ERP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.ERP.Case.xhtml) - Equivalent Radiated Power Panel Participation Factor Output Request
 
 Requests the form and type of ERP panel participation factor output for frequency or transient analysis.
 

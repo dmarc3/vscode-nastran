@@ -1,4 +1,4 @@
-## [ADJMETH](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ADJMETH.xhtml)
+## [ADJMETH](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/parameters/TOC.ADJMETH.xhtml)
 
 Default = 0
 

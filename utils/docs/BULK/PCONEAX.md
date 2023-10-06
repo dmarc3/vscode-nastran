@@ -1,4 +1,4 @@
-## [PCONEAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONEAX.xhtml) - Conical Shell Element Property
+## [PCONEAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PCONEAX.xhtml) - Conical Shell Element Property
 
 Defines the properties of a conical shell element described on a CCONEAX entry.
 

@@ -1,4 +1,4 @@
-## [PSHEARN](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHEARN.xhtml) - Nonlinear Property Extensions for a PSHEAR Entry
+## [PSHEARN](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSHEARN.xhtml) - Nonlinear Property Extensions for a PSHEAR Entry
 
 Specifies nonlinear properties for elements that point to a PSHEAR entry in SOL 400.
 

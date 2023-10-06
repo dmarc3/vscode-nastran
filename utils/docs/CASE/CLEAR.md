@@ -1,4 +1,4 @@
-## [CLEAR](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.CLEAR.xhtml) - Resets X-Y Plot Commands
+## [CLEAR](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.CLEAR.xhtml) - Resets X-Y Plot Commands
 
 Resets X-Y Plot commands to their default values.
 

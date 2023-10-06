@@ -1,4 +1,4 @@
-## [PELAS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAS.xhtml) - Scalar Elastic Property
+## [PELAS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PELAS.xhtml) - Scalar Elastic Property
 
 Specifies the stiffness, damping coefficient, and stress coefficient of a scalar elastic (spring) element (CELAS1 or CELAS3 entry).
 

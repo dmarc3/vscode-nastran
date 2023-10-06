@@ -1,4 +1,4 @@
-## [ECHOON](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ECHOON.xhtml) - Activate Printed Echo
+## [ECHOON](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkde/TOC.ECHOON.xhtml) - Activate Printed Echo
 
 Marks the point or points in the input file to activate printed echo of the input file.
 

@@ -1,4 +1,4 @@
-## [SEDRSP2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDRSP2.xhtml) - Design Sensitivity Equation Response Quantities for PART SE
+## [SEDRSP2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEDRSP2.xhtml) - Design Sensitivity Equation Response Quantities for PART SE
 
 Defines equation responses that are used in the design, either as constraints or as an objective with quantities from multiple PART SEs.
 

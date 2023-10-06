@@ -1,4 +1,4 @@
-## [PDUMi](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDUMi.xhtml) - Dummy Element Property
+## [PDUMi](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PDUMi.xhtml) - Dummy Element Property
 
 Defines the properties of a dummy element (3    <     i    <     7). Referenced by the CDUMi entry.
 

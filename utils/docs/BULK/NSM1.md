@@ -1,4 +1,4 @@
-## [NSM1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSM1.xhtml) - Alternate Form for NSM Entry
+## [NSM1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.NSM1.xhtml) - Alternate Form for NSM Entry
 
 Defines non structural mass entries by VALUE,ID list.
 

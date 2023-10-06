@@ -1,4 +1,4 @@
-## [GRIDA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDA.xhtml) - Associative GRID for PAA
+## [GRIDA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.GRIDA.xhtml) - Associative GRID for PAA
 
 Defines an associative GRID point to be used in the COMBINE step of PAA.
 

@@ -1,4 +1,4 @@
-## [FAILJC](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILJC.xhtml) - Johnson-Cook Failure Model - SOL 700 only
+## [FAILJC](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkfgil/TOC.FAILJC.xhtml) - Johnson-Cook Failure Model - SOL 700 only
 
 Defines the properties of the Johnson-Cook failure model. Used in SOL 700 only.
 

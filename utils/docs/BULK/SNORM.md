@@ -1,4 +1,4 @@
-## [SNORM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SNORM1.xhtml) - Surface Normal Vector at Grid Point
+## [SNORM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SNORM1.xhtml) - Surface Normal Vector at Grid Point
 
 Defines a surface normal vector at a grid point for CQUAD4, CQUADR, CTRIA3, and CTRIAR shell elements.
 

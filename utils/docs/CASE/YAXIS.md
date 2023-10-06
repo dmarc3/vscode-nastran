@@ -1,4 +1,4 @@
-## [YAXIS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YAXIS.xhtml) - Y Axis Plot Control
+## [YAXIS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YAXIS.xhtml) - Y Axis Plot Control
 
 Controls the plotting of the y-axis on all curves.
 

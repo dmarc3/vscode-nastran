@@ -1,4 +1,4 @@
-## [MDROT2](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDROT2.xhtml) - Module Reposition by Rotation - Option 2
+## [MDROT2](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MDROT2.xhtml) - Module Reposition by Rotation - Option 2
 
 Defines a Module rotation by specifying a coordinate system axis for the rotation vector.
 

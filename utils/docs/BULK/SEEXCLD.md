@@ -1,4 +1,4 @@
-## [SEEXCLD](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEEXCLD.xhtml) - Partitioned Superelement Exclusion
+## [SEEXCLD](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.SEEXCLD.xhtml) - Partitioned Superelement Exclusion
 
 Defines grids that will be excluded during the attachment of a partitioned superelement.
 

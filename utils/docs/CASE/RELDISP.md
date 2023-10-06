@@ -1,4 +1,4 @@
-## [RELDISP (Case)](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RELDISP.Case.xhtml) - Relative Displacement Output Request
+## [RELDISP (Case)](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4a/TOC.RELDISP.Case.xhtml) - Relative Displacement Output Request
 
 Requests the form and type of relative displacement output with respect to a structural grid point in SOL 101, 103, 105, 108, 109, 111, 112, 200 and SOL 400 only.
 

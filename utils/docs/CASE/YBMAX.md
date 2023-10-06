@@ -1,4 +1,4 @@
-## [YBMAX](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YBMAX.xhtml) - Maximum Y Axis Value
+## [YBMAX](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YBMAX.xhtml) - Maximum Y Axis Value
 
 Specifies the maximum value on the y-axis for lower half frame curves only.
 

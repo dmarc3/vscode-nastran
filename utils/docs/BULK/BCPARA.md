@@ -1,4 +1,4 @@
-## [BCPARA](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPARA.xhtml) - Contact Parameters -SOLs 101 and 400
+## [BCPARA](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkab/TOC.BCPARA.xhtml) - Contact Parameters -SOLs 101 and 400
 
 Defines contact parameters used in SOL 101 and SOL 400. This entry is not available in SOL 700.
 

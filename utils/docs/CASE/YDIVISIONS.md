@@ -1,4 +1,4 @@
-## [YDIVISIONS](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YDIVISIONS.xhtml) - Tic Spacing on Y Axis
+## [YDIVISIONS](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/casecontrol4c/TOC.YDIVISIONS.xhtml) - Tic Spacing on Y Axis
 
 Specifies spacing of tic marks on the y-axis for whole frame curves only.
 

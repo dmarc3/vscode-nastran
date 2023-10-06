@@ -1,4 +1,4 @@
-## [CSET](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSET.xhtml) - Free Boundary Degrees-of-Freedom
+## [CSET](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CSET.xhtml) - Free Boundary Degrees-of-Freedom
 
 Defines analysis set (a-set) degrees-of-freedom to be free (c-set) during generalized dynamic reduction or component mode synthesis calculations.
 

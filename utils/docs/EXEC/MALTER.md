@@ -1,4 +1,4 @@
-## [MALTER](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.MALTER.xhtml) - Inserts and/or Deletes DMAP Statements in Solution Sequences
+## [MALTER](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/executive/TOC.MALTER.xhtml) - Inserts and/or Deletes DMAP Statements in Solution Sequences
 
 Inserts or deletes DMAP statements by allowing a global “string” search across all subDMAPs within the current solution sequence.
 

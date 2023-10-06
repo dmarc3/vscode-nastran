@@ -1,4 +1,4 @@
-## [CTRIAX6](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIAX6.xhtml) - Axisymmetric Triangular Element Connection
+## [CTRIAX6](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkc2/TOC.CTRIAX6.xhtml) - Axisymmetric Triangular Element Connection
 
 Defines an isoparametric and axisymmetric triangular cross section ring element with midside grid points.
 

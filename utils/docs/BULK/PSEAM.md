@@ -1,4 +1,4 @@
-## [PSEAM](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSEAM.xhtml) - CSEAM Property
+## [PSEAM](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkp/TOC.PSEAM.xhtml) - CSEAM Property
 
 Defines the PSEAM property values.
 

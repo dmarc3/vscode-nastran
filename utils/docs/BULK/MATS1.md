@@ -1,4 +1,4 @@
-## [MATS1](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATS1.xhtml) - Material Stress Dependence
+## [MATS1](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkno/TOC.MATS1.xhtml) - Material Stress Dependence
 
 Specifies stress-dependent material properties for use in applications involving nonlinear materials. This entry is used if a MAT1 entry is specified with the same MID in a nonlinear solution sequence (SOLs 106, 129 and 400). For SOL 400 the MATEP option is the recommended approach for elastic-plastic materials.
 

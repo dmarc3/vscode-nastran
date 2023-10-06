@@ -1,4 +1,4 @@
-## [RBE3](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBE3.xhtml) - Interpolation Constraint Element
+## [RBE3](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/bulkqrs/TOC.RBE3.xhtml) - Interpolation Constraint Element
 
 Defines the motion at a reference grid point as the weighted average of the motions at a set of other grid points.
 
