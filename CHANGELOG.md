@@ -57,3 +57,9 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 
 - Added command to insert long and short field delineation comments (`F9` and `F10` keybinds)
 - Updated all hover documentations to provide correct hyperlink given Hexagon's updated documentation center per [#40](https://github.com/dmarc3/vscode-nastran/issues/40)
+
+## [1.0.7] - TBD
+
+### Added
+
+- Updated section (BULK, CASE, etc.) identification logic. Fixes [#44](https://github.com/dmarc3/vscode-nastran/issues/44) and [#45](https://github.com/dmarc3/vscode-nastran/issues/45)
