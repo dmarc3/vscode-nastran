@@ -13,7 +13,7 @@ for section in SECTIONS:
     cards = [os.path.basename(os.path.splitext(file)[0]) for file in files]
     SECTION_KEY[section] = cards
 
-def get_docs(card: str, section='') -> str:
+def get_docs(card: str, section: str, line: str) -> str:
     """Retrieves documentation for given Nastran entry and specified section.
 
     Args:
@@ -24,39 +24,15 @@ def get_docs(card: str, section='') -> str:
     Returns:
         str: Documentation for Nastran entry
     """
-    # If section provided, search that section
-    if section:
-        out = read_MSC_Nastran_docs(card, section)
-    else:
-        # If section not provided, search in this order till entry is found
-        for section in ["FMS", "EXEC", "CASE", "BULK"]:
-            out = read_MSC_Nastran_docs(card, section)
-            if out:
-                break
-    return out
-
-def read_MSC_Nastran_docs(card: str, section: str) -> str:
-    """Parse MSC Nastran documentation given Nastran entry and section.
-
-    Args:
-        card (str): Nastran entry to provide documentation for
-        section (str): Section the entry belongs to to specifically
-                       search.
-
-    Returns:
-        str: Documentation for Nastran entry
-    """
     out = ''
-    # No section
-    if section not in SECTION_KEY:
-        return out
     # Search for full card name
     filename = os.path.join('utils', 'docs', section, card+'.md')
-    if os.path.exists(filename):
-        out = open(filename, 'r', encoding='utf-8').read()
-        return out
-    elif section == 'BULK':
+    if 'PARAM' in line.upper() and card.upper() != 'PARAM':
         filename = os.path.join('utils', 'docs', section, 'PARAM', card+'.md')
+        if os.path.exists(filename):
+            out = open(filename, 'r', encoding='utf-8').read()
+            return out
+    else:
         if os.path.exists(filename):
             out = open(filename, 'r', encoding='utf-8').read()
             return out

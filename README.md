@@ -7,7 +7,7 @@ This [Visual Studio Code](https://code.visualstudio.com/) extension aims to buil
  The ultimate goal of this project is to provide a more efficient means of manipulating `Nastran` finite element models at the text file level through elimination of some of the key pain points and provide a more IDE-like experience.
 
 > **Note**
-> There are several flavors of `Nastran`. This extension is specifically built for [`MSC Nastran`](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/MSC_Nastran_main.htm); however, it may be expanded in the future to support [`Simcenter Nastran`](https://plm.sw.siemens.com/en-US/simcenter/mechanical-simulation/nastran/) and the original [`NASTRAN-95`](https://github.com/nasa/NASTRAN-95). There is significant overlap between the various versions of `Nastran` and this extension may still prove useful even if you are not using `MSC Nastran`.
+> There are several flavors of `Nastran`. This extension is specifically built for [`MSC Nastran`](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/MSC_Nastran_main.htm); however, it may be expanded in the future to support [`Simcenter Nastran`](https://plm.sw.siemens.com/en-US/simcenter/mechanical-simulation/nastran/) and the original [`NASTRAN-95`](https://github.com/nasa/NASTRAN-95). There is significant overlap between the various versions of `Nastran` and this extension may still prove useful even if you are not using `MSC Nastran`.
 
 ## Requirements
 
@@ -18,7 +18,7 @@ In order to use this extension, the user must have the following installed:
 
 ## Usage
 
-Once the requirements are satisfied and the extension is installed through [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mbakke.vscode-nastran), the extension will automatically activate upon opening a `Nastran` file with the following [extensions](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/getstart/GS-Files/TOC.Types.of.MSC.Nastran.xhtml):
+Once the requirements are satisfied and the extension is installed through [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mbakke.vscode-nastran), the extension will automatically activate upon opening a `Nastran` file with the following [extensions](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/getstart/GS-Files/TOC.Types.of.MSC.Nastran.xhtml):
 
 - `*.bdf`
 - `*.dat`
@@ -53,7 +53,7 @@ Currently supported features include:
     ![Find All Example](./resources/find_command.gif)
 
 5. `Nastran` execution command (keybound to `F6`)
-    - `Nastran` [keyword arguments](https://help.hexagonmi.com/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
+    - `Nastran` [keyword arguments](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
 
 6. Text completions with field names for rapid editing
 
