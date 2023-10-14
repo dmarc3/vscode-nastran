@@ -1,4 +1,5 @@
 from typing import Optional
+import os
 import re
 
 from pygls.server import LanguageServer
@@ -24,11 +25,15 @@ from utils.parse_file import get_section, exec_regex, REGEX_KEY
 
 class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
+    CMD_GET_INCLUDES = "custom/getIncludes"
+    CMD_GET_SECTIONS = "custom/getSections"
 
     CONFIGURATION_SECTION = "nastranServer"
 
     def __init__(self, *args):
         super().__init__(*args)
+        self.includes = []
+        self.sections = None
 
 # Initialize server class
 server = NastranLanguageServer("NastranLanguageServer", "v1.0.7")
@@ -45,15 +50,19 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     """
     # Acquire current line
     doc = server.workspace.get_document(params.text_document.uri)
+    # Find index of include file
+    filename = os.path.basename(params.text_document.uri)
+    include_no = 0
+    for include_no, include in enumerate(server.includes):
+        if include.endswith(filename):
+            break
     line = doc.lines[params.position.line]
     # Find what section of Nastran file cursor is at
-    section = get_section(line, doc.lines)
-    if not section:
-        return None
+    section = get_section(include_no, params.position.line, server.sections)
     # Execute regex search
-    if section == 'BULK' and 'param' in line.lstrip().lower():
+    if section == 'BULK' and 'PARAM' in line.lstrip().upper():
         # Process PARAM
-        logic = (params.position.character >= line.lower().index('param')) and (params.position.character <= line.lower().index('param')+len('param'))
+        logic = (params.position.character >= line.upper().index('PARAM')) and (params.position.character <= line.upper().index('PARAM')+len('PARAM'))
         if logic:
             card = exec_regex(re.match, REGEX_KEY[section], line)
         else:
@@ -61,7 +70,7 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     else:
         card = exec_regex(re.match, REGEX_KEY[section], line)
     # Calculate hover text
-    hover_txt = get_docs(card, section=section)
+    hover_txt = get_docs(card, section=section, line=line) if card else ''
     # If card is not blank and not a comment, find hover text
     if "$" not in line or line != "":
         # Only provide hover if cursor is near or on top of card
@@ -92,6 +101,12 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     """
     # Acquire document
     doc = server.workspace.get_document(params.text_document.uri)
+    # Find index of include file
+    filename = os.path.basename(params.text_document.uri)
+    include_no = 0
+    for include_no, include in enumerate(server.includes):
+        if include.endswith(filename):
+            break
     
     # Initialize counters and SemanticToken data
     last_line = 0
@@ -99,10 +114,10 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     data = []
     
     # For each line in the current range...
-    for lineno in range(params.range.start.line, params.range.end.line):
-        line = doc.lines[lineno]
+    for line_no in range(params.range.start.line, params.range.end.line):
+        line = doc.lines[line_no]
         # Determine the section of current line
-        section = get_section(line, doc.lines)
+        section = get_section(include_no, line_no, server.sections)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
@@ -110,10 +125,10 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
             # Determine long or short field
             if line.startswith('*'):
                 count = 1
-                parent = doc.lines[lineno-count]
+                parent = doc.lines[line_no-count]
                 while parent.startswith('*'):
                     count += 1
-                    parent = doc.lines[lineno-count]
+                    parent = doc.lines[line_no-count]
                 n = 16 if "*" in parent else 8
             else:
                 n = 16 if "*" in line else 8
@@ -127,13 +142,13 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
                 end = start + n
                 # Save SemanticToken data
                 data += [
-                    (lineno - last_line),
+                    (line_no - last_line),
                     (start - last_start),
                     (end - start),
                     0,
                     0
                 ]
-                last_line = lineno
+                last_line = line_no
                 last_start = start
         # Process file:// detection
         if 'file://' in line:
@@ -141,13 +156,13 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
             end = len(line)-1
             # Save SemanticToken data
             data += [
-                (lineno - last_line),
+                (line_no - last_line),
                 (start - last_start),
                 (end - start),
                 3,
                 0
             ]
-            last_line = lineno
+            last_line = line_no
             last_start = start
                 
         # # Process DMAP section
@@ -161,13 +176,13 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
         #             end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
         #             # Save SemanticToken data
         #             data += [
-        #                 (lineno - last_line),
+        #                 (line_no - last_line),
         #                 (start - last_start),
         #                 (end - start),
         #                 2,
         #                 0
         #             ]
-        #             last_line = lineno
+        #             last_line = line_no
         #             last_start = start
 
     return SemanticTokens(data=data)
@@ -181,6 +196,16 @@ def completions(params: CompletionParams) -> CompletionList:
         if card.startswith(line.upper()):
             items.append(CompletionItem(label=get_completion_item(get_docs(card, 'BULK'))))
     return CompletionList(is_incomplete=True, items=items)
+
+@server.feature(NastranLanguageServer.CMD_GET_INCLUDES)
+def get_includes(includes: list):
+    # Get include files from client
+    server.includes = includes[0]
+
+@server.feature(NastranLanguageServer.CMD_GET_SECTIONS)
+def get_sections(sections):
+    # Get sections from client
+    server.sections = sections
 
 # Start server
 server.start_io()

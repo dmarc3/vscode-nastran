@@ -1,3 +1,8 @@
 {
-  "python.defaultInterpreterPath": "python"
+  "python.defaultInterpreterPath": "python",
+  "cSpell.words": [
+    "lsprotocol",
+    "Nastran",
+    "pygls"
+  ]
 }

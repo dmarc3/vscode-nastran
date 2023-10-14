@@ -57,18 +57,42 @@ export function activate(context: vscode.ExtensionContext): void {
     if (!pythonPath) {
         throw new Error("`python.defaultInterpreterPath` is not set");
     }
-
     client = startLangServer(pythonPath, ["-m", "server.server"], cwd);
-    context.subscriptions.push(client.start());
+    // Execute on file edit
+    vscode.workspace.onDidChangeTextDocument((e: vscode.TextDocumentChangeEvent) => {
+        if (e.document.languageId === "nastran") {
+            // Update sections and send to server
+            includeHierarchyProvider.getSections()
+            client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        }
+    });
+    // Execute on file change
+    vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
+        if (e.document.languageId === "nastran") {
+            if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
+                includeHierarchyProvider.refresh()
+                client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+                client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+            }
+        }
+    });
     // Register Tree View
     const includeHierarchyProvider = new TreeDataProvider();
     vscode.window.registerTreeDataProvider(
         'includeHierarchy',
         includeHierarchyProvider
     );
+    // client.onReady().then(() => {
+    //     includeHierarchyProvider.refresh()
+    //     client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+    //     client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+    // });
     // Register Commands
-    vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () =>
+    vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {
         includeHierarchyProvider.refresh()
+        client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+        client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        }
     );
     vscode.commands.registerCommand('find', () => {
         executeFind(includeHierarchyProvider.includes)
@@ -100,6 +124,7 @@ export function activate(context: vscode.ExtensionContext): void {
         showKeywords(context)
         }
     );
+    context.subscriptions.push(client.start());
 }
 
 export function deactivate(): Thenable<void> {
