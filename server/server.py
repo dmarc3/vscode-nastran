@@ -194,7 +194,7 @@ def completions(params: CompletionParams) -> CompletionList:
     items = []
     for card in SECTION_KEY['BULK']:
         if card.startswith(line.upper()):
-            items.append(CompletionItem(label=get_completion_item(get_docs(card, 'BULK'))))
+            items.append(CompletionItem(label=get_completion_item(get_docs(card, 'BULK', line))))
     return CompletionList(is_incomplete=True, items=items)
 
 @server.feature(NastranLanguageServer.CMD_GET_INCLUDES)
