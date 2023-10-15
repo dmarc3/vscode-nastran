@@ -7,6 +7,7 @@ import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
 import { executeNastran, setKeywords, showKeywords } from "./execute";
 import { insertComment } from "./insert";
+import { initializeWebview } from "./webview";
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -88,6 +89,11 @@ export function activate(context: vscode.ExtensionContext): void {
     //     client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
     // });
     // Register Commands
+    context.subscriptions.push(
+    vscode.commands.registerCommand("femView.start", () => {
+        const panel = initializeWebview(context);
+    })
+    );
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {
         includeHierarchyProvider.refresh()
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)

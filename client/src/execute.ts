@@ -1,5 +1,4 @@
 import * as vscode from "vscode";
-// import * as cp from "child_process";
 
 export function executeNastran(rundeck, context) {
     var keywords = context.globalState.get('keywords')

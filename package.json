@@ -52,32 +52,44 @@
     },
     "commands": [
       {
+        "command": "femView.start",
+        "title": "Start FEM View",
+        "category": "Nastran"
+      },
+      {
         "command": "find",
-        "title": "Nastran: Find all occurences of substring."
+        "title": "Find all occurences of substring.",
+        "category": "Nastran"
       },
       {
         "command": "execute",
-        "title": "Nastran: Execute model."
+        "title": "Execute model.",
+        "category": "Nastran"
       },
       {
         "command": "set_keywords",
-        "title": "Nastran: Set execution keywords."
+        "title": "Set execution keywords.",
+        "category": "Nastran"
       },
       {
         "command": "show_keywords",
-        "title": "Nastran: Show execution keywords."
+        "title": "Show execution keywords.",
+        "category": "Nastran"
       },
       {
         "command": "insert_short_comment",
-        "title": "Nastran: Insert short field delineation comment."
+        "title": "Insert short field delineation comment.",
+        "category": "Nastran"
       },
       {
         "command": "insert_long_comment",
-        "title": "Nastran: Insert long field delineation comment."
+        "title": "Insert long field delineation comment.",
+        "category": "Nastran"
       },
       {
         "command": "includeHierarchy.buildHierarchy",
-        "title": "Nastran: Build include tree hierarchy.",
+        "title": "Build include tree hierarchy.",
+        "category": "Nastran",
         "icon": {
           "light": "resources/light/refresh.svg",
           "dark": "resources/dark/refresh.svg"
@@ -187,6 +199,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "three": "^0.157.0",
     "vscode-languageclient": "^7.0.0"
   }
 }
