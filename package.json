@@ -72,8 +72,16 @@
         "title": "Nastran: Insert short field delineation comment."
       },
       {
+        "command": "set_short_comment",
+        "title": "Nastran: Set short field delineation comment."
+      },
+      {
         "command": "insert_long_comment",
         "title": "Nastran: Insert long field delineation comment."
+      },
+      {
+        "command": "set_long_comment",
+        "title": "Nastran: Set long field delineation comment."
       },
       {
         "command": "includeHierarchy.buildHierarchy",

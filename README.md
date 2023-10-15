@@ -60,7 +60,8 @@ Currently supported features include:
     &nbsp;
     ![Text Completions Example](./resources/completions.gif)
 
-7. Command to insert short and long field delineation comments
+7. Command to insert short and long field delineation comments (`F9`, `F10`)
+    - Users defined comments may be set via the `Nastran: Set short field delineation comment` and `Nastran: Set long field delineation comment` commands (accessed via `CTRL + SHIFT + P`)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
 
