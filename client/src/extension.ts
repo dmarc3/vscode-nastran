@@ -6,8 +6,8 @@ import * as vscode from "vscode";
 import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
 import { executeNastran, setKeywords, showKeywords } from "./execute";
-import { initializeWebview } from "./webview";
 import { setComment, insertComment } from "./comments";
+import { initializeWebview } from "./webview";
 
 import {
     LanguageClient,

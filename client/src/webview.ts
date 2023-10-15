@@ -6,7 +6,7 @@ export function initializeWebview(context: vscode.ExtensionContext) {
         "femView",
         "FEM View",
         vscode.ViewColumn.Two,
-        {}
+        {enableScripts: true}
     );
     // Set HTML Content
     panel.webview.html = getWebviewContent(context, panel)
@@ -15,9 +15,9 @@ export function initializeWebview(context: vscode.ExtensionContext) {
 }
 
 function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.WebviewPanel) {
-    // const threejs = vscode.Uri.file(context.extensionPath+"node_modules/three/build/three.js");
-    // const threejsUri = panel.webview.asWebviewUri(threejs)
-    const femview = vscode.Uri.file(context.extensionPath+"client/src/fem_view.js");
+    const threejs = vscode.Uri.file(context.extensionPath+"/node_modules/three/build/three.js");
+    const threejsUri = panel.webview.asWebviewUri(threejs)
+    const femview = vscode.Uri.file(context.extensionPath+"/client/src/fem_view.js");
     const femviewUri = panel.webview.asWebviewUri(femview)
     return `
     <!DOCTYPE html>
@@ -30,20 +30,9 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
             </style>
         </head>
         <body>
-            ${vscode.window.activeTextEditor.document.fileName}
-            <script type="module" src="${femviewUri}"></script>
+            <script src="${threejsUri}"></script>
+            <script src="${femviewUri}"></script>
         </body>
     </html>
     `
-    // return `<!DOCTYPE html>
-    // <html lang="en">
-    // <head>
-    //     <meta charset="UTF-8">
-    //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    //     <title>Cat Coding</title>
-    // </head>
-    // <body>
-    //     <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
-    // </body>
-    // </html>`
 }
