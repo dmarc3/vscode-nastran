@@ -1,3 +1,13 @@
 {
-  "python.defaultInterpreterPath": "python"
+  "python.defaultInterpreterPath": "python",
+  "cSpell.words": [
+    "lsprotocol",
+    "Nastran",
+    "pygls"
+  ],
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

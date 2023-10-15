@@ -6,7 +6,8 @@ import * as vscode from "vscode";
 import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
 import { executeNastran, setKeywords, showKeywords } from "./execute";
-import { insertComment } from "./insert";
+import { setComment, insertComment } from "./comments";
+
 import {
     LanguageClient,
     LanguageClientOptions,
@@ -57,9 +58,25 @@ export function activate(context: vscode.ExtensionContext): void {
     if (!pythonPath) {
         throw new Error("`python.defaultInterpreterPath` is not set");
     }
-
     client = startLangServer(pythonPath, ["-m", "server.server"], cwd);
-    context.subscriptions.push(client.start());
+    // Execute on file edit
+    vscode.workspace.onDidChangeTextDocument((e: vscode.TextDocumentChangeEvent) => {
+        if (e.document.languageId === "nastran") {
+            // Update sections and send to server
+            includeHierarchyProvider.getSections()
+            client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        }
+    });
+    // Execute on file change
+    vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
+        if (e.document.languageId === "nastran") {
+            if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
+                includeHierarchyProvider.refresh()
+                client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+                client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+            }
+        }
+    });
     // Register Tree View
     const includeHierarchyProvider = new TreeDataProvider();
     vscode.window.registerTreeDataProvider(
@@ -67,8 +84,11 @@ export function activate(context: vscode.ExtensionContext): void {
         includeHierarchyProvider
     );
     // Register Commands
-    vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () =>
+    vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {
         includeHierarchyProvider.refresh()
+        client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+        client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        }
     );
     vscode.commands.registerCommand('find', () => {
         executeFind(includeHierarchyProvider.includes)
@@ -79,17 +99,19 @@ export function activate(context: vscode.ExtensionContext): void {
         }
     );
     vscode.commands.registerCommand('insert_short_comment', () => {
-        insertComment(
-            vscode.window.activeTextEditor,
-            '$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n'
-        )
+        insertComment(context, "short_comment")
         }
     );
     vscode.commands.registerCommand('insert_long_comment', () => {
-        insertComment(
-            vscode.window.activeTextEditor,
-            '$---1---$-------2-------$-------3-------$-------4-------$-------5-------$---6---$\n'
-        )
+        insertComment(context, "long_comment")
+        }
+    );
+    vscode.commands.registerCommand('set_short_comment', () => {
+        setComment(context, "Enter short field delineation comment:", "short_comment")
+        }
+    );
+    vscode.commands.registerCommand('set_long_comment', () => {
+        setComment(context, "Enter long field delineation comment:", "long_comment")
         }
     );
     vscode.commands.registerCommand('set_keywords', () => {
@@ -100,6 +122,7 @@ export function activate(context: vscode.ExtensionContext): void {
         showKeywords(context)
         }
     );
+    context.subscriptions.push(client.start());
 }
 
 export function deactivate(): Thenable<void> {
