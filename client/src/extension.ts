@@ -87,7 +87,7 @@ export function activate(context: vscode.ExtensionContext): void {
     // Register Commands
     context.subscriptions.push(
     vscode.commands.registerCommand("femView.start", () => {
-        const panel = initializeWebview(context);
+        const panel = initializeWebview(context, includeHierarchyProvider.includes);
     })
     );
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {

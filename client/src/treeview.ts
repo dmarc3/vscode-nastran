@@ -11,9 +11,6 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
 
     getTreeItem(element: IncludeFile): vscode.TreeItem {
         if (vscode.window.activeTextEditor.document.languageId === "nastran") {
-            // if (!this.includes.includes(element.origin)) {
-            //     this.includes.push(element.origin);
-            // }
             return element;
         }
     }
