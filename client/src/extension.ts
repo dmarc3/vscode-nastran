@@ -72,9 +72,6 @@ export function activate(context: vscode.ExtensionContext): void {
         if (e.document.languageId === "nastran") {
             if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
                 vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
-                // includeHierarchyProvider.refresh()
-                // client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
-                // client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
             }
         }
     });

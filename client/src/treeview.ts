@@ -77,7 +77,6 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     }
 
     public getSections = () => {
-        // this.sections = {"ID": null, "CEND": null, "BEGIN_BULK": null}
         this.sections = {"CEND": null, "BEGIN_BULK": null}
         if (this.includes.length > 0) {
             var include_no = 0
@@ -88,11 +87,6 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                     var lines = fs.readFileSync(this.includes[include_no]).toString().split("\n");
                 }
                 for (const [line_no, line] of lines.entries()) {
-                    // if (this.sections["ID"] === null) {
-                    //     if (line.toUpperCase().startsWith("ID")) {
-                    //         this.sections["ID"] = [include_no, line_no]
-                    //     }
-                    // }
                     if (this.sections["CEND"] === null) {
                         if (line.toUpperCase().startsWith("CEND")) {
                             this.sections["CEND"] = [include_no, line_no]
