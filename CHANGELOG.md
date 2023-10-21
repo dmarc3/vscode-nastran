@@ -65,3 +65,11 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 - Updated section (BULK, CASE, etc.) identification logic. Fixes [#44](https://github.com/dmarc3/vscode-nastran/issues/44) and [#45](https://github.com/dmarc3/vscode-nastran/issues/45) and accounts for live edits to file
 - Updated include hierarchy logic to auto update if file is not within current includes list
 - Added command to set user defined short field and long field delineation comments
+
+## [1.0.8] - 2023-10-20
+
+### Added
+
+- Updated section (BULK, CASE, etc.) identification logic. Fixes [#50](https://github.com/dmarc3/vscode-nastran/issues/50).
+- Updated include hierarchy logic to update once client is fully started
+- Updated semantic tokening logic to color adjacent fields when using free field format. Addresses [#51](https://github.com/dmarc3/vscode-nastran/issues/51).
