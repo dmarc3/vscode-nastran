@@ -71,9 +71,10 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
         if (e.document.languageId === "nastran") {
             if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
-                includeHierarchyProvider.refresh()
-                client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
-                client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+                vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+                // includeHierarchyProvider.refresh()
+                // client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+                // client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
             }
         }
     });
@@ -122,6 +123,9 @@ export function activate(context: vscode.ExtensionContext): void {
         showKeywords(context)
         }
     );
+    client.onReady().then(() => {
+        vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+    });
     context.subscriptions.push(client.start());
 }
 

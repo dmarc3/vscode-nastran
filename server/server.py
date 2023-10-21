@@ -36,7 +36,7 @@ class NastranLanguageServer(LanguageServer):
         self.sections = None
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v1.0.7")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.8")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -58,7 +58,7 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
             break
     line = doc.lines[params.position.line]
     # Find what section of Nastran file cursor is at
-    section = get_section(include_no, params.position.line, server.sections)
+    section = get_section(include_no, params.position.line, server.sections, line)
     # Execute regex search
     if section == 'BULK' and 'PARAM' in line.lstrip().upper():
         # Process PARAM
@@ -117,7 +117,7 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     for line_no in range(params.range.start.line, params.range.end.line):
         line = doc.lines[line_no]
         # Determine the section of current line
-        section = get_section(include_no, line_no, server.sections)
+        section = get_section(include_no, line_no, server.sections, line)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
@@ -150,6 +150,21 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
                 ]
                 last_line = line_no
                 last_start = start
+        elif section == "BULK" and "," in line:
+            # Split the line by fields
+            line_by_fields = line.split(",")
+            for i, field in enumerate(line_by_fields[2::2]):
+                start = line.index(field)
+                end = start + len(field)
+                data += [
+                    (line_no - last_line),
+                    (start - last_start),
+                    (end - start),
+                    0,
+                    0
+                ]
+                last_line = line_no
+                last_start = start
         # Process file:// detection
         if 'file://' in line:
             start = line.index('file://')
@@ -164,26 +179,6 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
             ]
             last_line = line_no
             last_start = start
-                
-        # # Process DMAP section
-        # if section == "DMAP":
-        #     # Skip comments and ALTER lines
-        #     if line.lstrip()[0] != "$":
-        #         if "ALTER" not in line:
-        #             # Find end of DMAP card
-        #             start = len(line) - len(line.lstrip())
-        #             # Find end of DMAP card
-        #             end = min([line.lstrip().index(char) for char in ["\n", " ", "=", "("] if char in line.lstrip()])+start
-        #             # Save SemanticToken data
-        #             data += [
-        #                 (line_no - last_line),
-        #                 (start - last_start),
-        #                 (end - start),
-        #                 2,
-        #                 0
-        #             ]
-        #             last_line = line_no
-        #             last_start = start
 
     return SemanticTokens(data=data)
 
