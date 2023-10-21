@@ -1,9 +1,7 @@
 from typing import Callable
 import os
+import re
 import json
-
-
-from utils.read_docs import SECTION_KEY
 
 # Read regex strings from syntax
 REGEX_KEY = {}
@@ -12,13 +10,14 @@ with open(os.path.join('syntaxes', 'nastran.json')) as f:
 for key in d['repository'].keys():
     REGEX_KEY[key.upper()] = d['repository'][key]['match']
 
-def get_section(include_no: int, line_no: int, sections) -> str:
+def get_section(include_no: int, line_no: int, sections, line: str) -> str:
     if sections:
-        if sections.ID and sections.CEND and sections.BEGIN_BULK:
-            if include_no <= sections.ID[0] and line_no <= sections.ID[1]:
-                return 'FMS'
-            elif include_no <= sections.CEND[0] and line_no <= sections.CEND[1]:
-                return 'EXEC'
+        if sections.CEND and sections.BEGIN_BULK:
+            if include_no <= sections.CEND[0] and line_no <= sections.CEND[1]:
+                if exec_regex(re.match, REGEX_KEY['EXEC'], line):
+                    return 'EXEC'
+                else:
+                    return 'FMS'
             elif include_no <= sections.BEGIN_BULK[0] and line_no <= sections.BEGIN_BULK[1]:
                 return 'CASE'
             elif include_no >= sections.BEGIN_BULK[0] and line_no > sections.BEGIN_BULK[1]:

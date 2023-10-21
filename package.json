@@ -3,7 +3,7 @@
   "displayName": "vscode-nastran",
   "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "mbakke",
   "repository": {
     "type": "git",
@@ -86,9 +86,17 @@
         "title": "Nastran: Set short field delineation comment."
       },
       {
+        "command": "set_short_comment",
+        "title": "Nastran: Set short field delineation comment."
+      },
+      {
         "command": "insert_long_comment",
         "title": "Insert long field delineation comment.",
         "category": "Nastran"
+      },
+      {
+        "command": "set_long_comment",
+        "title": "Nastran: Set long field delineation comment."
       },
       {
         "command": "set_long_comment",
