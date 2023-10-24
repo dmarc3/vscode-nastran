@@ -70,8 +70,10 @@ export function activate(context: vscode.ExtensionContext): void {
     // Execute on file change
     vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
         if (e.document.languageId === "nastran") {
-            if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
-                vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+            if (!path.basename(e.document.fileName).startsWith("find_")) {
+                if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
+                    vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+                }
             }
         }
     });
