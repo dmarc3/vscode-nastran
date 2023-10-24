@@ -94,6 +94,7 @@ function init(model) {
     let size = bbox.getSize(new THREE.Vector3());
     let center = bbox.getCenter(new THREE.Vector3());
     const max_dim = Math.max(size.x, size.y, size.z)
+    const min_dim = Math.min(size.x, size.y, size.z)
 
     // Helpers
     const axesHelper = new THREE.AxesHelper( max_dim );
@@ -120,9 +121,11 @@ function init(model) {
 	// Controls
 	controls = new TrackballControls( camera, renderer.domElement );
 
-	controls.rotateSpeed = max_dim*0.1;
+	// controls.rotateSpeed = max_dim*0.1;
+    controls.rotateSpeed = 1;
 	controls.zoomSpeed = 1;
-	controls.panSpeed = max_dim*0.1;
+	// controls.panSpeed = max_dim*0.1;
+    controls.panSpeed = 1;
 
 	controls.keys = [ 'KeyA', 'KeyS', 'KeyD' ];
 
