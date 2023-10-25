@@ -4,9 +4,11 @@ import * as vscode from "vscode";
 
 export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     public includes: string[];
+    public lines: object[];
     public sections: object;
     constructor() {
         this.includes = [];
+        this.lines = [];
     }
 
     getTreeItem(element: IncludeFile): vscode.TreeItem {
@@ -28,49 +30,68 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
 
     private hasIncludes(fileName: string): boolean {
         const lines = fs.readFileSync(fileName).toString().split("\n");
-        for (var line of lines) {
-            if (line.toLowerCase().includes('include')) {
-                return true
+        var state = false
+        for (const line of lines) {
+            this.lines.push({"include": fileName, "line": line})
+            if (line.toLowerCase().startsWith('incl')) {
+                state = !state
             }
         }
-        return false
+        return state
     }
 
     private getIncludes(element: string): IncludeFile[] {
         const lines = fs.readFileSync(element).toString().split("\n");
-        this.includes = [element]
+        this.includes.push(element)
+        this.lines = []
         var includes = []
+        var skip = false
         for (var [index, line] of lines.entries()) {
-            if (line.toLowerCase().includes('include')) {
-                if (line.toLowerCase().startsWith('include')) {
+            if (!skip) {
+                if (line.toLowerCase().startsWith('incl')) {
                     if (line.includes("'")) {
                         var line_split = line.split("'")
                         if (line_split.length < 3) {
-                            line_split = (line + lines[index+1]).split("'")
+                            var file = (line + lines[index+1]).split("'")[1]
+                        } else {
+                            var file = line_split[1]
                         }
-                        line = line_split[1]
                     } 
                     if (line.includes('"')) {
                         var line_split = line.split('"')
                         if (line_split.length < 3) {
-                            line_split = (line + lines[index+1]).split('"')
+                            var file = (line + lines[index+1]).split('"')[1]
+                        } else {
+                            var file = line_split[1]
                         }
-                        line = line_split[1]
                     }
-                    const fileName = path.join(path.dirname(element), line)
+                    const fileName = path.join(path.dirname(element), file)
                     if (fs.existsSync(fileName)) {
+                        this.lines.push({"include": element, "line": line});
+                        if (line_split.length < 3) {
+                            this.lines.push({"include": element, "line": lines[index+1]})
+                            skip = true;
+                        }
                         if (this.hasIncludes(fileName)) {
-                            includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.Expanded, fileName))
+                            includes.push(new IncludeFile(file, vscode.TreeItemCollapsibleState.Expanded, fileName))
                             this.includes.push(fileName)
                         } else {
-                            includes.push(new IncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                            includes.push(new IncludeFile(file, vscode.TreeItemCollapsibleState.None, fileName))
                             this.includes.push(fileName)
                         }
                     } else {
-                        includes.push(new MissIncludeFile(line, vscode.TreeItemCollapsibleState.None, fileName))
+                        this.lines.push({"include": element, "line": line});
+                        if (line_split.length < 3) {
+                            this.lines.push({"include": element, "line": lines[index+1]})
+                        }
+                        includes.push(new MissIncludeFile(file, vscode.TreeItemCollapsibleState.None, fileName))
                         this.includes.push(fileName)
                     }
+                } else {
+                    this.lines.push({"include": element, "line": line});
                 }
+            } else {
+                skip = false;
             }
         }
         return includes
@@ -79,28 +100,19 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     public getSections = () => {
         this.sections = {"CEND": null, "BEGIN_BULK": null}
         if (this.includes.length > 0) {
-            var include_no = 0
-            while (Object.values(this.sections).some(x => x === null)) {
-                if (this.includes[include_no] === vscode.window.activeTextEditor.document.fileName) {
-                    var lines = vscode.window.activeTextEditor.document.getText().toString().split("\n");
-                } else {
-                    var lines = fs.readFileSync(this.includes[include_no]).toString().split("\n");
-                }
-                for (const [line_no, line] of lines.entries()) {
-                    if (this.sections["CEND"] === null) {
-                        if (line.toUpperCase().startsWith("CEND")) {
-                            this.sections["CEND"] = [include_no, line_no]
-                        }
-                    }
-                    if (this.sections["BEGIN_BULK"] === null) {
-                        if (line.toUpperCase().startsWith("BEGIN BULK")) {
-                            this.sections["BEGIN_BULK"] = [include_no, line_no]
-                        }
-                    }
-                }
-                include_no += 1;
-                if (include_no === this.includes.length) {
+            for (const [index, value] of this.lines.entries()) {
+                if (Object.values(this.sections).every(x => x !== null)) {
                     break
+                }
+                if (this.sections["CEND"] === null) {
+                    if (value["line"].toUpperCase().startsWith("CEND")) {
+                        this.sections["CEND"] = index
+                    }
+                }
+                if (this.sections["BEGIN_BULK"] === null) {
+                    if (value["line"].toUpperCase().startsWith("BEGIN BULK")) {
+                        this.sections["BEGIN_BULK"] = index
+                    }
                 }
             }
         }
@@ -110,6 +122,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     readonly onDidChangeTreeData: vscode.Event<IncludeFile | undefined | null | void> = this._onDidChangeTreeData.event;
   
     refresh(): void {
+      this.includes = [];
       this.getIncludes(vscode.window.activeTextEditor.document.fileName)
       this._onDidChangeTreeData.fire();
       this.getSections();
