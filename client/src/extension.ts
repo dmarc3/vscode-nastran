@@ -88,6 +88,7 @@ export function activate(context: vscode.ExtensionContext): void {
         includeHierarchyProvider.refresh()
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
         client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        client.sendRequest('custom/getLines', includeHierarchyProvider.lines)
         }
     );
     vscode.commands.registerCommand('find', () => {
