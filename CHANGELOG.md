@@ -83,7 +83,7 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 - Updated semantic tokening logic for comment lines which contain commas.
 - Revised section logic to properly handle include files. Resolves [#56](https://github.com/dmarc3/vscode-nastran/issues/56).
 
-## [1.0.10] - 2023-10-TBD
+## [1.0.10] - 2023-10-26
 
 ### Added
 
