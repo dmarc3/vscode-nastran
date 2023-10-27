@@ -82,3 +82,9 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 - Updated README.md to include vscode version requirement. Resolves [#54](https://github.com/dmarc3/vscode-nastran/issues/54).
 - Updated semantic tokening logic for comment lines which contain commas.
 - Revised section logic to properly handle include files. Resolves [#56](https://github.com/dmarc3/vscode-nastran/issues/56).
+
+## [1.0.10] - 2023-10-26
+
+### Added
+
+- Revised include hierarchy logic to fix bug introduced in v1.0.9 where nested include files were not being properly loaded in the include hierarchy. Resolves [#57](https://github.com/dmarc3/vscode-nastran/issues/57).
