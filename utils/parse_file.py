@@ -10,17 +10,21 @@ with open(os.path.join('syntaxes', 'nastran.json')) as f:
 for key in d['repository'].keys():
     REGEX_KEY[key.upper()] = d['repository'][key]['match']
 
-def get_section(include_no: int, line_no: int, sections, line: str) -> str:
-    if sections:
-        if sections.CEND and sections.BEGIN_BULK:
-            if include_no <= sections.CEND[0] and line_no <= sections.CEND[1]:
-                if exec_regex(re.match, REGEX_KEY['EXEC'], line):
+def get_section(server, filename, line_no) -> str:
+    if server.sections:
+        if server.sections.CEND and server.sections.BEGIN_BULK:
+            for ind, content in enumerate(server.lines):
+                if content['include'].endswith(filename):
+                    line_no += ind
+                    break
+            if line_no <= server.sections.CEND:
+                if exec_regex(re.match, REGEX_KEY['EXEC'], server.lines[line_no]['line']):
                     return 'EXEC'
                 else:
                     return 'FMS'
-            elif include_no <= sections.BEGIN_BULK[0] and line_no <= sections.BEGIN_BULK[1]:
+            elif line_no <= server.sections.BEGIN_BULK:
                 return 'CASE'
-            elif include_no >= sections.BEGIN_BULK[0] and line_no > sections.BEGIN_BULK[1]:
+            elif line_no > server.sections.BEGIN_BULK:
                 return 'BULK'
         else:
             return 'BULK'

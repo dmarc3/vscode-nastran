@@ -13,6 +13,7 @@ This [Visual Studio Code](https://code.visualstudio.com/) extension aims to buil
 
 In order to use this extension, the user must have the following installed:
 
+- vscode 1.75.0+
 - Python 3.7+
   - [`pygls`](https://github.com/openlawlibrary/pygls)
 

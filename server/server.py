@@ -27,6 +27,7 @@ class NastranLanguageServer(LanguageServer):
     """Subclass of pygls LanguageServer"""
     CMD_GET_INCLUDES = "custom/getIncludes"
     CMD_GET_SECTIONS = "custom/getSections"
+    CMD_GET_LINES = "custom/getLines"
 
     CONFIGURATION_SECTION = "nastranServer"
 
@@ -36,7 +37,7 @@ class NastranLanguageServer(LanguageServer):
         self.sections = None
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v1.0.8")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.10")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -52,13 +53,12 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
     doc = server.workspace.get_document(params.text_document.uri)
     # Find index of include file
     filename = os.path.basename(params.text_document.uri)
-    include_no = 0
-    for include_no, include in enumerate(server.includes):
+    for include in server.includes:
         if include.endswith(filename):
             break
     line = doc.lines[params.position.line]
     # Find what section of Nastran file cursor is at
-    section = get_section(include_no, params.position.line, server.sections, line)
+    section = get_section(server, include, params.position.line)
     # Execute regex search
     if section == 'BULK' and 'PARAM' in line.lstrip().upper():
         # Process PARAM
@@ -117,7 +117,7 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     for line_no in range(params.range.start.line, params.range.end.line):
         line = doc.lines[line_no]
         # Determine the section of current line
-        section = get_section(include_no, line_no, server.sections, line)
+        section = get_section(server, include, line_no)
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
@@ -150,7 +150,7 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
                 ]
                 last_line = line_no
                 last_start = start
-        elif section == "BULK" and "," in line:
+        elif section == "BULK" and not line.lstrip().startswith('$') and "," in line:
             # Split the line by fields
             line_by_fields = line.split(",")
             for i, field in enumerate(line_by_fields[2::2]):
@@ -201,6 +201,11 @@ def get_includes(includes: list):
 def get_sections(sections):
     # Get sections from client
     server.sections = sections
+
+@server.feature(NastranLanguageServer.CMD_GET_LINES)
+def get_lines(lines):
+    # Get lines from client
+    server.lines = lines[0]
 
 # Start server
 server.start_io()
