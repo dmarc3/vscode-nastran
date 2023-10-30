@@ -1,6 +1,8 @@
 function loadModel(modelContent) {
     var model = {};
-    const elem_1D = ["CROD", "CBAR", "CBEAM", "CBEND", "CBUSH", "CGAP", "CMARKB2", "CSPR", "CTUBE", "CVISC"]
+    const elem_1D_a = ["CROD", "CBAR", "CBEAM", "CBEND", "CBUSH", "CGAP", "CMARKB2", "CSPR", "CTUBE", "CVISC"]
+    const elem_1D_b = ["CDAMP1", "CDAMP2", "CDAMP5", "CELAS1", "CELAS2", "CMASS1", "CMASS2"]
+    const elem_1D_c = ["CONROD"]
     const elem_2D_3e = ["CTRIA", "CACINF3"]
     const elem_2D_4e = ["CQUAD", "CSHEAR", "CACINF4", "CIFQUAD"]
     const elem_3D_4s = ["CTETRA"]
@@ -14,9 +16,15 @@ function loadModel(modelContent) {
             // Process GRIDs
             if (currentLine.toUpperCase().startsWith("GRID")) {
                 model[include] = process_grid(model[include], lines.slice(ind, ind+5))
-            // Process 1D elements
-            } else if (elem_1D.some(elem_1D => currentLine.startsWith(elem_1D))) {
-                model[include] = process_1d(model[include], lines.slice(ind, ind+5))
+            // Process 1D elements (a)
+            } else if (elem_1D_a.some(elem_1D_a => currentLine.startsWith(elem_1D_a))) {
+                model[include] = process_1d_a(model[include], lines.slice(ind, ind+5))
+            // Process 1D elements (b)
+            } else if (elem_1D_b.some(elem_1D_b => currentLine.startsWith(elem_1D_b))) {
+                model[include] = process_1d_b(model[include], lines.slice(ind, ind+5))
+            // Process 1D elements (c)
+            } else if (elem_1D_c.some(elem_1D_c => currentLine.startsWith(elem_1D_c))) {
+                model[include] = process_1d_c(model[include], lines.slice(ind, ind+5))
             // Process 2D elements with 4 edges
             } else if (elem_2D_4e.some(elem_2D_4e => currentLine.startsWith(elem_2D_4e))) {
                 model[include] = process_2D_4e(model[include], lines.slice(ind, ind+5))
@@ -88,7 +96,7 @@ function process_grid(model, lines) {
     return model
 }
 
-function process_1d(model, lines) {
+function process_1d_a(model, lines) {
     // Create 1D key if it doesn't exist
     if (!("1D" in model)) {
         model["1D"] = {}
@@ -116,6 +124,77 @@ function process_1d(model, lines) {
     // Add to object
     model["1D"][eid] = {}
     model["1D"][eid]["PID"] = pid
+    model["1D"][eid]["G1"] = g1
+    model["1D"][eid]["G2"] = g2
+    return model
+}
+
+function process_1d_b(model, lines) {
+    // Create 1D key if it doesn't exist
+    if (!("1D" in model)) {
+        model["1D"] = {}
+    }
+    // Process long field
+    if (~lines[0].indexOf("*")) {
+        // Extend both lines to 72 fields if shorter and split by 16 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
+        lines[1] = lines[1].padEnd(72).slice(8)
+        var [g2, c2] = lines[1].match(/.{1,16}/g)
+        // Convert types
+        eid = parseInt(eid)
+        pid = parseInt(pid)
+        g1 = parseInt(g1)
+        c1 = parseInt(c1)
+        g2 = parseInt(g2)
+        c2 = parseInt(c2)
+    // Process short field
+    } else {
+        // Extend line to 72 fields if shorter and split by 8 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [eid, pid, g1, c1, g2, c2] = lines[0].match(/.{1,8}/g)
+        eid = parseInt(eid)
+        pid = parseInt(pid)
+        g1 = parseInt(g1)
+        c1 = parseInt(c1)
+        g2 = parseInt(g2)
+        c2 = parseInt(c2)
+    }
+    // Add to object
+    model["1D"][eid] = {}
+    model["1D"][eid]["PID"] = pid
+    model["1D"][eid]["G1"] = g1
+    model["1D"][eid]["G2"] = g2
+    return model
+}
+
+function process_1d_c(model, lines) {
+    // Create 1D key if it doesn't exist
+    if (!("1D" in model)) {
+        model["1D"] = {}
+    }
+    // Process long field
+    if (~lines[0].indexOf("*")) {
+        // Extend both lines to 72 fields if shorter and split by 16 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [eid, g1, g2, mid] = lines[0].match(/.{1,16}/g)
+        // Convert types
+        eid = parseInt(eid)
+        g1 = parseInt(g1)
+        g2 = parseInt(g2)
+        mid = parseInt(mid)
+    // Process short field
+    } else {
+        // Extend line to 72 fields if shorter and split by 8 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [eid, g1, g2, mid] = lines[0].match(/.{1,8}/g)
+        eid = parseInt(eid)
+        g1 = parseInt(g1)
+        g2 = parseInt(g2)
+        mid = parseInt(mid)
+    }
+    // Add to object
+    model["1D"][eid] = {}
     model["1D"][eid]["G1"] = g1
     model["1D"][eid]["G2"] = g2
     return model
