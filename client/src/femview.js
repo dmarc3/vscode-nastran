@@ -4,6 +4,11 @@ import { TrackballControls } from 'TrackballControls';
 
 let camera, controls, scene, renderer, group;
 
+var material = new THREE.MeshPhysicalMaterial( { color: 0x00ffcc, flatShading: true } );
+material.side = THREE.DoubleSide;
+const line_material = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 2 } );
+const material_1d = new THREE.LineBasicMaterial( { color: 0x00ffcc, linewidth: 1 } );
+
 var model = loadModel(modelContent)
 
 init(model);
@@ -17,75 +22,105 @@ function init(model) {
 	// Build FEM
     for (var include in model) {
         let g = new THREE.Group();
-        var material = new THREE.MeshPhysicalMaterial( { color: 0x00ffcc, flatShading: true } );
-        material.side = THREE.DoubleSide;
-
         if (Object.keys(model[include]).length !== 0) {
-            //  Add QUAD
-            for (var [eid, quad] of Object.entries(model[include].CQUAD)) {
-                var points = new Float32Array( [
-                    model[include].GRID[quad.G1].X1, model[include].GRID[quad.G1].X2, model[include].GRID[quad.G1].X3,
-                    model[include].GRID[quad.G2].X1, model[include].GRID[quad.G2].X2, model[include].GRID[quad.G2].X3,
-                    model[include].GRID[quad.G3].X1, model[include].GRID[quad.G3].X2, model[include].GRID[quad.G3].X3,
-                    model[include].GRID[quad.G4].X1, model[include].GRID[quad.G4].X2, model[include].GRID[quad.G4].X3
-                ]);
-                var indices = [
-                    0, 1, 2,
-                    2, 3, 0,
-                ];
-                var geometry = new THREE.BufferGeometry();
-                geometry.setIndex( indices );
-                geometry.setAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
-                var mesh = new THREE.Mesh( geometry, material );
-                g.add( mesh );
-                                
-                // Add edges
-                var line_points = [];
-                line_points.push( new THREE.Vector3( model[include].GRID[quad.G1].X1, model[include].GRID[quad.G1].X2, model[include].GRID[quad.G1].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[quad.G2].X1, model[include].GRID[quad.G2].X2, model[include].GRID[quad.G2].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[quad.G3].X1, model[include].GRID[quad.G3].X2, model[include].GRID[quad.G3].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[quad.G4].X1, model[include].GRID[quad.G4].X2, model[include].GRID[quad.G4].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[quad.G1].X1, model[include].GRID[quad.G1].X2, model[include].GRID[quad.G1].X3 ) );
-                const line_material = new THREE.LineBasicMaterial( { color: 0x000000 } );
-                const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
-                const line = new THREE.Line( line_geometry, line_material );
-                g.add( line );
-
-                // Add to overall group
-                group.add( g );
+            //  Create 1D elements
+            if ('1D' in model[include]) {
+                for (var [_, rod] of Object.entries(model[include]['1D'])) {
+                    var grids = [rod.G1, rod.G2]
+                    g = line(g, grids, model[include])
+                    // Add to overall group
+                    group.add( g );
+                }
             }
-            // Add CTRIA
-            for (var [eid, tri] of Object.entries(model[include].CTRIA)) {
-                var points = new Float32Array( [
-                    model[include].GRID[tri.G1].X1, model[include].GRID[tri.G1].X2, model[include].GRID[tri.G1].X3,
-                    model[include].GRID[tri.G2].X1, model[include].GRID[tri.G2].X2, model[include].GRID[tri.G2].X3,
-                    model[include].GRID[tri.G3].X1, model[include].GRID[tri.G3].X2, model[include].GRID[tri.G3].X3
-                ]);
-                var indices = [
-                    0, 1, 2
-                ];
-                var geometry = new THREE.BufferGeometry();
-                geometry.setIndex( indices );
-                geometry.setAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
-                var mesh = new THREE.Mesh( geometry, material );
-                g.add( mesh );
-                                
-                // Add edges
-                var line_points = [];
-                line_points.push( new THREE.Vector3( model[include].GRID[tri.G1].X1, model[include].GRID[tri.G1].X2, model[include].GRID[tri.G1].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[tri.G2].X1, model[include].GRID[tri.G2].X2, model[include].GRID[tri.G2].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[tri.G3].X1, model[include].GRID[tri.G3].X2, model[include].GRID[tri.G3].X3 ) );
-                line_points.push( new THREE.Vector3( model[include].GRID[tri.G1].X1, model[include].GRID[tri.G1].X2, model[include].GRID[tri.G1].X3 ) );
-                const line_material = new THREE.LineBasicMaterial( { color: 0x000000 } );
-                const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
-                const line = new THREE.Line( line_geometry, line_material );
-                g.add( line );
-
-                // Add to overall group
-                group.add( g );
+            // Create 2D elements with 3 edges
+            if ('2D_3e' in model[include]) {
+                for (var [_, tri] of Object.entries(model[include]['2D_3e'])) {
+                    var grids = [tri.G1, tri.G2, tri.G3]
+                    g = triangle(g, grids, model[include], true)
+                    // Add to overall group
+                    group.add( g );
+                }
+            }
+            // Create 2D elements with 4 edges
+            if ('2D_4e' in model[include]) {
+                for (var [_, quad] of Object.entries(model[include]['2D_4e'])) {
+                    var grids = [quad.G1, quad.G2, quad.G3, quad.G4]
+                    g = square(g, grids, model[include])
+                    // Add to overall group
+                    group.add( g );
+                }
+            }
+            // Create 3D elements with 4 sides
+            if ('3D_4s' in model[include]) {
+                for (var [_, tet] of Object.entries(model[include]['3D_4s'])) {
+                    var grids = [tet.G1, tet.G2, tet.G3]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [tet.G1, tet.G2, tet.G4]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [tet.G2, tet.G3, tet.G4]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [tet.G1, tet.G3, tet.G4]
+                    g = triangle(g, grids, model[include], true)
+                    // Add to overall group
+                    group.add( g );
+                }
+            }
+            // Create 3D elements with 5 sides
+            if ('3D_5s' in model[include]) {
+                for (var [_, pyr] of Object.entries(model[include]['3D_5s'])) {
+                    var grids = [pyr.G1, pyr.G2, pyr.G3, pyr.G4]
+                    g = square(g, grids, model[include], true)
+                    var grids = [pyr.G1, pyr.G2, pyr.G5]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [pyr.G2, pyr.G3, pyr.G5]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [pyr.G3, pyr.G4, pyr.G5]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [pyr.G4, pyr.G1, pyr.G5]
+                    g = triangle(g, grids, model[include], true)
+                    // Add to overall group
+                    group.add( g );
+                }
+            }
+            // Create 3D elements with 6 sides
+            if ('3D_6s' in model[include]) {
+                for (var [_, hex] of Object.entries(model[include]['3D_6s'])) {
+                    var grids = [hex.G1, hex.G2, hex.G3, hex.G4]
+                    g = square(g, grids, model[include], true)
+                    var grids = [hex.G5, hex.G6, hex.G7, hex.G8]
+                    g = square(g, grids, model[include], true)
+                    var grids = [hex.G1, hex.G2, hex.G6, hex.G5]
+                    g = square(g, grids, model[include], true)
+                    var grids = [hex.G2, hex.G6, hex.G7, hex.G3]
+                    g = square(g, grids, model[include], true)
+                    var grids = [hex.G3, hex.G7, hex.G8, hex.G4]
+                    g = square(g, grids, model[include], true)
+                    var grids = [hex.G1, hex.G5, hex.G8, hex.G4]
+                    g = square(g, grids, model[include], true)
+                    // Add to overall group
+                    group.add( g );
+                }
+            }
+            // Create 3D elements with 7 sides
+            if ('3D_7s' in model[include]) {
+                for (var [_, pen] of Object.entries(model[include]['3D_7s'])) {
+                    var grids = [pen.G1, pen.G2, pen.G3]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [pen.G4, pen.G5, pen.G6]
+                    g = triangle(g, grids, model[include], true)
+                    var grids = [pen.G1, pen.G2, pen.G5, pen.G4]
+                    g = square(g, grids, model[include], true)
+                    var grids = [pen.G1, pen.G3, pen.G6, pen.G4]
+                    g = square(g, grids, model[include], true)
+                    var grids = [pen.G3, pen.G2, pen.G5, pen.G6]
+                    g = square(g, grids, model[include], true)
+                    // Add to overall group
+                    group.add( g );
+                }
             }
         }
     }
+    new THREE.Box3().setFromObject( group ).getCenter( group.position ).multiplyScalar( - 1 );
     scene.add( group );
 
     // Bounding Box
@@ -97,10 +132,12 @@ function init(model) {
     const min_dim = Math.min(size.x, size.y, size.z)
 
     // Helpers
-    const axesHelper = new THREE.AxesHelper( max_dim );
-    scene.add( axesHelper );
+    // const axesHelper = new THREE.AxesHelper( max_dim );
+    // scene.add( axesHelper );
     const box = new THREE.Box3();
-    box.setFromCenterAndSize( center, size );
+    // box.setFromCenterAndSize( center, size );
+    const scale = 2.0;
+    box.setFromCenterAndSize( center, new THREE.Vector3(size.x * scale, size.y * scale, size.z * scale) );
     const helper = new THREE.Box3Helper( box, 0xffff00 );
     scene.add( helper );
      
@@ -121,166 +158,20 @@ function init(model) {
 	// Controls
 	controls = new TrackballControls( camera, renderer.domElement );
 
-	// controls.rotateSpeed = max_dim*0.1;
-    controls.rotateSpeed = 1;
-	controls.zoomSpeed = 1;
-	// controls.panSpeed = max_dim*0.1;
+	// // controls.rotateSpeed = max_dim*0.1;
+    // controls.rotateSpeed = 1;
+	// controls.zoomSpeed = 1;
     controls.panSpeed = 1;
 
 	controls.keys = [ 'KeyA', 'KeyS', 'KeyD' ];
 
 	// lights
-	const dirLight1 = new THREE.DirectionalLight( 0xffffff, 3 );
-	dirLight1.position.set( 1, 1, 1 );
-	scene.add( dirLight1 );
-
-	const dirLight2 = new THREE.DirectionalLight( 0xffffff, 3 );
-	dirLight2.position.set( -1, -1, -1 );
-	scene.add( dirLight2 );
-
-    const dirLight3 = new THREE.DirectionalLight( 0xffffff, 3 );
-	dirLight3.position.set( -1, 0, -1 );
-	scene.add( dirLight3 );
-
-    const dirLight4 = new THREE.DirectionalLight( 0xffffff, 3 );
-	dirLight4.position.set( 1, 0, 1 );
-	scene.add( dirLight4 );
-
-	const ambientLight = new THREE.AmbientLight( 0x555555 );
+	const ambientLight = new THREE.AmbientLight( 0xffffff );
 	scene.add( ambientLight );
 
 	//
 	// window.addEventListener( 'resize', onWindowResize );
 
-}
-
-function loadModel(modelContent) {
-    var model = {};
-    for (var include in modelContent) {
-        var lines = modelContent[include]
-        model[include] = {}
-        for (const [ind, currentLine] of lines.entries()) {
-            if (currentLine.toUpperCase().startsWith("GRID")) {
-                model[include] = process_grid(model[include], lines.slice(ind, ind+2))
-            } else if (currentLine.toUpperCase().startsWith("CQUAD")) {
-                model[include] = process_quad(model[include], lines.slice(ind, ind+2))
-            } else if (currentLine.toUpperCase().startsWith("CTRIA")) {
-                model[include] = process_tri(model[include], lines.slice(ind, ind+2))
-            }
-        }
-    }
-    return model
-}
-
-function process_grid(model, lines) {
-    if (!("GRID" in model)) {
-        model["GRID"] = {}
-    }
-    if (~lines[0].indexOf("*")) {
-        lines[0] = lines[0].padEnd(72).slice(8)
-        var [id, cp, x1, x2] = lines[0].match(/.{1,16}/g)
-        lines[1] = lines[1].padEnd(72).slice(8)
-        var [x3, cd, ps, seid] = lines[1].match(/.{1,16}/g)
-        id = parseInt(id)
-        cp = parseInt(cp)
-        x1 = parseFloat(x1)
-        x2 = parseFloat(x2)
-        x3 = parseFloat(x3)
-        cd = parseInt(cd)
-        ps = parseInt(ps)
-        seid = parseInt(seid)
-    } else {
-        lines[0] = lines[0].padEnd(72)
-        var [_, id, cp, x1, x2, x3, cd, ps, seid] = lines[0].match(/.{1,8}/g)
-        id = parseInt(id)
-        cp = parseInt(cp)
-        x1 = parseFloat(x1)
-        x2 = parseFloat(x2)
-        x3 = parseFloat(x3)
-        cd = parseInt(cd)
-        ps = parseInt(ps)
-        seid = parseInt(seid)
-    }
-    model["GRID"][id] = {}
-    model["GRID"][id]["CP"] = cp
-    model["GRID"][id]["X1"] = x1
-    model["GRID"][id]["X2"] = x2
-    model["GRID"][id]["X3"] = x3
-    model["GRID"][id]["CD"] = cd
-    model["GRID"][id]["PS"] = ps
-    model["GRID"][id]["SEID"] = seid
-    return model
-}
-
-function process_quad(model, lines) {
-    if (!("CQUAD" in model)) {
-        model["CQUAD"] = {}
-    }
-    if (~lines[0].indexOf("*")) {
-        lines[0] = lines[0].padEnd(72).slice(8)
-        var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
-        lines[1] = lines[1].padEnd(72).slice(8)
-        var [g3, g4, mcid, zoffs] = lines[1].match(/.{1,16}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
-    } else {
-        lines[0] = lines[0].padEnd(72)
-        var [_, eid, pid, g1, g2, g3, g4, mcid, zoffs] = lines[0].match(/.{1,8}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
-    }
-    model["CQUAD"][eid] = {}
-    model["CQUAD"][eid]["G1"] = g1
-    model["CQUAD"][eid]["G2"] = g2
-    model["CQUAD"][eid]["G3"] = g3
-    model["CQUAD"][eid]["G4"] = g4
-    return model
-}
-
-function process_tri(model, lines) {
-    if (!("CTRIA" in model)) {
-        model["CTRIA"] = {}
-    }
-    if (~lines[0].indexOf("*")) {
-        lines[0] = lines[0].padEnd(72).slice(8)
-        var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
-        lines[1] = lines[1].padEnd(72).slice(8)
-        var [g3, mcid, zoffs, _] = lines[1].match(/.{1,16}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
-    } else {
-        lines[0] = lines[0].padEnd(72)
-        var [_, eid, pid, g1, g2, g3, mcid, zoffs, _] = lines[0].match(/.{1,8}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
-    }
-    model["CTRIA"][eid] = {}
-    model["CTRIA"][eid]["G1"] = g1
-    model["CTRIA"][eid]["G2"] = g2
-    model["CTRIA"][eid]["G3"] = g3
-    return model
 }
 
 function onWindowResize() {
@@ -303,4 +194,63 @@ function animate() {
 	requestAnimationFrame( animate );
 	controls.update();
 	renderer.render( scene, camera );
+}
+
+function triangle(group, grids, model, do_wireframe) {
+    var points = []
+    grids.forEach((x, i) => {
+        points.push(model.GRID[x].X1)
+        points.push(model.GRID[x].X2)
+        points.push(model.GRID[x].X3)
+    })
+    points = new Float32Array( points )
+    
+    var indices = [
+        0, 1, 2
+    ];
+    var geometry = new THREE.BufferGeometry();
+    geometry.setIndex( indices );
+    geometry.setAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
+    var mesh = new THREE.Mesh( geometry, material );
+    group.add( mesh );
+                    
+    // Add edges
+    if (do_wireframe) {
+        var line_points = [];
+        line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
+        line_points.push( new THREE.Vector3( model.GRID[grids[1]].X1, model.GRID[grids[1]].X2, model.GRID[grids[1]].X3 ) );
+        line_points.push( new THREE.Vector3( model.GRID[grids[2]].X1, model.GRID[grids[2]].X2, model.GRID[grids[2]].X3 ) );
+        line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
+        const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
+        const line = new THREE.Line( line_geometry, line_material );
+        group.add( line );
+    }
+    return group
+}
+
+function square(group, grids, model) {
+    group = triangle(group, [grids[0], grids[1], grids[2]], model, false);
+    group = triangle(group, [grids[0], grids[2], grids[3]], model, false);
+    //  Add Wireframe
+    var line_points = [];
+    line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
+    line_points.push( new THREE.Vector3( model.GRID[grids[1]].X1, model.GRID[grids[1]].X2, model.GRID[grids[1]].X3 ) );
+    line_points.push( new THREE.Vector3( model.GRID[grids[2]].X1, model.GRID[grids[2]].X2, model.GRID[grids[2]].X3 ) );
+    line_points.push( new THREE.Vector3( model.GRID[grids[3]].X1, model.GRID[grids[3]].X2, model.GRID[grids[3]].X3 ) );
+    line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
+    const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
+    const line = new THREE.Line( line_geometry, line_material );
+    group.add( line );
+
+    return group
+}
+
+function line(group, grids, model) {
+    var line_points = [];
+    line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
+    line_points.push( new THREE.Vector3( model.GRID[grids[1]].X1, model.GRID[grids[1]].X2, model.GRID[grids[1]].X3 ) );
+    const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
+    const line = new THREE.Line( line_geometry, material_1d );
+    group.add( line );
+    return group
 }

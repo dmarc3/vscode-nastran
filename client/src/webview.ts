@@ -31,9 +31,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const trackballUri = panel.webview.asWebviewUri(trackball)
     const threejs = vscode.Uri.file(context.extensionPath+"/node_modules/three/build/three.module.js");
     const threejsUri = panel.webview.asWebviewUri(threejs)
-    // const femview = vscode.Uri.file(context.extensionPath+"/client/src/fem_view.js");
-    // const femviewUri = panel.webview.asWebviewUri(femview)
-    const javascript = fs.readFileSync(context.extensionPath+"/client/src/femview.js").toString()
+    const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
+    const femview = fs.readFileSync(context.extensionPath+"/client/src/femview.js").toString()
     return `
     <!DOCTYPE html>
     <html>
@@ -57,7 +56,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 var modelContent=${JSON.stringify(content)}
             </script>
             <script type="module">
-                ${javascript}
+                ${femload}
+                ${femview}
             </script>
         </body>
     </html>
