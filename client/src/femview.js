@@ -4,10 +4,8 @@ import { TrackballControls } from 'TrackballControls';
 
 let camera, controls, scene, renderer, group;
 
-var material = new THREE.MeshPhysicalMaterial( { color: 0x00ffcc, flatShading: true } );
-material.side = THREE.DoubleSide;
-const line_material = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 2 } );
-const material_1d = new THREE.LineBasicMaterial( { color: 0x00ffcc, linewidth: 1 } );
+let line_material, material_1d
+line_material = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 2 } );
 
 var model = loadModel(modelContent)
 
@@ -20,14 +18,20 @@ function init(model) {
     group = new THREE.Group()
 	
 	// Build FEM
+    var counter = 0;
     for (var include in model) {
+        const color = Math.random() * 0xffffff;
+        const material = new THREE.MeshPhysicalMaterial( { color: color, flatShading: true } );
+        // material.color = colors[counter]
+        material.side = THREE.DoubleSide;
+        material_1d = new THREE.LineBasicMaterial( { color: color, linewidth: 1 } );
         let g = new THREE.Group();
         if (Object.keys(model[include]).length !== 0) {
             //  Create 1D elements
             if ('1D' in model[include]) {
                 for (var [_, rod] of Object.entries(model[include]['1D'])) {
                     var grids = [rod.G1, rod.G2]
-                    g = line(g, grids, model[include])
+                    g = line(g, grids, model[include], material_1d)
                     // Add to overall group
                     group.add( g );
                 }
@@ -36,7 +40,7 @@ function init(model) {
             if ('2D_3e' in model[include]) {
                 for (var [_, tri] of Object.entries(model[include]['2D_3e'])) {
                     var grids = [tri.G1, tri.G2, tri.G3]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     // Add to overall group
                     group.add( g );
                 }
@@ -45,7 +49,7 @@ function init(model) {
             if ('2D_4e' in model[include]) {
                 for (var [_, quad] of Object.entries(model[include]['2D_4e'])) {
                     var grids = [quad.G1, quad.G2, quad.G3, quad.G4]
-                    g = square(g, grids, model[include])
+                    g = square(g, grids, model[include], material)
                     // Add to overall group
                     group.add( g );
                 }
@@ -54,13 +58,13 @@ function init(model) {
             if ('3D_4s' in model[include]) {
                 for (var [_, tet] of Object.entries(model[include]['3D_4s'])) {
                     var grids = [tet.G1, tet.G2, tet.G3]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [tet.G1, tet.G2, tet.G4]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [tet.G2, tet.G3, tet.G4]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [tet.G1, tet.G3, tet.G4]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     // Add to overall group
                     group.add( g );
                 }
@@ -69,15 +73,15 @@ function init(model) {
             if ('3D_5s' in model[include]) {
                 for (var [_, pyr] of Object.entries(model[include]['3D_5s'])) {
                     var grids = [pyr.G1, pyr.G2, pyr.G3, pyr.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [pyr.G1, pyr.G2, pyr.G5]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [pyr.G2, pyr.G3, pyr.G5]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [pyr.G3, pyr.G4, pyr.G5]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [pyr.G4, pyr.G1, pyr.G5]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     // Add to overall group
                     group.add( g );
                 }
@@ -86,17 +90,17 @@ function init(model) {
             if ('3D_6s' in model[include]) {
                 for (var [_, hex] of Object.entries(model[include]['3D_6s'])) {
                     var grids = [hex.G1, hex.G2, hex.G3, hex.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [hex.G5, hex.G6, hex.G7, hex.G8]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [hex.G1, hex.G2, hex.G6, hex.G5]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [hex.G2, hex.G6, hex.G7, hex.G3]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [hex.G3, hex.G7, hex.G8, hex.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [hex.G1, hex.G5, hex.G8, hex.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     // Add to overall group
                     group.add( g );
                 }
@@ -105,20 +109,21 @@ function init(model) {
             if ('3D_7s' in model[include]) {
                 for (var [_, pen] of Object.entries(model[include]['3D_7s'])) {
                     var grids = [pen.G1, pen.G2, pen.G3]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [pen.G4, pen.G5, pen.G6]
-                    g = triangle(g, grids, model[include], true)
+                    g = triangle(g, grids, model[include], material, true)
                     var grids = [pen.G1, pen.G2, pen.G5, pen.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [pen.G1, pen.G3, pen.G6, pen.G4]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     var grids = [pen.G3, pen.G2, pen.G5, pen.G6]
-                    g = square(g, grids, model[include], true)
+                    g = square(g, grids, model[include], material, true)
                     // Add to overall group
                     group.add( g );
                 }
             }
         }
+        counter += 1;
     }
     new THREE.Box3().setFromObject( group ).getCenter( group.position ).multiplyScalar( - 1 );
     scene.add( group );
@@ -196,7 +201,7 @@ function animate() {
 	renderer.render( scene, camera );
 }
 
-function triangle(group, grids, model, do_wireframe) {
+function triangle(group, grids, model, material, do_wireframe) {
     var points = []
     grids.forEach((x, i) => {
         points.push(model.GRID[x].X1)
@@ -228,9 +233,9 @@ function triangle(group, grids, model, do_wireframe) {
     return group
 }
 
-function square(group, grids, model) {
-    group = triangle(group, [grids[0], grids[1], grids[2]], model, false);
-    group = triangle(group, [grids[0], grids[2], grids[3]], model, false);
+function square(group, grids, model, material) {
+    group = triangle(group, [grids[0], grids[1], grids[2]], model, material, false);
+    group = triangle(group, [grids[0], grids[2], grids[3]], model, material, false);
     //  Add Wireframe
     var line_points = [];
     line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
@@ -245,12 +250,12 @@ function square(group, grids, model) {
     return group
 }
 
-function line(group, grids, model) {
+function line(group, grids, model, material) {
     var line_points = [];
     line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
     line_points.push( new THREE.Vector3( model.GRID[grids[1]].X1, model.GRID[grids[1]].X2, model.GRID[grids[1]].X3 ) );
     const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
-    const line = new THREE.Line( line_geometry, material_1d );
+    const line = new THREE.Line( line_geometry, material );
     group.add( line );
     return group
 }
