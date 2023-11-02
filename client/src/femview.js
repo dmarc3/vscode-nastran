@@ -5,7 +5,7 @@ import * as EssentialsPlugin from '@tweakpane';
 // import path from 'path'
 
 
-let camera, controls, scene, renderer, group;
+let camera, controls, scene, renderer, group, state;
 
 // // FPS tracker
 // const fps = new Pane({container: document.getElementById('fps')})
@@ -43,6 +43,7 @@ function init(model) {
 
         const color = Math.random() * 0xffffff;
         const material = new THREE.MeshPhysicalMaterial( { color: color, flatShading: true } );
+        material.transparent = true;
         // material.color = colors[counter]
         material.side = THREE.DoubleSide;
         material_1d = new THREE.LineBasicMaterial( { color: color, linewidth: 1 } );
@@ -201,8 +202,35 @@ function init(model) {
 
     // Add Global UI
     let button = tab.pages[1].addButton( {title: 'Reset All'});
+    button.on('click', () => {
+        // scene = new THREE.ObjectLoader().parse( JSON.parse( state ));
+        controls.reset();
+    });
     tab.pages[1].addBlade({view: 'separator'});
-    let color = tab.pages[1].addBinding({color: '#ffffff'}, 'color');
+    // Global Color Change
+    let color1 = tab.pages[1].addBinding({color: '#ffffff', label: 'face'}, 'color');
+    let color2 = tab.pages[1].addBinding({color: '#000000', label: 'wireframe'}, 'color');
+    function setColor( obj, color, name ){
+        obj.children.forEach((child)=>{
+            setColor(child, color, name);
+        });
+        if (name === 'face') {
+            if (obj.material && obj.name.includes('face')){
+                obj.material.color = new THREE.Color( color );
+            };
+        } else {
+            if (obj.material && obj.name.includes('wireframe')){
+                obj.material.color = new THREE.Color( color );
+            };
+        }
+    };
+    color1.on('change', (ev) => {
+        setColor( group, ev.value, 'face' )
+    })
+    color2.on('change', (ev) => {
+        setColor( group, ev.value, 'wireframe' )
+    })
+    // Global Opacity Slider
     let slider = tab.pages[1].addBlade({
         view: 'slider',
         label: 'opacity',
@@ -210,6 +238,18 @@ function init(model) {
         max: 1,
         value: 1,
     })
+    function setOpacity( obj, opacity ){
+        obj.children.forEach((child)=>{
+            setOpacity(child, opacity);
+        })
+        if (obj.material){
+            obj.material.opacity = opacity;
+        };
+    };
+    slider.on('change', (ev) => {
+        setOpacity( group, ev.value );
+    })
+    // Global Helper bbox Checkbox
     let checkbox = tab.pages[1].addBinding({'bbox': false}, 'bbox')
     checkbox.on('change', (ev) => {
         if (ev.value) {
@@ -218,7 +258,16 @@ function init(model) {
             helper.visible = false
         }
     })
-
+    // Add Keybinds
+    document.addEventListener("keydown", onDocumentKeyDown, false);
+    function onDocumentKeyDown(event) {
+        var keyCode = event.which;
+        if (keyCode == 70){
+            controls.reset();
+        }
+    }
+    // Save initial scene
+    state = JSON.stringify(scene.toJSON());
 }
 
 function onWindowResize() {
@@ -259,6 +308,7 @@ function triangle(group, grids, model, material, do_wireframe) {
     geometry.setIndex( indices );
     geometry.setAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
     var mesh = new THREE.Mesh( geometry, material );
+    mesh.name = 'face';
     group.add( mesh );
                     
     // Add edges
@@ -270,6 +320,7 @@ function triangle(group, grids, model, material, do_wireframe) {
         line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
         const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
         const line = new THREE.Line( line_geometry, line_material );
+        line.name = 'wireframe';
         group.add( line );
     }
     return group
@@ -287,6 +338,7 @@ function square(group, grids, model, material) {
     line_points.push( new THREE.Vector3( model.GRID[grids[0]].X1, model.GRID[grids[0]].X2, model.GRID[grids[0]].X3 ) );
     const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
     const line = new THREE.Line( line_geometry, line_material );
+    line.name = 'wireframe';
     group.add( line );
 
     return group
@@ -298,6 +350,7 @@ function line(group, grids, model, material) {
     line_points.push( new THREE.Vector3( model.GRID[grids[1]].X1, model.GRID[grids[1]].X2, model.GRID[grids[1]].X3 ) );
     const line_geometry = new THREE.BufferGeometry().setFromPoints( line_points );
     const line = new THREE.Line( line_geometry, material );
+    line.name = 'wireframe';
     group.add( line );
     return group
 }
