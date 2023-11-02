@@ -31,6 +31,12 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const trackballUri = panel.webview.asWebviewUri(trackball)
     const threejs = vscode.Uri.file(context.extensionPath+"/node_modules/three/build/three.module.js");
     const threejsUri = panel.webview.asWebviewUri(threejs)
+    const tweakpane = vscode.Uri.file(context.extensionPath+"/node_modules/tweakpane/dist/tweakpane.js");
+    const tweakpaneUri = panel.webview.asWebviewUri(tweakpane)
+    const tweakpanep = vscode.Uri.file(context.extensionPath+"/node_modules/@tweakpane/plugin-essentials/dist/tweakpane-plugin-essentials.js")
+    const tweakpanepUri = panel.webview.asWebviewUri(tweakpanep)
+    // const path = vscode.Uri.file(context.extensionPath+'/node_modules/@types/node/path.d.ts');
+    // const pathUri = panel.webview.asWebviewUri(path);
     const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
     const femview = fs.readFileSync(context.extensionPath+"/client/src/femview.js").toString()
     return `
@@ -40,13 +46,33 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
             <meta charset="utf-8">
             <title>My first three.js app</title>
             <style>
-                body { margin: 0; }
+                body {
+                    margin: 0;
+                    background: var(--vscode-editor-background);
+                }
+                .fps {
+                    position: absolute;
+                    top: 10;
+                    left: 10;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    width: 100px;
+                }
+                * {
+                    font-family: var(--vscode-editor-font-family);
+                    font-size: var(--vscode-editor-font-size);
+                }
+                .tp-rotv_t {
+                    font-weight: bold;
+                }
             </style>
             <script type="importmap">
                 {
                     "imports": {
                         "three": "${threejsUri}",
-                        "TrackballControls": "${trackballUri}"
+                        "TrackballControls": "${trackballUri}",
+                        "tweakpane": "${tweakpaneUri}",
+                        "@tweakpane": "${tweakpanepUri}"
                     }
                 }
             </script>
@@ -59,6 +85,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 ${femload}
                 ${femview}
             </script>
+            <div class="fps" id="fps">
+            </div>
         </body>
     </html>
     `

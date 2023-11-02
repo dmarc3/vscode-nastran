@@ -1,8 +1,26 @@
 import * as THREE from 'three';
 import { TrackballControls } from 'TrackballControls';
+import { Pane } from 'tweakpane';
+import * as EssentialsPlugin from '@tweakpane';
+// import path from 'path'
 
 
 let camera, controls, scene, renderer, group;
+
+// // FPS tracker
+// const fps = new Pane({container: document.getElementById('fps')})
+// fps.registerPlugin(EssentialsPlugin);
+// const fpsGraph = fps.addBlade({view: 'fpsgraph', rows: 2});
+
+const pane = new Pane({title: 'FEM View Settings', expanded: false});
+pane.registerPlugin(EssentialsPlugin);
+const tab = pane.addTab({
+  pages: [
+    {title: 'Include Hierarchy'},
+    {title: 'Global'},
+  ],
+});
+
 
 let line_material, material_1d
 line_material = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 2 } );
@@ -20,6 +38,9 @@ function init(model) {
 	// Build FEM
     var counter = 0;
     for (var include in model) {
+        // Add UI for include
+        let f = tab.pages[0].addFolder({title: include.split(/[\\/]/).pop(), expanded: false});
+
         const color = Math.random() * 0xffffff;
         const material = new THREE.MeshPhysicalMaterial( { color: color, flatShading: true } );
         // material.color = colors[counter]
@@ -144,10 +165,11 @@ function init(model) {
     const scale = 2.0;
     box.setFromCenterAndSize( center, new THREE.Vector3(size.x * scale, size.y * scale, size.z * scale) );
     const helper = new THREE.Box3Helper( box, 0xffff00 );
+    helper.visible = false;
     scene.add( helper );
      
     // renderer
-	renderer = new THREE.WebGLRenderer();
+	renderer = new THREE.WebGLRenderer( { alpha: true } );
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
@@ -176,6 +198,26 @@ function init(model) {
 
 	//
 	// window.addEventListener( 'resize', onWindowResize );
+
+    // Add Global UI
+    let button = tab.pages[1].addButton( {title: 'Reset All'});
+    tab.pages[1].addBlade({view: 'separator'});
+    let color = tab.pages[1].addBinding({color: '#ffffff'}, 'color');
+    let slider = tab.pages[1].addBlade({
+        view: 'slider',
+        label: 'opacity',
+        min: 0,
+        max: 1,
+        value: 1,
+    })
+    let checkbox = tab.pages[1].addBinding({'bbox': false}, 'bbox')
+    checkbox.on('change', (ev) => {
+        if (ev.value) {
+            helper.visible = true
+        } else {
+            helper.visible = false
+        }
+    })
 
 }
 
