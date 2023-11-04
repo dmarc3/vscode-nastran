@@ -35,6 +35,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const tweakpaneUri = panel.webview.asWebviewUri(tweakpane)
     const tweakpanep = vscode.Uri.file(context.extensionPath+"/node_modules/@tweakpane/plugin-essentials/dist/tweakpane-plugin-essentials.js")
     const tweakpanepUri = panel.webview.asWebviewUri(tweakpanep)
+    const stats = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/libs/stats.module.js")
+    const statsUri = panel.webview.asWebviewUri(stats)
     // const path = vscode.Uri.file(context.extensionPath+'/node_modules/@types/node/path.d.ts');
     // const pathUri = panel.webview.asWebviewUri(path);
     const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
@@ -50,22 +52,9 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                     margin: 0;
                     background: var(--vscode-editor-background);
                 }
-                .stats {
-                    position: absolute;
-                    top: 10;
-                    left: 10;
-                    width: 10%;
-                    margin-top: 5px;
-                    margin-left: 5px;
-                }
-                .fps {
-                    font-family: var(--vscode-editor-font-family);
-                    font-size: var(--vscode-editor-font-size);
-                    margin: 5px auto;
-                }
                 * {
                     font-family: var(--vscode-editor-font-family);
-                    font-size: var(--vscode-editor-font-size);
+                    // font-size: var(--vscode-editor-font-size);
                 }
                 .tp-rotv_t {
                     font-weight: bold;
@@ -77,7 +66,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                         "three": "${threejsUri}",
                         "TrackballControls": "${trackballUri}",
                         "tweakpane": "${tweakpaneUri}",
-                        "@tweakpane": "${tweakpanepUri}"
+                        "@tweakpane": "${tweakpanepUri}",
+                        "stats": "${statsUri}"
                     }
                 }
             </script>
@@ -90,13 +80,7 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 ${femload}
                 ${femview}
             </script>
-            <div class="stats" id="stats">
-                <div class="fps" id="fps"></div>
-            </div>
         </body>
     </html>
     `
-//     <script>
-//     import { OrbitControls } from "${orbitUri}";
-// </script>
 }

@@ -2,35 +2,33 @@ import * as THREE from 'three';
 import { TrackballControls } from 'TrackballControls';
 import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
+import Stats from 'stats';
 // import path from 'path'
 
 
-let camera, controls, scene, renderer, group, state;
+let camera, controls, scene, renderer, group;
 
-// FPS tracker
-const fps = new Pane({container: document.getElementById('fps')})
-fps.registerPlugin(EssentialsPlugin);
-const fpsGraph = fps.addBlade({view: 'fpsgraph', rows: 2});
+// Performance Stats
+var stats = new Stats();
+document.body.appendChild( stats.dom );
 
-const pane = new Pane({title: 'FEM View Settings', expanded: false});
-pane.registerPlugin(EssentialsPlugin);
-const tab = pane.addTab({
-    pages: [
-        {title: 'Include Hierarchy'},
-        {title: 'Global'},
-    ],
-});
-
-
-let line_material, material_1d
-line_material = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 2 } );
-
+// Load model
 var model = loadModel(modelContent)
 
 init(model);
 animate();
 
 function init(model) {
+    // Initialize UI
+    const pane = new Pane({title: 'FEM View Settings', expanded: false});
+    pane.registerPlugin(EssentialsPlugin);
+    const tab = pane.addTab({
+        pages: [
+            {title: 'Include Hierarchy'},
+            {title: 'Global'},
+        ],
+    });
+
    	// World
 	scene = new THREE.Scene();
     group = new THREE.Group()
@@ -44,27 +42,32 @@ function init(model) {
         grids[i*3+2] = model['GRID'][i].X3
     }
     point_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
-    
     var point_material = new THREE.PointsMaterial( {
-        color: 0xffffff,
-        size: 4,
+        color: 0x899499,
+        // size: 4,
         map: null
     } );
     var points = new THREE.Points( point_geometry, point_material );
     group.add( points );
 
-    // Create Faces
-    var face_geometry = new THREE.BufferGeometry();
-    var indices = [];
-    const color = Math.random() * 0xffffff;
-    const material = new THREE.MeshBasicMaterial( { color: color } );
-    material.transparent = true;
-    material.side = THREE.DoubleSide;
     for (var include in model) {
+        if (include === 'GRID') {
+            continue
+        }
         // Add UI for include
-        // let f = tab.pages[0].addFolder({title: include.split(/[\\/]/).pop(), expanded: false});
-        // material_1d = new THREE.LineBasicMaterial( { color: color, linewidth: 1 } );
-        // let g = new THREE.Group();
+        let f = tab.pages[0].addFolder({title: include.split(/[\\/]/).pop(), expanded: false});
+        // Initialize Face information
+        var face_geometry = new THREE.BufferGeometry();
+        var face_indices = [];
+        const color = Math.random() * 0xffffff;
+        const face_material = new THREE.MeshBasicMaterial( { color: color } );
+        face_material.transparent = true;
+        face_material.side = THREE.DoubleSide;
+        // Initialize Line information
+        var line_geometry = new THREE.BufferGeometry();
+        var line_material = new THREE.LineBasicMaterial( {color: 0x899499} );
+        var line_indices = [];
+        // Loop through all includes
         if (Object.keys(model[include]).length !== 0) {
             // //  Create 1D elements
             // if ('1D' in model[include]) {
@@ -75,30 +78,60 @@ function init(model) {
             //         group.add( g );
             //     }
             // }
-            // // Create 2D elements with 3 edges
-            // if ('2D_3e' in model[include]) {
-            //     for (var [_, tri] of Object.entries(model[include]['2D_3e'])) {
-            //         var grids = [tri.G1, tri.G2, tri.G3]
-            //         g = triangle(g, grids, model[include], material, true)
-            //         // Add to overall group
-            //         group.add( g );
-            //     }
-            // }
+            // Create 2D elements with 3 edges
+            if ('2D_3e' in model[include]) {
+                for (var [_, tri] of Object.entries(model[include]['2D_3e'])) {
+                    // Get indices
+                    let ind1 = model['GRID'].findIndex(x => x.ID === tri.G1)
+                    let ind2 = model['GRID'].findIndex(x => x.ID === tri.G2)
+                    let ind3 = model['GRID'].findIndex(x => x.ID === tri.G3)
+                    // Face
+                    // Triangle 1
+                    face_indices.push(ind1)
+                    face_indices.push(ind2)
+                    face_indices.push(ind3)
+                    // Lines
+                    // Line 1
+                    line_indices.push(ind1)
+                    line_indices.push(ind2)
+                    // Line 2
+                    line_indices.push(ind2)
+                    line_indices.push(ind3)
+                    // Line 3
+                    line_indices.push(ind3)
+                    line_indices.push(ind1)
+                }
+            }
             // Create 2D elements with 4 edges
             if ('2D_4e' in model[include]) {
                 for (var [_, quad] of Object.entries(model[include]['2D_4e'])) {
+                    // Get indices
                     let ind1 = model['GRID'].findIndex(x => x.ID === quad.G1)
                     let ind2 = model['GRID'].findIndex(x => x.ID === quad.G2)
                     let ind3 = model['GRID'].findIndex(x => x.ID === quad.G3)
                     let ind4 = model['GRID'].findIndex(x => x.ID === quad.G4)
+                    // Face
                     // Triangle 1
-                    indices.push(ind1)
-                    indices.push(ind2)
-                    indices.push(ind3)
+                    face_indices.push(ind1)
+                    face_indices.push(ind2)
+                    face_indices.push(ind3)
                     // Triangle 2
-                    indices.push(ind3)
-                    indices.push(ind4)
-                    indices.push(ind1)
+                    face_indices.push(ind3)
+                    face_indices.push(ind4)
+                    face_indices.push(ind1)
+                    // Lines
+                    // Line 1
+                    line_indices.push(ind1)
+                    line_indices.push(ind2)
+                    // Line 2
+                    line_indices.push(ind2)
+                    line_indices.push(ind3)
+                    // Line 3
+                    line_indices.push(ind3)
+                    line_indices.push(ind4)
+                    // Line 4
+                    line_indices.push(ind4)
+                    line_indices.push(ind1)
                     // var grids = [quad.G1, quad.G2, quad.G3, quad.G4]
                     // g = square(g, grids, model[include], material)
                     // // Add to overall group
@@ -174,14 +207,23 @@ function init(model) {
             //     }
             // }
         }
+        // Faces
+        face_geometry.setIndex( face_indices );
+        face_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
+        const faces = new THREE.Mesh( face_geometry, face_material );
+        faces.name = "face";
+        // Lines
+        line_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
+        line_geometry.setIndex(new THREE.BufferAttribute(new Uint16Array(line_indices), 1));
+        var lines = new THREE.LineSegments(line_geometry, line_material);
+        lines.name = "wireframe";
+        // Add to group
+        group.add(faces)
+        group.add(lines)
     }
-    console.log(model['GRID'])
-    console.log(grids)
-    console.log(indices)
-    face_geometry.setIndex( indices );
-    face_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
-    const mesh = new THREE.Mesh( face_geometry, material );
-    group.add(mesh)
+    
+
+    // Add to scene
     new THREE.Box3().setFromObject( group ).getCenter( group.position ).multiplyScalar( - 1 );
     scene.add( group );
 
@@ -243,8 +285,8 @@ function init(model) {
     });
     tab.pages[1].addBlade({view: 'separator'});
     // Global Color Change
-    let color1 = tab.pages[1].addBinding({color: '#ffffff', label: 'face'}, 'color');
-    let color2 = tab.pages[1].addBinding({color: '#000000', label: 'wireframe'}, 'color');
+    let color1 = tab.pages[1].addBinding({"face color": '#ffffff'}, 'face color');
+    let color2 = tab.pages[1].addBinding({"edge color": '#000000'}, 'edge color');
     function setColor( obj, color, name ){
         obj.children.forEach((child)=>{
             setColor(child, color, name);
@@ -324,10 +366,10 @@ function onWindowResize() {
 }
 
 function animate() {
-    fpsGraph.begin();
+    stats.begin();
 	renderer.render( scene, camera );
 	controls.update();
-    fpsGraph.end();
+    stats.end();
 	requestAnimationFrame( animate );
     // console.log(renderer.info.render)
 }
