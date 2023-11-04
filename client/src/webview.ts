@@ -50,13 +50,18 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                     margin: 0;
                     background: var(--vscode-editor-background);
                 }
-                .fps {
+                .stats {
                     position: absolute;
                     top: 10;
                     left: 10;
+                    width: 10%;
                     margin-top: 5px;
                     margin-left: 5px;
-                    width: 100px;
+                }
+                .fps {
+                    font-family: var(--vscode-editor-font-family);
+                    font-size: var(--vscode-editor-font-size);
+                    margin: 5px auto;
                 }
                 * {
                     font-family: var(--vscode-editor-font-family);
@@ -85,7 +90,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 ${femload}
                 ${femview}
             </script>
-            <div class="fps" id="fps">
+            <div class="stats" id="stats">
+                <div class="fps" id="fps"></div>
             </div>
         </body>
     </html>

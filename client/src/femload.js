@@ -15,7 +15,7 @@ function loadModel(modelContent) {
         for (const [ind, currentLine] of lines.entries()) {
             // Process GRIDs
             if (currentLine.toUpperCase().startsWith("GRID")) {
-                model[include] = process_grid(model[include], lines.slice(ind, ind+5))
+                model = process_grid(model, lines.slice(ind, ind+5))
             // Process 1D elements (a)
             } else if (elem_1D_a.some(elem_1D_a => currentLine.startsWith(elem_1D_a))) {
                 model[include] = process_1d_a(model[include], lines.slice(ind, ind+5))
@@ -52,7 +52,7 @@ function loadModel(modelContent) {
 function process_grid(model, lines) {
     // Create GRID key if it doesn't exist
     if (!("GRID" in model)) {
-        model["GRID"] = {}
+        model["GRID"] = []
     }
     // Process long field
     if (~lines[0].indexOf("*")) {
@@ -85,14 +85,16 @@ function process_grid(model, lines) {
         seid = parseInt(seid)
     }
     // Add to object
-    model["GRID"][id] = {}
-    model["GRID"][id]["CP"] = cp
-    model["GRID"][id]["X1"] = x1
-    model["GRID"][id]["X2"] = x2
-    model["GRID"][id]["X3"] = x3
-    model["GRID"][id]["CD"] = cd
-    model["GRID"][id]["PS"] = ps
-    model["GRID"][id]["SEID"] = seid
+    let grid = {}
+    grid["ID"] = id
+    grid["CP"] = cp
+    grid["X1"] = x1
+    grid["X2"] = x2
+    grid["X3"] = x3
+    grid["CD"] = cd
+    grid["PS"] = ps
+    grid["SEID"] = seid
+    model["GRID"].push(grid)
     return model
 }
 
