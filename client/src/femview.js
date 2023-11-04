@@ -38,10 +38,10 @@ function init(model) {
 	// Create Points
     var point_geometry = new THREE.BufferGeometry();
     var grids = new Float32Array(model['GRID'].length * 3)
-    for ( var i = 0; i < model['GRID'].length; i += 3 ) {
-        grids[i] = model['GRID'][i].X1
-        grids[i+1] = model['GRID'][i].X2
-        grids[i+2] = model['GRID'][i].X3
+    for ( var i = 0; i < model['GRID'].length; i ++ ) {
+        grids[i*3] = model['GRID'][i].X1
+        grids[i*3+1] = model['GRID'][i].X2
+        grids[i*3+2] = model['GRID'][i].X3
     }
     point_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
     
