@@ -27,10 +27,16 @@ function readFEM(includes: string[]) {
 }
 
 function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.WebviewPanel, content: object) {
-    const trackball = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/TrackballControls.js");
-    const trackballUri = panel.webview.asWebviewUri(trackball)
     const threejs = vscode.Uri.file(context.extensionPath+"/node_modules/three/build/three.module.js");
     const threejsUri = panel.webview.asWebviewUri(threejs)
+    const trackball = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/TrackballControls.js");
+    const trackballUri = panel.webview.asWebviewUri(trackball)
+    const orbit = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/OrbitControls.js");
+    const orbitUri = panel.webview.asWebviewUri(orbit)
+    // const viewhelper = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/helpers/ViewHelper.js");
+    // const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
+    const viewhelper = vscode.Uri.file(context.extensionPath+"/client/src/ViewHelper.js");
+    const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
     const tweakpane = vscode.Uri.file(context.extensionPath+"/node_modules/tweakpane/dist/tweakpane.js");
     const tweakpaneUri = panel.webview.asWebviewUri(tweakpane)
     const tweakpanep = vscode.Uri.file(context.extensionPath+"/node_modules/@tweakpane/plugin-essentials/dist/tweakpane-plugin-essentials.js")
@@ -50,6 +56,11 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
             <style>
                 body {
                     margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    overflow: hidden;
                     background: var(--vscode-editor-background);
                 }
                 * {
@@ -59,12 +70,33 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 .tp-rotv_t {
                     font-weight: bold;
                 }
+                :root {
+                    --tp-base-background-color: var(--vscode-menubar-selectionBackground);
+                    --tp-button-background-color: var(--vscode-menubar-selectionForeground);
+                    --tp-button-background-color-active: var(--vscode-menubar-selectionBackground);
+                    --tp-button-background-color-focus: var(--vscode-menubar-selectionForeground);
+                    --tp-button-background-color-hover: var(--vscode-menubar-selectionForeground);
+                    --tp-button-foreground-color: var(--vscode-titleBar-activeBackground);
+                    --tp-container-background-color: var(--vscode-titleBar-inactiveBackground);
+                    --tp-container-background-color-active: var(--vscode-titleBar-activeBackground);
+                    --tp-container-background-color-focus: var(--vscode-menubar-selectionBackground);
+                    --tp-container-background-color-hover: var(--vscode-menubar-selectionBackground);
+                    --tp-container-foreground-color: var(--vscode-menubar-selectionForeground);
+                    --tp-label-foreground-color: var(--vscode-menubar-selectionForeground);
+                    --tp-input-background-color: var(--vscode-editor-background);
+                    --tp-input-background-color-active: var(--vscode-editor-background);
+                    --tp-input-background-color-focus: var(--vscode-menubar-selectionBackground);
+                    --tp-input-background-color-hover: var(--vscode-menubar-selectionBackground);
+                    --tp-input-foreground-color: var(--vscode-menubar-selectionForeground);
+                }
             </style>
             <script type="importmap">
                 {
                     "imports": {
                         "three": "${threejsUri}",
                         "TrackballControls": "${trackballUri}",
+                        // "OrbitControls": "${orbitUri}",
+                        "ViewHelper": "${viewhelperUri}",
                         "tweakpane": "${tweakpaneUri}",
                         "@tweakpane": "${tweakpanepUri}",
                         "stats": "${statsUri}"
