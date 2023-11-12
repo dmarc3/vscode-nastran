@@ -27,9 +27,9 @@ class ViewHelper extends Object3D {
 		this.animating = false;
 		this.center = new Vector3();
 
-		const color1 = new Color( '#ff0000' );
-		const color2 = new Color( '#00ff00' );
-		const color3 = new Color( '#0000ff' );
+		const color1 = new Color( '#a82222' );
+		const color2 = new Color( '#26a822' );
+		const color3 = new Color( '#2234a8' );
 
 		const interactiveObjects = [];
 		const raycaster = new Raycaster();
@@ -195,7 +195,7 @@ class ViewHelper extends Object3D {
 
 		this.update = function ( delta ) {
 
-			const step = delta * turnRate;
+			const step = delta * 1.5 *turnRate;
 
 			// animate position by doing a slerp and then scaling the position on the unit sphere
 

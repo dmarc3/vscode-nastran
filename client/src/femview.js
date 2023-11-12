@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { TrackballControls } from 'TrackballControls';
-// import { OrbitControls } from 'OrbitControls';
+// import { TrackballControls } from 'TrackballControls';
+import { OrbitControls } from 'OrbitControls';
 import { ViewHelper } from 'ViewHelper';
 import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
@@ -8,7 +8,8 @@ import Stats from 'stats';
 // import path from 'path'
 
 
-let camera, controls, scene, renderer, group, frustumSize, aspect, view, clock;
+let camera, controls, scene, renderer, group, frustumSize, aspect, view;
+let clock = new THREE.Clock();
 
 // Performance Stats
 var stats = new Stats();
@@ -272,8 +273,8 @@ function init(model) {
     camera.lookAt( scene.position );
 
 	// Controls
-	controls = new TrackballControls( camera, renderer.domElement );
-    // controls = new OrbitControls( camera, renderer.domElement );
+	// controls = new TrackballControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
 
 	// lights
 	const ambientLight = new THREE.AmbientLight( 0xffffff );
@@ -351,9 +352,8 @@ function init(model) {
     window.addEventListener( 'resize', onWindowResize, false );
 
     // ViewHelper
-    clock = new THREE.Clock();
     view = new ViewHelper( camera, renderer.domElement );
-    view.controls = controls;
+    // view.controls = controls;
     view.center = controls.target;
     
     const div = document.createElement( 'div' );
@@ -388,17 +388,16 @@ function onWindowResize() {
 function animate() {
     stats.begin();
 
-	controls.update();
+    requestAnimationFrame( animate );
     
-    // TODO: Figure out how to animate with TrackballControls
-    // const delta = clock.getDelta();
-    // if ( view.animating ) view.update( delta );
+    // TODO: Figure out how to animate with TrackballControls?
+	// controls.update();
+    const delta = clock.getDelta();
+    if ( view.animating ) view.update( delta );
     
-    renderer.clear();
+    // renderer.clear();
 	renderer.render( scene, camera );
     view.render( renderer );
-
-    requestAnimationFrame( animate );
 
     stats.end();
 }

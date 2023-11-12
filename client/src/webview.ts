@@ -94,8 +94,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 {
                     "imports": {
                         "three": "${threejsUri}",
-                        "TrackballControls": "${trackballUri}",
-                        // "OrbitControls": "${orbitUri}",
+                        // "TrackballControls": "${trackballUri}",
+                        "OrbitControls": "${orbitUri}",
                         "ViewHelper": "${viewhelperUri}",
                         "tweakpane": "${tweakpaneUri}",
                         "@tweakpane": "${tweakpanepUri}",
