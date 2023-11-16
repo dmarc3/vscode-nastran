@@ -12,37 +12,42 @@ function loadModel(modelContent) {
     for (var include in modelContent) {
         var lines = modelContent[include]
         model[include] = {}
-        for (const [ind, currentLine] of lines.entries()) {
-            // Process GRIDs
-            if (currentLine.toUpperCase().startsWith("GRID")) {
-                model = process_grid(model, lines.slice(ind, ind+5))
-            // Process 1D elements (a)
-            } else if (elem_1D_a.some(elem_1D_a => currentLine.startsWith(elem_1D_a))) {
-                model[include] = process_1d_a(model[include], lines.slice(ind, ind+5))
-            // Process 1D elements (b)
-            } else if (elem_1D_b.some(elem_1D_b => currentLine.startsWith(elem_1D_b))) {
-                model[include] = process_1d_b(model[include], lines.slice(ind, ind+5))
-            // Process 1D elements (c)
-            } else if (elem_1D_c.some(elem_1D_c => currentLine.startsWith(elem_1D_c))) {
-                model[include] = process_1d_c(model[include], lines.slice(ind, ind+5))
-            // Process 2D elements with 4 edges
-            } else if (elem_2D_4e.some(elem_2D_4e => currentLine.startsWith(elem_2D_4e))) {
-                model[include] = process_2D_4e(model[include], lines.slice(ind, ind+5))
-            // Process 2D elements with 3 edges
-            } else if (elem_2D_3e.some(elem_2D_3e => currentLine.startsWith(elem_2D_3e)) && !currentLine.toUpperCase().includes('CTRIAX6')) {
-                model[include] = process_2D_3e(model[include], lines.slice(ind, ind+5))
-            // Process 3D elements with 4 sides
-            } else if (elem_3D_4s.some(elem_3D_4s => currentLine.startsWith(elem_3D_4s))) {
-                model[include] = process_3D_4s(model[include], lines.slice(ind, ind+5))
-            // Process 3D elements with 5 sides
-            } else if (elem_3D_5s.some(elem_3D_5s => currentLine.startsWith(elem_3D_5s))) {
-                model[include] = process_3D_5s(model[include], lines.slice(ind, ind+5))
-            // Process 3D elements with 6 sides
-            } else if (elem_3D_6s.some(elem_3D_6s => currentLine.startsWith(elem_3D_6s))) {
-                model[include] = process_3D_6s(model[include], lines.slice(ind, ind+5))
-            // Process 3D elements with 7 sides
-            } else if (elem_3D_7s.some(elem_3D_7s => currentLine.startsWith(elem_3D_7s))) {
-                model[include] = process_3D_7s(model[include], lines.slice(ind, ind+5))
+        for (var [ind, currentLine] of lines.entries()) {
+            try {
+                // Process GRIDs
+                if (currentLine.toUpperCase().startsWith("GRID")) {
+                    model = process_grid(model, lines.slice(ind, ind+5))
+                // Process 1D elements (a)
+                } else if (elem_1D_a.some(elem_1D_a => currentLine.startsWith(elem_1D_a))) {
+                    model[include] = process_1d_a(model[include], lines.slice(ind, ind+5))
+                // Process 1D elements (b)
+                } else if (elem_1D_b.some(elem_1D_b => currentLine.startsWith(elem_1D_b))) {
+                    model[include] = process_1d_b(model[include], lines.slice(ind, ind+5))
+                // Process 1D elements (c)
+                } else if (elem_1D_c.some(elem_1D_c => currentLine.startsWith(elem_1D_c))) {
+                    model[include] = process_1d_c(model[include], lines.slice(ind, ind+5))
+                // Process 2D elements with 4 edges
+                } else if (elem_2D_4e.some(elem_2D_4e => currentLine.startsWith(elem_2D_4e))) {
+                    model[include] = process_2D_4e(model[include], lines.slice(ind, ind+5))
+                // Process 2D elements with 3 edges
+                } else if (elem_2D_3e.some(elem_2D_3e => currentLine.startsWith(elem_2D_3e)) && !currentLine.toUpperCase().includes('CTRIAX6')) {
+                    model[include] = process_2D_3e(model[include], lines.slice(ind, ind+5))
+                // Process 3D elements with 4 sides
+                } else if (elem_3D_4s.some(elem_3D_4s => currentLine.startsWith(elem_3D_4s))) {
+                    model[include] = process_3D_4s(model[include], lines.slice(ind, ind+5))
+                // Process 3D elements with 5 sides
+                } else if (elem_3D_5s.some(elem_3D_5s => currentLine.startsWith(elem_3D_5s))) {
+                    model[include] = process_3D_5s(model[include], lines.slice(ind, ind+5))
+                // Process 3D elements with 6 sides
+                } else if (elem_3D_6s.some(elem_3D_6s => currentLine.startsWith(elem_3D_6s))) {
+                    model[include] = process_3D_6s(model[include], lines.slice(ind, ind+5))
+                // Process 3D elements with 7 sides
+                } else if (elem_3D_7s.some(elem_3D_7s => currentLine.startsWith(elem_3D_7s))) {
+                    model[include] = process_3D_7s(model[include], lines.slice(ind, ind+5))
+                }
+            } catch(err) {
+                console.log(err)
+                return currentLine
             }
         }
     }
@@ -61,29 +66,21 @@ function process_grid(model, lines) {
         var [id, cp, x1, x2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [x3, cd, ps, seid] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        id = parseInt(id)
-        cp = parseInt(cp)
-        x1 = str2float(x1)
-        x2 = str2float(x2)
-        x3 = str2float(x3)
-        cd = parseInt(cd)
-        ps = parseInt(ps)
-        seid = parseInt(seid)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
         var [_, id, cp, x1, x2, x3, cd, ps, seid] = lines[0].match(/.{1,8}/g)
-        id = parseInt(id)
-        cp = parseInt(cp)
-        x1 = str2float(x1)
-        x2 = str2float(x2)
-        x3 = str2float(x3)
-        cd = parseInt(cd)
-        ps = parseInt(ps)
-        seid = parseInt(seid)
     }
+    // Convert types
+    id = parseInt(id)
+    cp = parseInt(cp)
+    x1 = str2float(x1)
+    x2 = str2float(x2)
+    x3 = str2float(x3)
+    cd = parseInt(cd)
+    ps = parseInt(ps)
+    seid = parseInt(seid)
     // Add to object
     let grid = {}
     grid["ID"] = id
@@ -94,6 +91,18 @@ function process_grid(model, lines) {
     grid["CD"] = cd
     grid["PS"] = ps
     grid["SEID"] = seid
+    if (isNaN(id)) { // TODO: Rework to test if integer
+        throw new Error('ID is not a integer!');
+    }
+    if (isNaN(x1)) {
+        throw new Error('X1 is not a float!')
+    }
+    if (isNaN(x2)) {
+        throw new Error('X2 is not a float!')
+    }
+    if (isNaN(x3)) {
+        throw new Error('X3 is not a float!')
+    }
     model["GRID"].push(grid)
     return model
 }
@@ -108,20 +117,23 @@ function process_1d_a(model, lines) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, pid, g1, g2] = lines[0].match(/.{1,8}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
     }
     // Add to object
     model["1D"][eid] = {}
@@ -143,24 +155,25 @@ function process_1d_b(model, lines) {
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g2, c2] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        c1 = parseInt(c1)
-        g2 = parseInt(g2)
-        c2 = parseInt(c2)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, pid, g1, c1, g2, c2] = lines[0].match(/.{1,8}/g)
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        c1 = parseInt(c1)
-        g2 = parseInt(g2)
-        c2 = parseInt(c2)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    c1 = parseInt(c1)
+    g2 = parseInt(g2)
+    c2 = parseInt(c2)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
     }
     // Add to object
     model["1D"][eid] = {}
@@ -180,20 +193,23 @@ function process_1d_c(model, lines) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, g1, g2, mid] = lines[0].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        mid = parseInt(mid)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, g1, g2, mid] = lines[0].match(/.{1,8}/g)
-        eid = parseInt(eid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        mid = parseInt(mid)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    mid = parseInt(mid)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
     }
     // Add to object
     model["1D"][eid] = {}
@@ -214,27 +230,29 @@ function process_2D_3e(model, lines) {
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g3, mcid, zoffs, _] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
         var [_, eid, pid, g1, g2, g3, mcid, zoffs, _] = lines[0].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    mcid = parseInt(mcid)
+    zoffs = parseInt(zoffs)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G3 is not an integer!')
     }
     // Add to object
     model["2D_3e"][eid] = {}
@@ -256,29 +274,33 @@ function process_2D_4e(model, lines) {
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g3, g4, mcid, zoffs] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
         var [_, eid, pid, g1, g2, g3, g4, mcid, zoffs] = lines[0].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        mcid = parseInt(mcid)
-        zoffs = parseInt(zoffs)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    g4 = parseInt(g4)
+    mcid = parseInt(mcid)
+    zoffs = parseInt(zoffs)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G3 is not an integer!')
+    }
+    if (isNaN(g4)) {
+        throw new Error('G4 is not an integer!')
     }
     // Add to object
     model["2D_4e"][eid] = {}
@@ -301,25 +323,31 @@ function process_3D_4s(model, lines) {
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g3, g4, _, _] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
         var [_, eid, pid, g1, g2, g3, g4, _, _] = lines[0].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    g4 = parseInt(g4)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G3 is not an integer!')
+    }
+    if (isNaN(g4)) {
+        throw new Error('G4 is not an integer!')
     }
     // Add to object
     model["3D_4s"][eid] = {}
@@ -344,17 +372,6 @@ function process_3D_5s(model, lines) {
         var [g3, g4, g5, g6] = lines[1].match(/.{1,16}/g)
         lines[2] = lines[2].padEnd(72).slice(8)
         var [g7, g8, g9, g10] = lines[2].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
-        g7 = parseInt(g7)
-        g8 = parseInt(g8)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
@@ -362,17 +379,33 @@ function process_3D_5s(model, lines) {
         var [eid, pid, g1, g2, g3, g4, g5, g6] = lines[0].match(/.{1,8}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g7, g8, g9, g10, g11, g12, g13, g14] = lines[1].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
-        g7 = parseInt(g7)
-        g8 = parseInt(g8)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    g4 = parseInt(g4)
+    g5 = parseInt(g5)
+    g6 = parseInt(g6)
+    g7 = parseInt(g7)
+    g8 = parseInt(g8)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G3 is not an integer!')
+    }
+    if (isNaN(g4)) {
+        throw new Error('G4 is not an integer!')
+    }
+    if (isNaN(g5)) {
+        throw new Error('G5 is not an integer!')
     }
     // Add to object
     model["3D_5s"][eid] = {}
@@ -401,17 +434,6 @@ function process_3D_6s(model, lines) {
         var [g3, g4, g5, g6] = lines[1].match(/.{1,16}/g)
         lines[2] = lines[2].padEnd(72).slice(8)
         var [g7, g8, g9, g10] = lines[2].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
-        g7 = parseInt(g7)
-        g8 = parseInt(g8)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
@@ -419,17 +441,36 @@ function process_3D_6s(model, lines) {
         var [eid, pid, g1, g2, g3, g4, g5, g6] = lines[0].match(/.{1,8}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g7, g8, g9, g10, g11, g12, g13, g14] = lines[1].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
-        g7 = parseInt(g7)
-        g8 = parseInt(g8)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    g4 = parseInt(g4)
+    g5 = parseInt(g5)
+    g6 = parseInt(g6)
+    g7 = parseInt(g7)
+    g8 = parseInt(g8)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g4)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g5)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g6)) {
+        throw new Error('G2 is not an integer!')
     }
     // Add to object
     model["3D_6s"][eid] = {}
@@ -456,29 +497,39 @@ function process_3D_7s(model, lines) {
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g3, g4, g5, g6] = lines[1].match(/.{1,16}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
     // Process short field
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, pid, g1, g2, g3, g4, g5, g6] = lines[0].match(/.{1,8}/g)
-        // Convert types
-        eid = parseInt(eid)
-        pid = parseInt(pid)
-        g1 = parseInt(g1)
-        g2 = parseInt(g2)
-        g3 = parseInt(g3)
-        g4 = parseInt(g4)
-        g5 = parseInt(g5)
-        g6 = parseInt(g6)
+    }
+    // Convert types
+    eid = parseInt(eid)
+    pid = parseInt(pid)
+    g1 = parseInt(g1)
+    g2 = parseInt(g2)
+    g3 = parseInt(g3)
+    g4 = parseInt(g4)
+    g5 = parseInt(g5)
+    g6 = parseInt(g6)
+    // Validate types
+    if (isNaN(g1)) {
+        throw new Error('G1 is not an integer!')
+    }
+    if (isNaN(g2)) {
+        throw new Error('G2 is not an integer!')
+    }
+    if (isNaN(g3)) {
+        throw new Error('G3 is not an integer!')
+    }
+    if (isNaN(g4)) {
+        throw new Error('G4 is not an integer!')
+    }
+    if (isNaN(g5)) {
+        throw new Error('G5 is not an integer!')
+    }
+    if (isNaN(g6)) {
+        throw new Error('G6 is not an integer!')
     }
     // Add to object
     model["3D_7s"][eid] = {}
@@ -513,9 +564,14 @@ function str2float(str) {
         if (indexes.length === 1 && str[0] !== '-') {
             str = str.replace(/\-/g, 'E-');
         } else if (indexes.length === 2) {
-            str = [str.substring(0, indexes[1]), 'E', str.substring(indexes[1], str.length-1)].join('');
+            str = [str.substring(0, indexes[1]), 'E', str.substring(indexes[1], str.length)].join('');
         }
     }
     // Convert to float
     return parseFloat(str)
 }
+
+// module.exports = {
+//     str2float:str2float,
+//     process_grid:process_grid
+// }

@@ -33,6 +33,10 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const trackballUri = panel.webview.asWebviewUri(trackball)
     const orbit = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/OrbitControls.js");
     const orbitUri = panel.webview.asWebviewUri(orbit)
+    const chai = vscode.Uri.file(context.extensionPath+'/node_modules/chai/chai.js');
+    const chaiUri = panel.webview.asWebviewUri(chai);
+    // const assert = vscode.Uri.file(context.extensionPath+'/node_modules/chai-asserttype/asserttype.js');
+    // const assertUri = panel.webview.asWebviewUri(assert);
     // const viewhelper = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/helpers/ViewHelper.js");
     // const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
     const viewhelper = vscode.Uri.file(context.extensionPath+"/client/src/ViewHelper.js");
@@ -99,7 +103,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                         "ViewHelper": "${viewhelperUri}",
                         "tweakpane": "${tweakpaneUri}",
                         "@tweakpane": "${tweakpanepUri}",
-                        "stats": "${statsUri}"
+                        "stats": "${statsUri}",
+                        "chai": "${chaiUri}"
                     }
                 }
             </script>

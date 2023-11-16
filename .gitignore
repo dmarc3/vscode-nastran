@@ -130,6 +130,7 @@ dmypy.json
 
 # node
 node_modules
+.nyc_output
 
 # client compiled code
 client/out/*
