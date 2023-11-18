@@ -6,6 +6,7 @@ import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
 import Stats from 'stats';
 // import path from 'path'
+import { loadModel } from 'femload.mjs'
 
 
 let camera, controls, scene, renderer, group, frustumSize, aspect, view;
