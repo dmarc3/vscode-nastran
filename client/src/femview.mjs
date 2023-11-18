@@ -6,20 +6,25 @@ import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
 import Stats from 'stats';
 // import path from 'path'
+import { loadModel } from 'femload.mjs'
 
 
 let camera, controls, scene, renderer, group, frustumSize, aspect, view;
 let clock = new THREE.Clock();
 
-// Performance Stats
-var stats = new Stats();
-document.body.appendChild( stats.dom );
-
 // Load model
 var model = loadModel(modelContent)
 
-init(model);
-animate();
+if (typeof model === 'string') {
+    document.body.innerText = model;
+} else {
+    // Performance Stats
+    var stats = new Stats();
+    document.body.appendChild( stats.dom );
+    // Three.js model
+    init(model);
+    animate();
+}
 
 function init(model) {
     // renderer
@@ -268,7 +273,7 @@ function init(model) {
     // Camera
     aspect = window.innerHeight / window.innerWidth;
     camera = new THREE.OrthographicCamera( frustumSize / -2, frustumSize / 2, frustumSize*aspect / 2, frustumSize*aspect / -2, 0.1, max_dim*10 );
-    camera.up = new THREE.Vector3(0, 0, 1);
+    // camera.up = new THREE.Vector3(0, 0, 1);
     camera.position.set( -max_dim, -max_dim, max_dim );
     camera.lookAt( scene.position );
 

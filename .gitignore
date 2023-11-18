@@ -130,6 +130,7 @@ dmypy.json
 
 # node
 node_modules
+coverage
 
 # client compiled code
 client/out/*

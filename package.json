@@ -207,12 +207,18 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -b",
-    "watch": "tsc -b -w"
+    "watch": "tsc -b -w",
+    "test": "mocha -r esm",
+    "coverage": "c8 mocha -r esm"
   },
   "devDependencies": {
     "@tweakpane/core": "^2.0.1",
     "@types/node": "^18.14.0",
     "@types/vscode": "^1.75.1",
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "esm": "^3.2.25",
+    "mocha": "^10.2.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {

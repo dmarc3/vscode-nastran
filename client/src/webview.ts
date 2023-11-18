@@ -33,10 +33,16 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const trackballUri = panel.webview.asWebviewUri(trackball)
     const orbit = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/OrbitControls.js");
     const orbitUri = panel.webview.asWebviewUri(orbit)
+    const chai = vscode.Uri.file(context.extensionPath+'/node_modules/chai/chai.js');
+    const chaiUri = panel.webview.asWebviewUri(chai);
+    // const assert = vscode.Uri.file(context.extensionPath+'/node_modules/chai-asserttype/asserttype.js');
+    // const assertUri = panel.webview.asWebviewUri(assert);
     // const viewhelper = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/helpers/ViewHelper.js");
     // const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
     const viewhelper = vscode.Uri.file(context.extensionPath+"/client/src/ViewHelper.js");
     const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
+    const femload = vscode.Uri.file(context.extensionPath+"/client/src/femload.mjs");
+    const femloadUri = panel.webview.asWebviewUri(femload)
     const tweakpane = vscode.Uri.file(context.extensionPath+"/node_modules/tweakpane/dist/tweakpane.js");
     const tweakpaneUri = panel.webview.asWebviewUri(tweakpane)
     const tweakpanep = vscode.Uri.file(context.extensionPath+"/node_modules/@tweakpane/plugin-essentials/dist/tweakpane-plugin-essentials.js")
@@ -45,8 +51,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const statsUri = panel.webview.asWebviewUri(stats)
     // const path = vscode.Uri.file(context.extensionPath+'/node_modules/@types/node/path.d.ts');
     // const pathUri = panel.webview.asWebviewUri(path);
-    const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
-    const femview = fs.readFileSync(context.extensionPath+"/client/src/femview.js").toString()
+    // const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
+    const femview = fs.readFileSync(context.extensionPath+"/client/src/femview.mjs").toString()
     return `
     <!DOCTYPE html>
     <html>
@@ -99,7 +105,9 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                         "ViewHelper": "${viewhelperUri}",
                         "tweakpane": "${tweakpaneUri}",
                         "@tweakpane": "${tweakpanepUri}",
-                        "stats": "${statsUri}"
+                        "stats": "${statsUri}",
+                        "chai": "${chaiUri}",
+                        "femload.mjs": "${femloadUri}"
                     }
                 }
             </script>
@@ -109,7 +117,6 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 var modelContent=${JSON.stringify(content)}
             </script>
             <script type="module">
-                ${femload}
                 ${femview}
             </script>
         </body>
