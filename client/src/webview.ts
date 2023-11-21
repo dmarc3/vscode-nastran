@@ -9,6 +9,8 @@ export function initializeWebview(context: vscode.ExtensionContext, includes: st
         vscode.ViewColumn.Two,
         {enableScripts: true}
     );
+    // Set Icon
+    panel.iconPath = vscode.Uri.joinPath(context.extensionUri, 'resources', 'dark', 'mesh.png');
     // Read FEM
     const content = readFEM(includes)
     // Set HTML Content
@@ -33,6 +35,12 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     const trackballUri = panel.webview.asWebviewUri(trackball)
     const orbit = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/controls/OrbitControls.js");
     const orbitUri = panel.webview.asWebviewUri(orbit)
+    const font = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/loaders/FontLoader.js");
+    const fontUri = panel.webview.asWebviewUri(font)
+    const fontPath = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/fonts/helvetiker_regular.typeface.json");
+    const fontPathUri = panel.webview.asWebviewUri(fontPath)
+    const textGeom = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/geometries/TextGeometry.js");
+    const textGeomUri = panel.webview.asWebviewUri(textGeom)
     const chai = vscode.Uri.file(context.extensionPath+'/node_modules/chai/chai.js');
     const chaiUri = panel.webview.asWebviewUri(chai);
     // const assert = vscode.Uri.file(context.extensionPath+'/node_modules/chai-asserttype/asserttype.js');
@@ -73,6 +81,25 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                     font-family: var(--vscode-editor-font-family);
                     // font-size: var(--vscode-editor-font-size);
                 }
+                .error {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    text-align: center;
+                    font-family: var(--vscode-editor-font-family);
+                    font-size: var(--vscode-editor-font-size);
+                    white-space: pre;
+                }
+                .error_text {
+                    position: absolute;
+                    top: 90%;
+                    right: 20%;
+                    width: 60%;
+                    text-align: left;
+                    font-family: var(--vscode-editor-font-family);
+                    font-size: var(--vscode-editor-font-size);
+                    text-wrap: wrap;
+                }
                 .tp-rotv_t {
                     font-weight: bold;
                 }
@@ -102,6 +129,8 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                         "three": "${threejsUri}",
                         // "TrackballControls": "${trackballUri}",
                         "OrbitControls": "${orbitUri}",
+                        "FontLoader": "${fontUri}",
+                        "TextGeometry": "${textGeomUri}",
                         "ViewHelper": "${viewhelperUri}",
                         "tweakpane": "${tweakpaneUri}",
                         "@tweakpane": "${tweakpanepUri}",
@@ -114,12 +143,17 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
         </head>
         <body>
             <script>
-                var modelContent=${JSON.stringify(content)}
+                var modelContent=${JSON.stringify(content)};
+            </script>
+            <script>
+                const fontPath="${fontPathUri}";
             </script>
             <script type="module">
                 ${femview}
             </script>
-        </body>
+            <div class=error id=error></div>
+            <p class=error_text id=error_text></p>
+            </body>
     </html>
     `
 }

@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 // import { TrackballControls } from 'TrackballControls';
 import { OrbitControls } from 'OrbitControls';
+import { FontLoader } from 'FontLoader';
+import { TextGeometry } from 'TextGeometry';
 import { ViewHelper } from 'ViewHelper';
 import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
@@ -15,10 +17,21 @@ let clock = new THREE.Clock();
 // Load model
 var model = loadModel(modelContent)
 
+// Check that model was successfully loaded
 if (typeof model === 'string') {
-    document.body.innerText = model;
+    // Failed to load
+    error()
+    // Add text
+    var div = document.getElementById( 'error' );
+    var content = document.createTextNode(model);
+    div.appendChild(content);
+    var p = document.getElementById( 'error_text' ); 
+    // TODO: Update link to issue with template.
+    p.innerHTML = 'Failed to process the above line while loading FEM View. Please verify that the entry is valid Nastran syntax. If it is, please consider submitting an issue <a href="https://github.com/dmarc3/vscode-nastran/issues/new/">here</a>.';
+    div.appendChild(p);
+    // document.body.innerText = model;
 } else {
-    // Performance Stats
+    // Successful load
     var stats = new Stats();
     document.body.appendChild( stats.dom );
     // Three.js model
@@ -447,4 +460,57 @@ function square(face_indices, line_indices, ind) {
     line_indices.push(ind[3])
     line_indices.push(ind[0])
     return face_indices, line_indices
+}
+
+function error() {
+    // renderer
+	renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true } );
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.autoClear = false;
+	document.body.appendChild( renderer.domElement );
+
+    camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
+    camera.position.set( 0, 100, 700 );
+    camera.lookAt(new THREE.Vector3(0,-100,0)); // Set look at coordinate like this
+    scene = new THREE.Scene();
+    const loader = new FontLoader();
+    const font = loader.load( fontPath, function ( font ) {
+        var textGeometry = new TextGeometry( "E R R O R", {
+            font: font,
+            size: 50,
+            height: 25,
+            curveSegments: 12,
+            bevelEnabled: true,
+            bevelThickness: 5,
+            bevelSize: 3,
+            bevelOffset: 0,
+            bevelSegments: 3
+        });
+        textGeometry.center()
+    
+        var textMaterial = new THREE.MeshToonMaterial( 
+        { color: 0xFF0000, gradientMap: 'threeTone'}
+        );
+    
+        var mesh = new THREE.Mesh( textGeometry, textMaterial );
+        scene.add( mesh );
+        // const light = new THREE.AmbientLight( 0xFFFFFF );
+        const light = new THREE.HemisphereLight( 0xFFFFFF, 0x000000, 1 );
+        scene.add( light );
+        // const directionalLight = new THREE.DirectionalLight( 0xFF00FF );
+        // directionalLight.position.set(1, 1, 1);
+        // scene.add( directionalLight );
+        renderer.render( scene, camera );
+        window.addEventListener( 'resize', onErrorWindowResize, false );
+    });
+}
+
+function onErrorWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
