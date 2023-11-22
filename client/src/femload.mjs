@@ -46,6 +46,9 @@ export function loadModel(modelContent) {
                 // Process CORD1R
                 } else if (currentLine.toUpperCase().startsWith("CORD1R")) {
                     model = process_cord1r(model, lines.slice(ind, ind+5))
+                // Process CORD2R
+                } else if (currentLine.toUpperCase().startsWith("CORD2R")) {
+                    model = process_cord2r(model, lines.slice(ind, ind+5))
                 }
             } catch(err) {
                 console.log(err)
@@ -687,9 +690,9 @@ export function process_3D_6s(model, lines) {
 }
 
 export function process_cord1r(model, lines) {
-    // Create CORD1R key if it doesn't exist
-    if (!("CORD1R" in model)) {
-        model["CORD1R"] = []
+    // Create COORDS key if it doesn't exist
+    if (!("COORDS" in model)) {
+        model["COORDS"] = {}
     }
     // Process free field
     if (~lines[0].indexOf(",")) {
@@ -726,16 +729,7 @@ export function process_cord1r(model, lines) {
     g1b = parseInt(g1b)
     g2b = parseInt(g2b)
     g3b = parseInt(g3b)
-    // Add to object
-    let cord1r = {}
-    cord1r["CIDA"] = cida
-    cord1r["G1A"] = g1a
-    cord1r["G2A"] = g2a
-    cord1r["G3A"] = g3a
-    cord1r["CIDB"] = cidb
-    cord1r["G1B"] = g1b
-    cord1r["G2B"] = g2b
-    cord1r["G3B"] = g3b
+    // Validate types
     if (isNaN(cida)) {
         throw new Error('CIDA is not an integer!');
     }
@@ -748,19 +742,134 @@ export function process_cord1r(model, lines) {
     if (isNaN(g3a)) {
         throw new Error('G3A is not an integer!')
     }
-    if (isNaN(cidb)) {
-        throw new Error('CIDB is not an integer!');
+    if (!(isNaN(cidb) && isNaN(g1b) && isNaN(g2b) && isNaN(g3b))) {
+        if (isNaN(cidb)) {
+            throw new Error('CIDB is not an integer!');
+        }
+        if (isNaN(g1b)) {
+            throw new Error('G1B is not an integer!')
+        }
+        if (isNaN(g2b)) {
+            throw new Error('G2B is not an integer!')
+        }
+        if (isNaN(g3b)) {
+            throw new Error('G3B is not an integer!')
+        }
     }
-    if (isNaN(g1b)) {
-        throw new Error('G1B is not an integer!')
+    // Add to object
+    model["COORDS"][cida] = {}
+    model["COORDS"][cida]["TYPE"] = "CORD1R"
+    model["COORDS"][cida]["G1"] = g1a
+    model["COORDS"][cida]["G2"] = g2a
+    model["COORDS"][cida]["G3"] = g3a
+    if (!(isNaN(cidb) && isNaN(g1b) && isNaN(g2b) && isNaN(g3b))) {
+        model["COORDS"][cidb] = {}
+        model["COORDS"][cidb]["TYPE"] = "CORD1R"
+        model["COORDS"][cidb]["G1"] = g1b
+        model["COORDS"][cidb]["G2"] = g2b
+        model["COORDS"][cidb]["G3"] = g3b
     }
-    if (isNaN(g2b)) {
-        throw new Error('G2B is not an integer!')
+    return model
+}
+
+export function process_cord2r(model, lines) {
+    // Create COORDS key if it doesn't exist
+    if (!("COORDS" in model)) {
+        model["COORDS"] = {}
     }
-    if (isNaN(g3b)) {
-        throw new Error('G3B is not an integer!')
+    // Process free field
+    if (~lines[0].indexOf(",")) {
+        // Split line by comma
+        lines[0] = lines[0].split(',')
+        lines[1] = lines[1].split(',')
+        // Unpack array
+        var cid = lines[0][1];
+        var rid = lines[0][2];
+        var a1 = lines[0][3];
+        var a2 = lines[0][4];
+        var a3 = lines[0][5];
+        var b1 = lines[0][6];
+        var b2 = lines[0][7];
+        var b3 = lines[0][8];
+        var c1 = lines[1][1];
+        var c2 = lines[1][2];
+        var c3 = lines[1][3];
+    // Process long field
+    } else if (~lines[0].indexOf("*")) {
+        // Extend both lines to 72 fields if shorter and split by 16 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [cid, rid, a1, a2] = lines[0].match(/.{1,16}/g)
+        lines[1] = lines[1].padEnd(72).slice(8)
+        var [a3, b1, b2, b3] = lines[1].match(/.{1,16}/g)
+        lines[2] = lines[2].padEnd(72).slice(8)
+        var [c1, c2, c3, _] = lines[2].match(/.{1,16}/g)
+    // Process short field
+    } else {
+        // Extend line to 72 fields if shorter and split by 8 characters
+        lines[0] = lines[0].padEnd(72)
+        var [_, cid, rid, a1, a2, a3, b1, b2, b3] = lines[0].match(/.{1,8}/g)
+        lines[1] = lines[1].padEnd(72)
+        var [_, c1, c2, c3, _, _, _, _, _] = lines[1].match(/.{1,8}/g)
     }
-    model["CORD1R"].push(cord1r)
+    // Convert types
+    cid = parseInt(cid)
+    rid = parseInt(rid)
+    a1 = parseInt(a1)
+    a2 = parseInt(a2)
+    a3 = parseInt(a3)
+    b1 = parseInt(b1)
+    b2 = parseInt(b2)
+    b3 = parseInt(b3)
+    c1 = parseInt(c1)
+    c2 = parseInt(c2)
+    c3 = parseInt(c3)
+    // Validate types
+    if (isNaN(cid)) {
+        throw new Error('CID is not an integer!');
+    }
+    if (isNaN(rid)) {
+        throw new Error('RID is not an integer!');
+    }
+    if (isNaN(a1)) {
+        throw new Error('A1 is not an integer!')
+    }
+    if (isNaN(a2)) {
+        throw new Error('A2 is not an integer!')
+    }
+    if (isNaN(a3)) {
+        throw new Error('A3 is not an integer!')
+    }
+    if (isNaN(b1)) {
+        throw new Error('B1 is not an integer!');
+    }
+    if (isNaN(b2)) {
+        throw new Error('B2 is not an integer!')
+    }
+    if (isNaN(b3)) {
+        throw new Error('B3 is not an integer!')
+    }
+    if (isNaN(c1)) {
+        throw new Error('C1 is not an integer!')
+    }
+    if (isNaN(c2)) {
+        throw new Error('C2 is not an integer!')
+    }
+    if (isNaN(c3)) {
+        throw new Error('C3 is not an integer!')
+    }
+    // Add to object
+    model["COORDS"][cid] = {}
+    model["COORDS"][cid]["TYPE"] = "CORD2R"
+    model["COORDS"][cid]["RID"] = rid
+    model["COORDS"][cid]["A1"] = a1
+    model["COORDS"][cid]["A2"] = a2
+    model["COORDS"][cid]["A3"] = a3
+    model["COORDS"][cid]["B1"] = b1
+    model["COORDS"][cid]["B2"] = b2
+    model["COORDS"][cid]["B3"] = b3
+    model["COORDS"][cid]["C1"] = c1
+    model["COORDS"][cid]["C2"] = c2
+    model["COORDS"][cid]["C3"] = c3
     return model
 }
 

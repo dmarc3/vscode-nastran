@@ -882,28 +882,32 @@ describe('Load CORD1R from lines', function () {
     it('Processing short field', function () {
         const lines = ['CORD1R  1       2       3       4       5       6       7       8']
         const expected = {
-            "CORD1R": [
+            "COORDS": {
+                "1":
                 {
-                    "CIDA": 1,
-                    "G1A": 2,
-                    "G2A": 3,
-                    "G3A": 4,
-                    "CIDB": 5,
-                    "G1B": 6,
-                    "G2B": 7,
-                    "G3B": 8,
+                    "TYPE": "CORD1R",
+                    "G1": 2,
+                    "G2": 3,
+                    "G3": 4
+                },
+                "5":
+                {
+                    "TYPE": "CORD1R",
+                    "G1": 6,
+                    "G2": 7,
+                    "G3": 8
                 }
-            ]
+            }
         }
         const actual = fl.process_cord1r({}, lines);
-        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
-        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
-        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
-        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
-        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
-        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
-        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
-        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
+        assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
+        assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
+        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
+        assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
+        assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
     });
     it('Processing long field', function () {
         var lines = [
@@ -911,54 +915,62 @@ describe('Load CORD1R from lines', function () {
             '*       5               6               7               8'
         ]
         const expected = {
-            "CORD1R": [
+            "COORDS": {
+                "1":
                 {
-                    "CIDA": 1,
-                    "G1A": 2,
-                    "G2A": 3,
-                    "G3A": 4,
-                    "CIDB": 5,
-                    "G1B": 6,
-                    "G2B": 7,
-                    "G3B": 8,
+                    "TYPE": "CORD1R",
+                    "G1": 2,
+                    "G2": 3,
+                    "G3": 4
+                },
+                "5":
+                {
+                    "TYPE": "CORD1R",
+                    "G1": 6,
+                    "G2": 7,
+                    "G3": 8
                 }
-            ]
+            }
         }
         const actual = fl.process_cord1r({}, lines);
-        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
-        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
-        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
-        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
-        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
-        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
-        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
-        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
+        assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
+        assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
+        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
+        assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
+        assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
     });
     it('Processing free field', function () {
         const lines = ['CORD1R,1,2,3,4,5,6,7,8']
         const expected = {
-            "CORD1R": [
+            "COORDS": {
+                "1":
                 {
-                    "CIDA": 1,
-                    "G1A": 2,
-                    "G2A": 3,
-                    "G3A": 4,
-                    "CIDB": 5,
-                    "G1B": 6,
-                    "G2B": 7,
-                    "G3B": 8,
+                    "TYPE": "CORD1R",
+                    "G1": 2,
+                    "G2": 3,
+                    "G3": 4
+                },
+                "5":
+                {
+                    "TYPE": "CORD1R",
+                    "G1": 6,
+                    "G2": 7,
+                    "G3": 8
                 }
-            ]
+            }
         }
         const actual = fl.process_cord1r({}, lines);
-        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
-        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
-        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
-        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
-        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
-        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
-        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
-        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
+        assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
+        assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
+        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
+        assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
+        assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
     });
     it('Processing field validation', function () {
         // Bad CIDA
@@ -985,6 +997,161 @@ describe('Load CORD1R from lines', function () {
         // Bad G3B
         lines = ['CORD1R  1       2       3       4       5       6       7       BAD']
         expect(function() {fl.process_cord1r({}, lines)}).to.throw('G3B is not an integer!');
+    });
+});
+
+describe('Load CORD2R from lines', function () {
+    it('Processing short field', function () {
+        const lines = ['CORD2R  1       2       3       4       5       6       7       8',
+                       '        9       10      11']
+        const expected = {
+            "COORDS": {
+                "1":
+                {
+                    "TYPE": "CORD2R",
+                    "RID": 2,
+                    "A1": 3,
+                    "A2": 4,
+                    "A3": 5,
+                    "B1": 6,
+                    "B2": 7,
+                    "B3": 8,
+                    "C1": 9,
+                    "C2": 10,
+                    "C3": 11,
+                }
+            }
+        }
+        const actual = fl.process_cord2r({}, lines);
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
+        assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
+        assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
+        assert.equal(actual['COORDS'][1]['A3'],   expected['COORDS'][1]['A3'])
+        assert.equal(actual['COORDS'][1]['B1'],   expected['COORDS'][1]['B1'])
+        assert.equal(actual['COORDS'][1]['B2'],   expected['COORDS'][1]['B2'])
+        assert.equal(actual['COORDS'][1]['B3'],   expected['COORDS'][1]['B3'])
+        assert.equal(actual['COORDS'][1]['C1'],   expected['COORDS'][1]['C1'])
+        assert.equal(actual['COORDS'][1]['C2'],   expected['COORDS'][1]['C2'])
+        assert.equal(actual['COORDS'][1]['C3'],   expected['COORDS'][1]['C3'])
+    });
+    it('Processing long field', function () {
+        var lines = [
+            'CORD2R* 1               2               3               4',
+            '*       5               6               7               8',
+            '*       9               10              11'
+        ]
+        const expected = {
+            "COORDS": {
+                "1":
+                {
+                    "TYPE": "CORD2R",
+                    "RID": 2,
+                    "A1": 3,
+                    "A2": 4,
+                    "A3": 5,
+                    "B1": 6,
+                    "B2": 7,
+                    "B3": 8,
+                    "C1": 9,
+                    "C2": 10,
+                    "C3": 11,
+                }
+            }
+        }
+        const actual = fl.process_cord2r({}, lines);
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
+        assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
+        assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
+        assert.equal(actual['COORDS'][1]['A3'],   expected['COORDS'][1]['A3'])
+        assert.equal(actual['COORDS'][1]['B1'],   expected['COORDS'][1]['B1'])
+        assert.equal(actual['COORDS'][1]['B2'],   expected['COORDS'][1]['B2'])
+        assert.equal(actual['COORDS'][1]['B3'],   expected['COORDS'][1]['B3'])
+        assert.equal(actual['COORDS'][1]['C1'],   expected['COORDS'][1]['C1'])
+        assert.equal(actual['COORDS'][1]['C2'],   expected['COORDS'][1]['C2'])
+        assert.equal(actual['COORDS'][1]['C3'],   expected['COORDS'][1]['C3'])
+    });
+    it('Processing free field', function () {
+        const lines = ['CORD2R,1,2,3,4,5,6,7,8',
+                       ',9,10,11']
+        const expected = {
+            "COORDS": {
+                "1":
+                {
+                    "TYPE": "CORD2R",
+                    "RID": 2,
+                    "A1": 3,
+                    "A2": 4,
+                    "A3": 5,
+                    "B1": 6,
+                    "B2": 7,
+                    "B3": 8,
+                    "C1": 9,
+                    "C2": 10,
+                    "C3": 11,
+                }
+            }
+        }
+        const actual = fl.process_cord2r({}, lines);
+        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
+        assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
+        assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
+        assert.equal(actual['COORDS'][1]['A3'],   expected['COORDS'][1]['A3'])
+        assert.equal(actual['COORDS'][1]['B1'],   expected['COORDS'][1]['B1'])
+        assert.equal(actual['COORDS'][1]['B2'],   expected['COORDS'][1]['B2'])
+        assert.equal(actual['COORDS'][1]['B3'],   expected['COORDS'][1]['B3'])
+        assert.equal(actual['COORDS'][1]['C1'],   expected['COORDS'][1]['C1'])
+        assert.equal(actual['COORDS'][1]['C2'],   expected['COORDS'][1]['C2'])
+        assert.equal(actual['COORDS'][1]['C3'],   expected['COORDS'][1]['C3'])
+    });
+    it('Processing field validation', function () {
+        // Bad CID
+        var lines = ['CORD2R  BAD     2       3       4       5       6       7       8',
+                     '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('CID is not an integer!');
+        // Bad RID
+        lines = ['CORD2R  1       BAD     3       4       5       6       7       8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('RID is not an integer!');
+        // Bad A1
+        lines = ['CORD2R  1       2       BAD     4       5       6       7       8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A1 is not an integer!');
+        // Bad A2
+        lines = ['CORD2R  1       2       3       BAD     5       6       7       8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A2 is not an integer!');
+        // Bad A3
+        lines = ['CORD2R  1       2       3       4       BAD     6       7       8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A3 is not an integer!');
+        // Bad B1
+        lines = ['CORD2R  1       2       3       4       5       BAD     7       8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B1 is not an integer!');
+        // Bad B2
+        lines = ['CORD2R  1       2       3       4       5       6       BAD     8',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B2 is not an integer!');
+        // Bad B3
+        lines = ['CORD2R  1       2       3       4       5       6       7       BAD',
+                 '        9       10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B3 is not an integer!');
+        // Bad C1
+        lines = ['CORD2R  1       2       3       4       5       6       7       8',
+                 '        BAD     10      11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C1 is not an integer!');
+        // Bad C2
+        lines = ['CORD2R  1       2       3       4       5       6       7       8',
+                 '        9       BAD     11']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C2 is not an integer!');
+        // Bad C3
+        lines = ['CORD2R  1       2       3       4       5       6       7       8',
+                 '        9       10      BAD']
+        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C3 is not an integer!');
+        
     });
 });
 
