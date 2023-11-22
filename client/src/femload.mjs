@@ -9,13 +9,16 @@ export function loadModel(modelContent) {
     const elem_3D_5s_a = ["CPYRAM"]
     const elem_3D_5s_b = ["CPENTA", "CIFPENT"]
     const elem_3D_6s = ["CHEXA", "CHACAB", "CHACBR", "CIFHEX"]
+    const cord1 = ["CORD1R", "CORD1C", "CORD1S"]
+    const cord2 = ["CORD2R", "CORD2C", "CORD2S"]
     for (var include in modelContent) {
         var lines = modelContent[include]
         model[include] = {}
         for (var [ind, currentLine] of lines.entries()) {
             try {
+                currentLine = currentLine.toUpperCase();
                 // Process GRIDs
-                if (currentLine.toUpperCase().startsWith("GRID")) {
+                if (currentLine.startsWith("GRID")) {
                     model = process_grid(model, lines.slice(ind, ind+5))
                 // Process 1D elements (a)
                 } else if (elem_1D_a.some(elem_1D_a => currentLine.startsWith(elem_1D_a))) {
@@ -30,7 +33,7 @@ export function loadModel(modelContent) {
                 } else if (elem_2D_4e.some(elem_2D_4e => currentLine.startsWith(elem_2D_4e))) {
                     model[include] = process_2D_4e(model[include], lines.slice(ind, ind+5))
                 // Process 2D elements with 3 edges
-                } else if (elem_2D_3e.some(elem_2D_3e => currentLine.startsWith(elem_2D_3e)) && !currentLine.toUpperCase().includes('CTRIAX6')) {
+                } else if (elem_2D_3e.some(elem_2D_3e => currentLine.startsWith(elem_2D_3e)) && !currentLine.includes('CTRIAX6')) {
                     model[include] = process_2D_3e(model[include], lines.slice(ind, ind+5))
                 // Process 3D elements with 4 sides
                 } else if (elem_3D_4s.some(elem_3D_4s => currentLine.startsWith(elem_3D_4s))) {
@@ -43,12 +46,12 @@ export function loadModel(modelContent) {
                 // Process 3D elements with 6 sides
                 } else if (elem_3D_6s.some(elem_3D_6s => currentLine.startsWith(elem_3D_6s))) {
                     model[include] = process_3D_6s(model[include], lines.slice(ind, ind+5))
-                // Process CORD1R
-                } else if (currentLine.toUpperCase().startsWith("CORD1R")) {
-                    model = process_cord1r(model, lines.slice(ind, ind+5))
-                // Process CORD2R
-                } else if (currentLine.toUpperCase().startsWith("CORD2R")) {
-                    model = process_cord2r(model, lines.slice(ind, ind+5))
+                // Process CORD1*
+                } else if (cord1.some(cord1 => currentLine.startsWith(cord1))) {
+                    model = process_cord1(model, lines.slice(ind, ind+5))
+                // Process CORD2*
+                } else if (cord2.some(cord2 => currentLine.startsWith(cord2))) {
+                    model = process_cord2(model, lines.slice(ind, ind+5))
                 }
             } catch(err) {
                 console.log(err)
@@ -689,7 +692,7 @@ export function process_3D_6s(model, lines) {
     return model
 }
 
-export function process_cord1r(model, lines) {
+export function process_cord1(model, lines) {
     // Create COORDS key if it doesn't exist
     if (!("COORDS" in model)) {
         model["COORDS"] = {}
@@ -699,6 +702,7 @@ export function process_cord1r(model, lines) {
         // Split line by comma
         lines[0] = lines[0].split(',')
         // Unpack array
+        var type = lines[0][0];
         var cida = lines[0][1];
         var g1a = lines[0][2];
         var g2a = lines[0][3];
@@ -710,6 +714,7 @@ export function process_cord1r(model, lines) {
     // Process long field
     } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
+        var type = lines[0].substring(0, 8)
         lines[0] = lines[0].padEnd(72).slice(8)
         var [cida, g1a, g2a, g3a] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
@@ -718,9 +723,10 @@ export function process_cord1r(model, lines) {
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
-        var [_, cida, g1a, g2a, g3a, cidb, g1b, g2b, g3b] = lines[0].match(/.{1,8}/g)
+        var [type, cida, g1a, g2a, g3a, cidb, g1b, g2b, g3b] = lines[0].match(/.{1,8}/g)
     }
     // Convert types
+    type = type.replace('*', '').replace(/\s/g, "");
     cida = parseInt(cida)
     g1a = parseInt(g1a)
     g2a = parseInt(g2a)
@@ -758,13 +764,13 @@ export function process_cord1r(model, lines) {
     }
     // Add to object
     model["COORDS"][cida] = {}
-    model["COORDS"][cida]["TYPE"] = "CORD1R"
+    model["COORDS"][cida]["TYPE"] = type
     model["COORDS"][cida]["G1"] = g1a
     model["COORDS"][cida]["G2"] = g2a
     model["COORDS"][cida]["G3"] = g3a
     if (!(isNaN(cidb) && isNaN(g1b) && isNaN(g2b) && isNaN(g3b))) {
         model["COORDS"][cidb] = {}
-        model["COORDS"][cidb]["TYPE"] = "CORD1R"
+        model["COORDS"][cidb]["TYPE"] = type
         model["COORDS"][cidb]["G1"] = g1b
         model["COORDS"][cidb]["G2"] = g2b
         model["COORDS"][cidb]["G3"] = g3b
@@ -772,7 +778,7 @@ export function process_cord1r(model, lines) {
     return model
 }
 
-export function process_cord2r(model, lines) {
+export function process_cord2(model, lines) {
     // Create COORDS key if it doesn't exist
     if (!("COORDS" in model)) {
         model["COORDS"] = {}
@@ -783,6 +789,7 @@ export function process_cord2r(model, lines) {
         lines[0] = lines[0].split(',')
         lines[1] = lines[1].split(',')
         // Unpack array
+        var type = lines[0][0];
         var cid = lines[0][1];
         var rid = lines[0][2];
         var a1 = lines[0][3];
@@ -797,6 +804,7 @@ export function process_cord2r(model, lines) {
     // Process long field
     } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
+        var type = lines[0].substring(0, 8)
         lines[0] = lines[0].padEnd(72).slice(8)
         var [cid, rid, a1, a2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
@@ -807,13 +815,16 @@ export function process_cord2r(model, lines) {
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
-        var [_, cid, rid, a1, a2, a3, b1, b2, b3] = lines[0].match(/.{1,8}/g)
+        var [type, cid, rid, a1, a2, a3, b1, b2, b3] = lines[0].match(/.{1,8}/g)
         lines[1] = lines[1].padEnd(72)
         var [_, c1, c2, c3, _, _, _, _, _] = lines[1].match(/.{1,8}/g)
     }
     // Convert types
+    type = type.replace('*', '').replace(/\s/g, "");
     cid = parseInt(cid)
-    rid = parseInt(rid)
+    if (!(rid.replace(/\s+/g, '') === '')) {
+        rid = parseInt(rid)
+    }
     a1 = parseInt(a1)
     a2 = parseInt(a2)
     a3 = parseInt(a3)
@@ -859,7 +870,7 @@ export function process_cord2r(model, lines) {
     }
     // Add to object
     model["COORDS"][cid] = {}
-    model["COORDS"][cid]["TYPE"] = "CORD2R"
+    model["COORDS"][cid]["TYPE"] = type
     model["COORDS"][cid]["RID"] = rid
     model["COORDS"][cid]["A1"] = a1
     model["COORDS"][cid]["A2"] = a2

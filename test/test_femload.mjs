@@ -878,7 +878,7 @@ describe('Load 3D 6-sided elements from lines', function () {
     });
 });
 
-describe('Load CORD1R from lines', function () {
+describe('Load CORD1 from lines', function () {
     it('Processing short field', function () {
         const lines = ['CORD1R  1       2       3       4       5       6       7       8']
         const expected = {
@@ -899,7 +899,7 @@ describe('Load CORD1R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord1r({}, lines);
+        const actual = fl.process_cord1({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
@@ -932,7 +932,7 @@ describe('Load CORD1R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord1r({}, lines);
+        const actual = fl.process_cord1({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
@@ -962,7 +962,7 @@ describe('Load CORD1R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord1r({}, lines);
+        const actual = fl.process_cord1({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
@@ -975,32 +975,32 @@ describe('Load CORD1R from lines', function () {
     it('Processing field validation', function () {
         // Bad CIDA
         var lines = ['CORD1R  BAD     2       3       4       5       6       7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('CIDA is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('CIDA is not an integer!');
         // Bad G1A
         lines = ['CORD1R  1       BAD     3       4       5       6       7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G1A is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G1A is not an integer!');
         // Bad G2A
         lines = ['CORD1R  1       2       BAD     4       5       6       7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G2A is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G2A is not an integer!');
         // Bad G1A
         lines = ['CORD1R  1       2       3       BAD     5       6       7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G3A is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G3A is not an integer!');
         // Bad CIDB
         lines = ['CORD1R  1       2       3       4       BAD     6       7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('CIDB is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('CIDB is not an integer!');
         // Bad G1B
         lines = ['CORD1R  1       2       3       4       5       BAD     7       8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G1B is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G1B is not an integer!');
         // Bad G2B
         lines = ['CORD1R  1       2       3       4       5       6       BAD     8']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G2B is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G2B is not an integer!');
         // Bad G3B
         lines = ['CORD1R  1       2       3       4       5       6       7       BAD']
-        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G3B is not an integer!');
+        expect(function() {fl.process_cord1({}, lines)}).to.throw('G3B is not an integer!');
     });
 });
 
-describe('Load CORD2R from lines', function () {
+describe('Load CORD2 from lines', function () {
     it('Processing short field', function () {
         const lines = ['CORD2R  1       2       3       4       5       6       7       8',
                        '        9       10      11']
@@ -1022,7 +1022,7 @@ describe('Load CORD2R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord2r({}, lines);
+        const actual = fl.process_cord2({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
@@ -1059,7 +1059,7 @@ describe('Load CORD2R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord2r({}, lines);
+        const actual = fl.process_cord2({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
@@ -1093,7 +1093,7 @@ describe('Load CORD2R from lines', function () {
                 }
             }
         }
-        const actual = fl.process_cord2r({}, lines);
+        const actual = fl.process_cord2({}, lines);
         assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
@@ -1110,47 +1110,47 @@ describe('Load CORD2R from lines', function () {
         // Bad CID
         var lines = ['CORD2R  BAD     2       3       4       5       6       7       8',
                      '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('CID is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('CID is not an integer!');
         // Bad RID
         lines = ['CORD2R  1       BAD     3       4       5       6       7       8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('RID is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('RID is not an integer!');
         // Bad A1
         lines = ['CORD2R  1       2       BAD     4       5       6       7       8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A1 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('A1 is not an integer!');
         // Bad A2
         lines = ['CORD2R  1       2       3       BAD     5       6       7       8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A2 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('A2 is not an integer!');
         // Bad A3
         lines = ['CORD2R  1       2       3       4       BAD     6       7       8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('A3 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('A3 is not an integer!');
         // Bad B1
         lines = ['CORD2R  1       2       3       4       5       BAD     7       8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B1 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('B1 is not an integer!');
         // Bad B2
         lines = ['CORD2R  1       2       3       4       5       6       BAD     8',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B2 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('B2 is not an integer!');
         // Bad B3
         lines = ['CORD2R  1       2       3       4       5       6       7       BAD',
                  '        9       10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('B3 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('B3 is not an integer!');
         // Bad C1
         lines = ['CORD2R  1       2       3       4       5       6       7       8',
                  '        BAD     10      11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C1 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('C1 is not an integer!');
         // Bad C2
         lines = ['CORD2R  1       2       3       4       5       6       7       8',
                  '        9       BAD     11']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C2 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('C2 is not an integer!');
         // Bad C3
         lines = ['CORD2R  1       2       3       4       5       6       7       8',
                  '        9       10      BAD']
-        expect(function() {fl.process_cord2r({}, lines)}).to.throw('C3 is not an integer!');
+        expect(function() {fl.process_cord2({}, lines)}).to.throw('C3 is not an integer!');
         
     });
 });

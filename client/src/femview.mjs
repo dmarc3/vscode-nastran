@@ -16,6 +16,7 @@ let clock = new THREE.Clock();
 
 // Load model
 var model = loadModel(modelContent)
+console.log(model)
 
 // Check that model was successfully loaded
 if (typeof model === 'string') {
