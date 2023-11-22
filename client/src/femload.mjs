@@ -43,8 +43,10 @@ export function loadModel(modelContent) {
                 // Process 3D elements with 6 sides
                 } else if (elem_3D_6s.some(elem_3D_6s => currentLine.startsWith(elem_3D_6s))) {
                     model[include] = process_3D_6s(model[include], lines.slice(ind, ind+5))
+                // Process CORD1R
+                } else if (currentLine.toUpperCase().startsWith("CORD1R")) {
+                    model = process_cord1r(model, lines.slice(ind, ind+5))
                 }
-                // Process 3D elements with 7 sides
             } catch(err) {
                 console.log(err)
                 return currentLine
@@ -681,6 +683,84 @@ export function process_3D_6s(model, lines) {
     model["3D_6s"][eid]["G6"] = g6
     model["3D_6s"][eid]["G7"] = g7
     model["3D_6s"][eid]["G8"] = g8
+    return model
+}
+
+export function process_cord1r(model, lines) {
+    // Create CORD1R key if it doesn't exist
+    if (!("CORD1R" in model)) {
+        model["CORD1R"] = []
+    }
+    // Process free field
+    if (~lines[0].indexOf(",")) {
+        // Split line by comma
+        lines[0] = lines[0].split(',')
+        // Unpack array
+        var cida = lines[0][1];
+        var g1a = lines[0][2];
+        var g2a = lines[0][3];
+        var g3a = lines[0][4];
+        var cidb = lines[0][5];
+        var g1b = lines[0][6];
+        var g2b = lines[0][7];
+        var g3b = lines[0][8];
+    // Process long field
+    } else if (~lines[0].indexOf("*")) {
+        // Extend both lines to 72 fields if shorter and split by 16 characters
+        lines[0] = lines[0].padEnd(72).slice(8)
+        var [cida, g1a, g2a, g3a] = lines[0].match(/.{1,16}/g)
+        lines[1] = lines[1].padEnd(72).slice(8)
+        var [cidb, g1b, g2b, g3b] = lines[1].match(/.{1,16}/g)
+    // Process short field
+    } else {
+        // Extend line to 72 fields if shorter and split by 8 characters
+        lines[0] = lines[0].padEnd(72)
+        var [_, cida, g1a, g2a, g3a, cidb, g1b, g2b, g3b] = lines[0].match(/.{1,8}/g)
+    }
+    // Convert types
+    cida = parseInt(cida)
+    g1a = parseInt(g1a)
+    g2a = parseInt(g2a)
+    g3a = parseInt(g3a)
+    cidb = parseInt(cidb)
+    g1b = parseInt(g1b)
+    g2b = parseInt(g2b)
+    g3b = parseInt(g3b)
+    // Add to object
+    let cord1r = {}
+    cord1r["CIDA"] = cida
+    cord1r["G1A"] = g1a
+    cord1r["G2A"] = g2a
+    cord1r["G3A"] = g3a
+    cord1r["CIDB"] = cidb
+    cord1r["G1B"] = g1b
+    cord1r["G2B"] = g2b
+    cord1r["G3B"] = g3b
+    if (isNaN(cida)) {
+        throw new Error('CIDA is not an integer!');
+    }
+    if (isNaN(g1a)) {
+        throw new Error('G1A is not an integer!')
+    }
+    if (isNaN(g2a)) {
+        throw new Error('G2A is not an integer!')
+    }
+    if (isNaN(g3a)) {
+        throw new Error('G3A is not an integer!')
+    }
+    if (isNaN(cidb)) {
+        throw new Error('CIDB is not an integer!');
+    }
+    if (isNaN(g1b)) {
+        throw new Error('G1B is not an integer!')
+    }
+    if (isNaN(g2b)) {
+        throw new Error('G2B is not an integer!')
+    }
+    if (isNaN(g3b)) {
+        throw new Error('G3B is not an integer!')
+    }
+    model["CORD1R"].push(cord1r)
     return model
 }
 

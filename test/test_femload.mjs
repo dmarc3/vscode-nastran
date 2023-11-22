@@ -878,4 +878,113 @@ describe('Load 3D 6-sided elements from lines', function () {
     });
 });
 
+describe('Load CORD1R from lines', function () {
+    it('Processing short field', function () {
+        const lines = ['CORD1R  1       2       3       4       5       6       7       8']
+        const expected = {
+            "CORD1R": [
+                {
+                    "CIDA": 1,
+                    "G1A": 2,
+                    "G2A": 3,
+                    "G3A": 4,
+                    "CIDB": 5,
+                    "G1B": 6,
+                    "G2B": 7,
+                    "G3B": 8,
+                }
+            ]
+        }
+        const actual = fl.process_cord1r({}, lines);
+        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
+        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
+        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
+        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
+        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
+        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
+        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
+        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+    });
+    it('Processing long field', function () {
+        var lines = [
+            'CORD1R* 1               2               3               4',
+            '*       5               6               7               8'
+        ]
+        const expected = {
+            "CORD1R": [
+                {
+                    "CIDA": 1,
+                    "G1A": 2,
+                    "G2A": 3,
+                    "G3A": 4,
+                    "CIDB": 5,
+                    "G1B": 6,
+                    "G2B": 7,
+                    "G3B": 8,
+                }
+            ]
+        }
+        const actual = fl.process_cord1r({}, lines);
+        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
+        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
+        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
+        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
+        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
+        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
+        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
+        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+    });
+    it('Processing free field', function () {
+        const lines = ['CORD1R,1,2,3,4,5,6,7,8']
+        const expected = {
+            "CORD1R": [
+                {
+                    "CIDA": 1,
+                    "G1A": 2,
+                    "G2A": 3,
+                    "G3A": 4,
+                    "CIDB": 5,
+                    "G1B": 6,
+                    "G2B": 7,
+                    "G3B": 8,
+                }
+            ]
+        }
+        const actual = fl.process_cord1r({}, lines);
+        assert.equal(actual['CORD1R'][0]['CIDA'], expected['CORD1R'][0]['CIDA'])
+        assert.equal(actual['CORD1R'][0]['G1A'],  expected['CORD1R'][0]['G1A'])
+        assert.equal(actual['CORD1R'][0]['G2A'],  expected['CORD1R'][0]['G2A'])
+        assert.equal(actual['CORD1R'][0]['G3A'],  expected['CORD1R'][0]['G3A'])
+        assert.equal(actual['CORD1R'][0]['CIDB'], expected['CORD1R'][0]['CIDB'])
+        assert.equal(actual['CORD1R'][0]['G1B'],  expected['CORD1R'][0]['G1B'])
+        assert.equal(actual['CORD1R'][0]['G2B'],  expected['CORD1R'][0]['G2B'])
+        assert.equal(actual['CORD1R'][0]['G3B'],  expected['CORD1R'][0]['G3B'])
+    });
+    it('Processing field validation', function () {
+        // Bad CIDA
+        var lines = ['CORD1R  BAD     2       3       4       5       6       7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('CIDA is not an integer!');
+        // Bad G1A
+        lines = ['CORD1R  1       BAD     3       4       5       6       7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G1A is not an integer!');
+        // Bad G2A
+        lines = ['CORD1R  1       2       BAD     4       5       6       7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G2A is not an integer!');
+        // Bad G1A
+        lines = ['CORD1R  1       2       3       BAD     5       6       7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G3A is not an integer!');
+        // Bad CIDB
+        lines = ['CORD1R  1       2       3       4       BAD     6       7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('CIDB is not an integer!');
+        // Bad G1B
+        lines = ['CORD1R  1       2       3       4       5       BAD     7       8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G1B is not an integer!');
+        // Bad G2B
+        lines = ['CORD1R  1       2       3       4       5       6       BAD     8']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G2B is not an integer!');
+        // Bad G3B
+        lines = ['CORD1R  1       2       3       4       5       6       7       BAD']
+        expect(function() {fl.process_cord1r({}, lines)}).to.throw('G3B is not an integer!');
+    });
+});
 
