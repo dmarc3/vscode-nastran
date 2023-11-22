@@ -125,8 +125,17 @@ export function process_1d_a(model, lines) {
     if (!("1D" in model)) {
         model["1D"] = {}
     }
+    // Process free field
+    if (~lines[0].indexOf(",")) {
+        // Split line by comma
+        lines[0] = lines[0].split(',')
+        // Unpack array
+        var eid = lines[0][1];
+        var pid = lines[0][2];
+        var g1 = lines[0][3];
+        var g2 = lines[0][4];
     // Process long field
-    if (~lines[0].indexOf("*")) {
+    } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
@@ -142,6 +151,9 @@ export function process_1d_a(model, lines) {
     g1 = parseInt(g1)
     g2 = parseInt(g2)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -161,11 +173,22 @@ export function process_1d_b(model, lines) {
     if (!("1D" in model)) {
         model["1D"] = {}
     }
+    // Process free field
+    if (~lines[0].indexOf(",")) {
+        // Split line by comma
+        lines[0] = lines[0].split(',')
+        // Unpack array
+        var eid = lines[0][1];
+        var pid = lines[0][2];
+        var g1 = lines[0][3];
+        var c1 = lines[0][4];
+        var g2 = lines[0][5];
+        var c2 = lines[0][6];
     // Process long field
-    if (~lines[0].indexOf("*")) {
+    } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
         lines[0] = lines[0].padEnd(72).slice(8)
-        var [eid, pid, g1, g2] = lines[0].match(/.{1,16}/g)
+        var [eid, pid, g1, c1] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
         var [g2, c2] = lines[1].match(/.{1,16}/g)
     // Process short field
@@ -182,6 +205,9 @@ export function process_1d_b(model, lines) {
     g2 = parseInt(g2)
     c2 = parseInt(c2)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -201,8 +227,17 @@ export function process_1d_c(model, lines) {
     if (!("1D" in model)) {
         model["1D"] = {}
     }
+    // Process free field
+    if (~lines[0].indexOf(",")) {
+        // Split line by comma
+        lines[0] = lines[0].split(',')
+        // Unpack array
+        var eid = lines[0][1];
+        var g1 = lines[0][2];
+        var g2 = lines[0][3];
+        var mid = lines[0][4];
     // Process long field
-    if (~lines[0].indexOf("*")) {
+    } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
         lines[0] = lines[0].padEnd(72).slice(8)
         var [eid, g1, g2, mid] = lines[0].match(/.{1,16}/g)
@@ -218,6 +253,9 @@ export function process_1d_c(model, lines) {
     g2 = parseInt(g2)
     mid = parseInt(mid)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -270,6 +308,9 @@ export function process_2D_3e(model, lines) {
     mcid = parseInt(mcid)
     zoffs = parseInt(zoffs)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -328,6 +369,9 @@ export function process_2D_4e(model, lines) {
     mcid = parseInt(mcid)
     zoffs = parseInt(zoffs)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -386,6 +430,9 @@ export function process_3D_4s(model, lines) {
     g3 = parseInt(g3)
     g4 = parseInt(g4)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -446,6 +493,9 @@ export function process_3D_5s_a(model, lines) {
     g4 = parseInt(g4)
     g5 = parseInt(g5)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -512,6 +562,9 @@ export function process_3D_5s_b(model, lines) {
     g5 = parseInt(g5)
     g6 = parseInt(g6)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -591,6 +644,9 @@ export function process_3D_6s(model, lines) {
     g7 = parseInt(g7)
     g8 = parseInt(g8)
     // Validate types
+    if (isNaN(eid)) {
+        throw new Error('EID is not an integer!')
+    }
     if (isNaN(g1)) {
         throw new Error('G1 is not an integer!')
     }
@@ -598,16 +654,22 @@ export function process_3D_6s(model, lines) {
         throw new Error('G2 is not an integer!')
     }
     if (isNaN(g3)) {
-        throw new Error('G1 is not an integer!')
+        throw new Error('G3 is not an integer!')
     }
     if (isNaN(g4)) {
-        throw new Error('G2 is not an integer!')
+        throw new Error('G4 is not an integer!')
     }
     if (isNaN(g5)) {
-        throw new Error('G1 is not an integer!')
+        throw new Error('G5 is not an integer!')
     }
     if (isNaN(g6)) {
-        throw new Error('G2 is not an integer!')
+        throw new Error('G6 is not an integer!')
+    }
+    if (isNaN(g7)) {
+        throw new Error('G7 is not an integer!')
+    }
+    if (isNaN(g8)) {
+        throw new Error('G8 is not an integer!')
     }
     // Add to object
     model["3D_6s"][eid] = {}

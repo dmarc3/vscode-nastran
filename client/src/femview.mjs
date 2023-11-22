@@ -71,7 +71,7 @@ function init(model) {
     }
     point_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
     var point_material = new THREE.PointsMaterial( {
-        color: 0x899499,
+        color: 0x000000,
         // size: 4,
         map: null
     } );
@@ -108,7 +108,7 @@ function init(model) {
             setColor( g, ev.value, 'face' )
         })
         // Edge Color
-        let color2 = f.addBinding({'edge color': '#899499'}, 'edge color');
+        let color2 = f.addBinding({'edge color': '#000000'}, 'edge color');
         color2.on('change', (ev) => {
             setColor( g, ev.value, 'wireframe' )
         })
@@ -120,7 +120,7 @@ function init(model) {
         face_material.side = THREE.DoubleSide;
         // Initialize Line information
         var line_geometry = new THREE.BufferGeometry();
-        var line_material = new THREE.LineBasicMaterial( {color: 0x899499} );
+        var line_material = new THREE.LineBasicMaterial( {color: 0x000000} );
         var line_indices = [];
         // Loop through all includes
         if (Object.keys(model[include]).length !== 0) {
