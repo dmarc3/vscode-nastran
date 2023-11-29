@@ -999,14 +999,14 @@ describe('Load CORD1 from lines', function () {
 
 describe('Load CORD2 from lines', function () {
     it('Processing short field', function () {
-        const lines = ['CORD2R  1       2       3       4       5       6       7       8',
-                       '        9       10      11']
+        const lines = ['CORD2R  1               3       4       5       6       7       8',
+                       '        9       10      11'] 
         const expected = {
             "COORDS": {
                 "1":
                 {
                     "NAME": "CORD2R",
-                    "RID": 2,
+                    "RID": 0,
                     "A1": 3,
                     "A2": 4,
                     "A3": 5,

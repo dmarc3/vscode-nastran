@@ -930,30 +930,36 @@ export function toGlobal(grid, model) {
     // Convert grid to vectorious array
     var g = array([grid.X1, grid.X2, grid.X3]);
     // Transform
-    if (coord['NAME'].startsWith('CORD2')) {
+    if (coord['NAME'].startsWith('CORD1')) {
+        var a = array([model['GRID'][coord.G1]['X1'], model['GRID'][coord.G1]['X2'], model['GRID'][coord.G1]['X3']]);
+        var b = array([model['GRID'][coord.G2]['X1'], model['GRID'][coord.G2]['X2'], model['GRID'][coord.G2]['X3']]);
+        var c = array([model['GRID'][coord.G3]['X1'], model['GRID'][coord.G3]['X2'], model['GRID'][coord.G3]['X3']]);
+    } else if (coord['NAME'].startsWith('CORD2')) {
         // Create vectorious arrays of coordinate system points
-        const a = array([coord.A1, coord.A2, coord.A3]);
-        const b = array([coord.B1, coord.B2, coord.B3]);
-        const c = array([coord.C1, coord.C2, coord.C3]);
-        // Calculate ijk
-        const k = (b.subtract(a)).normalize();
-        const j = (k.copy().cross(c.subtract(a))).normalize();
-        const i = (j.copy().cross(k)).normalize();
-        // Calculate transformation matrix and invert
-        const Tinv = i.copy().combine(j).combine(k).reshape(3, 3).inv();
-        // Apply transformation matrix and calculate position in reference frame
-        // TODO: Investigate why cannot do Tinv.multiply(g)
-        const ng = array([
-            Tinv.data[0]*g.data[0] + Tinv.data[1]*g.data[1] + Tinv.data[2]*g.data[2],
-            Tinv.data[3]*g.data[0] + Tinv.data[4]*g.data[1] + Tinv.data[5]*g.data[2],
-            Tinv.data[6]*g.data[0] + Tinv.data[7]*g.data[1] + Tinv.data[8]*g.data[2]
-        ]).add(a);
-        // Update grid
-        grid.X1 = ng.data[0];
-        grid.X2 = ng.data[1];
-        grid.X3 = ng.data[2];
-        grid.CP = coord.RID;
+        var a = array([coord.A1, coord.A2, coord.A3]);
+        var b = array([coord.B1, coord.B2, coord.B3]);
+        var c = array([coord.C1, coord.C2, coord.C3]);
+    } else {
+        throw Error(`Unkown coordinate system type: ${coord['NAME']}!`)
     }
+    // Calculate ijk
+    const k = (b.subtract(a)).normalize();
+    const j = (k.copy().cross(c.subtract(a))).normalize();
+    const i = (j.copy().cross(k)).normalize();
+    // Calculate transformation matrix and invert
+    const Tinv = i.copy().combine(j).combine(k).reshape(3, 3).inv();
+    // Apply transformation matrix and calculate position in reference frame
+    // TODO: Investigate why cannot do Tinv.multiply(g)
+    const ng = array([
+        Tinv.data[0]*g.data[0] + Tinv.data[1]*g.data[1] + Tinv.data[2]*g.data[2],
+        Tinv.data[3]*g.data[0] + Tinv.data[4]*g.data[1] + Tinv.data[5]*g.data[2],
+        Tinv.data[6]*g.data[0] + Tinv.data[7]*g.data[1] + Tinv.data[8]*g.data[2]
+    ]).add(a);
+    // Update grid
+    grid.X1 = ng.data[0];
+    grid.X2 = ng.data[1];
+    grid.X3 = ng.data[2];
+    grid.CP = coord.RID;
     // Recursively run function till in global
     if (grid['CP'] !== 0) {
         toGlobal(grid, model);
