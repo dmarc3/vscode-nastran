@@ -10,6 +10,7 @@ describe('Convert string field to float', function () {
         assert.equal(fl.str2float("     2.0"), 2.)
         assert.equal(fl.str2float("  2.    "), 2.)
         assert.equal(fl.str2float("2.0     "), 2.)
+        assert.equal(fl.str2float("+2.0    "), 2.)
         assert.equal(fl.str2float("    -2.0"), -2.)
     });
     it('Processing scientific notation', function () {
@@ -33,12 +34,12 @@ describe('Convert string field to float', function () {
 
 describe('Load GRID from lines', function () {
     it('Processing short field', function () {
-        const lines = ['GRID    1       2       3.0     4.0     5.0     6       7       8']
+        const lines = ['GRID    1               3.0     4.0     5.0     6       7       8']
         const expected = {
-            "GRID": [
+            "GRID": {
+                1:
                 {
-                    "ID": 1,
-                    "CP": 2,
+                    "CP": 0,
                     "X1": 3.,
                     "X2": 4.,
                     "X3": 5.,
@@ -46,17 +47,16 @@ describe('Load GRID from lines', function () {
                     "PS": 7,
                     "SEID": 8,
                 }
-            ]
+            }
         }
         const actual = fl.process_grid({}, lines);
-        assert.equal(actual['GRID'][0]['ID'],   expected['GRID'][0]['ID'])
-        assert.equal(actual['GRID'][0]['CP'],   expected['GRID'][0]['CP'])
-        assert.equal(actual['GRID'][0]['X1'],   expected['GRID'][0]['X1'])
-        assert.equal(actual['GRID'][0]['X2'],   expected['GRID'][0]['X2'])
-        assert.equal(actual['GRID'][0]['X3'],   expected['GRID'][0]['X3'])
-        assert.equal(actual['GRID'][0]['CD'],   expected['GRID'][0]['CD'])
-        assert.equal(actual['GRID'][0]['PS'],   expected['GRID'][0]['PS'])
-        assert.equal(actual['GRID'][0]['SEID'], expected['GRID'][0]['SEID'])
+        assert.equal(actual['GRID'][1]['CP'],   expected['GRID'][1]['CP'])
+        assert.equal(actual['GRID'][1]['X1'],   expected['GRID'][1]['X1'])
+        assert.equal(actual['GRID'][1]['X2'],   expected['GRID'][1]['X2'])
+        assert.equal(actual['GRID'][1]['X3'],   expected['GRID'][1]['X3'])
+        assert.equal(actual['GRID'][1]['CD'],   expected['GRID'][1]['CD'])
+        assert.equal(actual['GRID'][1]['PS'],   expected['GRID'][1]['PS'])
+        assert.equal(actual['GRID'][1]['SEID'], expected['GRID'][1]['SEID'])
     });
     it('Processing long field', function () {
         var lines = [
@@ -64,9 +64,9 @@ describe('Load GRID from lines', function () {
             '*       5.0             6               7               8'
         ]
         var expected = {
-            "GRID": [
+            "GRID": {
+                1:
                 {
-                    "ID": 1,
                     "CP": 2,
                     "X1": 3.,
                     "X2": 4.,
@@ -75,25 +75,24 @@ describe('Load GRID from lines', function () {
                     "PS": 7,
                     "SEID": 8,
                 }
-            ]
+            }
         }
         var actual = fl.process_grid({}, lines);
-        assert.equal(actual['GRID'][0]['ID'],   expected['GRID'][0]['ID'])
-        assert.equal(actual['GRID'][0]['CP'],   expected['GRID'][0]['CP'])
-        assert.equal(actual['GRID'][0]['X1'],   expected['GRID'][0]['X1'])
-        assert.equal(actual['GRID'][0]['X2'],   expected['GRID'][0]['X2'])
-        assert.equal(actual['GRID'][0]['X3'],   expected['GRID'][0]['X3'])
-        assert.equal(actual['GRID'][0]['CD'],   expected['GRID'][0]['CD'])
-        assert.equal(actual['GRID'][0]['PS'],   expected['GRID'][0]['PS'])
-        assert.equal(actual['GRID'][0]['SEID'], expected['GRID'][0]['SEID'])
+        assert.equal(actual['GRID'][1]['CP'],   expected['GRID'][1]['CP'])
+        assert.equal(actual['GRID'][1]['X1'],   expected['GRID'][1]['X1'])
+        assert.equal(actual['GRID'][1]['X2'],   expected['GRID'][1]['X2'])
+        assert.equal(actual['GRID'][1]['X3'],   expected['GRID'][1]['X3'])
+        assert.equal(actual['GRID'][1]['CD'],   expected['GRID'][1]['CD'])
+        assert.equal(actual['GRID'][1]['PS'],   expected['GRID'][1]['PS'])
+        assert.equal(actual['GRID'][1]['SEID'], expected['GRID'][1]['SEID'])
         lines = [
             'GRID   *1               2               3.0             4.0',
             '*       5.0             6               7               8'
         ]
         expected = {
-            "GRID": [
+            "GRID": {
+                1:
                 {
-                    "ID": 1,
                     "CP": 2,
                     "X1": 3.,
                     "X2": 4.,
@@ -102,24 +101,23 @@ describe('Load GRID from lines', function () {
                     "PS": 7,
                     "SEID": 8,
                 }
-            ]
+            }
         }
         actual = fl.process_grid({}, lines);
-        assert.equal(actual['GRID'][0]['ID'],   expected['GRID'][0]['ID'])
-        assert.equal(actual['GRID'][0]['CP'],   expected['GRID'][0]['CP'])
-        assert.equal(actual['GRID'][0]['X1'],   expected['GRID'][0]['X1'])
-        assert.equal(actual['GRID'][0]['X2'],   expected['GRID'][0]['X2'])
-        assert.equal(actual['GRID'][0]['X3'],   expected['GRID'][0]['X3'])
-        assert.equal(actual['GRID'][0]['CD'],   expected['GRID'][0]['CD'])
-        assert.equal(actual['GRID'][0]['PS'],   expected['GRID'][0]['PS'])
-        assert.equal(actual['GRID'][0]['SEID'], expected['GRID'][0]['SEID'])
+        assert.equal(actual['GRID'][1]['CP'],   expected['GRID'][1]['CP'])
+        assert.equal(actual['GRID'][1]['X1'],   expected['GRID'][1]['X1'])
+        assert.equal(actual['GRID'][1]['X2'],   expected['GRID'][1]['X2'])
+        assert.equal(actual['GRID'][1]['X3'],   expected['GRID'][1]['X3'])
+        assert.equal(actual['GRID'][1]['CD'],   expected['GRID'][1]['CD'])
+        assert.equal(actual['GRID'][1]['PS'],   expected['GRID'][1]['PS'])
+        assert.equal(actual['GRID'][1]['SEID'], expected['GRID'][1]['SEID'])
     });
     it('Processing free field', function () {
         const lines = ['GRID,1,2,3.0,4.0,5.0,6,7,8']
         const expected = {
-            "GRID": [
+            "GRID": {
+                1:
                 {
-                    "ID": 1,
                     "CP": 2,
                     "X1": 3.,
                     "X2": 4.,
@@ -128,17 +126,16 @@ describe('Load GRID from lines', function () {
                     "PS": 7,
                     "SEID": 8,
                 }
-            ]
+            }
         }
         const actual = fl.process_grid({}, lines);
-        assert.equal(actual['GRID'][0]['ID'],   expected['GRID'][0]['ID'])
-        assert.equal(actual['GRID'][0]['CP'],   expected['GRID'][0]['CP'])
-        assert.equal(actual['GRID'][0]['X1'],   expected['GRID'][0]['X1'])
-        assert.equal(actual['GRID'][0]['X2'],   expected['GRID'][0]['X2'])
-        assert.equal(actual['GRID'][0]['X3'],   expected['GRID'][0]['X3'])
-        assert.equal(actual['GRID'][0]['CD'],   expected['GRID'][0]['CD'])
-        assert.equal(actual['GRID'][0]['PS'],   expected['GRID'][0]['PS'])
-        assert.equal(actual['GRID'][0]['SEID'], expected['GRID'][0]['SEID'])
+        assert.equal(actual['GRID'][1]['CP'],   expected['GRID'][1]['CP'])
+        assert.equal(actual['GRID'][1]['X1'],   expected['GRID'][1]['X1'])
+        assert.equal(actual['GRID'][1]['X2'],   expected['GRID'][1]['X2'])
+        assert.equal(actual['GRID'][1]['X3'],   expected['GRID'][1]['X3'])
+        assert.equal(actual['GRID'][1]['CD'],   expected['GRID'][1]['CD'])
+        assert.equal(actual['GRID'][1]['PS'],   expected['GRID'][1]['PS'])
+        assert.equal(actual['GRID'][1]['SEID'], expected['GRID'][1]['SEID'])
     });
     it('Processing field validation', function () {
         // Bad ID
@@ -885,14 +882,14 @@ describe('Load CORD1 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 2,
                     "G2": 3,
                     "G3": 4
                 },
                 "5":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 6,
                     "G2": 7,
                     "G3": 8
@@ -900,11 +897,11 @@ describe('Load CORD1 from lines', function () {
             }
         }
         const actual = fl.process_cord1({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
         assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
-        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['NAME'], expected['COORDS'][5]['NAME'])
         assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
         assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
         assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
@@ -918,14 +915,14 @@ describe('Load CORD1 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 2,
                     "G2": 3,
                     "G3": 4
                 },
                 "5":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 6,
                     "G2": 7,
                     "G3": 8
@@ -933,11 +930,11 @@ describe('Load CORD1 from lines', function () {
             }
         }
         const actual = fl.process_cord1({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
         assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
-        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['NAME'], expected['COORDS'][5]['NAME'])
         assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
         assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
         assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
@@ -948,14 +945,14 @@ describe('Load CORD1 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 2,
                     "G2": 3,
                     "G3": 4
                 },
                 "5":
                 {
-                    "TYPE": "CORD1R",
+                    "NAME": "CORD1R",
                     "G1": 6,
                     "G2": 7,
                     "G3": 8
@@ -963,11 +960,11 @@ describe('Load CORD1 from lines', function () {
             }
         }
         const actual = fl.process_cord1({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['G1'],   expected['COORDS'][1]['G1'])
         assert.equal(actual['COORDS'][1]['G2'],   expected['COORDS'][1]['G2'])
         assert.equal(actual['COORDS'][1]['G3'],   expected['COORDS'][1]['G3'])
-        assert.equal(actual['COORDS'][5]['TYPE'], expected['COORDS'][5]['TYPE'])
+        assert.equal(actual['COORDS'][5]['NAME'], expected['COORDS'][5]['NAME'])
         assert.equal(actual['COORDS'][5]['G1'],   expected['COORDS'][5]['G1'])
         assert.equal(actual['COORDS'][5]['G2'],   expected['COORDS'][5]['G2'])
         assert.equal(actual['COORDS'][5]['G3'],   expected['COORDS'][5]['G3'])
@@ -1008,7 +1005,7 @@ describe('Load CORD2 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD2R",
+                    "NAME": "CORD2R",
                     "RID": 2,
                     "A1": 3,
                     "A2": 4,
@@ -1023,7 +1020,7 @@ describe('Load CORD2 from lines', function () {
             }
         }
         const actual = fl.process_cord2({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
         assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
@@ -1045,7 +1042,7 @@ describe('Load CORD2 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD2R",
+                    "NAME": "CORD2R",
                     "RID": 2,
                     "A1": 3,
                     "A2": 4,
@@ -1060,7 +1057,7 @@ describe('Load CORD2 from lines', function () {
             }
         }
         const actual = fl.process_cord2({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
         assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
@@ -1079,7 +1076,7 @@ describe('Load CORD2 from lines', function () {
             "COORDS": {
                 "1":
                 {
-                    "TYPE": "CORD2R",
+                    "NAME": "CORD2R",
                     "RID": 2,
                     "A1": 3,
                     "A2": 4,
@@ -1094,7 +1091,7 @@ describe('Load CORD2 from lines', function () {
             }
         }
         const actual = fl.process_cord2({}, lines);
-        assert.equal(actual['COORDS'][1]['TYPE'], expected['COORDS'][1]['TYPE'])
+        assert.equal(actual['COORDS'][1]['NAME'], expected['COORDS'][1]['NAME'])
         assert.equal(actual['COORDS'][1]['RID'],  expected['COORDS'][1]['RID'])
         assert.equal(actual['COORDS'][1]['A1'],   expected['COORDS'][1]['A1'])
         assert.equal(actual['COORDS'][1]['A2'],   expected['COORDS'][1]['A2'])
@@ -1151,6 +1148,12 @@ describe('Load CORD2 from lines', function () {
         lines = ['CORD2R  1       2       3       4       5       6       7       8',
                  '        9       10      BAD']
         expect(function() {fl.process_cord2({}, lines)}).to.throw('C3 is not an integer!');
+        
+    });
+});
+
+describe('To global coordinates', function () {
+    it('Rectangular to global', function () {
         
     });
 });

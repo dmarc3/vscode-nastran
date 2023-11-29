@@ -8,7 +8,7 @@ import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane';
 import Stats from 'stats';
 // import path from 'path'
-import { loadModel } from 'femload.mjs'
+// import { loadModel, toGlobal } from 'femload.mjs'
 
 
 let camera, controls, scene, renderer, group, frustumSize, aspect, view;
@@ -16,7 +16,6 @@ let clock = new THREE.Clock();
 
 // Load model
 var model = loadModel(modelContent)
-console.log(model)
 
 // Check that model was successfully loaded
 if (typeof model === 'string') {
@@ -64,11 +63,13 @@ function init(model) {
 	
 	// Create Points
     var point_geometry = new THREE.BufferGeometry();
-    var grids = new Float32Array(model['GRID'].length * 3)
-    for ( var i = 0; i < model['GRID'].length; i ++ ) {
-        grids[i*3] = model['GRID'][i].X1
-        grids[i*3+1] = model['GRID'][i].X2
-        grids[i*3+2] = model['GRID'][i].X3
+    const grid_ids = Object.keys(model['GRID']);
+    var grids = new Float32Array(grid_ids.length * 3)
+    for ( var i = 0; i < grid_ids.length; i ++ ) {
+        const grid = toGlobal(model['GRID'][grid_ids[i]], model);
+        grids[i*3] = grid.X1
+        grids[i*3+1] = grid.X2
+        grids[i*3+2] = grid.X3
     }
     point_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
     var point_material = new THREE.PointsMaterial( {
@@ -83,7 +84,7 @@ function init(model) {
 
     for (var include in model) {
         // Skip GRID
-        if (include === 'GRID') {
+        if (include === 'GRID' || include === 'COORDS') {
             continue
         }
         // Skip include if nothing to plot
@@ -121,15 +122,22 @@ function init(model) {
         face_material.side = THREE.DoubleSide;
         // Initialize Line information
         var line_geometry = new THREE.BufferGeometry();
-        var line_material = new THREE.LineBasicMaterial( {color: 0x000000} );
+        var line_material = new THREE.LineBasicMaterial( {color: c, linewidth: 10} );
+        line_material.transparent = true;
         var line_indices = [];
+        var wire_geometry = new THREE.BufferGeometry();
+        var wire_material = new THREE.LineBasicMaterial( {color: 0x000000} );
+        var wire_indices = [];
         // Loop through all includes
         if (Object.keys(model[include]).length !== 0) {
             //  Create 1D elements
             if ('1D' in model[include]) {
                 for (var [_, rod] of Object.entries(model[include]['1D'])) {
-                    line_indices.push(model['GRID'].findIndex(x => x.ID === rod.G1))
-                    line_indices.push(model['GRID'].findIndex(x => x.ID === rod.G2))
+                    let ind = []
+                    ind.push(grid_ids.indexOf(rod.G1.toString()))
+                    ind.push(grid_ids.indexOf(rod.G2.toString()))
+                    line_indices.push(ind[0])
+                    line_indices.push(ind[1])
                 }
             }
             // Create 2D elements with 3 edges
@@ -137,10 +145,10 @@ function init(model) {
                 for (var [_, tri] of Object.entries(model[include]['2D_3e'])) {
                     // Get indices
                     let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === tri.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === tri.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === tri.G3))
-                    face_indices, line_indices = triangle(face_indices, line_indices, ind)
+                    ind.push(grid_ids.indexOf(tri.G1.toString()))
+                    ind.push(grid_ids.indexOf(tri.G2.toString()))
+                    ind.push(grid_ids.indexOf(tri.G3.toString()))
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, ind)
                 }
             }
             // Create 2D elements with 4 edges
@@ -148,11 +156,11 @@ function init(model) {
                 for (var [_, quad] of Object.entries(model[include]['2D_4e'])) {
                     // Get indices
                     let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === quad.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === quad.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === quad.G3))
-                    ind.push(model['GRID'].findIndex(x => x.ID === quad.G4))
-                    face_indices, line_indices = square(face_indices, line_indices, ind)
+                    ind.push(grid_ids.indexOf(quad.G1.toString()))
+                    ind.push(grid_ids.indexOf(quad.G2.toString()))
+                    ind.push(grid_ids.indexOf(quad.G3.toString()))
+                    ind.push(grid_ids.indexOf(quad.G4.toString()))
+                    face_indices, wire_indices = square(face_indices, wire_indices, ind)
                 }
             }
             // Create 3D elements with 4 sides
@@ -160,40 +168,63 @@ function init(model) {
                 for (var [_, tet] of Object.entries(model[include]['3D_4s'])) {
                     // Get indices
                     let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === tet.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === tet.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === tet.G3))
-                    ind.push(model['GRID'].findIndex(x => x.ID === tet.G4))
+                    ind.push(grid_ids.indexOf(tet.G1.toString()))
+                    ind.push(grid_ids.indexOf(tet.G2.toString()))
+                    ind.push(grid_ids.indexOf(tet.G3.toString()))
+                    ind.push(grid_ids.indexOf(tet.G4.toString()))
                     // Triangle 1
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[0], ind[1], ind[2]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[0], ind[1], ind[2]])
                     // Triangle 2
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[0], ind[1], ind[3]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[0], ind[1], ind[3]])
                     // Triangle 3
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[1], ind[2], ind[3]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[1], ind[2], ind[3]])
                     // Triangle 4
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[0], ind[2], ind[3]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[0], ind[2], ind[3]])
                 }
             }
-            // Create 3D elements with 5 sides
-            if ('3D_5s' in model[include]) {
-                for (var [_, pyr] of Object.entries(model[include]['3D_5s'])) {
+            // Create 3D elements with 5 sides (a)
+            if ('3D_5s_a' in model[include]) {
+                for (var [_, pyr] of Object.entries(model[include]['3D_5s_a'])) {
                     // Get indices
                     let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === pyr.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pyr.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pyr.G3))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pyr.G4))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pyr.G5))
+                    ind.push(grid_ids.indexOf(pyr.G1.toString()));
+                    ind.push(grid_ids.indexOf(pyr.G2.toString()));
+                    ind.push(grid_ids.indexOf(pyr.G3.toString()));
+                    ind.push(grid_ids.indexOf(pyr.G4.toString()));
+                    ind.push(grid_ids.indexOf(pyr.G5.toString()));
                     // Square
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[1], ind[2], ind[3]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[1], ind[2], ind[3]])
                     // Triangle 1
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[0], ind[1], ind[4]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[0], ind[1], ind[4]])
                     // Triangle 2
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[1], ind[2], ind[4]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[1], ind[2], ind[4]])
                     // Triangle 3
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[2], ind[3], ind[4]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[2], ind[3], ind[4]])
                     // Triangle 4
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[3], ind[0], ind[4]])
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[3], ind[0], ind[4]])
+                }
+            }
+            // Create 3D elements with 5 sides (b)
+            if ('3D_5s_b' in model[include]) {
+                for (var [_, pen] of Object.entries(model[include]['3D_5s_b'])) {
+                    // Get indices
+                    let ind = []
+                    ind.push(grid_ids.indexOf(pen.G1.toString()));
+                    ind.push(grid_ids.indexOf(pen.G2.toString()));
+                    ind.push(grid_ids.indexOf(pen.G3.toString()));
+                    ind.push(grid_ids.indexOf(pen.G4.toString()));
+                    ind.push(grid_ids.indexOf(pen.G5.toString()));
+                    ind.push(grid_ids.indexOf(pen.G6.toString()));
+                    // Triangle 1
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[0], ind[1], ind[2]])
+                    // Triangle 2
+                    face_indices, wire_indices = triangle(face_indices, wire_indices, [ind[3], ind[4], ind[5]])
+                    // Square 1
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[1], ind[4], ind[3]])
+                    // Square 2
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[2], ind[5], ind[3]])
+                    // Square 3
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[2], ind[1], ind[4], ind[5]])
                 }
             }
             // Create 3D elements with 6 sides
@@ -201,49 +232,26 @@ function init(model) {
                 for (var [_, hex] of Object.entries(model[include]['3D_6s'])) {
                     // Get indices
                     let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G3))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G4))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G5))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G6))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G7))
-                    ind.push(model['GRID'].findIndex(x => x.ID === hex.G8))
+                    ind.push(grid_ids.indexOf(hex.G1.toString()));
+                    ind.push(grid_ids.indexOf(hex.G2.toString()));
+                    ind.push(grid_ids.indexOf(hex.G3.toString()));
+                    ind.push(grid_ids.indexOf(hex.G4.toString()));
+                    ind.push(grid_ids.indexOf(hex.G5.toString()));
+                    ind.push(grid_ids.indexOf(hex.G6.toString()));
+                    ind.push(grid_ids.indexOf(hex.G7.toString()));
+                    ind.push(grid_ids.indexOf(hex.G8.toString()));
                     // Square 1
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[1], ind[2], ind[3]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[1], ind[2], ind[3]])
                     // Square 2
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[4], ind[5], ind[6], ind[7]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[4], ind[5], ind[6], ind[7]])
                     // Square 3
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[1], ind[5], ind[4]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[1], ind[5], ind[4]])
                     // Square 4
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[1], ind[5], ind[6], ind[2]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[1], ind[5], ind[6], ind[2]])
                     // Square 5
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[2], ind[6], ind[7], ind[3]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[2], ind[6], ind[7], ind[3]])
                     // Square 6
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[4], ind[7], ind[3]])
-                }
-            }
-            // Create 3D elements with 7 sides
-            if ('3D_7s' in model[include]) {
-                for (var [_, pen] of Object.entries(model[include]['3D_7s'])) {
-                    // Get indices
-                    let ind = []
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G1))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G2))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G3))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G4))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G5))
-                    ind.push(model['GRID'].findIndex(x => x.ID === pen.G6))
-                    // Triangle 1
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[0], ind[1], ind[2]])
-                    // Triangle 2
-                    face_indices, line_indices = triangle(face_indices, line_indices, [ind[3], ind[4], ind[5]])
-                    // Square 1
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[1], ind[4], ind[3]])
-                    // Square 2
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[0], ind[2], ind[5], ind[3]])
-                    // Square 3
-                    face_indices, line_indices = square(face_indices, line_indices, [ind[2], ind[1], ind[4], ind[5]])
+                    face_indices, wire_indices = square(face_indices, wire_indices, [ind[0], ind[4], ind[7], ind[3]])
                 }
             }
         }
@@ -256,9 +264,15 @@ function init(model) {
         line_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
         line_geometry.setIndex(new THREE.BufferAttribute(new Uint16Array(line_indices), 1));
         var lines = new THREE.LineSegments(line_geometry, line_material);
-        lines.name = "wireframe";
+        lines.name = "face";
+        // Wires
+        wire_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
+        wire_geometry.setIndex(new THREE.BufferAttribute(new Uint16Array(wire_indices), 1));
+        var wires = new THREE.LineSegments(wire_geometry, wire_material);
+        wires.name = "wireframe";
         // Add to group
         g.add(faces);
+        g.add(wires);
         g.add(lines);
         g.name = include;
         group.add(g);
@@ -339,6 +353,7 @@ function init(model) {
     })
     function setOpacity( obj, opacity ){
         obj.children.forEach((child)=>{
+            console.log(child.name)
             setOpacity(child, opacity);
         })
         if (obj.material){

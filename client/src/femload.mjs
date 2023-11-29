@@ -1,3 +1,5 @@
+import { array } from 'vectorious';
+
 export function loadModel(modelContent) {
     var model = {};
     const elem_1D_a = ["CROD", "CBAR", "CBEAM", "CBEND", "CBUSH", "CGAP", "CMARKB2", "CSPR", "CTUBE", "CVISC"]
@@ -65,7 +67,8 @@ export function loadModel(modelContent) {
 export function process_grid(model, lines) {
     // Create GRID key if it doesn't exist
     if (!("GRID" in model)) {
-        model["GRID"] = []
+        // model["GRID"] = []
+        model["GRID"] = {}
     }
     // Process free field
     if (~lines[0].indexOf(",")) {
@@ -102,18 +105,12 @@ export function process_grid(model, lines) {
     cd = parseInt(cd)
     ps = parseInt(ps)
     seid = parseInt(seid)
-    // Add to object
-    let grid = {}
-    grid["ID"] = id
-    grid["CP"] = cp
-    grid["X1"] = x1
-    grid["X2"] = x2
-    grid["X3"] = x3
-    grid["CD"] = cd
-    grid["PS"] = ps
-    grid["SEID"] = seid
+    // Validate
     if (isNaN(id)) { // TODO: Rework to test if integer
         throw new Error('ID is not an integer!');
+    }
+    if (isNaN(cp)) {
+        cp = 0;
     }
     if (isNaN(x1)) {
         throw new Error('X1 is not a float!')
@@ -124,7 +121,25 @@ export function process_grid(model, lines) {
     if (isNaN(x3)) {
         throw new Error('X3 is not a float!')
     }
-    model["GRID"].push(grid)
+    // Add to object
+    // let grid = {}
+    // grid["ID"] = id
+    // grid["CP"] = cp
+    // grid["X1"] = x1
+    // grid["X2"] = x2
+    // grid["X3"] = x3
+    // grid["CD"] = cd
+    // grid["PS"] = ps
+    // grid["SEID"] = seid
+    // model["GRID"].push(grid)
+    model['GRID'][id] = {}
+    model['GRID'][id]['CP'] = cp
+    model['GRID'][id]['X1'] = x1
+    model['GRID'][id]['X2'] = x2
+    model['GRID'][id]['X3'] = x3
+    model['GRID'][id]['CD'] = cd
+    model['GRID'][id]['PS'] = ps
+    model['GRID'][id]['SEID'] = seid
     return model
 }
 
@@ -702,7 +717,7 @@ export function process_cord1(model, lines) {
         // Split line by comma
         lines[0] = lines[0].split(',')
         // Unpack array
-        var type = lines[0][0];
+        var name = lines[0][0];
         var cida = lines[0][1];
         var g1a = lines[0][2];
         var g2a = lines[0][3];
@@ -714,7 +729,7 @@ export function process_cord1(model, lines) {
     // Process long field
     } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
-        var type = lines[0].substring(0, 8)
+        var name = lines[0].substring(0, 8)
         lines[0] = lines[0].padEnd(72).slice(8)
         var [cida, g1a, g2a, g3a] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
@@ -723,10 +738,10 @@ export function process_cord1(model, lines) {
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
-        var [type, cida, g1a, g2a, g3a, cidb, g1b, g2b, g3b] = lines[0].match(/.{1,8}/g)
+        var [name, cida, g1a, g2a, g3a, cidb, g1b, g2b, g3b] = lines[0].match(/.{1,8}/g)
     }
     // Convert types
-    type = type.replace('*', '').replace(/\s/g, "");
+    name = name.replace('*', '').replace(/\s/g, "");
     cida = parseInt(cida)
     g1a = parseInt(g1a)
     g2a = parseInt(g2a)
@@ -764,13 +779,13 @@ export function process_cord1(model, lines) {
     }
     // Add to object
     model["COORDS"][cida] = {}
-    model["COORDS"][cida]["TYPE"] = type
+    model["COORDS"][cida]["NAME"] = name
     model["COORDS"][cida]["G1"] = g1a
     model["COORDS"][cida]["G2"] = g2a
     model["COORDS"][cida]["G3"] = g3a
     if (!(isNaN(cidb) && isNaN(g1b) && isNaN(g2b) && isNaN(g3b))) {
         model["COORDS"][cidb] = {}
-        model["COORDS"][cidb]["TYPE"] = type
+        model["COORDS"][cidb]["NAME"] = name
         model["COORDS"][cidb]["G1"] = g1b
         model["COORDS"][cidb]["G2"] = g2b
         model["COORDS"][cidb]["G3"] = g3b
@@ -789,7 +804,7 @@ export function process_cord2(model, lines) {
         lines[0] = lines[0].split(',')
         lines[1] = lines[1].split(',')
         // Unpack array
-        var type = lines[0][0];
+        var name = lines[0][0];
         var cid = lines[0][1];
         var rid = lines[0][2];
         var a1 = lines[0][3];
@@ -804,7 +819,7 @@ export function process_cord2(model, lines) {
     // Process long field
     } else if (~lines[0].indexOf("*")) {
         // Extend both lines to 72 fields if shorter and split by 16 characters
-        var type = lines[0].substring(0, 8)
+        var name = lines[0].substring(0, 8)
         lines[0] = lines[0].padEnd(72).slice(8)
         var [cid, rid, a1, a2] = lines[0].match(/.{1,16}/g)
         lines[1] = lines[1].padEnd(72).slice(8)
@@ -815,25 +830,27 @@ export function process_cord2(model, lines) {
     } else {
         // Extend line to 72 fields if shorter and split by 8 characters
         lines[0] = lines[0].padEnd(72)
-        var [type, cid, rid, a1, a2, a3, b1, b2, b3] = lines[0].match(/.{1,8}/g)
+        var [name, cid, rid, a1, a2, a3, b1, b2, b3] = lines[0].match(/.{1,8}/g)
         lines[1] = lines[1].padEnd(72)
         var [_, c1, c2, c3, _, _, _, _, _] = lines[1].match(/.{1,8}/g)
     }
     // Convert types
-    type = type.replace('*', '').replace(/\s/g, "");
+    name = name.replace('*', '').replace(/\s/g, "");
     cid = parseInt(cid)
     if (!(rid.replace(/\s+/g, '') === '')) {
         rid = parseInt(rid)
+    } else {
+        rid = 0;
     }
-    a1 = parseInt(a1)
-    a2 = parseInt(a2)
-    a3 = parseInt(a3)
-    b1 = parseInt(b1)
-    b2 = parseInt(b2)
-    b3 = parseInt(b3)
-    c1 = parseInt(c1)
-    c2 = parseInt(c2)
-    c3 = parseInt(c3)
+    a1 = str2float(a1)
+    a2 = str2float(a2)
+    a3 = str2float(a3)
+    b1 = str2float(b1)
+    b2 = str2float(b2)
+    b3 = str2float(b3)
+    c1 = str2float(c1)
+    c2 = str2float(c2)
+    c3 = str2float(c3)
     // Validate types
     if (isNaN(cid)) {
         throw new Error('CID is not an integer!');
@@ -870,7 +887,7 @@ export function process_cord2(model, lines) {
     }
     // Add to object
     model["COORDS"][cid] = {}
-    model["COORDS"][cid]["TYPE"] = type
+    model["COORDS"][cid]["NAME"] = name
     model["COORDS"][cid]["RID"] = rid
     model["COORDS"][cid]["A1"] = a1
     model["COORDS"][cid]["A2"] = a2
@@ -884,12 +901,76 @@ export function process_cord2(model, lines) {
     return model
 }
 
+export function toGlobal(grid, model) {
+    // If GRID is already resolved in global coordinates, return
+    if (grid['CP'] === 0) {
+        return grid
+    }
+    // Get coordinate system
+    const coord = model['COORDS'][grid['CP']];
+    // Convert local cylindrical to rectangular
+    if (coord['NAME'].endsWith('C')) {
+        const ang = grid.X2 * Math.PI/180.;
+        const x = grid.X1 * Math.cos(ang);
+        const y = grid.X1 * Math.sin(ang);
+        const z = grid.X3;
+        grid.X1 = x;
+        grid.X2 = y;
+        grid.X3 = z;
+    }
+    // Convert local spherical to rectangular
+    if (coord['NAME'].endsWith('S')) {
+        const x = grid.X1 * Math.sin(grid.X2 * Math.PI/180.) * Math.cos(grid.X3 * Math.PI/180.);
+        const y = grid.X1 * Math.sin(grid.X2 * Math.PI/180.) * Math.cos(grid.X3 * Math.PI/180.);
+        const z = grid.X1 * Math.cos(grid.X2 * Math.PI/180.);
+        grid.X1 = x;
+        grid.X2 = y;
+        grid.X3 = z;
+    }
+    // Convert grid to vectorious array
+    var g = array([grid.X1, grid.X2, grid.X3]);
+    // Transform
+    if (coord['NAME'].startsWith('CORD2')) {
+        // Create vectorious arrays of coordinate system points
+        const a = array([coord.A1, coord.A2, coord.A3]);
+        const b = array([coord.B1, coord.B2, coord.B3]);
+        const c = array([coord.C1, coord.C2, coord.C3]);
+        // Calculate ijk
+        const k = (b.subtract(a)).normalize();
+        const j = (k.copy().cross(c.subtract(a))).normalize();
+        const i = (j.copy().cross(k)).normalize();
+        // Calculate transformation matrix and invert
+        const Tinv = i.copy().combine(j).combine(k).reshape(3, 3).inv();
+        // Apply transformation matrix and calculate position in reference frame
+        // TODO: Investigate why cannot do Tinv.multiply(g)
+        const ng = array([
+            Tinv.data[0]*g.data[0] + Tinv.data[1]*g.data[1] + Tinv.data[2]*g.data[2],
+            Tinv.data[3]*g.data[0] + Tinv.data[4]*g.data[1] + Tinv.data[5]*g.data[2],
+            Tinv.data[6]*g.data[0] + Tinv.data[7]*g.data[1] + Tinv.data[8]*g.data[2]
+        ]).add(a);
+        // Update grid
+        grid.X1 = ng.data[0];
+        grid.X2 = ng.data[1];
+        grid.X3 = ng.data[2];
+        grid.CP = coord.RID;
+    }
+    // Recursively run function till in global
+    if (grid['CP'] !== 0) {
+        toGlobal(grid, model);
+    }
+    return grid
+}
+
 export function str2float(str) {
     // Remove whitespace
     str = str.replace(/\s+/g, '');
     // 0.0 if empty
     if (!str) {
         return 0.0
+    }
+    // Replace leading +
+    if (str[0] === "+") {
+        str = str.replace(/\+/g, '');
     }
     // Replace D with E
     if (str.toUpperCase().includes('D')) {

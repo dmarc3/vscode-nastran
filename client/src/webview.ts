@@ -49,17 +49,19 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
     // const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
     const viewhelper = vscode.Uri.file(context.extensionPath+"/client/src/ViewHelper.js");
     const viewhelperUri = panel.webview.asWebviewUri(viewhelper)
-    const femload = vscode.Uri.file(context.extensionPath+"/client/src/femload.mjs");
-    const femloadUri = panel.webview.asWebviewUri(femload)
+    // const femload = vscode.Uri.file(context.extensionPath+"/client/src/femload.mjs");
+    // const femloadUri = panel.webview.asWebviewUri(femload)
     const tweakpane = vscode.Uri.file(context.extensionPath+"/node_modules/tweakpane/dist/tweakpane.js");
     const tweakpaneUri = panel.webview.asWebviewUri(tweakpane)
     const tweakpanep = vscode.Uri.file(context.extensionPath+"/node_modules/@tweakpane/plugin-essentials/dist/tweakpane-plugin-essentials.js")
     const tweakpanepUri = panel.webview.asWebviewUri(tweakpanep)
     const stats = vscode.Uri.file(context.extensionPath+"/node_modules/three/examples/jsm/libs/stats.module.js")
     const statsUri = panel.webview.asWebviewUri(stats)
+    const vectorious = vscode.Uri.file(context.extensionPath+"/node_modules/vectorious/dist/index.mjs")
+    const vectoriousUri = panel.webview.asWebviewUri(vectorious)
     // const path = vscode.Uri.file(context.extensionPath+'/node_modules/@types/node/path.d.ts');
     // const pathUri = panel.webview.asWebviewUri(path);
-    // const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.js").toString()
+    const femload = fs.readFileSync(context.extensionPath+"/client/src/femload.mjs").toString()
     const femview = fs.readFileSync(context.extensionPath+"/client/src/femview.mjs").toString()
     return `
     <!DOCTYPE html>
@@ -136,7 +138,7 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                         "@tweakpane": "${tweakpanepUri}",
                         "stats": "${statsUri}",
                         "chai": "${chaiUri}",
-                        "femload.mjs": "${femloadUri}"
+                        "vectorious": "${vectoriousUri}"
                     }
                 }
             </script>
@@ -149,6 +151,7 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
                 const fontPath="${fontPathUri}";
             </script>
             <script type="module">
+                ${femload}
                 ${femview}
             </script>
             <div class=error id=error></div>
