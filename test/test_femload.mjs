@@ -261,8 +261,9 @@ describe('Load 1D elements (b) from lines', function () {
         var lines = ['CELAS2  1       2       BAD     4       5       6']
         expect(function() {fl.process_1d_b({}, lines)}).to.throw('G1 is not an integer!');
         // Bad G2
-        var lines = ['CELAS2  1       2       3       4       BAD     6']
-        expect(function() {fl.process_1d_b({}, lines)}).to.throw('G2 is not an integer!');
+        var lines = ['CELAS2  1       2       3       4']
+        const actual = fl.process_1d_b({'test': 0}, lines);
+        assert.equal(actual['test'], 0)
     });
 });
 

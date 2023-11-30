@@ -42,7 +42,7 @@ export function loadModel(modelContent) {
                     model[include] = process_3D_4s(model[include], lines.slice(ind, ind+5))
                 // Process 3D elements with 5 sides
                 } else if (elem_3D_5s_a.some(elem_3D_5s_a => currentLine.startsWith(elem_3D_5s_a))) {
-                    model[include] = process_3D_5s(model[include], lines.slice(ind, ind+5))
+                    model[include] = process_3D_5s_a(model[include], lines.slice(ind, ind+5))
                 } else if (elem_3D_5s_b.some(elem_3D_5s_b => currentLine.startsWith(elem_3D_5s_b))) {
                     model[include] = process_3D_5s_b(model[include], lines.slice(ind, ind+5))
                 // Process 3D elements with 6 sides
@@ -65,11 +65,6 @@ export function loadModel(modelContent) {
 }
 
 export function process_grid(model, lines) {
-    // Create GRID key if it doesn't exist
-    if (!("GRID" in model)) {
-        // model["GRID"] = []
-        model["GRID"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -121,17 +116,11 @@ export function process_grid(model, lines) {
     if (isNaN(x3)) {
         throw new Error('X3 is not a float!')
     }
+    // Create GRID key if it doesn't exist
+    if (!("GRID" in model)) {
+        model["GRID"] = {}
+    }
     // Add to object
-    // let grid = {}
-    // grid["ID"] = id
-    // grid["CP"] = cp
-    // grid["X1"] = x1
-    // grid["X2"] = x2
-    // grid["X3"] = x3
-    // grid["CD"] = cd
-    // grid["PS"] = ps
-    // grid["SEID"] = seid
-    // model["GRID"].push(grid)
     model['GRID'][id] = {}
     model['GRID'][id]['CP'] = cp
     model['GRID'][id]['X1'] = x1
@@ -144,10 +133,6 @@ export function process_grid(model, lines) {
 }
 
 export function process_1d_a(model, lines) {
-    // Create 1D key if it doesn't exist
-    if (!("1D" in model)) {
-        model["1D"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -183,6 +168,10 @@ export function process_1d_a(model, lines) {
     if (isNaN(g2)) {
         throw new Error('G2 is not an integer!')
     }
+    // Create 1D key if it doesn't exist
+    if (!("1D" in model)) {
+        model["1D"] = {}
+    }
     // Add to object
     model["1D"][eid] = {}
     model["1D"][eid]["PID"] = pid
@@ -192,10 +181,6 @@ export function process_1d_a(model, lines) {
 }
 
 export function process_1d_b(model, lines) {
-    // Create 1D key if it doesn't exist
-    if (!("1D" in model)) {
-        model["1D"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -235,7 +220,11 @@ export function process_1d_b(model, lines) {
         throw new Error('G1 is not an integer!')
     }
     if (isNaN(g2)) {
-        throw new Error('G2 is not an integer!')
+        return model
+    }
+    // Create 1D key if it doesn't exist
+    if (!("1D" in model)) {
+        model["1D"] = {}
     }
     // Add to object
     model["1D"][eid] = {}
@@ -246,10 +235,6 @@ export function process_1d_b(model, lines) {
 }
 
 export function process_1d_c(model, lines) {
-    // Create 1D key if it doesn't exist
-    if (!("1D" in model)) {
-        model["1D"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -285,6 +270,10 @@ export function process_1d_c(model, lines) {
     if (isNaN(g2)) {
         throw new Error('G2 is not an integer!')
     }
+    // Create 1D key if it doesn't exist
+    if (!("1D" in model)) {
+        model["1D"] = {}
+    }
     // Add to object
     model["1D"][eid] = {}
     model["1D"][eid]["G1"] = g1
@@ -293,10 +282,6 @@ export function process_1d_c(model, lines) {
 }
 
 export function process_2D_3e(model, lines) {
-    // Create 2D_3e key if it doesn't exist
-    if (!("2D_3e" in model)) {
-        model["2D_3e"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -343,6 +328,10 @@ export function process_2D_3e(model, lines) {
     if (isNaN(g3)) {
         throw new Error('G3 is not an integer!')
     }
+    // Create 2D_3e key if it doesn't exist
+    if (!("2D_3e" in model)) {
+        model["2D_3e"] = {}
+    }
     // Add to object
     model["2D_3e"][eid] = {}
     model["2D_3e"][eid]["G1"] = g1
@@ -352,10 +341,6 @@ export function process_2D_3e(model, lines) {
 }
 
 export function process_2D_4e(model, lines) {
-    // Create 2D_4e key if it doesn't exist
-    if (!("2D_4e" in model)) {
-        model["2D_4e"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -407,6 +392,10 @@ export function process_2D_4e(model, lines) {
     if (isNaN(g4)) {
         throw new Error('G4 is not an integer!')
     }
+    // Create 2D_4e key if it doesn't exist
+    if (!("2D_4e" in model)) {
+        model["2D_4e"] = {}
+    }
     // Add to object
     model["2D_4e"][eid] = {}
     model["2D_4e"][eid]["G1"] = g1
@@ -417,10 +406,6 @@ export function process_2D_4e(model, lines) {
 }
 
 export function process_3D_4s(model, lines) {
-    // Create 3D_4s key if it doesn't exist
-    if (!("3D_4s" in model)) {
-        model["3D_4s"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -468,6 +453,10 @@ export function process_3D_4s(model, lines) {
     if (isNaN(g4)) {
         throw new Error('G4 is not an integer!')
     }
+    // Create 3D_4s key if it doesn't exist
+    if (!("3D_4s" in model)) {
+        model["3D_4s"] = {}
+    }
     // Add to object
     model["3D_4s"][eid] = {}
     model["3D_4s"][eid]["G1"] = g1
@@ -478,10 +467,6 @@ export function process_3D_4s(model, lines) {
 }
 
 export function process_3D_5s_a(model, lines) {
-    // Create 3D_5s_a key if it doesn't exist
-    if (!("3D_5s_a" in model)) {
-        model["3D_5s_a"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -534,6 +519,10 @@ export function process_3D_5s_a(model, lines) {
     if (isNaN(g5)) {
         throw new Error('G5 is not an integer!')
     }
+    // Create 3D_5s_a key if it doesn't exist
+    if (!("3D_5s_a" in model)) {
+        model["3D_5s_a"] = {}
+    }
     // Add to object
     model["3D_5s_a"][eid] = {}
     model["3D_5s_a"][eid]["G1"] = g1
@@ -545,10 +534,6 @@ export function process_3D_5s_a(model, lines) {
 }
 
 export function process_3D_5s_b(model, lines) {
-    // Create 3D_5s_b key if it doesn't exist
-    if (!("3D_5s_b" in model)) {
-        model["3D_5s_b"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -606,6 +591,10 @@ export function process_3D_5s_b(model, lines) {
     if (isNaN(g6)) {
         throw new Error('G6 is not an integer!')
     }
+    // Create 3D_5s_b key if it doesn't exist
+    if (!("3D_5s_b" in model)) {
+        model["3D_5s_b"] = {}
+    }
     // Add to object
     model["3D_5s_b"][eid] = {}
     model["3D_5s_b"][eid]["G1"] = g1
@@ -618,10 +607,6 @@ export function process_3D_5s_b(model, lines) {
 }
 
 export function process_3D_6s(model, lines) {
-    // Create 3D_6s key if it doesn't exist
-    if (!("3D_6s" in model)) {
-        model["3D_6s"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -694,6 +679,10 @@ export function process_3D_6s(model, lines) {
     if (isNaN(g8)) {
         throw new Error('G8 is not an integer!')
     }
+    // Create 3D_6s key if it doesn't exist
+    if (!("3D_6s" in model)) {
+        model["3D_6s"] = {}
+    }
     // Add to object
     model["3D_6s"][eid] = {}
     model["3D_6s"][eid]["G1"] = g1
@@ -708,10 +697,6 @@ export function process_3D_6s(model, lines) {
 }
 
 export function process_cord1(model, lines) {
-    // Create COORDS key if it doesn't exist
-    if (!("COORDS" in model)) {
-        model["COORDS"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -777,6 +762,10 @@ export function process_cord1(model, lines) {
             throw new Error('G3B is not an integer!')
         }
     }
+    // Create COORDS key if it doesn't exist
+    if (!("COORDS" in model)) {
+        model["COORDS"] = {}
+    }
     // Add to object
     model["COORDS"][cida] = {}
     model["COORDS"][cida]["NAME"] = name
@@ -794,10 +783,6 @@ export function process_cord1(model, lines) {
 }
 
 export function process_cord2(model, lines) {
-    // Create COORDS key if it doesn't exist
-    if (!("COORDS" in model)) {
-        model["COORDS"] = {}
-    }
     // Process free field
     if (~lines[0].indexOf(",")) {
         // Split line by comma
@@ -884,6 +869,10 @@ export function process_cord2(model, lines) {
     }
     if (isNaN(c3)) {
         throw new Error('C3 is not an integer!')
+    }
+    // Create COORDS key if it doesn't exist
+    if (!("COORDS" in model)) {
+        model["COORDS"] = {}
     }
     // Add to object
     model["COORDS"][cid] = {}

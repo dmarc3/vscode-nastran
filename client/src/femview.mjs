@@ -67,9 +67,12 @@ function init(model) {
     var grids = new Float32Array(grid_ids.length * 3)
     for ( var i = 0; i < grid_ids.length; i ++ ) {
         const grid = toGlobal(model['GRID'][grid_ids[i]], model);
+        // Switch Z and Y coordinates since three.js sets Y in typical Z direction
         grids[i*3] = grid.X1
-        grids[i*3+1] = grid.X2
-        grids[i*3+2] = grid.X3
+        // grids[i*3+1] = grid.X2
+        grids[i*3+1] = grid.X3
+        // grids[i*3+2] = grid.X3
+        grids[i*3+2] = -grid.X2
     }
     point_geometry.setAttribute('position', new THREE.BufferAttribute( grids, 3));
     var point_material = new THREE.PointsMaterial( {
@@ -138,6 +141,8 @@ function init(model) {
                     ind.push(grid_ids.indexOf(rod.G2.toString()))
                     line_indices.push(ind[0])
                     line_indices.push(ind[1])
+                    wire_indices.push(ind[0])
+                    wire_indices.push(ind[1])
                 }
             }
             // Create 2D elements with 3 edges
@@ -290,11 +295,12 @@ function init(model) {
     let size = bbox.getSize(new THREE.Vector3());
     let center = bbox.getCenter(new THREE.Vector3());
     const max_dim = Math.max(size.x, size.y, size.z)
-    const frustumSize = max_dim*5;
+    const frustumSize = max_dim*1.25;
     const min_dim = Math.min(size.x, size.y, size.z)
 
     // Helpers
     const helper = new THREE.AxesHelper( max_dim / 10 );
+    helper.rotation.x = -Math.PI/2;
     helper.visible = false;
     scene.add( helper );
 
@@ -302,8 +308,12 @@ function init(model) {
     aspect = window.innerHeight / window.innerWidth;
     camera = new THREE.OrthographicCamera( frustumSize / -2, frustumSize / 2, frustumSize*aspect / 2, frustumSize*aspect / -2, 0.1, max_dim*10 );
     // camera.up = new THREE.Vector3(0, 0, 1);
-    camera.position.set( -max_dim, -max_dim, max_dim );
-    camera.lookAt( scene.position );
+    camera.position.set(scene.position.x, scene.position.y, scene.position.z);
+    camera.translateX(-max_dim);
+    camera.translateY(max_dim);
+    camera.translateZ(max_dim);
+    // camera.position.set( -max_dim, max_dim, max_dim );
+    // camera.lookAt( scene.position );
 
 	// Controls
 	// controls = new TrackballControls( camera, renderer.domElement );

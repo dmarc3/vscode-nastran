@@ -28,8 +28,10 @@ class ViewHelper extends Object3D {
 		this.center = new Vector3();
 
 		const color1 = new Color( '#a82222' );
-		const color2 = new Color( '#26a822' );
-		const color3 = new Color( '#2234a8' );
+		// const color2 = new Color( '#26a822' );
+		const color2 = new Color( '#2234a8' );
+		// const color3 = new Color( '#2234a8' );
+		const color3 = new Color( '#26a822' );
 
 		const interactiveObjects = [];
 		const raycaster = new Raycaster();
@@ -46,7 +48,8 @@ class ViewHelper extends Object3D {
 		const zAxis = new Mesh( geometry, getAxisMaterial( color3 ) );
 
 		yAxis.rotation.z = Math.PI / 2;
-		zAxis.rotation.y = - Math.PI / 2;
+		// zAxis.rotation.y = - Math.PI / 2;
+		zAxis.rotation.y = Math.PI / 2;
 
 		this.add( xAxis );
 		this.add( zAxis );
@@ -54,15 +57,17 @@ class ViewHelper extends Object3D {
 
 		const posXAxisHelper = new Sprite( getSpriteMaterial( color1, 'X' ) );
 		posXAxisHelper.userData.type = 'posX';
-		const posYAxisHelper = new Sprite( getSpriteMaterial( color2, 'Y' ) );
+		// const posYAxisHelper = new Sprite( getSpriteMaterial( color2, 'Y' ) );
+		const posYAxisHelper = new Sprite( getSpriteMaterial( color2, 'Z' ) );
 		posYAxisHelper.userData.type = 'posY';
-		const posZAxisHelper = new Sprite( getSpriteMaterial( color3, 'Z' ) );
+		// const posZAxisHelper = new Sprite( getSpriteMaterial( color3, 'Z' ) );
+		const posZAxisHelper = new Sprite( getSpriteMaterial( color3 ) );
 		posZAxisHelper.userData.type = 'posZ';
 		const negXAxisHelper = new Sprite( getSpriteMaterial( color1 ) );
 		negXAxisHelper.userData.type = 'negX';
 		const negYAxisHelper = new Sprite( getSpriteMaterial( color2 ) );
 		negYAxisHelper.userData.type = 'negY';
-		const negZAxisHelper = new Sprite( getSpriteMaterial( color3 ) );
+		const negZAxisHelper = new Sprite( getSpriteMaterial( color3, 'Y' ) );
 		negZAxisHelper.userData.type = 'negZ';
 
 		posXAxisHelper.position.x = 1;
@@ -73,7 +78,8 @@ class ViewHelper extends Object3D {
 		negYAxisHelper.position.y = - 1;
 		negYAxisHelper.scale.setScalar( 0.8 );
 		negZAxisHelper.position.z = - 1;
-		negZAxisHelper.scale.setScalar( 0.8 );
+		// negZAxisHelper.scale.setScalar( 0.8 );
+		posZAxisHelper.scale.setScalar( 0.8 );
 
 		this.add( posXAxisHelper );
 		this.add( posYAxisHelper );
@@ -195,7 +201,7 @@ class ViewHelper extends Object3D {
 
 		this.update = function ( delta ) {
 
-			const step = delta * 1.5 *turnRate;
+			const step = delta * turnRate;
 
 			// animate position by doing a slerp and then scaling the position on the unit sphere
 
