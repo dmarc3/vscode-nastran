@@ -320,8 +320,10 @@ function init(model) {
     controls = new OrbitControls( camera, renderer.domElement );
 
 	// lights
-	const ambientLight = new THREE.AmbientLight( 0xffffff );
+	const ambientLight = new THREE.AmbientLight( 0xffffff, 0.5 );
 	scene.add( ambientLight );
+    var pointLight = new THREE.PointLight( 0xffffff, 0.9 );
+    camera.add( pointLight );
 
     // Add Global UI
     let button = tab.pages[1].addButton( {title: 'Reset All'});

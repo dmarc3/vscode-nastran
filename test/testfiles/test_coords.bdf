@@ -1,0 +1,10 @@
+$ Rectangular Coordinate System
+CORD2R  1               1       1       1       1       1       2
+        2       1       2
+CORD2R  2       1       0       0       0       0        1      -1
+         1      0       -1
+GRID    1       2       -1.     -1.     0.
+GRID    2       2       -1.      1.     0.
+GRID    3       2        1.      1.     0.
+GRID    4       2        1.     -1.     0.
+CQUAD4  1               1       2       3       4
