@@ -62,21 +62,21 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                     if (line.includes("'")) { // Calculate filename if ' used
                         var line_split = line.split("'")
                         if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split("'")[1]
+                            var file = (line.trim() + lines[index+1].trim()).split("'")[1]
                         } else {
                             var file = line_split[1]
                         }
                     } else if (line.includes('"')) { // Calculate filename if " used
                         var line_split = line.split('"')
                         if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split('"')[1]
+                            var file = (line.trim() + lines[index+1].trim()).split('"')[1]
                         } else {
                             var file = line_split[1]
                         }
                     }  else if (line.includes('`')) { // Calculate filename if ` used
                         var line_split = line.split('`')
                         if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split('`')[1]
+                            var file = (line.trim() + lines[index+1].trim()).split('`')[1]
                         } else {
                             var file = line_split[1]
                         }
