@@ -95,3 +95,4 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 
 - Updated requirements in `README.md` documentation to include [vscode-python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension. Resolves [#64](https://github.com/dmarc3/vscode-nastran/issues/64)
 - Updated multi-line include logic to fix bug where include hierarchy paths for multi-line include files were not properly being calculated. Resolves [#70](https://github.com/dmarc3/vscode-nastran/issues/70).
+- Updated semantic token logic to support tab formatting.
