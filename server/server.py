@@ -165,6 +165,21 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
                 ]
                 last_line = line_no
                 last_start = start
+        elif section == "BULK" and not line.lstrip().startswith('$') and "\t" in line:
+            # Split the line by fields
+            line_by_fields = line.split("\t")
+            for i, field in enumerate(line_by_fields[2::2]):
+                start = line.index(field)
+                end = start + len(field)
+                data += [
+                    (line_no - last_line),
+                    (start - last_start),
+                    (end - start),
+                    0,
+                    0
+                ]
+                last_line = line_no
+                last_start = start
         # Process file:// detection
         if 'file://' in line:
             start = line.index('file://')
