@@ -85,7 +85,7 @@ export function activate(context: vscode.ExtensionContext): void {
     );
     // Register Commands
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {
-        includeHierarchyProvider.refresh()
+        includeHierarchyProvider.getSections()
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
         client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
         client.sendRequest('custom/getLines', includeHierarchyProvider.lines)
