@@ -37,7 +37,7 @@ class NastranLanguageServer(LanguageServer):
         self.sections = None
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v1.0.10")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.11")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
@@ -153,6 +153,21 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
         elif section == "BULK" and not line.lstrip().startswith('$') and "," in line:
             # Split the line by fields
             line_by_fields = line.split(",")
+            for i, field in enumerate(line_by_fields[2::2]):
+                start = line.index(field)
+                end = start + len(field)
+                data += [
+                    (line_no - last_line),
+                    (start - last_start),
+                    (end - start),
+                    0,
+                    0
+                ]
+                last_line = line_no
+                last_start = start
+        elif section == "BULK" and not line.lstrip().startswith('$') and "\t" in line:
+            # Split the line by fields
+            line_by_fields = line.split("\t")
             for i, field in enumerate(line_by_fields[2::2]):
                 start = line.index(field)
                 end = start + len(field)

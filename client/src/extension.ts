@@ -85,6 +85,10 @@ export function activate(context: vscode.ExtensionContext): void {
     );
     // Register Commands
     vscode.commands.registerCommand('includeHierarchy.buildHierarchy', () => {
+        // Register Tree View
+        includeHierarchyProvider.reset()
+        includeHierarchyProvider.getIncludes(vscode.window.activeTextEditor.document.fileName)
+        includeHierarchyProvider.getSections()
         includeHierarchyProvider.refresh()
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
         client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
@@ -124,7 +128,10 @@ export function activate(context: vscode.ExtensionContext): void {
         }
     );
     client.onReady().then(() => {
-        vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+        includeHierarchyProvider.getSections()
+        client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
+        client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
+        client.sendRequest('custom/getLines', includeHierarchyProvider.lines)
     });
     context.subscriptions.push(client.start());
 }

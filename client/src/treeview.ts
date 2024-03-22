@@ -7,8 +7,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     public lines: object[];
     public sections: object;
     constructor() {
-        this.includes = [];
-        this.lines = [];
+        this.reset()
     }
 
     getTreeItem(element: IncludeFile): vscode.TreeItem {
@@ -29,6 +28,16 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
         }
     }
 
+    public reset = () => {
+        this.includes = [];
+        this.lines = [];
+        // const origin = vscode.window.activeTextEditor.document.fileName
+        // const lines = fs.readFileSync(origin).toString().split("\n");
+        // for (const line of lines) {
+        //     this.lines.push({"include": origin, "line": line})
+        // }
+    }
+
     private hasIncludes(fileName: string): boolean {
         // Read lines from file
         const lines = fs.readFileSync(fileName).toString().split("\n");
@@ -45,13 +54,12 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
         return state
     }
 
-    private getIncludes(element: string): IncludeFile[] {
+    public getIncludes(element: string): IncludeFile[] {
         // Read lines from file
         const lines = fs.readFileSync(element).toString().split("\n");
         // Add origin file to class includes variable
         this.includes.push(element)
         // Preallocate variables
-        this.lines = []
         var includes = []
         var skip = false
         // For each line in origin file...
@@ -62,14 +70,21 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                     if (line.includes("'")) { // Calculate filename if ' used
                         var line_split = line.split("'")
                         if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split("'")[1]
+                            var file = (line.trim() + lines[index+1].trim()).split("'")[1]
                         } else {
                             var file = line_split[1]
                         }
                     } else if (line.includes('"')) { // Calculate filename if " used
                         var line_split = line.split('"')
                         if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split('"')[1]
+                            var file = (line.trim() + lines[index+1].trim()).split('"')[1]
+                        } else {
+                            var file = line_split[1]
+                        }
+                    }  else if (line.includes('`')) { // Calculate filename if ` used
+                        var line_split = line.split('`')
+                        if (line_split.length < 3) {
+                            var file = (line.trim() + lines[index+1].trim()).split('`')[1]
                         } else {
                             var file = line_split[1]
                         }
@@ -151,10 +166,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     readonly onDidChangeTreeData: vscode.Event<IncludeFile | undefined | null | void> = this._onDidChangeTreeData.event;
   
     refresh(): void {
-      this.includes = [];
-      this.getIncludes(vscode.window.activeTextEditor.document.fileName)
       this._onDidChangeTreeData.fire();
-      this.getSections();
     }
 
 }
