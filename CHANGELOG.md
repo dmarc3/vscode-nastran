@@ -88,3 +88,9 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 ### Added
 
 - Revised include hierarchy logic to fix bug introduced in v1.0.9 where nested include files were not being properly loaded in the include hierarchy. Resolves [#60](https://github.com/dmarc3/vscode-nastran/issues/60).
+
+## [1.0.11] - 2024-03-21
+
+### Added
+
+- Updated line logging logic to fix bug related to duplicate entries in `Find All` command. Resolves [#72](https://github.com/dmarc3/vscode-nastran/issues/72).
