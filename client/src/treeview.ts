@@ -88,6 +88,13 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                         } else {
                             var file = line_split[1]
                         }
+                    }  else if (line.includes('`')) { // Calculate filename if ` used
+                        var line_split = line.split('`')
+                        if (line_split.length < 3) {
+                            var file = (line + lines[index+1]).split('`')[1]
+                        } else {
+                            var file = line_split[1]
+                        }
                     }
                     // Get current include file path relative to origin file
                     const fileName = path.join(path.dirname(element), file)
