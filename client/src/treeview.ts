@@ -7,13 +7,7 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
     public lines: object[];
     public sections: object;
     constructor() {
-        this.includes = [];
-        this.lines = [];
-        const origin = vscode.window.activeTextEditor.document.fileName
-        const lines = fs.readFileSync(origin).toString().split("\n");
-        for (const line of lines) {
-            this.lines.push({"include": origin, "line": line})
-        }
+        this.reset()
     }
 
     getTreeItem(element: IncludeFile): vscode.TreeItem {
@@ -32,6 +26,16 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                 return Promise.resolve([new IncludeFile(path.basename(origin), vscode.TreeItemCollapsibleState.Expanded, origin)]);
             }
         }
+    }
+
+    public reset = () => {
+        this.includes = [];
+        this.lines = [];
+        // const origin = vscode.window.activeTextEditor.document.fileName
+        // const lines = fs.readFileSync(origin).toString().split("\n");
+        // for (const line of lines) {
+        //     this.lines.push({"include": origin, "line": line})
+        // }
     }
 
     private hasIncludes(fileName: string): boolean {
