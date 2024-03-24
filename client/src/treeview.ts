@@ -67,33 +67,16 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
             if (!skip) {
                 // If line starts with INCL
                 if (line.toLowerCase().startsWith('incl')) {
-                    if (line.includes("'")) { // Calculate filename if ' used
-                        var line_split = line.split("'")
-                        if (line_split.length < 3) {
-                            var file = (line.trim() + lines[index+1].trim()).split("'")[1]
-                        } else {
-                            var file = line_split[1]
-                        }
-                    } else if (line.includes('"')) { // Calculate filename if " used
-                        var line_split = line.split('"')
-                        if (line_split.length < 3) {
-                            var file = (line.trim() + lines[index+1].trim()).split('"')[1]
-                        } else {
-                            var file = line_split[1]
-                        }
-                    }  else if (line.includes('`')) { // Calculate filename if ` used
-                        var line_split = line.split('`')
-                        if (line_split.length < 3) {
-                            var file = (line.trim() + lines[index+1].trim()).split('`')[1]
-                        } else {
-                            var file = line_split[1]
-                        }
-                    }  else if (line.includes('`')) { // Calculate filename if ` used
-                        var line_split = line.split('`')
-                        if (line_split.length < 3) {
-                            var file = (line + lines[index+1]).split('`')[1]
-                        } else {
-                            var file = line_split[1]
+                    const quotes = ["'", '"', "`"]
+                    for (var quote of quotes) {
+                        if (line.includes(quote)) {
+                            var line_split = line.split(quote)
+                            if (line_split.length < 3) {
+                                var file = (line.trim() + lines[index+1].trim()).split(quote)[1]
+                            } else {
+                                var file = line_split[1]
+                            }
+                            break
                         }
                     }
                     // Get current include file path relative to origin file

@@ -3,7 +3,7 @@
   "displayName": "vscode-nastran",
   "description": "Syntax highlighting and documentation support for MSC Nastran",
   "author": "Marcus Bakke",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "publisher": "mbakke",
   "repository": {
     "type": "git",
@@ -90,6 +90,10 @@
           "light": "resources/light/refresh.svg",
           "dark": "resources/dark/refresh.svg"
         }
+      },
+      {
+        "command": "open_file",
+        "title": "Open Nastran include file"
       }
     ],
     "keybindings": [
@@ -125,6 +129,18 @@
           "command": "includeHierarchy.buildHierarchy",
           "when": "view == includeHierarchy",
           "group": "navigation"
+        }
+      ],
+      "commandPalette":[
+        {
+            "command":"open_file",
+            "when":"false"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "open_file",
+          "when": "editorLangId == nastran"
         }
       ]
     },
