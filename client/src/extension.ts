@@ -16,6 +16,7 @@ import {
 } from "vscode-languageclient/node";
 
 let client: LanguageClient;
+let settings;
 
 function getClientOptions(): LanguageClientOptions {
     return {
@@ -60,6 +61,7 @@ export function activate(context: vscode.ExtensionContext): void {
         throw new Error("`python.defaultInterpreterPath` is not set");
     }
     client = startLangServer(pythonPath, ["-m", "server.server"], cwd);
+
     // Execute on file edit
     vscode.workspace.onDidChangeTextDocument((e: vscode.TextDocumentChangeEvent) => {
         if (e.document.languageId === "nastran") {
@@ -112,6 +114,9 @@ export function activate(context: vscode.ExtensionContext): void {
         }
     );
     vscode.commands.registerCommand('insert_short_comment', () => {
+        // // Get Settings
+        // const settings = vscode.workspace.getConfiguration('nastran')
+        // if (settings.autoLoadIncludeHierarchy) {
         insertComment(context, "short_comment")
         }
     );

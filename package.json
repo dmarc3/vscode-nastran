@@ -146,12 +146,37 @@
     },
     "configuration": {
       "type": "object",
-      "title": "Nastran Server Configuration",
+      "title": "vscode-nastran",
       "properties": {
-        "nastranServer.Configuration": {
-          "scope": "resource",
+        "nastran.nastranPath": {
+          "order": 1,
           "type": "string",
-          "default": "You can override this message."
+          "default": "",
+          "description": "Defines the path to the Nastran executable. If blank, will assume executable is on the system path variable."
+        },
+        "nastran.nastranKeywords": {
+          "order": 2,
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Defines the Nastran [keyword arguments](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) to use when executing Nastran."
+        },
+        "nastran.shortComment": {
+          "order": 3,
+          "type": "string",
+          "default": "$---1---$---2---$---3---$---4---$---5---$---6---$---7---$---8---$---9---$---10--$\n",
+          "description": "Defines the text used for short comments."
+        },
+        "nastran.longComment": {
+          "order": 4,
+          "type": "string",
+          "default": "$---1---$-------2-------$-------3-------$-------4-------$-------5-------$---6---$\n",
+          "description": "Defines the text used for long comments."
+        },
+        "nastran.autoLoadIncludeHierarchy": {
+          "order": 5,
+          "type": "boolean",
+          "default": true,
+          "description": "Specifies whether or not to automatically load the Include Hierarchy on start-up."
         }
       }
     },
