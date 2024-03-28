@@ -103,8 +103,7 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     doc = server.workspace.get_document(params.text_document.uri)
     # Find index of include file
     filename = os.path.basename(params.text_document.uri)
-    include_no = 0
-    for include_no, include in enumerate(server.includes):
+    for include in server.includes:
         if include.endswith(filename):
             break
     
@@ -133,10 +132,11 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
             else:
                 n = 16 if "*" in line else 8
             # Split the line by fields
+            line = line.ljust(len(line) + n - (len(line) - 8) % n)
             bulk_line_end = len(line) if len(line)<108 else 108
             if '$' in line:
                 bulk_line_end = line.index('$')
-            line_by_fields = [line[i:i+n] for i in range(0, bulk_line_end, n)]
+            line_by_fields = [line[:(8+n)]]+[line[i:i+n] for i in range(8+n, bulk_line_end, n)]
             for i, _ in enumerate(line_by_fields[2::2]):
                 start = 2*n*(i)+n+8
                 end = start + n
