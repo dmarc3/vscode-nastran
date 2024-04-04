@@ -131,10 +131,10 @@
           "group": "navigation"
         }
       ],
-      "commandPalette":[
+      "commandPalette": [
         {
-            "command":"open_file",
-            "when":"false"
+          "command": "open_file",
+          "when": "false"
         }
       ],
       "editor/context": [
