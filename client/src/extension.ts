@@ -142,7 +142,11 @@ export function activate(context: vscode.ExtensionContext): void {
         }
     );
     client.onReady().then(() => {
-        includeHierarchyProvider.getSections()
+        if (includeHierarchyProvider.includes.length != 0) {
+            includeHierarchyProvider.getSections()
+        } else {
+            vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+        }
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
         client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
         client.sendRequest('custom/getLines', includeHierarchyProvider.lines)
