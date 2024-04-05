@@ -97,3 +97,10 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 - Updated multi-line include logic to fix bug where include hierarchy paths for multi-line include files were not properly being calculated. Resolves [#70](https://github.com/dmarc3/vscode-nastran/issues/70).
 - Updated semantic token logic to support tab formatting.
 - Updated line logging logic to fix bug related to duplicate entries in `Find All` command. Resolves [#72](https://github.com/dmarc3/vscode-nastran/issues/72).
+
+## [1.0.12] - 2024-03-24
+
+### Added
+
+- Added right click "Open Nastran include file" context menu similar to [this extension](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile) and as referenced in [#69](https://github.com/dmarc3/vscode-nastran/issues/69).
+- Fixed initialization bug introduced in v1.0.11. Resolves [#76](https://github.com/dmarc3/vscode-nastran/issues/76).

@@ -7,6 +7,7 @@ import { TreeDataProvider } from "./treeview";
 import { executeFind } from "./find";
 import { executeNastran, setKeywords, showKeywords } from "./execute";
 import { setComment, insertComment } from "./comments";
+import { openFile } from "./open";
 
 import {
     LanguageClient,
@@ -71,7 +72,14 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
         if (e.document.languageId === "nastran") {
             if (!path.basename(e.document.fileName).startsWith("find_")) {
-                if (!includeHierarchyProvider.includes.includes(e.document.fileName)) {
+                var isInclude = false
+                for (var include of includeHierarchyProvider.includes) {
+                    const basename = path.basename(e.document.fileName)
+                    if (include.endsWith(basename)) {
+                        isInclude = true
+                    }
+                }
+                if (!isInclude) {
                     vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
                 }
             }
@@ -127,8 +135,18 @@ export function activate(context: vscode.ExtensionContext): void {
         showKeywords(context)
         }
     );
+    vscode.commands.registerCommand('open_file', () => {
+        const lineno = vscode.window.activeTextEditor.selection.active.line
+        const lines = vscode.window.activeTextEditor.document.getText().split('\n')
+        openFile(lineno, lines)
+        }
+    );
     client.onReady().then(() => {
-        includeHierarchyProvider.getSections()
+        if (includeHierarchyProvider.includes.length != 0) {
+            includeHierarchyProvider.getSections()
+        } else {
+            vscode.commands.executeCommand('includeHierarchy.buildHierarchy')
+        }
         client.sendRequest('custom/getIncludes', includeHierarchyProvider.includes)
         client.sendRequest('custom/getSections', includeHierarchyProvider.sections)
         client.sendRequest('custom/getLines', includeHierarchyProvider.lines)

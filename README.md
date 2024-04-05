@@ -49,20 +49,25 @@ Currently supported features include:
     &nbsp;
     ![Include Hierarchy Example](./resources/include_hierarchy.gif)
 
-4. "Find All" command (keybound to `ALT + F`) to search model for all substring occurrences and provide hyperlink to location in model.
+4. Open file right click context menu for `INCLUDE` lines.
+
+    &nbsp;
+    ![Open File Menu](./resources/open_file.gif)
+
+5. "Find All" command (keybound to `ALT + F`) to search model for all substring occurrences and provide hyperlink to location in model.
 
     &nbsp;
     ![Find All Example](./resources/find_command.gif)
 
-5. `Nastran` execution command (keybound to `F6`)
+6. `Nastran` execution command (keybound to `F6`)
     - `Nastran` [keyword arguments](https://nexus.hexagon.com/documentationcenter/bundle/MSC_Nastran_2022.4/page/Nastran_Combined_Book/qrg/nastran/TOC.Executing.MSC.Nastran1.xhtml) may be set via the `Nastran: Set execution keywords` command (accessed via `CTRL + SHIFT + P`)
 
-6. Text completions with field names for rapid editing
+7. Text completions with field names for rapid editing
 
     &nbsp;
     ![Text Completions Example](./resources/completions.gif)
 
-7. Command to insert short and long field delineation comments (`F9`, `F10`)
+8. Command to insert short and long field delineation comments (`F9`, `F10`)
     - Users defined comments may be set via the `Nastran: Set short field delineation comment` and `Nastran: Set long field delineation comment` commands (accessed via `CTRL + SHIFT + P`)
 
 In addition to these features, the following are proposed features with no feasibility assessment or time table for implementation:
