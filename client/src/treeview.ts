@@ -80,7 +80,8 @@ export class TreeDataProvider implements vscode.TreeDataProvider<IncludeFile> {
                         }
                     }
                     // Get current include file path relative to origin file
-                    const fileName = path.join(path.dirname(element), file)
+                    const fileName = getIncludeFilename(file, element)
+                    // const fileName = path.join(path.dirname(element), file)
                     // If the include file exists...
                     if (fs.existsSync(fileName)) {
                         // Save include file and line pair
@@ -192,4 +193,13 @@ iconPath = {
     light: path.join(__filename, '..', '..', '..', 'resources', 'light', 'mesh_missing.png'),
     dark: path.join(__filename, '..', '..', '..', 'resources', 'dark', 'mesh_missing.png')
 };
+}
+
+export function getIncludeFilename(file, element) {
+    if (fs.existsSync(file)) {
+        return file
+    } else if (fs.existsSync(path.join(path.dirname(element), file))) {
+        return path.join(path.dirname(element), file)
+    }
+    return ''
 }
