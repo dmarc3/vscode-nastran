@@ -104,3 +104,12 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 
 - Added right click "Open Nastran include file" context menu similar to [this extension](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile) and as referenced in [#69](https://github.com/dmarc3/vscode-nastran/issues/69).
 - Fixed initialization bug introduced in v1.0.11. Resolves [#76](https://github.com/dmarc3/vscode-nastran/issues/76).
+
+## [1.0.13] - 2024-04-09
+
+### Added
+
+- Updated include file parsing logic to check:
+  - Existence of filename as an absolute path
+  - Existence of filename relative to the file including it
+  - Existence of filename relative to source run deck file

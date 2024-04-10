@@ -37,7 +37,7 @@ class NastranLanguageServer(LanguageServer):
         self.sections = None
 
 # Initialize server class
-server = NastranLanguageServer("NastranLanguageServer", "v1.0.12")
+server = NastranLanguageServer("NastranLanguageServer", "v1.0.13")
 
 @server.feature(TEXT_DOCUMENT_HOVER)
 async def hovers(params: HoverParams) -> Optional[Hover]:
