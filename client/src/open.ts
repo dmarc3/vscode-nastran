@@ -2,7 +2,7 @@ import * as path from "path";
 import * as vscode from "vscode";
 import { getIncludeFilename } from "./treeview";
 
-export function openFile(lineno, lines) {
+export function openFile(lineno, lines, includes) {
     // Get current line
     const line = lines[lineno]
     // Line must start with INCL
@@ -21,7 +21,7 @@ export function openFile(lineno, lines) {
             }
         }
         // Get current include file path
-        const filepath = getIncludeFilename(filename, vscode.window.activeTextEditor.document.fileName)
+        const filepath = getIncludeFilename(filename, vscode.window.activeTextEditor.document.fileName, includes)
         let uri = vscode.Uri.file(filepath)
         // Open file
         vscode.window.showTextDocument(uri)

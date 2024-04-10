@@ -138,7 +138,7 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.commands.registerCommand('open_file', () => {
         const lineno = vscode.window.activeTextEditor.selection.active.line
         const lines = vscode.window.activeTextEditor.document.getText().split('\n')
-        openFile(lineno, lines)
+        openFile(lineno, lines, includeHierarchyProvider.includes)
         }
     );
     client.onReady().then(() => {
