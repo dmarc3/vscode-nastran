@@ -5,8 +5,8 @@ import re
 from utils.parse_file import exec_regex, REGEX_KEY
 
 def test_bulk_regex():
-    # Regex string to test
-    regex = REGEX_KEY['BULK']
+    # Define BULK_LABEL variables
+    bulk_label = ("MONSUMT", "MONSUM1", "MONSUM", "MONPNT3", "MONPNT2", "MONPNT1", "MONGRP", "MONDSP1", "MONCNCM")
     # Get lines to test
     for file in glob(os.path.join('utils', 'docs', 'BULK', '*.md')):
         # Skip DTI, cards for now
@@ -14,6 +14,12 @@ def test_bulk_regex():
             continue
         # Parse card
         card = os.path.basename(file).replace('.md', '')
+        if card.startswith(bulk_label):
+            # Regex string to test
+            regex = REGEX_KEY['BULK_LABEL']
+        else:
+            # Regex string to test
+            regex = REGEX_KEY['BULK']
         # Construct test line with short field
         line = card.ljust(80)
         assert card == exec_regex(re.match, regex, line)
