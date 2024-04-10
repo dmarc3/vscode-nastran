@@ -115,6 +115,9 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
     last_start = 0
     data = []
     
+    # Define BULK_LABEL variables
+    bulk_label = ("MONSUMT", "MONSUM1", "MONSUM", "MONPNT3", "MONPNT2", "MONPNT1", "MONGRP", "MONDSP1", "MONCNCM")
+    
     # For each line in the current range...
     for line_no in range(params.range.start.line, params.range.end.line):
         line = doc.lines[line_no]
@@ -123,7 +126,7 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
-        if section == "BULK" and line.lstrip().upper().startswith('MON'):
+        if section == "BULK" and line.lstrip().upper().startswith(bulk_label):
             # Determine long or short field
             if line.startswith('*'):
                 count = 1
