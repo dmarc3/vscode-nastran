@@ -113,3 +113,4 @@ All notable changes to the `vscode-nastran` extension will be documented in this
   - Existence of filename as an absolute path
   - Existence of filename relative to the file including it
   - Existence of filename relative to source run deck file
+- Resolves [#80](https://github.com/dmarc3/vscode-nastran/issues/80).
