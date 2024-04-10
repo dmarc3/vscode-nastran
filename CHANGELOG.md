@@ -109,8 +109,8 @@ All notable changes to the `vscode-nastran` extension will be documented in this
 
 ### Added
 
-- Updated include file parsing logic to check:
+- Updated include file parsing logic to check the following. Resolves [#80](https://github.com/dmarc3/vscode-nastran/issues/80).
   - Existence of filename as an absolute path
   - Existence of filename relative to the file including it
   - Existence of filename relative to source run deck file
-- Resolves [#80](https://github.com/dmarc3/vscode-nastran/issues/80).
+- Updated semantic token logic and syntax file to properly highlight and provide hovers for `MONPNT` entries with a label that contains an `=` symbol. Resolves [#68](https://github.com/dmarc3/vscode-nastran/issues/68).

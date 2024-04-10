@@ -67,6 +67,8 @@ async def hovers(params: HoverParams) -> Optional[Hover]:
             card = exec_regex(re.match, REGEX_KEY[section], line)
         else:
             card = exec_regex(re.search, REGEX_KEY['PARAM'], line)
+    elif section == 'BULK' and line.lstrip().upper().startswith('MON'):
+        card = exec_regex(re.match, REGEX_KEY['BULK_LABEL'], line)
     else:
         card = exec_regex(re.match, REGEX_KEY[section], line)
     # Calculate hover text
@@ -121,7 +123,33 @@ def semantic_tokens(params: SemanticTokensRangeParams) -> SemanticTokensPartialR
         last_start = 0
         # Process the BULK section
         # Ignore comments and lines with free format (comma separated)
-        if section == "BULK" and not line.lstrip().startswith('$') and "," not in line and "'" not in line and '\t' not in line:
+        if section == "BULK" and line.lstrip().upper().startswith('MON'):
+            # Determine long or short field
+            if line.startswith('*'):
+                count = 1
+                parent = doc.lines[line_no-count]
+                while parent.startswith('*'):
+                    count += 1
+                    parent = doc.lines[line_no-count]
+                n = 16 if "*" in parent else 8
+            else:
+                n = 16 if "*" in line else 8
+            # Split the line by fields
+            line_by_fields = [line[:8], line[8:8+n], line[8+n:]]
+            for i, _ in enumerate(line_by_fields[2::2]):
+                start = 2*n*(i)+n+8
+                end = len(line)-1
+                # Save SemanticToken data
+                data += [
+                    (line_no - last_line),
+                    (start - last_start),
+                    (end - start),
+                    0,
+                    0
+                ]
+                last_line = line_no
+                last_start = start
+        elif section == "BULK" and not line.lstrip().startswith('$') and "," not in line and "'" not in line and '\t' not in line:
             # Determine long or short field
             if line.startswith('*'):
                 count = 1
