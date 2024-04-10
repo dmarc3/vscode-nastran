@@ -1,5 +1,6 @@
 import * as path from "path";
 import * as vscode from "vscode";
+import { getIncludeFilename } from "./treeview";
 
 export function openFile(lineno, lines) {
     // Get current line
@@ -19,11 +20,11 @@ export function openFile(lineno, lines) {
                 break
             }
         }
-        // Get current include file path relative to origin file
-        const filepath = path.join(path.dirname(vscode.window.activeTextEditor.document.uri.toString()), filename)
-        const openpath = vscode.Uri.parse(filepath)
+        // Get current include file path
+        const filepath = getIncludeFilename(filename, vscode.window.activeTextEditor.document.fileName)
+        let uri = vscode.Uri.file(filepath)
         // Open file
-        vscode.window.showTextDocument(openpath)
+        vscode.window.showTextDocument(uri)
     } else {
         vscode.window.showErrorMessage("Unable to open include file!")
     }
