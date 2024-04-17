@@ -3,6 +3,7 @@ import * as vscode from "vscode";
 import { getIncludeFilename } from "./treeview";
 
 export function openFile(lineno, lines, includes) {
+
     // Get current line
     const line = lines[lineno]
     // Line must start with INCL

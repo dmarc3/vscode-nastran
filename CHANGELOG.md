@@ -114,3 +114,4 @@ All notable changes to the `vscode-nastran` extension will be documented in this
   - Existence of filename relative to the file including it
   - Existence of filename relative to source run deck file
 - Updated semantic token logic and syntax file to properly highlight and provide hovers for `MONPNT` entries with a label that contains an `=` symbol. Resolves [#68](https://github.com/dmarc3/vscode-nastran/issues/68).
+
