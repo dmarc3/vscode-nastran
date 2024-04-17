@@ -45,8 +45,8 @@ function startLangServer(
         command,
         options: { cwd },
     };
-
-    return new LanguageClient(command, serverOptions, getClientOptions());
+    const clientOptions = getClientOptions();
+    return new LanguageClient(command, serverOptions, clientOptions);
 }
 
 export function activate(context: vscode.ExtensionContext): void {

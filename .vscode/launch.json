@@ -8,10 +8,10 @@
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}"],
-            "outFiles": ["${workspaceRoot}/client/out/**/*.js"],
+            "outFiles": ["${workspaceRoot}/dist/**/*.js"],
             "preLaunchTask": {
                 "type": "npm",
-                "script": "compile"
+                "script": "webpack"
             },
             "env": {
                 "VSCODE_DEBUG_MODE": "true"
@@ -30,19 +30,6 @@
                 "PYTHONPATH": "${workspaceFolder}"
             }
         },
-        {
-            "name": "Launch Server [WebSockets]",
-            "type": "python",
-            "request": "launch",
-            "module": "server.server",
-            "args": ["--ws"],
-            "justMyCode": false,
-            "python": "${command:python.interpreterPath}",
-            "cwd": "${workspaceFolder}",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        }
     ],
     "compounds": [
         {

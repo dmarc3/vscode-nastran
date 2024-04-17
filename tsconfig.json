@@ -3,10 +3,9 @@
         "module": "commonjs",
         "target": "es2019",
         "lib": ["ES2019"],
-        "rootDir": "client/src",
-        "outDir": "client/out",
+        "rootDir": "src",
         "sourceMap": true
     },
-    "include": ["client/src"],
+    "include": ["src", "server", "utils"],
     "exclude": ["node_modules"]
 }
