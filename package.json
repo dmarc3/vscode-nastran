@@ -26,7 +26,8 @@
         ],
         "extensions": [
           ".bdf",
-          ".dat"
+          ".dat",
+          ".blk"
         ],
         "icon": {
           "light": "./resources/light/logo.png",
