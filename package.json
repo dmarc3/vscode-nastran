@@ -27,7 +27,10 @@
         "extensions": [
           ".bdf",
           ".dat",
-          ".blk"
+          ".blk",
+          ".bulk",
+          ".nas",
+          ".nastran"
         ],
         "icon": {
           "light": "./resources/light/logo.png",
