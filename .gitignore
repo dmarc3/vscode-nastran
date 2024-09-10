@@ -146,3 +146,6 @@ utils/docs/tmp
 
 # Hover test bdf
 utils/test.bdf
+
+venv_prod
+.venv_prod_remake

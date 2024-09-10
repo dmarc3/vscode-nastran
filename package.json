@@ -131,10 +131,10 @@
           "group": "navigation"
         }
       ],
-      "commandPalette":[
+      "commandPalette": [
         {
-            "command":"open_file",
-            "when":"false"
+          "command": "open_file",
+          "when": "false"
         }
       ],
       "editor/context": [
@@ -148,6 +148,20 @@
       "type": "object",
       "title": "Nastran Server Configuration",
       "properties": {
+        "nastranServer.pythonInterpreterPath": {
+          "type": "string",
+          "description": "Path to a Python 3.8+ Interpreter.",
+          "default": "python",
+          "scope": "application",
+          "overrides": {
+            "windows": {
+              "default": "python"
+            },
+            "linux": {
+              "default": "python3"
+            }
+          }
+        },
         "nastranServer.Configuration": {
           "scope": "resource",
           "type": "string",
@@ -206,7 +220,7 @@
     "watch": "tsc -b -w"
   },
   "devDependencies": {
-    "@types/node": "^18.14.0",
+    "@types/node": "^18.19.50",
     "@types/vscode": "^1.75.1",
     "typescript": "^4.9.5"
   },
