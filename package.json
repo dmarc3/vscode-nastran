@@ -148,6 +148,20 @@
       "type": "object",
       "title": "Nastran Server Configuration",
       "properties": {
+        "nastranServer.pythonInterpreterPath": {
+          "type": "string",
+          "description": "Path to a Python 3.8+ Interpreter.",
+          "default": "python",
+          "scope": "application",
+          "overrides": {
+            "windows": {
+              "default": "python"
+            },
+            "linux": {
+              "default": "python3"
+            }
+          }
+        },
         "nastranServer.Configuration": {
           "scope": "resource",
           "type": "string",

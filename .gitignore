@@ -146,3 +146,7 @@ utils/docs/tmp
 
 # Hover test bdf
 utils/test.bdf
+
+# python venv
+venv_prod/
+.venv_prod_remake
